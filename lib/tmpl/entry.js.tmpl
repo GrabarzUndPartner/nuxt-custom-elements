@@ -1,0 +1,24 @@
+import Vue from 'vue';
+import VueCustomElement from 'vue-custom-element';
+
+<% if (options.polyfill) { %>
+  if (!(('customElements' in window) || ('registerElement' in document))) {
+    import('document-register-element/build/document-register-element'); // For cross-browser compatibility (IE9+) use Custom Elements polyfill.
+  }
+<% } %>
+
+
+<% options.tags.forEach(function ({ path }, i) {  %><%= `import Component${i} from '${path}';\n` %><% }); %>
+
+  Vue.use(VueCustomElement);
+
+
+<% options.tags.forEach(function ({ name, options }, i) { %><%= `Vue.customElement('${name}', Component${i}, ${JSON.stringify(options)});\n` %><% }); %>
+
+<% if (process.env.NODE_ENV === 'production') { %>
+  // Create missing NuxtLink as RouterLink.
+  Vue.component('NuxtLink', {
+    extends: Vue.component('RouterLink')
+  })
+  <% } %>
+
