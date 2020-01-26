@@ -8,7 +8,7 @@
 
 > Publish your Components as a [vue-custom-element](https://github.com/karol-f/vue-custom-element) standalone build.
 
-`nuxt-custom-elements` is a Nuxt.js module that uses [vue-custom-element]([./LICENSE](https://github.com/karol-f/vue-custom-element)) to publish single components as custom element / web-component.
+`nuxt-custom-elements` is a Nuxt.js module that uses [vue-custom-element](https://github.com/karol-f/vue-custom-element) to publish single components as custom element / web-component.
 
 [📖 **Release Notes**](./CHANGELOG.md)
 
@@ -100,7 +100,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
 | Name         | Type             | Description                                                                                                                                   | Default Value | Required |
 | ------------ | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
-| `analyzer`   | `Boolean|Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
+| `analyzer`   | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
 | `polyfill`   | `Boolean`        | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
 | `publicPath` | `String`         | Defines the webpack `publicPath`.                                                                                                             | `/`           | `false`  |
 | `staticPath` | `String`         | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
@@ -159,7 +159,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | Name        | Type           | Description                                                  | Default Value |
 | ----------- | -------------- | ------------------------------------------------------------ | ------------- |
 | `shadowDom` | `Boolean`      | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
-| `props`     | `Array|Object` | Use array for prop definition and object for default values. | `[]`          |
+| `props`     | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
 
 ## Plugins
 
