@@ -1,0 +1,51 @@
+language: node_js
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+env:
+  global:
+    #github
+    - secure: XPeDgfmFwiReCTPfXDnz8TcMfBjFPxbxf4b3lEA64W97TjQrEuu/Pq4slEBa5CmZ1B3UMrD8cXTj+loJjmBV0XSkJcNWVJBP5CJKRJSnRj8KibGPmJH9eo961q9/8Q9KqZmrgiMOIQ3GHwpRiJUlwcWJbS3tpk/8ZczDWhsQbB7iRAvNcfrDnKrH8Q59gsCUD81F5sMVMMkHwZKHgC/GDcS6KXIa4KRcUCIeSpEeWExMB+qs8bR//T8RKeqzbu7bSz/9mD/iCheGVYaxkEn+og57JEGG8QmbiUzukjr1+K2aoz7pyzcpUBUER75aDBAVO2e0eglaiJlylM1TOa74dJPElYIIyCZvz3fBBOcQzncMDxMizTV7e3xSrhy7r/Ztf1AiO73WJwR+tdsjh07K0zBLUXpJfUSqT/VCrM0D8uQxRfCaZ7z+F9r0Aq/z2IP8V4khfGN7owbr+ea07u5nzEYME7qnw666XKghXv/KMbKbqUQ9SY/nsqdo0+dVVWcsMUd+eA/kLf1yk56KRj84IDP/cFFDu5o5dS8Q4K5tCC88p2swiHmrlyzOAwmcA3mhJqIaQeIekMGFdsWNk4rBU9bPP6soV/LXWDzGFJmjqF30dMRSARyLD36IQMlUfVX1edaaRxWmTPwkZzfj6ovRl1mZM6ltxGoGN7uwjMcabqc=
+cache:
+  npm: true
+  directories:
+    - dist
+    - reports
+jobs:
+  include:
+    - stage: prepare cache
+      name: install
+      before_install:
+        - rm -rf dist reports
+      install:
+        - npm i
+    - stage: website
+      name: build
+      script:
+        # - echo $TRAVIS_PULL_REQUEST_BRANCH
+        # - echo $TRAVIS_BRANCH
+        # - echo $TRAVIS_COMMIT
+        # - echo $TRAVIS_PULL_REQUEST_SHA
+        - if [ -z "$TRAVIS_PULL_REQUEST_BRANCH" ]; then export PT_BRANCH=$TRAVIS_BRANCH; else export PT_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH; fi
+        - if [ -z "$TRAVIS_PULL_REQUEST_SHA" ]; then export PT_COMMIT=$TRAVIS_COMMIT; else export PT_COMMIT=$TRAVIS_PULL_REQUEST_SHA; fi
+        # - echo $PT_COMMIT
+        # - echo $PT_BRANCH
+        - npm run build
+    - stage: deploy
+      if: branch = master
+      install:
+        - npm i semantic-release @semantic-release/exec @semantic-release/git @semantic-release/changelog --no-save
+      script:
+        - npx semantic-release --provider=github
+        - mkdir gh-pages gh-pages/reports
+        - cp -R dist/nuxt-custom-elements/* gh-pages/
+        - cp -R reports/* gh-pages/reports/
+        - touch gh-pages/.nojekyll
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GH_TOKEN
+        local_dir: gh-pages/
+        on:
+          branch: master
+
