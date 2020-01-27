@@ -3,7 +3,7 @@
 [![Build Status][travis-build-status-src]][travis-build-status-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Codecov][codecov-src]][codecov-href]
+<!-- [![Codecov][codecov-src]][codecov-href] -->
 [![License][license-src]][license-href]
 
 > Publish your Components as a [vue-custom-element](https://github.com/karol-f/vue-custom-element) standalone build.
