@@ -5,7 +5,7 @@ module.exports = {
   dev: isDev,
 
   mode: 'spa',
-  modern: false, // 'client',
+  modern: 'client',
 
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),

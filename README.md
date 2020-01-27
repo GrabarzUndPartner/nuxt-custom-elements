@@ -1,8 +1,8 @@
 # nuxt-custom-elements
 
+[![Build Status][travis-build-status-src]][travis-build-status-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Circle CI][circle-ci-src]][circle-ci-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
@@ -98,13 +98,13 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Name         | Type             | Description                                                                                                                                   | Default Value | Required |
-| ------------ | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
+| Name         | Type              | Description                                                                                                                                   | Default Value | Required |
+| ------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
 | `analyzer`   | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
-| `polyfill`   | `Boolean`        | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
-| `publicPath` | `String`         | Defines the webpack `publicPath`.                                                                                                             | `/`           | `false`  |
-| `staticPath` | `String`         | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
-| `entries`    | `Array`          | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
+| `polyfill`   | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
+| `publicPath` | `String`          | Defines the webpack `publicPath`.                                                                                                             | `/`           | `false`  |
+| `staticPath` | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
+| `entries`    | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
 
 ---
 
@@ -156,9 +156,9 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
 ## Tag Options
 
-| Name        | Type           | Description                                                  | Default Value |
-| ----------- | -------------- | ------------------------------------------------------------ | ------------- |
-| `shadowDom` | `Boolean`      | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
+| Name        | Type            | Description                                                  | Default Value |
+| ----------- | --------------- | ------------------------------------------------------------ | ------------- |
+| `shadowDom` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
 | `props`     | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
 
 ## Plugins
@@ -210,7 +210,7 @@ First of all, components that are to be exported as custom elements must be spec
 ```
 
 Finally a `nuxt generate` must be executed. The custom-element build is located in the nuxt-generate directory. Example: `dist/nuxt-custom-elements`
-Or execute a "nuxt build", the files are located under `.nuxt/nuxt-custom-elements/dist`.
+Or execute a `nuxt build`, the files are located under `.nuxt/nuxt-custom-elements/dist`.
 
 ## Development custom-element on the fly
 
@@ -275,17 +275,18 @@ The custom elements contained in the page template can now be called.
 [MIT License](./LICENSE)
 
 <!-- Badges -->
+
+[travis-build-status-src]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements.svg?branch=master)>
+[travis-build-status-href]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements>
+
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-custom-elements/latest.svg?style=flat-square
 [npm-version-href]: https://npmjs.com/package/nuxt-custom-elements
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-custom-elements.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/nuxt-custom-elements
 
-[circle-ci-src]: https://img.shields.io/circleci/project/github/.svg?style=flat-square
-[circle-ci-href]: https://circleci.com/gh/
-
-[codecov-src]: https://img.shields.io/codecov/c/github/.svg?style=flat-square
-[codecov-href]: https://codecov.io/gh/
+[codecov-src]: https://img.shields.io/codecov/c/github/GrabarzUndPartner/nuxt-custom-elements/branch/master/graph/badge.svg?style=flat-square
+[codecov-href]: https://codecov.io/gh/GrabarzUndPartner/nuxt-custom-elements
 
 [license-src]: https://img.shields.io/npm/l/nuxt-custom-elements.svg?style=flat-square
 [license-href]: https://npmjs.com/package/nuxt-custom-elements
