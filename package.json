@@ -36,10 +36,10 @@
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "@nuxt/builder": "^2.11.0",
-    "@nuxt/config": "^2.11.0",
-    "@nuxt/core": "^2.11.0",
-    "@nuxt/webpack": "^2.11.0",
+    "@nuxt/builder": "latest",
+    "@nuxt/config": "latest",
+    "@nuxt/core": "latest",
+    "@nuxt/webpack": "latest",
     "@nuxtjs/eslint-config": "latest",
     "@nuxtjs/module-test-utils": "latest",
     "babel-eslint": "latest",
@@ -50,9 +50,9 @@
     "jest": "latest",
     "nuxt-edge": "latest",
     "standard-version": "latest",
-    "stylelint": "^13.0.0",
-    "stylelint-config-recess-order": "^2.0.3",
-    "stylelint-config-standard": "^19.0.0"
+    "stylelint": "latest",
+    "stylelint-config-recess-order": "latest",
+    "stylelint-config-standard": "latest"
   },
   "publishConfig": {
     "access": "public"
