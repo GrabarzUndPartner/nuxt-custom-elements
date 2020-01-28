@@ -28,7 +28,7 @@ module.exports = {
         analyzer: true,
         polyfill: true,
         publicPath: getBasePath(),
-        staticPath: resolve(process.cwd(), 'example/custom-element/static'),
+        staticPath: resolve(__dirname, '../example/custom-element/static'),
         entries: [
           {
             name: 'ComponentAppAbstract',
