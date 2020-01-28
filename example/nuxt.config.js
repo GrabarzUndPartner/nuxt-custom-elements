@@ -27,6 +27,7 @@ module.exports = {
       '@/../', {
         analyzer: true,
         polyfill: true,
+        publicPath: getBasePath(),
         staticPath: resolve(process.cwd(), 'example/custom-element/static'),
         entries: [
           {
@@ -37,7 +38,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               }
@@ -51,7 +52,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               }
@@ -65,7 +66,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               }
@@ -79,7 +80,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               },
@@ -88,7 +89,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               },
@@ -97,7 +98,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: '/'
+                    basePath: getBasePath()
                   }
                 }
               }
@@ -107,4 +108,8 @@ module.exports = {
       }
     ]
   ]
+}
+
+function getBasePath () {
+  return process.env.npm_config_base || '/'
 }
