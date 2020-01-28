@@ -186,7 +186,7 @@ First of all, components that are to be exported as custom elements must be spec
     [
       'nuxt-custom-elements', {
         polyfill: true,
-        staticPath: resolve('@/custom-element/static'),
+        staticPath: path.resolve(__dirname, 'src/static'),
         entries: [
           {
             name: 'ComponentAppAbstract',
@@ -272,6 +272,8 @@ or look here
 - [ComponentAppAbstract](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-abstract.html)
 - [ComponentAppHash](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-hash.html)
 - [ComponentAppHistory](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-history.html)
+- [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/client.html)
+- [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/modern.html)
 
 ## Development
 
