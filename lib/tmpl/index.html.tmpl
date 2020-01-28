@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title><%= htmlWebpackPlugin.options.title %></title>
+  <% if (base) { %>
   <base href="<%= base %>" target="_blank">
+  <% } %>
 </head>
 
 <body>

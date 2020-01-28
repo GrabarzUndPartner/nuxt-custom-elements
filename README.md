@@ -261,8 +261,17 @@ The custom elements contained in the page template can now be called.
 
 ## Preview
 
-1. Start static server using `npm run start:build`
-2. Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in Browser.
+1. Clone this repository
+2. Install dependencies using `yarn install` or `npm install`
+3. Build and start with express `npm run start:build`
+4. Open [http://127.0.0.1:3000](http://127.0.0.1:3000) in Browser.
+
+or look here
+
+- [ComponentAppBundle](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-bundle.html)
+- [ComponentAppAbstract](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-abstract.html)
+- [ComponentAppHash](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-hash.html)
+- [ComponentAppHistory](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-history.html)
 
 ## Development
 
