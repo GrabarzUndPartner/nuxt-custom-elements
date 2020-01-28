@@ -1,0 +1,17 @@
+const { build, loadConfig } = require('@nuxtjs/module-test-utils')
+
+describe('build', () => {
+  let nuxt, builder
+
+  beforeAll(async () => {
+    ({ nuxt, builder } = await build(loadConfig(__dirname, '../../example')))
+  }, 60000)
+
+  afterAll(async () => {
+    await nuxt.close()
+  })
+
+  test('render', () => {
+    expect(builder._buildStatus).toBe(2)
+  })
+})

@@ -1,0 +1,60 @@
+{
+  "name": "nuxt-custom-elements",
+  "version": "0.0.0",
+  "description": "Publish your Components as a vue-custom-element standalone build.",
+  "repository": "GrabarzUndPartner/nuxt-custom-elements",
+  "license": "MIT",
+  "author": "Thorn-Welf Walli",
+  "contributors": [
+    {
+      "name": "Thorn-Welf Walli",
+      "email": "thorn.walli@grabarzundpartner.de"
+    }
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "build": "nuxt build --config-file example/nuxt.config.js",
+    "start:build": "yarn build && yarn express-server --dist example/.nuxt/nuxt-custom-elements/dist",
+    "lint": "yarn lint:js && yarn lint:css",
+    "lint:js": "eslint --ext .js,.vue example lib test",
+    "lint:css": "stylelint \"example/**/*.vue\" \"example/**/**/*.css\", \"lib/**/*.vue\" \"lib/**/**/*.css\"",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "express-server": "node ./tools/express-server.js",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "change-case": "^4.1.1",
+    "document-register-element": "^1.14.3",
+    "vue-custom-element": "^3.2.12"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxt/builder": "latest",
+    "@nuxt/config": "latest",
+    "@nuxt/core": "latest",
+    "@nuxt/webpack": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "standard-version": "latest",
+    "stylelint": "latest",
+    "stylelint-config-recess-order": "latest",
+    "stylelint-config-standard": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
