@@ -20,6 +20,10 @@ export function createRouter (mode = 'abstract') {
   const router = new VueRouter({
     mode
   })
-  router.replace('/')
+  console.log(mode, '=== ', 'abstract')
+  if (mode === 'abstract') {
+    console.log(324)
+    router.replace('/')
+  }
   return router
 }

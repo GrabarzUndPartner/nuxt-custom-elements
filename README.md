@@ -287,7 +287,7 @@ or look here
 
 <!-- Badges -->
 
-[travis-build-status-src]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements.svg?branch=master)>
+[travis-build-status-src]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements.svg?branch=master>
 [travis-build-status-href]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements>
 
 [npm-version-src]: https://img.shields.io/npm/v/nuxt-custom-elements/latest.svg?style=flat-square

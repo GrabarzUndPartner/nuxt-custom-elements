@@ -1,6 +1,6 @@
 <script>
 import CustomElementRouterView from '../components/helpers/RouterView'
-import { createRouter, getRoutesFromViews } from '../utils/router'
+import { getRoutesFromViews } from '../utils/router'
 import store from '../utils/store'
 import { setup } from '../utils/nuxt'
 
@@ -10,7 +10,6 @@ export default {
 
   components: { CustomElementRouterView },
   store,
-  router: createRouter(),
   props: {
     basePath: {
       type: String,

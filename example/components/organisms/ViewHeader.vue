@@ -3,7 +3,7 @@
     <atom-headline
       v-bind="headline"
       tag="div"
-      type="view-header"
+      style-type="view-header"
     />
     <nav>
       <span>Views:</span>

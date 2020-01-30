@@ -13,8 +13,6 @@
 import AppExtend from '@/custom-element/extends/App'
 import { createRouter } from '@/custom-element/utils/router'
 
-// import OrganismViewHeader from '@/components/organisms/ViewHeader'
-
 export default {
   name: 'AppOne',
 
@@ -26,7 +24,7 @@ export default {
   data () {
     return {
       views: [
-        'index', 'test-1'
+        'index', 'view-1', 'view-2', 'view-3'
       ]
     }
   },
@@ -38,7 +36,9 @@ export default {
           title: 'App with router mode "hash"',
           navigation: [
             { title: 'Home', url: '/' },
-            { title: 'Test 1', url: '/test-1' }
+            { title: 'View 1', url: '/view-1' },
+            { title: 'View 2', url: '/view-2' },
+            { title: 'View 3', url: '/view-3' }
           ]
         }
       }
