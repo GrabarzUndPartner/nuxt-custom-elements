@@ -8,12 +8,25 @@ import VueCustomElement from 'vue-custom-element';
 <% } %>
 
 
-<% options.tags.forEach(function ({ path }, i) {  %><%= `import Component${i} from '${path}';\n` %><% }); %>
+<% options.tags.filter(function ({ async }) { return !async; }).forEach(function ({ path }, i) { %><%= `import Component${i} from '${path}';\n` %><% }); %>
 
   Vue.use(VueCustomElement);
 
 
-<% options.tags.forEach(function ({ name, options }, i) { %><%= `Vue.customElement('${name}', Component${i}, ${JSON.stringify(options)});\n` %><% }); %>
+<% options.tags.forEach(function ({ async, name, path, options }, i) {
+
+    if (async) {
+
+    %><%= `Vue.customElement('${name}', () => { return import('${path}').then(module => module.default); }, ${JSON.stringify(options)});\n` %><%
+
+  } else {
+
+    %><%= `Vue.customElement('${name}', Component${i}, ${JSON.stringify(options)});\n` %><%
+
+  }
+
+
+  }); %>
 
 <% if (process.env.NODE_ENV === 'production') { %>
   // Create missing NuxtLink as RouterLink.

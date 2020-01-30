@@ -34,6 +34,7 @@ module.exports = {
             name: 'ComponentAppAbstract',
             tags: [
               {
+                async: false,
                 name: 'CustomElementAppAbstract',
                 path: '@/components/apps/AppAbstract',
                 options: {
@@ -48,6 +49,7 @@ module.exports = {
             name: 'ComponentAppHash',
             tags: [
               {
+                async: false,
                 name: 'CustomElementAppHash',
                 path: '@/components/apps/AppHash',
                 options: {
@@ -62,6 +64,7 @@ module.exports = {
             name: 'ComponentAppHistory',
             tags: [
               {
+                async: false,
                 name: 'CustomElementAppHistory',
                 path: '@/components/apps/AppHistory',
                 options: {
@@ -76,6 +79,7 @@ module.exports = {
             name: 'ComponentAppBundle',
             tags: [
               {
+                async: true,
                 name: 'CustomElementAppAbstract',
                 path: '@/components/apps/AppAbstract',
                 options: {
@@ -85,6 +89,7 @@ module.exports = {
                 }
               },
               {
+                async: true,
                 name: 'CustomElementAppHash',
                 path: '@/components/apps/AppHash',
                 options: {
@@ -94,6 +99,7 @@ module.exports = {
                 }
               },
               {
+                async: true,
                 name: 'CustomElementAppHistory',
                 path: '@/components/apps/AppHistory',
                 options: {
