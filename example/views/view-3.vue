@@ -1,6 +1,9 @@
 <template>
-  <div class="view-test-1">
-    <atom-headline v-bind="headline" />
+  <div class="view-3">
+    <atom-headline
+      v-bind="headline"
+      type="view"
+    />
   </div>
 </template>
 
@@ -10,19 +13,11 @@ import AtomHeadline from '@/components/atoms/Headline'
 
 export default {
   components: { AtomHeadline },
-  props: {
-    basePath: {
-      type: String,
-      default () {
-        return '/'
-      }
-    }
-  },
   data () {
     return {
       headline: {
         overline: null,
-        headline: 'Test 1 View',
+        headline: 'View 3',
         subline: null
       }
     }
@@ -31,7 +26,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.view-test-1 {
+.view-3 {
   /* empty */
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="view-index">
+  <div class="view-1">
     <atom-headline
       v-bind="headline"
       type="view"
@@ -17,7 +17,7 @@ export default {
     return {
       headline: {
         overline: null,
-        headline: 'Custom-Element Example',
+        headline: 'View 1',
         subline: null
       }
     }
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.view-index {
+.view-1 {
   /* empty */
 }
 </style>

@@ -43,7 +43,7 @@ export default {
         return 'h1'
       }
     },
-    type: {
+    styleType: {
       type: String,
       default () {
         return null
@@ -75,7 +75,7 @@ export default {
     styleClasses () {
       const classes = {}
       classes[`headline--${this.tag}`] = true
-      classes[`headline--${this.type}`] = true
+      classes[`headline--${this.styleType}`] = this.styleType
       return classes
     }
   }
@@ -145,6 +145,10 @@ export default {
     font-family: sans-serif;
     font-size: 20px;
     font-weight: normal;
+  }
+
+  &.headline--view {
+    padding: 0 10px;
   }
 }
 </style>
