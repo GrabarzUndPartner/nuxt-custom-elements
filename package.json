@@ -1,6 +1,6 @@
 {
   "name": "nuxt-custom-elements",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Publish your Components as a vue-custom-element standalone build.",
   "repository": "GrabarzUndPartner/nuxt-custom-elements",
   "license": "MIT",

@@ -1,5 +1,17 @@
 # Project Changelog
 
+# [1.1.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.0.4...v1.1.0) (2020-01-30)
+
+
+### Bug Fixes
+
+* **update:** update example components & readme ([eb11e5f](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/eb11e5fcac9af6f8c8c92e8bc0ee7b89b077bee0))
+
+
+### Features
+
+* **async-component:** added async property ([156782b](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/156782bd65577e458f5088316b9364a8e8271926))
+
 ## [1.0.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.0.3...v1.0.4) (2020-01-28)
 
 
