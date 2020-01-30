@@ -67,6 +67,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
             name: 'CustomElementsBundle',
             tags: [
               {
+                async: true,
                 name: 'ComponentOne',
                 path: 'Path to ComponentOne',
                 options: {
@@ -74,6 +75,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
                 }
               },
               {
+                async: true,
                 name: 'ComponentTwo',
                 path: 'Path to ComponentTwo',
                 options: {
@@ -116,6 +118,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
   tags: [
     // Simplified props, definition only
     {
+      async: false,
       name: 'TagName',
       path: 'component path',
       options: {
@@ -125,6 +128,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
     },
     // Extended props, with default values and with native shadow dom
     {
+      async: true,
       name: 'AnotherTagName',
       path: 'component path',
       options: {
@@ -148,11 +152,12 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
 ## Tag
 
-| Name      | Type     | Description                                                                                             |
-| --------- | -------- | ------------------------------------------------------------------------------------------------------- |
-| `name`    | `String` | Name of the Tag.<br>Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name` |
-| `path`    | `String` | Path to the component to be called by the tag.                                                          |
-| `options` | `Object` | Options from Options.                                                                                   |
+| Name      | Type      | Description                                                                                                                           |
+| --------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`    | `String`  | Name of the Tag.<br>Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`                               |
+| `async`   | `Boolean` | Components are loaded asynchronously.<br><br>If there is more than one entry the async will lead to unwanted webpack chunk splitting. |
+| `path`    | `String`  | Path to the component to be called by the tag.                                                                                        |
+| `options` | `Object`  | Options from Options.                                                                                                                 |
 
 ## Tag Options
 
