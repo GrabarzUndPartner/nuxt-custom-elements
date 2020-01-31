@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+export default () => new Vuex.Store({
   modules: getModules()
 })
 
@@ -11,10 +11,10 @@ export default new Vuex.Store({
  * Adds modules to the store.
  */
 function getModules () {
-  const moduleReq = require.context('./', true, /\.js$/)
+  const moduleReq = require.context('../store', true, /\.js$/)
   return moduleReq.keys().reduce((result, key) => {
     const name = key.replace(/\.\/(.*)\.js/, '$1')
-    result[String(name)] = moduleReq(key)
+    result[String(name)] = Object.assign({ namespaced: true }, moduleReq(key))
     return result
   }, {})
 }

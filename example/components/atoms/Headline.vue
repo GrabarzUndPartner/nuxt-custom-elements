@@ -141,14 +141,14 @@ export default {
   }
 
   &.headline--view-header {
-    padding: 10px;
+    padding: 15px;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: normal;
   }
 
   &.headline--view {
-    padding: 0 10px;
+    /* empty */
   }
 }
 </style>

@@ -1,9 +1,11 @@
 <template>
-  <transition name="router-view-change">
-    <keep-alive>
-      <router-view v-if="$router" />
-    </keep-alive>
-  </transition>
+  <div>
+    <transition name="router-view-change">
+      <keep-alive>
+        <router-view v-if="$router" />
+      </keep-alive>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -12,7 +14,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss" scoped>
+div {
+  position: relative;
+}
+
 .router-view-change-enter-active,
 .router-view-change-leave-active {
   transition: opacity 0s 0.15s linear;

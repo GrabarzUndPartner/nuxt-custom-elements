@@ -1,7 +1,6 @@
 
-export const namespaced = true
 export const state = () => ({
-  value: false
+  value: true
 })
 
 export const mutations = {
@@ -17,7 +16,7 @@ export const getters = {
 }
 
 export const actions = {
-  value (context, toggle) {
+  setValue (context, toggle) {
     context.commit('value', toggle)
   }
 }

@@ -1,6 +1,16 @@
 <template>
   <div>
     <client-only>
+      <custom-element-app-abstract
+        :base-path="basePath"
+        class="application"
+      >
+        <script
+          type="application/json"
+          v-text="data"
+        />
+        <!-- eslint-disable-next-line vue/html-indent -->
+      </custom-element-app-abstract>
       <custom-element-app-hash
         :base-path="basePath"
         class="application"
@@ -20,6 +30,7 @@
 import Vue from 'vue'
 
 Vue.config.ignoredElements = [
+  'custom-element-app-abstract',
   'custom-element-app-hash'
 ]
 
@@ -35,6 +46,7 @@ export default {
     }
   },
   created () {
+    this.$registerCustomElementsEntry('component-app-abstract')
     this.$registerCustomElementsEntry('component-app-hash')
   }
 }
