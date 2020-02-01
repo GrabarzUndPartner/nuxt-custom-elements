@@ -2,6 +2,14 @@
   "name": "nuxt-custom-elements",
   "version": "1.1.0",
   "description": "Publish your Components as a vue-custom-element standalone build.",
+  "keywords": [
+    "nuxt",
+    "vue",
+    "vue-custom-element",
+    "custom-element",
+    "shadow",
+    "dom"
+  ],
   "repository": "GrabarzUndPartner/nuxt-custom-elements",
   "license": "MIT",
   "author": "Thorn-Welf Walli",

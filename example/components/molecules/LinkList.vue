@@ -8,20 +8,20 @@
         v-for="(item) in list"
         :key="item.title"
       >
-        <atom-link :url="getUrl(item)">
+        <atom-link-to :url="getUrl(item)">
           {{ item.title }}
-        </atom-link>
+        </atom-link-to>
       </li>
     </slot>
   </ul>
 </template>
 
 <script>
-import AtomLink from '@/components/atoms/Link'
+import AtomLinkTo from '@/components/atoms/LinkTo'
 
 export default {
   components: {
-    AtomLink
+    AtomLinkTo
   },
   props: {
     type: {
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     getUrl (item) {
-      if ('locale' in this) {
+      if ('$i18n' in this) {
         // use when nuxtI18n exists
         this.localePath(item.url)
       } else {
