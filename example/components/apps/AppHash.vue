@@ -43,17 +43,10 @@ export default {
         }
       }
     },
+
     header () {
       return this.content.header
     }
-  },
-
-  mounted () {
-    // try {
-    //   const externalData = getJSONFromDefaultSlot(this.$slots.default)
-    // } catch (err) {
-    //   throw err
-    // }
   }
 
 }
@@ -73,6 +66,8 @@ export default {
   }
 
   & .router-view {
+    min-height: 160px;
+    padding: 0 15px;
     margin-top: 20px;
   }
 }

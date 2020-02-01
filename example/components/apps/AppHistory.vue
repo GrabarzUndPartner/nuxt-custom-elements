@@ -43,6 +43,7 @@ export default {
         }
       }
     },
+
     header () {
       return this.content.header
     }
@@ -65,6 +66,8 @@ export default {
   }
 
   & .router-view {
+    min-height: 160px;
+    padding: 0 15px;
     margin-top: 20px;
   }
 }

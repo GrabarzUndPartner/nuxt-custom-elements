@@ -9,7 +9,7 @@ setup()
 export default {
 
   components: { CustomElementRouterView },
-  store,
+  store: store(),
   props: {
     basePath: {
       type: String,
@@ -34,9 +34,11 @@ export default {
   },
 
   created () {
-    this.$router.base = this.basePath
-    this.$router.history.base = this.basePath
-    this.$router.addRoutes(getRoutesFromViews(this.views))
+    if (this.$router) {
+      this.$router.base = this.basePath
+      this.$router.history.base = this.basePath
+      this.$router.addRoutes(getRoutesFromViews(this.views))
+    }
   }
 
 }

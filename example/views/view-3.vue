@@ -2,7 +2,7 @@
   <div class="view-3">
     <atom-headline
       v-bind="headline"
-      type="view"
+      style-type="view"
     />
   </div>
 </template>

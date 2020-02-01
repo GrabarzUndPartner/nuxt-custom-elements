@@ -2,17 +2,19 @@
   <div class="view-index">
     <atom-headline
       v-bind="headline"
-      type="view"
+      style-type="view"
     />
+    <organism-shared-store />
   </div>
 </template>
 
 <script>
 
 import AtomHeadline from '@/components/atoms/Headline'
+import OrganismSharedStore from '@/components/organisms/SharedStore'
 
 export default {
-  components: { AtomHeadline },
+  components: { AtomHeadline, OrganismSharedStore },
   data () {
     return {
       headline: {
