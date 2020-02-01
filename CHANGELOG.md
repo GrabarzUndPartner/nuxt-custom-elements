@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.1.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.0...v1.1.1) (2020-02-01)
+
+
+### Bug Fixes
+
+* **update:** update example, readme and clean project ([af8146b](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/af8146bf2bc6aa40c3b2e1817aae6b6189426a08))
+* **update:** update example; add eslint rules ([fc647c9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/fc647c95cf13fbf3e9d7eab27ffaec35137f239e))
+
 # [1.1.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.0.4...v1.1.0) (2020-01-30)
 
 
