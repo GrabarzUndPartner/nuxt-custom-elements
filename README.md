@@ -107,8 +107,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | `staticPath` | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
 | `entries`    | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
 
----
-
 ## Entry
 
 ```js
@@ -146,8 +144,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `name` | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` |
 | `tags` | `Array`  | Tag of the endpoint.<br>Value will be converted to ParamCase later.                                                    |
-
----
 
 ## Tag
 
@@ -221,7 +217,6 @@ Or execute a `nuxt build`, the files are located under `.nuxt/nuxt-custom-elemen
 To develop a custom component in dev mode, the endpoint must be called in the create method of a page.
 
 ```html
-
 <script>
 export {
   data () {
@@ -237,7 +232,6 @@ export {
   }
 }
 </script>
-
 ```
 
 The custom elements contained in the page template can now be called.
