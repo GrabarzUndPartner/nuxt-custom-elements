@@ -1,4 +1,4 @@
-const { resolve } = require('path')
+const { resolve } = require('upath')
 const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
 
   modules: [
     [
-      '@/../', {
+      resolve(__dirname, '..'), {
         analyzer: true,
         polyfill: true,
         publicPath: getBasePath(),
