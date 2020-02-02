@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Express-Server (dist)",
+      "runtimeVersion": "12.1.0",
+      "program": "${workspaceFolder}/tools/express-server",
+      "outputCapture": "std",
+      "args": [
+        "--dist",
+        "dist/nuxt-custom-elements"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Express-Server (build/dist)",
+      "runtimeVersion": "12.1.0",
+      "program": "${workspaceFolder}/tools/express-server",
+      "outputCapture": "std",
+      "args": [
+        "--dist",
+        "example/.nuxt/nuxt-custom-elements/dist"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (CLI)",
+      "runtimeVersion": "12.1.0",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/tools/cli",
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (build)",
+      "runtimeVersion": "12.1.0",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+      "outputCapture": "std",
+      "args": [
+        "build",
+        "--config-file",
+        "example/nuxt.config.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxt)",
+      "runtimeVersion": "12.1.0",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+      "outputCapture": "std",
+      "args": [
+        "--config-file",
+        "example/nuxt.config.js"
+      ]
+    }
+  ]
+}
