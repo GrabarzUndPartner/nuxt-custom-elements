@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.1.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.2...v1.1.3) (2020-02-02)
+
+
+### Bug Fixes
+
+* **readme:** update readme ([83ea25d](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/83ea25d92675b87d52330df217e3653a47daa9e1))
+* **vscode:** add launch.json for debug ([c630696](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/c630696999e206f3f040636e2b6d64e9f549d749))
+
 ## [1.1.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.1...v1.1.2) (2020-02-02)
 
 
