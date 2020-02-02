@@ -2,12 +2,6 @@ language: node_js
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
-env:
-  global:
-    # github
-    - secure: xshzmeLa4AzhyAXUemrs2xc22boiTQwstj+GJm8MIxoT6Ps1H4YL6KzuXA1TH6zRZW5RbidUhhis/Dsgt2Efsc7ACdnSSq2Hucrmtj9sjjGDTiAXk/9JK3pbxFyzKvTHYKt/laiJWEkkHUjfh9jm9ga3kOTsyZUbDKFw7G4lh8o9QtkEHi1gdHpTQwCjPTGUStLFpsIjQG7BT0TtxOl5J/oRy407oefGXGXBOKhOiXLPlojzrRm2Ycw3M+lZD33BY5gZqoihys/MH0VyTCYPpohv+dn0yJhKu9/GJfuMoWjPDd3LqD6FdJUi2tWVKy7B2xFYqmx75r0KPgS2rX/eNqwhjzTGVOKIlBvB1c+OvovbCDx8tm/6pSoeN3KmGdiYE3lF4dN3oMpG3I2veNvUcR1rtjaPAVtdQHuZWgfXA3fFwARjGUVBBAvwKqz6yyfTU9bdHCCG0eewnQLbg6E3YuVafDANVuHg0yKhM/7I9hiw49fKHbTWvPo4B7kLakFOwYM4I0mzHHn2zw+ut4nB9Ji8FdF116bC168gTM+ZibtOdgv5uak4U/TAYdmsrX57Qk/MisYJtiohSokxUBQFQW7c17k4H8YWN6UC4bpysqsjWXL86iqOcwJwfRNyPXN2C/xsWUmX79pFqVNaHi4D839nEBog/z4BNQMy7YgG4Mw=
-    # npm
-    - secure: BUYZJKYQN/Njn7AslbKQxQEiilfyx+sRigv/48P5ir1blNXJZYHr5mW9Nari+fH+YdX51AD+R3f3Ppk7/Te8ZTEE4Xg4a2YqBxegOqJ5ctB3bP74LqMzT4UgMxOuol1sF8HdsOW+GIFwXya7VTGEwhq8N3EkyZWAXmBAPYJeiAE2kbG0u/X/Kj1sHJyl3vfr2v3FoDZWhYBtUQDQHdXKy4yxrorJHF4XD64czgxMtQmDV4+u9/2DHznp/sZzH310OP2FXel9w9fsCeu/+R06FNJ4Afv9gx0q6ygThtvzFVwc3EBBh3ukJUHOCW9WZ0EGIPM4j4CediY8HuU78o7P/oKad8GplKwrdW7LdSY/uhH3a1N6ogXhKS6ppzToqjm8dIz9N/cQJQFZSv9nFMSQdPABVO9Rv/+oYovTUscHotbwV9XHrrJAmI73dC8JI8DYAzjA+i0wh24tkUZJis29l2ydu2yetp9tTICJ0acI+M0Mfg9OfH7cwoUtIawYKaivWqUkyECEmYn5xoAX5tB4eQEye5/43B9SZ0zXMr87JlRTLcZMYcQuI/x0uQcZqw7ysv++zMGLBbwqwxYHctEbheeu0hVntJW+WlTX4tRNQZU40eGCkLZ4OeAfsPegrDvdbJkctL3x7qbhIMyi33ARvRGlRUDTNeAIgCzk6UYWw9s=
 cache:
   npm: true
   directories:
@@ -46,7 +40,7 @@ jobs:
       deploy:
         provider: pages
         cleanup: false
-        github_token: $GH_TOKEN
+        github_token: $GITHUB_TOKEN
         local_dir: gh-pages/
         on:
           branch: master
