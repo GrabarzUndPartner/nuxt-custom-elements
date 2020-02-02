@@ -65,6 +65,11 @@
     "workbench.settings.enableNaturalLanguageSearch": false
   },
   "extensions": {
-    "recommendations": []
+    "recommendations": [
+      "stylelint.vscode-stylelint",
+      "dbaeumer.vscode-eslint",
+      "octref.vetur",
+      "christian-kohler.path-intellisense"
+    ]
   }
 }

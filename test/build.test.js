@@ -11,7 +11,7 @@ describe('build', () => {
     await nuxt.close()
   })
 
-  test('render', () => {
+  test('build', () => {
     expect(builder._buildStatus).toBe(2)
   })
 })
