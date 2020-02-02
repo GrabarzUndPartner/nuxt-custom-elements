@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.1.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.4...v1.1.5) (2020-02-02)
+
+
+### Bug Fixes
+
+* **travis-token:** change tokens for travis-ci.org ([db261a0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/db261a062f361ae451d29257689c26726670e923))
+* **travis-token:** remove secrets, add secrets in ci-env ([4e5da63](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/4e5da63540019b60f2c86d9840c63542480abac3))
+
 ## [1.1.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.3...v1.1.4) (2020-02-02)
 
 
