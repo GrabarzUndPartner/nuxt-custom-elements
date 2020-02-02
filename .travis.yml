@@ -40,6 +40,7 @@ jobs:
       deploy:
         provider: pages
         cleanup: false
+        keep_history: false
         github_token: $GITHUB_TOKEN
         local_dir: gh-pages/
         on:
