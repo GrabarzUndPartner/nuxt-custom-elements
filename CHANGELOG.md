@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.5...v1.1.6) (2020-02-02)
+
+
+### Bug Fixes
+
+* **travis-preview:** add keep_history property; update keywords ([820922b](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/820922bfa18cc9c33db052802460d21a9814f059))
+
 ## [1.1.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.4...v1.1.5) (2020-02-02)
 
 
