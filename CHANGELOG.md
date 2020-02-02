@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.1...v1.1.2) (2020-02-02)
+
+
+### Bug Fixes
+
+* **windows:** troubleshooting for use with windows; optimization ([d4864d5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/d4864d58f65d85a4affbb5795aedc66f7d89e4f6))
+
 ## [1.1.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.0...v1.1.1) (2020-02-01)
 
 
