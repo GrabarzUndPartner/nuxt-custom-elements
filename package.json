@@ -24,11 +24,12 @@
   "main": "lib/module.js",
   "scripts": {
     "dev": "nuxt example",
+    "generate": "nuxt generate --config-file example/nuxt.config.js",
     "build": "nuxt build --config-file example/nuxt.config.js",
     "start:build": "yarn build && yarn express-server --dist example/.nuxt/nuxt-custom-elements/dist",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "eslint --ext .js,.vue example lib test",
-    "lint:css": "stylelint \"example/**/*.vue\" \"example/**/**/*.css\", \"lib/**/*.vue\" \"lib/**/**/*.css\"",
+    "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
     "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "express-server": "node ./tools/express-server.js",
     "test": "yarn lint && jest"
