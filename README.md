@@ -99,7 +99,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Name         | Type              | Description                                                                                                                                   | Default Value | Required |
+| Property     | Type              | Description                                                                                                                                   | Default Value | Required |
 | ------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
 | `analyzer`   | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
 | `polyfill`   | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
@@ -107,7 +107,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | `staticPath` | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
 | `entries`    | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
 
-## Entry
+### Entry
 
 ```js
 {
@@ -140,23 +140,23 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 }
 ```
 
-| Name   | Type     | Description                                                                                                            |
-| ------ | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `name` | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` |
-| `tags` | `Array`  | Tag of the endpoint.<br>Value will be converted to ParamCase later.                                                    |
+| Property | Type     | Description                                                                                                            |
+| -------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `name`   | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` |
+| `tags`   | `Array`  | Tag of the endpoint.<br>Value will be converted to ParamCase later.                                                    |
 
-## Tag
+### Tag
 
-| Name      | Type      | Description                                                                                                                           |
+| Property  | Type      | Description                                                                                                                           |
 | --------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `name`    | `String`  | Name of the Tag.<br>Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`                               |
 | `async`   | `Boolean` | Components are loaded asynchronously.<br><br>If there is more than one entry the async will lead to unwanted webpack chunk splitting. |
 | `path`    | `String`  | Path to the component to be called by the tag.                                                                                        |
 | `options` | `Object`  | Options from Options.                                                                                                                 |
 
-## Tag Options
+### Tag Options
 
-| Name        | Type            | Description                                                  | Default Value |
+| Property    | Type            | Description                                                  | Default Value |
 | ----------- | --------------- | ------------------------------------------------------------ | ------------- |
 | `shadowDom` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
 | `props`     | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
