@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.6...v1.1.7) (2020-02-15)
+
+
+### Bug Fixes
+
+* **props-readme:** fix prop value and readme ([9051838](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/90518389ece315b42fd334bee2c23a4efeea150b))
+
 ## [1.1.6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.5...v1.1.6) (2020-02-02)
 
 
