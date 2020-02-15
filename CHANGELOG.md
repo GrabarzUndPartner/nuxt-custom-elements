@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.1.8](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.7...v1.1.8) (2020-02-15)
+
+
+### Bug Fixes
+
+* **build:** fix build ([3714f50](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/3714f509d1c4ac282e2f91017db714094cee0f52))
+* **shadow:** fix shadow property ([4659678](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/4659678f30b265c1fe4b6e0123dc3cd8cb21b1e0))
+
 ## [1.1.7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.6...v1.1.7) (2020-02-15)
 
 
