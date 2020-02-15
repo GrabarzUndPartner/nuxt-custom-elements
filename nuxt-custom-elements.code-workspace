@@ -46,8 +46,8 @@
       ".releaserc": "json",
       ".stylelintrc": "json",
       ".vcmrc": "json",
-      "*.css": "postcss",
-      "*.pcss": "postcss",
+      "*.css": "css",
+      "*.pcss": "css",
       ".*ignore": "ignore",
       "*.js.tmpl": "javascript",
       "*.html.tmpl": "html"
