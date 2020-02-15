@@ -120,7 +120,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
       path: 'component path',
       options: {
         props: ['prop1', 'prop2'],
-        shadowDom: false
+        shadow: false
       }
     },
     // Extended props, with default values and with native shadow dom
@@ -133,7 +133,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
           prop1: false,
           prop2: true
         },
-        shadowDom: true
+        shadow: true
       }
     }
   ]
@@ -156,10 +156,14 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
 ## Tag Options
 
-| Name        | Type            | Description                                                  | Default Value |
-| ----------- | --------------- | ------------------------------------------------------------ | ------------- |
-| `shadowDom` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
-| `props`     | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
+| Property | Type            | Description                                                  | Default Value |
+| -------- | --------------- | ------------------------------------------------------------ | ------------- |
+| `shadow` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
+| `props`  | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
+
+>⚠️ **Important:** CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
+>
+>For shadow CSS the vue-custom-element property `shadowCSS` must be used. 
 
 ## Plugins
 
