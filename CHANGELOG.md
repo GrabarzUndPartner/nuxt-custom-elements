@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.10](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.9...v1.1.10) (2020-02-18)
+
+
+### Bug Fixes
+
+* **renovate:** change renovate extends ([fb9d149](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/fb9d14967360654dd915761782f5720ca611d89d))
+
 ## [1.1.9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.8...v1.1.9) (2020-02-18)
 
 
