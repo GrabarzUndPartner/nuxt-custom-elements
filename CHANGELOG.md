@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.8...v1.1.9) (2020-02-18)
+
+
+### Bug Fixes
+
+* **test-timeout:** set test build timeout to 80 sec. ([c2cf365](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/c2cf365ef26dbb625d4937290582ba7786478e56))
+
 ## [1.1.8](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.7...v1.1.8) (2020-02-15)
 
 
