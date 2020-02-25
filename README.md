@@ -216,6 +216,60 @@ First of all, components that are to be exported as custom elements must be spec
 Finally a `nuxt generate` must be executed. The custom-element build is located in the nuxt-generate directory. Example: `dist/nuxt-custom-elements`
 Or execute a `nuxt build`, the files are located under `.nuxt/nuxt-custom-elements/dist`.
 
+### Integrations
+
+### Vue Router & Vuex Store
+
+To use `Vuex Store` or `Vue Router`, the store or router must be referenced on the top component (endpoint).
+
+All child components have access to `this.$router` and `this.$store`.
+
+```html
+<script>
+
+import Vue from 'vue'
+import Vuex from 'vuex'
+import VueRouter from 'vue-router'
+
+Vue.use(Vuex)
+Vue.use(VueRouter)
+
+// store
+
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
+// router
+
+const router = new VueRouter({
+  routes: [...]
+})
+
+export default {
+
+  store,
+
+  router,
+
+  props: {...},
+
+  mounted() {
+    console.log(this.$store, this.$router)
+  }
+  
+}
+
+</script>
+```
+
 ## Development custom-element on the fly
 
 To develop a custom component in dev mode, the endpoint must be called in the create method of a page.
