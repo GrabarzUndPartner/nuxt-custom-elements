@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.12](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.11...v1.1.12) (2020-02-27)
+
+
+### Bug Fixes
+
+* **build-html:** fix incorrect display of the props on the html tag (example: 0=prop) ([2a08200](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/2a082005ec3a5a5a0f9cc7402395b2a993c5c012))
+
 ## [1.1.11](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.10...v1.1.11) (2020-02-27)
 
 
