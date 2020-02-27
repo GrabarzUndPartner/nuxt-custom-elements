@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.11](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.10...v1.1.11) (2020-02-27)
+
+
+### Bug Fixes
+
+* **polyfill:** fix async polyfill integration (IE11) ([42dce42](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/42dce42efafec11fb3c7dc8ddfe2052b8c756ee8))
+
 ## [1.1.10](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.9...v1.1.10) (2020-02-18)
 
 
