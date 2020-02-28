@@ -99,13 +99,13 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property     | Type              | Description                                                                                                                                   | Default Value | Required |
-| ------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
-| `analyzer`   | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
-| `polyfill`   | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
-| `publicPath` | `String`          | Defines the webpack `publicPath`.                                                                                                             | `/`           | `false`  |
-| `staticPath` | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
-| `entries`    | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
+| Property         | Type              | Description                                                                                                                                   | Default Value | Required |
+| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
+| `analyzer`       | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
+| `polyfill`       | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
+| `parallelBuilds` | `Number`          | Number of parallel endpoint generations.                                                                                                      | `1`           | `false`  |
+| `staticPath`     | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
+| `entries`        | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
 
 ### Entry
 
@@ -140,10 +140,11 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 }
 ```
 
-| Property | Type     | Description                                                                                                            |
-| -------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `name`   | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` |
-| `tags`   | `Array`  | Tag of the endpoint.<br>Value will be converted to ParamCase later.                                                    |
+| Property     | Type     | Description                                                                                                            | Default Value | Required |
+| ------------ | -------- | ---------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
+| `name`       | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` | `null`        | `true`   |
+| `publicPath` | `String` | Defines the webpack `publicPath`                                                                                       | `/`           | `false`  |
+| `tags`       | `Array`  | Tag Definitions.                                                                                                       | `[]`          | `true`   |
 
 ### Tag
 
@@ -324,12 +325,18 @@ The custom elements contained in the page template can now be called.
 
 or look here
 
-- [ComponentAppBundle](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-bundle.html)
-- [ComponentAppAbstract](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-abstract.html)
-- [ComponentAppHash](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-hash.html)
-- [ComponentAppHistory](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-history.html)
-- [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/client.html)
-- [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/modern.html)
+- [ComponentAppBundle](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-bundle/)
+  - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-bundle/client.html)
+  - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-bundle/modern.html)
+- [ComponentAppAbstract](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-abstract/)
+  - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-abstract/client.html)
+  - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-abstract/modern.html)
+- [ComponentAppHash](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-hash/)
+  - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-hash/client.html)
+  - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-hash/modern.html) 
+- [ComponentAppHistory](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-history/)
+  - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-history/client.html)
+  - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-history/modern.html)
 
 ## Development
 
