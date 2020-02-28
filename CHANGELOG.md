@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.14](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.13...v1.1.14) (2020-02-28)
+
+
+### Bug Fixes
+
+* **webpack:** fix output path for webpack under windows ([250c2a1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/250c2a16288b64604c102527b0d699db9df043c4))
+
 ## [1.1.13](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.12...v1.1.13) (2020-02-28)
 
 
