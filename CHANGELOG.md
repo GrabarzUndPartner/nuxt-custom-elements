@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.1.13](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.12...v1.1.13) (2020-02-28)
+
+
+### Bug Fixes
+
+* **babel-nuxt:** fix endpoint webpack builds ([dfdc6d9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/dfdc6d96f2b178fc77e4ec718e1ab35f9a6d7e28))
+
 ## [1.1.12](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.11...v1.1.12) (2020-02-27)
 
 
