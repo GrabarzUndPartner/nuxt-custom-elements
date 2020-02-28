@@ -20,6 +20,20 @@ module.exports = {
       plugins: {
         'postcss-nesting': {}
       }
+    },
+    babel: {
+      presets (context) {
+        const { isServer, isModern } = context
+        const targets = isServer ? { node: 'current' } : { ie: 11 }
+        return [
+          [
+            require.resolve('@nuxt/babel-preset-app'), {
+              targets,
+              useBuiltIns: isModern ? 'entry' : 'usage'
+            }
+          ]
+        ]
+      }
     }
   },
 
@@ -28,6 +42,7 @@ module.exports = {
       resolve(__dirname, '..'), {
         analyzer: true,
         polyfill: true,
+        parallelBuilds: 2,
         publicPath: getBasePath(),
         staticPath: resolve(__dirname, '../example/custom-element/static'),
         entries: [
@@ -40,7 +55,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               }
@@ -55,7 +70,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               }
@@ -70,7 +85,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               }
@@ -85,7 +100,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               },
@@ -95,7 +110,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               },
@@ -105,7 +120,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: getBasePath()
+                    basePath: './'
                   }
                 }
               }

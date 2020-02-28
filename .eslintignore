@@ -7,4 +7,5 @@ reports
 
 # Plugin
 lib/plugin.js
+lib/tmpl/entry.js
 
