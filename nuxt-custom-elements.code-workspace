@@ -46,8 +46,8 @@
       ".releaserc": "json",
       ".stylelintrc": "json",
       ".vcmrc": "json",
-      "*.css": "css",
-      "*.pcss": "css",
+      "*.css": "postcss",
+      "*.pcss": "postcss",
       ".*ignore": "ignore",
       "*.js.tmpl": "javascript",
       "*.html.tmpl": "html"
@@ -69,7 +69,21 @@
       "stylelint.vscode-stylelint",
       "dbaeumer.vscode-eslint",
       "octref.vetur",
-      "christian-kohler.path-intellisense"
+      "christian-kohler.path-intellisense",
+      "pflannery.vscode-versionlens",
+      "eamodio.gitlens",
+      "EditorConfig.EditorConfig",
+      "codezombiech.gitignore",
+      "mrmlnc.vscode-attrs-sorter",
+      "steoates.autoimport",
+      "wayou.vscode-todo-highlight",
+      "yzhang.markdown-all-in-one",
+      "dariofuzinato.vue-peek",
+      "formulahendry.auto-close-tag",
+      "formulahendry.auto-rename-tag",
+      "jcbuisson.vue",
+      "naumovs.color-highlight",
+      "csstools.postcss"
     ]
   }
 }
