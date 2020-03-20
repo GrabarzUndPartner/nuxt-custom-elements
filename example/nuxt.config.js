@@ -43,7 +43,9 @@ module.exports = {
         analyzer: true,
         polyfill: true,
         parallelBuilds: 2,
-        publicPath: getBasePath(),
+        webpackOutput: {
+          publicPath: getBasePath()
+        },
         staticPath: resolve(__dirname, '../example/custom-element/static'),
         entries: [
           {
@@ -133,5 +135,5 @@ module.exports = {
 }
 
 function getBasePath () {
-  return process.env.npm_config_base || '/'
+  return process.env.npm_config_base || './'
 }

@@ -1,8 +1,11 @@
 # nuxt-custom-elements
 
+[![Grabarz & Partner - Module][grabarz-partner-module-src]][grabarz-partner-href]  
+
 [![Build Status][travis-build-status-src]][travis-build-status-href]
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Renovate - Status][renovate-status-src]][renovate-status-href]
 [![License][license-src]][license-href]
 
 > Publish your Components as a [vue-custom-element](https://github.com/karol-f/vue-custom-element) standalone build.
@@ -28,7 +31,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
     ['nuxt-custom-elements', {
         analyzer: true,
         polyfill: true,
-        publicPath: '/',
         staticPath: 'path to static-dir',
         entries: [
 
@@ -99,13 +101,16 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property         | Type              | Description                                                                                                                                   | Default Value | Required |
-| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
-| `analyzer`       | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`       | `false`  |
-| `polyfill`       | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`       | `false`  |
-| `parallelBuilds` | `Number`          | Number of parallel endpoint generations.                                                                                                      | `1`           | `false`  |
-| `staticPath`     | `String`          | Path to the `static` directory.                                                                                                               | `null`        | `false`  |
-| `entries`        | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`        | `true`   |
+| Property         | Type              | Description                                                                                                                                   | Default Value                                        | Required |
+| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
+| `analyzer`       | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`                                              | `false`  |
+| `polyfill`       | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`                                              | `false`  |
+| `parallelBuilds` | `Number`          | Number of parallel endpoint generations.                                                                                                      | `1`                                                  | `false`  |
+| `staticPath`     | `String`          | Path to the `static` directory.                                                                                                               | `null`                                               | `false`  |
+| `entries`        | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`                                               | `true`   |
+| `webpackOutput`  | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                               | `{ filename: '[name].[hash].js', publicPath: './' }` | `false`  |
+
+>⚠️ **Important:** If the filename of the webpack output configuration does not contain a `[hash]`, do not execute a modern build. Use `modern: false,` in the nuxt.config. `[hash]` is used to identify the different builds
 
 ### Entry
 
@@ -140,11 +145,10 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 }
 ```
 
-| Property     | Type     | Description                                                                                                            | Default Value | Required |
-| ------------ | -------- | ---------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
-| `name`       | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` | `null`        | `true`   |
-| `publicPath` | `String` | Defines the webpack `publicPath`                                                                                       | `/`           | `false`  |
-| `tags`       | `Array`  | Tag Definitions.                                                                                                       | `[]`          | `true`   |
+| Property | Type     | Description                                                                                                            | Default Value | Required |
+| -------- | -------- | ---------------------------------------------------------------------------------------------------------------------- | ------------- | -------- |
+| `name`   | `String` | Name of the endpoint.<br>Value will be converted to ParamCase later.<br><br>Example: `EndpointName` -> `endpoint-name` | `null`        | `true`   |
+| `tags`   | `Array`  | Tag Definitions.                                                                                                       | `[]`          | `true`   |
 
 ### Tag
 
@@ -349,6 +353,12 @@ or look here
 [MIT License](./LICENSE)
 
 <!-- Badges -->
+
+[grabarz-partner-module-src]: <https://img.shields.io/badge/Grabarz%20&%20Partner-Module-d19700>
+[grabarz-partner-href]: <https://grabarzundpartner.de>
+
+[renovate-status-src]: <https://img.shields.io/badge/renovate-enabled-brightgreen>
+[renovate-status-href]: <https://renovate.whitesourcesoftware.com/>
 
 [travis-build-status-src]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements.svg?branch=master>
 [travis-build-status-href]: <https://travis-ci.org/GrabarzUndPartner/nuxt-custom-elements>
