@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.2.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.14...v1.2.0) (2020-03-20)
+
+
+### Features
+
+* **webpack:** webpack options extended ([fae8022](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/fae8022900a20919eb1198c3dd02536aa4c7bb6b))
+
 ## [1.1.14](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.13...v1.1.14) (2020-02-28)
 
 
