@@ -35,8 +35,6 @@ export default {
 
   created () {
     if (this.$router) {
-      this.$router.base = this.basePath
-      this.$router.history.base = this.basePath
       this.$router.addRoutes(getRoutesFromViews(this.views))
     }
   }

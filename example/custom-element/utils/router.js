@@ -18,7 +18,8 @@ export function getRoutesFromViews (views) {
 
 export function createRouter (mode = 'abstract') {
   const router = new VueRouter({
-    mode
+    mode,
+    base: global.location.pathname
   })
   if (mode === 'abstract') {
     router.replace('/')
