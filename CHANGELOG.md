@@ -1,5 +1,13 @@
 # Project Changelog
 
+## [1.2.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.2.0...v1.2.1) (2020-03-23)
+
+
+### Bug Fixes
+
+* **router:** clean router setup; fix router base ([b070b82](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/b070b827f861a2d4f92431b0a8d56f2dc1265c31))
+* **travis:** remove base path from demo; use relative ([b14b77d](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/b14b77d6ab438704ef5326306bae2251fe64bc35))
+
 # [1.2.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.1.14...v1.2.0) (2020-03-20)
 
 
