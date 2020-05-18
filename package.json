@@ -58,7 +58,7 @@
     "jest": "24.0.0",
     "nuxt-edge": "latest",
     "standard-version": "8.0.0",
-    "stylelint": "13.4.0",
+    "stylelint": "13.4.1",
     "stylelint-config-recess-order": "2.0.4",
     "stylelint-config-standard": "20.0.0"
   },
