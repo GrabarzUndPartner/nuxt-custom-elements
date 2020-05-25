@@ -34,9 +34,6 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Test
-        run: npm run test
-
   build-gh-pages:
     name: Build (GH-Pages)
     needs: install
@@ -65,11 +62,12 @@ jobs:
       - name: Build
         run: |
           npm run generate
-          cp -R reports/* dist/reports/
-          touch dist/.nojekyll
+          mkdir ghpages ghpages/reports
+          cp -R dist/nuxt-custom-elements/* ghpages/
+          cp -R reports/* ghpages/reports/
         env:
           WEBSITE_HOST: https://grabarzundpartner.github.io/nuxt-custom-elements
-          BASE_PATH: /nuxt-custom-elements/
+          BASE_PATH: ./
           DIST_PATH: dist
           GITHUB_URL: https://github.com/GrabarzUndPartner/nuxt-custom-elements
 
@@ -77,7 +75,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: ghpages
-          path: dist
+          path: ghpages
 
   deploy-ghpages:
     name: Deploy (GH-Pages)
