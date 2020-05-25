@@ -15,6 +15,10 @@ module.exports = {
     resourceHints: false
   },
 
+  env: {
+    GITHUB_URL: process.env.GITHUB_URL
+  },
+
   build: {
     postcss: {
       plugins: {
