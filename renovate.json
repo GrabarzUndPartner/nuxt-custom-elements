@@ -2,6 +2,9 @@
   "extends": [
     "@nuxtjs"
   ],
+  "baseBranches": [
+    "release"
+  ],
   "ignoreDeps": [
     "jest"
   ]

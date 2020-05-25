@@ -1,0 +1,101 @@
+name: Preview
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  install:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    name: Install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Checkout Repo
+        uses: actions/checkout@v1
+
+      - name: cache node_modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Test
+        run: npm run test
+
+  build-gh-pages:
+    name: Build (GH-Pages)
+    needs: install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Checkout Repo
+        uses: actions/checkout@v1
+
+      - name: cache node_modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
+
+      - name: Build
+        run: |
+          npm run generate
+          cp -R reports/* dist/reports/
+          touch dist/.nojekyll
+        env:
+
+          WEBSITE_HOST: ${{ format('https://{0}.github.io/{1}', github.repository_owner, 'nuxt-custom-elements') }}
+          BASE_PATH: ${{ format('/{0}/', 'nuxt-custom-elements') }}
+          DIST_PATH: dist
+          GITHUB_URL: ${{ format('https://github.com/{0}', github.repository) }}
+
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: ghpages
+          path: dist
+
+  deploy-ghpages:
+    name: Deploy (GH-Pages)
+    needs: build-gh-pages
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: ghpages
+          path: ghpages
+      - name: Deploy to GH-Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ghpages
