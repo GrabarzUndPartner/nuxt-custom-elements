@@ -30,7 +30,6 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "eslint --ext .js,.vue example lib test",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
     "express-server": "node ./tools/express-server.js --dist dist/nuxt-custom-elements",
     "test": "yarn lint && jest"
   },
