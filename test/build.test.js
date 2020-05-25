@@ -5,7 +5,7 @@ describe('build', () => {
 
   beforeAll(async () => {
     ({ nuxt, builder } = await build(loadConfig(__dirname, '../../example')))
-  }, 80000)
+  }, 120000)
 
   afterAll(async () => {
     await nuxt.close()
