@@ -65,7 +65,7 @@ jobs:
       - name: Build
         run: |
           npm run generate
-          mkdir ghpages gh-pages/reports
+          mkdir ghpages ghpages/reports
           cp -R dist/nuxt-custom-elements/* ghpages/
           cp -R reports/* ghpages/reports/
         env:
