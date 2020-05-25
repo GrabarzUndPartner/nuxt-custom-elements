@@ -147,7 +147,7 @@ module.exports = {
 }
 
 function getBasePath () {
-  return process.env.npm_config_base || process.env.BASE_PATH || '/'
+  return process.env.npm_config_base || process.env.BASE_PATH || './'
 }
 
 function getDistPath () {
