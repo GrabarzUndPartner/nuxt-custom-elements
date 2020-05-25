@@ -70,7 +70,7 @@ jobs:
           cp -R reports/* ghpages/reports/
         env:
           WEBSITE_HOST: https://grabarzundpartner.github.io/nuxt-custom-elements
-          BASE_PATH: /nuxt-custom-elements/
+          BASE_PATH: ./
           DIST_PATH: dist
           GITHUB_URL: https://github.com/GrabarzUndPartner/nuxt-custom-elements
 
