@@ -92,7 +92,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: ghpages
-          path: dist
+          path: ghpages
 
   deploy-ghpages:
     name: Deploy (GH-Pages)
