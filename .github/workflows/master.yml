@@ -1,8 +1,8 @@
-name: Preview
+name: Master
 on:
   push:
     branches:
-      - 'master'
+      - master
 
 jobs:
   install:
@@ -19,20 +19,42 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-
       - name: Checkout Repo
         uses: actions/checkout@v1
-
       - name: cache node_modules
         uses: actions/cache@v1
         id: cache
         with:
           path: node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
-
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
+      - name: Test
+        run: npm run test
+
+  semantic-version:
+    name: Semantic Release
+    needs: install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [12]
+
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Checkout Repo
+        uses: actions/checkout@v1
+      - name: Versioning
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx -p semantic-release -p @semantic-release/git -p @semantic-release/changelog -p @semantic-release/exec -p semantic-release-ado semantic-release --provider=github
 
   build-gh-pages:
     name: Build (GH-Pages)
@@ -48,17 +70,14 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-
       - name: Checkout Repo
         uses: actions/checkout@v1
-
       - name: cache node_modules
         uses: actions/cache@v1
         id: cache
         with:
           path: node_modules
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
-
       - name: Build
         run: |
           npm run generate
@@ -69,13 +88,11 @@ jobs:
           WEBSITE_HOST: https://grabarzundpartner.github.io/nuxt-custom-elements
           BASE_PATH: ./
           DIST_PATH: dist
-          GITHUB_URL: https://github.com/GrabarzUndPartner/nuxt-custom-elements
-
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
           name: ghpages
-          path: ghpages
+          path: dist
 
   deploy-ghpages:
     name: Deploy (GH-Pages)
