@@ -16,7 +16,7 @@ module.exports = {
   },
 
   env: {
-    GITHUB_URL: process.env.GITHUB_URL
+    GITHUB_REPO_URL: `https://github.com/${process.env.GITHUB_REPOSITORY}`
   },
 
   build: {

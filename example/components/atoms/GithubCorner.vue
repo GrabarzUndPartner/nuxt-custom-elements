@@ -14,7 +14,7 @@ export default {
     },
     url: {
       type: String,
-      default: process.env.GITHUB_URL || 'https://your-url'
+      default: process.env.GITHUB_REPO_URL || 'https://your-url'
     }
   }
 }
