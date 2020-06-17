@@ -5,8 +5,5 @@
   "baseBranches": [
     "release"
   ],
-  "ignoreDeps": [
-    "jest"
-  ],
   "automerge": true
 }
