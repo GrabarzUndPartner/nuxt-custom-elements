@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.2.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.2.1...v1.2.2) (2020-06-18)
+
+
+### Bug Fixes
+
+* **webpack:** remove parallelBuild option ([1f5c154](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/1f5c1543c71a68c1160ae48e3e2d89c10be4f4b7))
+
 ## [1.2.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.2.0...v1.2.1) (2020-03-23)
 
 
