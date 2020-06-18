@@ -102,14 +102,13 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property         | Type              | Description                                                                                                                                   | Default Value                                        | Required |
-| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
-| `analyzer`       | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`                                              | `false`  |
-| `polyfill`       | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`                                              | `false`  |
-| `parallelBuilds` | `Number`          | Number of parallel endpoint generations.                                                                                                      | `1`                                                  | `false`  |
-| `staticPath`     | `String`          | Path to the `static` directory.                                                                                                               | `null`                                               | `false`  |
-| `entries`        | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`                                               | `true`   |
-| `webpackOutput`  | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                               | `{ filename: '[name].[hash].js', publicPath: './' }` | `false`  |
+| Property        | Type              | Description                                                                                                                                   | Default Value                                        | Required |
+| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
+| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`                                              | `false`  |
+| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`                                              | `false`  |
+| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                               | `null`                                               | `false`  |
+| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`                                               | `true`   |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                               | `{ filename: '[name].[hash].js', publicPath: './' }` | `false`  |
 
 >⚠️ **Important:** If the filename of the webpack output configuration does not contain a `[hash]`, do not execute a modern build. Use `modern: false,` in the nuxt.config. `[hash]` is used to identify the different builds
 

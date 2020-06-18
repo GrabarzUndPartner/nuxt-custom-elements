@@ -5,7 +5,7 @@ module.exports = {
   dev: isDev,
 
   mode: 'spa',
-  modern: 'client',
+  modern: isDev ? false : 'client',
 
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
@@ -54,7 +54,6 @@ module.exports = {
       resolve(__dirname, '..'), {
         analyzer: true,
         polyfill: true,
-        parallelBuilds: 2,
         webpackOutput: {
           publicPath: getBasePath()
         },
