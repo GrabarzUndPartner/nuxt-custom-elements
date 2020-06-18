@@ -26,11 +26,11 @@
     "dev": "nuxt example",
     "generate": "nuxt generate --config-file example/nuxt.config.js",
     "build": "nuxt build --config-file example/nuxt.config.js",
-    "start:build": "yarn build && yarn express-server --dist example/.nuxt/nuxt-custom-elements/dist",
+    "start:build": "yarn build && yarn express-server",
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "eslint --ext .js,.vue example lib test",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
-    "express-server": "node ./tools/express-server.js --dist dist/nuxt-custom-elements",
+    "express-server": "node ./tools/express-server.js --dist dist",
     "test": "yarn lint && jest"
   },
   "dependencies": {
