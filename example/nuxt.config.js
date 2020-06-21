@@ -20,25 +20,28 @@ module.exports = {
   },
 
   build: {
-    postcss: {
-      plugins: {
-        'postcss-nesting': {}
-      }
-    },
+
     babel: {
-      presets (context) {
-        const { isServer, isModern } = context
+      presets ({ isServer, isModern }) {
         const targets = isServer ? { node: 'current' } : { ie: 11 }
         return [
           [
-            require.resolve('@nuxt/babel-preset-app'), {
+            require.resolve('@nuxt/babel-preset-app-edge'), {
               targets,
-              useBuiltIns: isModern ? 'entry' : 'usage'
+              useBuiltIns: isModern ? 'entry' : 'usage',
+              corejs: { version: 3 }
             }
           ]
         ]
       }
+    },
+
+    postcss: {
+      plugins: {
+        'postcss-nesting': {}
+      }
     }
+
   },
 
   generate: {
