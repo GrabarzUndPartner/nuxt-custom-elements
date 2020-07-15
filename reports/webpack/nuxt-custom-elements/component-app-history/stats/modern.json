@@ -5,8 +5,8 @@
   ],
   "version": "4.43.0",
   "hash": "d74a69704d26f4c95dbb",
-  "time": 1532,
-  "builtAt": 1593982741681,
+  "time": 1696,
+  "builtAt": 1594848205767,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-history",
   "assetsByChunkName": {
