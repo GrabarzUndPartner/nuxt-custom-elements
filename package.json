@@ -39,10 +39,10 @@
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
-    "@babel/core": "7.10.4",
+    "@babel/core": "7.10.5",
     "@babel/preset-env": "7.10.4",
-    "@commitlint/cli": "9.0.1",
-    "@commitlint/config-conventional": "9.0.1",
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
     "core-js": "3.6.5",
     "@nuxt/builder": "2.13.3",
     "@nuxt/config": "2.13.3",
@@ -57,7 +57,7 @@
     "husky": "4.2.5",
     "jest": "26.1.0",
     "nuxt-edge": "latest",
-    "standard-version": "8.0.0",
+    "standard-version": "8.0.2",
     "stylelint": "13.6.1",
     "stylelint-config-recess-order": "2.0.4",
     "stylelint-config-standard": "20.0.0"
