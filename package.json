@@ -48,7 +48,7 @@
     "@nuxt/config": "2.13.3",
     "@nuxt/core": "2.13.3",
     "@nuxt/webpack": "2.13.3",
-    "@nuxtjs/eslint-config": "3.0.0",
+    "@nuxtjs/eslint-config": "3.1.0",
     "@nuxtjs/module-test-utils": "1.6.3",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.1.0",
