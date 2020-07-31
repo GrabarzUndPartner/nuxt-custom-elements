@@ -59,7 +59,7 @@
     "nuxt-edge": "latest",
     "standard-version": "8.0.2",
     "stylelint": "13.6.1",
-    "stylelint-config-recess-order": "2.0.4",
+    "stylelint-config-recess-order": "2.1.0",
     "stylelint-config-standard": "20.0.0"
   },
   "publishConfig": {
