@@ -3,10 +3,10 @@
   ],
   "warnings": [
   ],
-  "version": "4.43.0",
+  "version": "4.44.0",
   "hash": "618f6ad37b672f80569b",
-  "time": 1409,
-  "builtAt": 1595359674257,
+  "time": 1954,
+  "builtAt": 1596288616850,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-hash",
   "assetsByChunkName": {
