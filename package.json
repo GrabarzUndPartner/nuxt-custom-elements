@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "change-case": "4.1.1",
-    "document-register-element": "1.14.3",
+    "document-register-element": "1.14.5",
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
