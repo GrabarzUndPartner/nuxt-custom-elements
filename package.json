@@ -55,7 +55,7 @@
     "codecov": "3.7.2",
     "eslint": "7.6.0",
     "husky": "4.2.5",
-    "jest": "26.3.0",
+    "jest": "26.4.0",
     "nuxt-edge": "latest",
     "standard-version": "8.0.2",
     "stylelint": "13.6.1",
