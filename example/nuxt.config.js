@@ -1,5 +1,6 @@
 const { resolve } = require('upath')
 const isDev = process.env.NODE_ENV === 'development'
+const isTest = process.env.NODE_ENV === 'test'
 
 module.exports = {
   dev: isDev,
@@ -55,7 +56,7 @@ module.exports = {
   modules: [
     [
       resolve(__dirname, '..'), {
-        analyzer: true,
+        analyzer: !isTest,
         polyfill: true,
         webpackOutput: {
           publicPath: getBasePath()

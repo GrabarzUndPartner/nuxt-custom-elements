@@ -31,15 +31,17 @@
     "lint:js": "eslint --ext .js,.vue example lib test",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
     "express-server": "node ./tools/express-server.js --dist dist",
-    "test": "yarn lint && jest"
+    "test": "yarn lint && jest",
+    "jest": "jest"
   },
   "dependencies": {
     "change-case": "4.1.1",
     "document-register-element": "1.14.5",
+    "puppeteer": "^5.2.1",
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
-    "@babel/core": "7.11.1",
+    "@babel/core": "7.11.4",
     "@babel/preset-env": "7.11.0",
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.2",
@@ -55,7 +57,7 @@
     "codecov": "3.7.2",
     "eslint": "7.7.0",
     "husky": "4.2.5",
-    "jest": "26.4.0",
+    "jest": "26.4.2",
     "nuxt-edge": "latest",
     "standard-version": "9.0.0",
     "stylelint": "13.6.1",
