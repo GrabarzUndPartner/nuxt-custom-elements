@@ -1,4 +1,5 @@
 const { resolve } = require('upath')
+const repository = require('../package.json').repository
 const isDev = process.env.NODE_ENV === 'development'
 const isTest = process.env.NODE_ENV === 'test'
 
@@ -17,7 +18,7 @@ module.exports = {
   },
 
   env: {
-    GITHUB_REPO_URL: `https://github.com/${process.env.GITHUB_REPOSITORY}`
+    GITHUB_REPO_URL: `https://github.com/${repository}`
   },
 
   build: {
@@ -60,7 +61,7 @@ module.exports = {
         modern: true,
         polyfill: true,
         webpackOutput: {
-          publicPath: getBasePath()
+          publicPath: getPublicPath()
         },
         staticPath: resolve(__dirname, '../example/custom-element/static'),
         entries: [
@@ -73,7 +74,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               }
@@ -88,7 +89,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               }
@@ -103,7 +104,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               }
@@ -118,7 +119,7 @@ module.exports = {
                 path: '@/components/apps/AppAbstract',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               },
@@ -128,7 +129,7 @@ module.exports = {
                 path: '@/components/apps/AppHash',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               },
@@ -138,7 +139,7 @@ module.exports = {
                 path: '@/components/apps/AppHistory',
                 options: {
                   props: {
-                    basePath: './'
+                    base: './'
                   }
                 }
               }
@@ -151,7 +152,11 @@ module.exports = {
 }
 
 function getBasePath () {
-  return process.env.npm_config_base || process.env.BASE_PATH || './'
+  return process.env.npm_config_base || process.env.BASE_PATH || '/'
+}
+
+function getPublicPath () {
+  return process.env.npm_config_base || process.env.PUBLIC_PATH || './'
 }
 
 function getDistPath () {

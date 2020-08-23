@@ -321,14 +321,14 @@ To develop a custom component in dev mode, the endpoint must be called in the cr
 export {
   data () {
     return {
-      basePath: '/', // router base
+      base: '/', // router base
       data: {
         foo: 'bar'
       }
     }
   },
   created () {
-    this.$registerCustomElementsEntry('ComponentAppAbstract')
+    this.$registerCustomElementsEntry('ComponentAppHistory')
   }
 }
 </script>
@@ -340,15 +340,18 @@ The custom elements contained in the page template can now be called.
 <template>
   <div>
     <client-only>
-      <custom-element-app-abstract
-        :base-path="basePath"
+      <script type="text/javascript">
+        <!-- Used in example/custom-element/utils/router.js:22 -->
+        window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
+      </script>
+      <custom-element-app-history
         class="application"
       >
         <script
           type="application/json"
           v-text="data"
         ></script>
-      </custom-element-app-abstract>
+      </custom-element-app-history>
     </client-only>
   </div>
 </template>
@@ -364,10 +367,10 @@ The custom elements contained in the page template can now be called.
 3. Build and start with express `npm run start:build`
 4. Open endpoints via `http://127.0.0.1:3000/` in Browser
 
-- [ComponentAppBundle](http://127.0.0.1:3000/component-app-bundle)  
-- [ComponentAppAbstract](http://127.0.0.1:3000/component-app-abstract)  
-- [ComponentAppHash](http://127.0.0.1:3000/component-app-hash)  
-- [ComponentAppHistory](http://127.0.0.1:3000/component-app-history)
+- [ComponentAppBundle](http://127.0.0.1:3000/nuxt-custom-elements/component-app-bundle)  
+- [ComponentAppAbstract](http://127.0.0.1:3000/nuxt-custom-elements/component-app-abstract)  
+- [ComponentAppHash](http://127.0.0.1:3000/nuxt-custom-elements/component-app-hash)  
+- [ComponentAppHistory](http://127.0.0.1:3000/nuxt-custom-elements/component-app-history)
 
 or look here
 

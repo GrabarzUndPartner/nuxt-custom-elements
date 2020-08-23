@@ -4,6 +4,7 @@
       v-bind="headline"
       style-type="view"
     />
+    <img src="@/assets/image.png">
     <organism-shared-store />
   </div>
 </template>
@@ -29,6 +30,8 @@ export default {
 
 <style lang="postcss">
 .view-index {
-  /* empty */
+  & img {
+    height: 32px;
+  }
 }
 </style>
