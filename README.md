@@ -284,14 +284,14 @@ To develop a custom component in dev mode, the endpoint must be called in the cr
 export {
   data () {
     return {
-      basePath: '/', // router base
+      base: '/', // router base
       data: {
         foo: 'bar'
       }
     }
   },
   created () {
-    this.$registerCustomElementsEntry('ComponentAppAbstract')
+    this.$registerCustomElementsEntry('ComponentAppHistory')
   }
 }
 </script>
@@ -303,15 +303,18 @@ The custom elements contained in the page template can now be called.
 <template>
   <div>
     <client-only>
-      <custom-element-app-abstract
-        :base-path="basePath"
+      <script type="text/javascript">
+        <!-- Used in example/custom-element/utils/router.js:22 -->
+        window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
+      </script>
+      <custom-element-app-history
         class="application"
       >
         <script
           type="application/json"
           v-text="data"
         ></script>
-      </custom-element-app-abstract>
+      </custom-element-app-history>
     </client-only>
   </div>
 </template>
