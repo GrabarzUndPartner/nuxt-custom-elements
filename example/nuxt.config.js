@@ -56,6 +56,7 @@ module.exports = {
     [
       resolve(__dirname, '..'), {
         analyzer: true,
+        modern: true,
         polyfill: true,
         webpackOutput: {
           publicPath: getBasePath()

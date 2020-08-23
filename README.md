@@ -31,6 +31,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
     ['nuxt-custom-elements', {
         analyzer: true,
+        modern: true,
         polyfill: true,
         staticPath: 'path to static-dir',
         entries: [
@@ -102,15 +103,53 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property        | Type              | Description                                                                                                                                   | Default Value                                        | Required |
-| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
-| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`                                              | `false`  |
-| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`                                              | `false`  |
-| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                               | `null`                                               | `false`  |
-| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`                                               | `true`   |
-| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                               | `{ filename: '[name].[hash].js', publicPath: './' }` | `false`  |
+| Property        | Type              | Description                                                                                                                                                          | Default Value               | Required |
+| --------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | -------- |
+| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                | `false`                     | `false`  |
+| `modern`        | `Boolean`         | Sets `true` for [modern build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                 | `false`  |
+| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                     | `false`  |
+| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                      | `false`  |
+| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                      | `true`   |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | `See webpackOutput Example` | `false`  |
 
->⚠️ **Important:** If the filename of the webpack output configuration does not contain a `[hash]`, do not execute a modern build. Use `modern: false,` in the nuxt.config. `[hash]` is used to identify the different builds
+
+### Important `webpackOutput` option
+
+The webpack output.filename is has default two outputs.
+
+
+**With `modern`**
+
+Entry files named with:
+- client: `[name].client.js`
+- modern: `[name].modern.js`
+
+**Only `client`** 
+
+- client: `[name].js`
+
+You can override the pattern with own function or pattern (string) e.g. `[name].[hash].js`.
+
+**Override example:**
+
+```javascript 
+{
+  webpackOutput: {
+    publicPath: '/',
+    filename: (chunk, webpackConfig, moduleOptions) => {
+      if (moduleOptions.modern) {
+        if (webpackConfig.name === 'modern') {
+          return '[name].modern.js'
+        } else {
+          return '[name].client.js'
+        }
+      } else {
+        return 'test.[name].js'
+      }
+    }
+  }
+}
+```
 
 ### Entry
 
