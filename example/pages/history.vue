@@ -5,7 +5,7 @@
         <!-- Used in example/custom-element/utils/router.js:22 -->
         window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
       </script>
-      <custom-element-app-abstract
+      <custom-element-app-history
         class="application"
       >
         <script
@@ -13,16 +13,7 @@
           v-text="data"
         />
         <!-- eslint-disable-next-line vue/html-indent -->
-      </custom-element-app-abstract>
-      <custom-element-app-hash
-        class="application"
-      >
-        <script
-          type="application/json"
-          v-text="data"
-        />
-        <!-- eslint-disable-next-line vue/html-indent -->
-      </custom-element-app-hash>
+      </custom-element-app-history>
     </client-only>
     <atom-github-corner />
   </div>
@@ -34,8 +25,7 @@ import Vue from 'vue'
 import AtomGithubCorner from '@/components/atoms/GithubCorner'
 
 Vue.config.ignoredElements = [
-  'custom-element-app-abstract',
-  'custom-element-app-hash'
+  'custom-element-app-history'
 ]
 
 export default {
@@ -47,15 +37,14 @@ export default {
 
   data () {
     return {
-      base: '/', // router base
+      base: 'history', // router base
       data: {
         script: 'tag'
       }
     }
   },
   created () {
-    this.$registerCustomElementsEntry('component-app-abstract')
-    this.$registerCustomElementsEntry('component-app-hash')
+    this.$registerCustomElementsEntry('component-app-history')
   }
 }
 </script>
