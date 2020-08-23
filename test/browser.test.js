@@ -4,8 +4,7 @@ const { setup, loadConfig, generatePort } = require('@nuxtjs/module-test-utils')
 const express = require('express')
 
 describe('browser (puppeteer)', () => {
-  let nuxt, express,
-    browser, page
+  let nuxt, express, browser, page
   const fixtureDir = resolve(__dirname, 'fixture', 'browser')
   const buildDir = join(fixtureDir, '.nuxt')
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist')
@@ -30,7 +29,9 @@ describe('browser (puppeteer)', () => {
   }, 120000)
 
   afterAll(async () => {
-    await express.close()
+    await new Promise((resolve) => {
+      express.close(resolve)
+    })
     await browser.close()
   })
 
