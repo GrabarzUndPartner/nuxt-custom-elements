@@ -103,34 +103,33 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property        | Type              | Description                                                                                                                                                          | Default Value               | Required |
-| --------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | -------- |
-| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                | `false`                     | `false`  |
-| `modern`        | `Boolean`         | Sets `true` for [modern build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                 | `false`  |
-| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                     | `false`  |
-| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                      | `false`  |
-| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                      | `true`   |
+| Property        | Type              | Description                                                                                                                                                          | Default Value                                               | Required |
+| --------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                | `false`                                                     | `false`  |
+| `modern`        | `Boolean`         | Sets `true` for [modern build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                 | `false`  |
+| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                                                     | `false`  |
+| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                                                      | `false`  |
+| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                                                      | `true`   |
 | `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | [See webpackOutput Example](#user-content-override-example) | `false`  |
 
 
-### Important `webpackOutput` option
+### Important `webpackOutput` Option
 
-The webpack output.filename is has default two outputs.
+The webpack `output.filename` is has default two outputs.
 
 
-**With `modern`**
+With `modern` entry files named with:
 
-Entry files named with:
 - client: `[name].client.js`
 - modern: `[name].modern.js`
 
-**Only `client`** 
+Or simple `client` build:
 
 - client: `[name].js`
 
 You can override the pattern with own function or pattern (string) e.g. `[name].[hash].js`.
 
-#### Override example:
+#### Override example with function:
 
 ```javascript 
 {
@@ -144,7 +143,7 @@ You can override the pattern with own function or pattern (string) e.g. `[name].
           return '[name].client.js'
         }
       } else {
-        return 'test.[name].js'
+        return '[name].js'
       }
     }
   }
@@ -257,8 +256,7 @@ First of all, components that are to be exported as custom elements must be spec
 }
 ```
 
-Finally a `nuxt generate` must be executed. The custom-element build is located in the nuxt-generate directory. Example: `dist/nuxt-custom-elements`
-Or execute a `nuxt build`, the files are located under `.nuxt/nuxt-custom-elements/dist`.
+Finally a `nuxt generate` or `nuxt build` must be executed. The custom-element build is located in the nuxt-generate directory (`generate.dir`).  e.g. `dist/nuxt-custom-elements`
 
 ### Integrations
 
