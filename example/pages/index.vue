@@ -24,14 +24,12 @@
         <!-- eslint-disable-next-line vue/html-indent -->
       </custom-element-app-hash>
     </client-only>
-    <atom-github-corner />
   </div>
 </template>
 
 <script>
 
 import Vue from 'vue'
-import AtomGithubCorner from '@/components/atoms/GithubCorner'
 
 Vue.config.ignoredElements = [
   'custom-element-app-abstract',
@@ -40,10 +38,6 @@ Vue.config.ignoredElements = [
 
 export default {
   layout: 'blank',
-
-  components: {
-    AtomGithubCorner
-  },
 
   data () {
     return {

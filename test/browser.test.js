@@ -11,7 +11,6 @@ describe('browser (puppeteer)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      modern: 'client',
       buildDir
     };
 

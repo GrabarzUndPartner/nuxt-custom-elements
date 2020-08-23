@@ -330,10 +330,10 @@ The custom elements contained in the page template can now be called.
 3. Build and start with express `npm run start:build`
 4. Open endpoints via `http://127.0.0.1:3000/` in Browser
 
-- [ComponentAppBundle](http://127.0.0.1:3000/component-app-bundle)  
-- [ComponentAppAbstract](http://127.0.0.1:3000/component-app-abstract)  
-- [ComponentAppHash](http://127.0.0.1:3000/component-app-hash)  
-- [ComponentAppHistory](http://127.0.0.1:3000/component-app-history)
+- [ComponentAppBundle](http://127.0.0.1:3000/nuxt-custom-elements/component-app-bundle)  
+- [ComponentAppAbstract](http://127.0.0.1:3000/nuxt-custom-elements/component-app-abstract)  
+- [ComponentAppHash](http://127.0.0.1:3000/nuxt-custom-elements/component-app-hash)  
+- [ComponentAppHistory](http://127.0.0.1:3000/nuxt-custom-elements/component-app-history)
 
 or look here
 
