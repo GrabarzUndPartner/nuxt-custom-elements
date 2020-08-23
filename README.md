@@ -31,6 +31,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
     ['nuxt-custom-elements', {
         analyzer: true,
+        modern: true,
         polyfill: true,
         staticPath: 'path to static-dir',
         entries: [
@@ -102,15 +103,52 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 >
 > **Example:** `@/static`
 
-| Property        | Type              | Description                                                                                                                                   | Default Value                                        | Required |
-| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | -------- |
-| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                         | `false`                                              | `false`  |
-| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                          | `false`                                              | `false`  |
-| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                               | `null`                                               | `false`  |
-| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources. | `null`                                               | `true`   |
-| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                               | `{ filename: '[name].[hash].js', publicPath: './' }` | `false`  |
+| Property        | Type              | Description                                                                                                                                                          | Default Value                                               | Required |
+| --------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                | `false`                                                     | `false`  |
+| `modern`        | `Boolean`         | Sets `true` for [modern build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                 | `false`  |
+| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                                                     | `false`  |
+| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                                                      | `false`  |
+| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                                                      | `true`   |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | [See webpackOutput Example](#user-content-override-example) | `false`  |
 
->⚠️ **Important:** If the filename of the webpack output configuration does not contain a `[hash]`, do not execute a modern build. Use `modern: false,` in the nuxt.config. `[hash]` is used to identify the different builds
+
+### Important `webpackOutput` Option
+
+The webpack `output.filename` is has default two outputs.
+
+
+With `modern` entry files named with:
+
+- client: `[name].client.js`
+- modern: `[name].modern.js`
+
+Or simple `client` build:
+
+- client: `[name].js`
+
+You can override the pattern with own function or pattern (string) e.g. `[name].[hash].js`.
+
+#### Override example with function:
+
+```javascript 
+{
+  webpackOutput: {
+    publicPath: '/',
+    filename: (chunk, webpackConfig, moduleOptions) => {
+      if (moduleOptions.modern) {
+        if (webpackConfig.name === 'modern') {
+          return '[name].modern.js'
+        } else {
+          return '[name].client.js'
+        }
+      } else {
+        return '[name].js'
+      }
+    }
+  }
+}
+```
 
 ### Entry
 
@@ -218,8 +256,7 @@ First of all, components that are to be exported as custom elements must be spec
 }
 ```
 
-Finally a `nuxt generate` must be executed. The custom-element build is located in the nuxt-generate directory. Example: `dist/nuxt-custom-elements`
-Or execute a `nuxt build`, the files are located under `.nuxt/nuxt-custom-elements/dist`.
+Finally a `nuxt generate` or `nuxt build` must be executed. The custom-element build is located in the nuxt-generate directory (`generate.dir`).  e.g. `dist/nuxt-custom-elements`
 
 ### Integrations
 
@@ -284,14 +321,14 @@ To develop a custom component in dev mode, the endpoint must be called in the cr
 export {
   data () {
     return {
-      basePath: '/', // router base
+      base: '/', // router base
       data: {
         foo: 'bar'
       }
     }
   },
   created () {
-    this.$registerCustomElementsEntry('ComponentAppAbstract')
+    this.$registerCustomElementsEntry('ComponentAppHistory')
   }
 }
 </script>
@@ -303,15 +340,18 @@ The custom elements contained in the page template can now be called.
 <template>
   <div>
     <client-only>
-      <custom-element-app-abstract
-        :base-path="basePath"
+      <script type="text/javascript">
+        <!-- Used in example/custom-element/utils/router.js:22 -->
+        window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
+      </script>
+      <custom-element-app-history
         class="application"
       >
         <script
           type="application/json"
           v-text="data"
         ></script>
-      </custom-element-app-abstract>
+      </custom-element-app-history>
     </client-only>
   </div>
 </template>
@@ -327,10 +367,10 @@ The custom elements contained in the page template can now be called.
 3. Build and start with express `npm run start:build`
 4. Open endpoints via `http://127.0.0.1:3000/` in Browser
 
-- [ComponentAppBundle](http://127.0.0.1:3000/component-app-bundle)  
-- [ComponentAppAbstract](http://127.0.0.1:3000/component-app-abstract)  
-- [ComponentAppHash](http://127.0.0.1:3000/component-app-hash)  
-- [ComponentAppHistory](http://127.0.0.1:3000/component-app-history)
+- [ComponentAppBundle](http://127.0.0.1:3000/nuxt-custom-elements/component-app-bundle)  
+- [ComponentAppAbstract](http://127.0.0.1:3000/nuxt-custom-elements/component-app-abstract)  
+- [ComponentAppHash](http://127.0.0.1:3000/nuxt-custom-elements/component-app-hash)  
+- [ComponentAppHistory](http://127.0.0.1:3000/nuxt-custom-elements/component-app-history)
 
 or look here
 

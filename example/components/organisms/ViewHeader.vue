@@ -13,14 +13,21 @@
         :list="navigation"
       />
     </nav>
+    <atom-github-corner />
   </div>
 </template>
 
 <script>
-import atomHeadline from '@/components/atoms/Headline'
+import AtomHeadline from '@/components/atoms/Headline'
 import MoleculeLinkList from '@/components/molecules/LinkList'
+import AtomGithubCorner from '@/components/atoms/GithubCorner'
 export default {
-  components: { atomHeadline, MoleculeLinkList },
+  components: {
+    AtomHeadline,
+    MoleculeLinkList,
+    AtomGithubCorner
+  },
+
   props: {
     title: {
       type: String,
@@ -53,6 +60,8 @@ export default {
 
 <style lang="postcss">
 .organisms-view-header {
+  position: relative;
+
   & nav {
     display: flex;
     line-height: 1;
