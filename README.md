@@ -110,7 +110,7 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                     | `false`  |
 | `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                      | `false`  |
 | `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                      | `true`   |
-| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | `See webpackOutput Example` | `false`  |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | [See webpackOutput Example](#user-content-override-example) | `false`  |
 
 
 ### Important `webpackOutput` option
@@ -130,7 +130,7 @@ Entry files named with:
 
 You can override the pattern with own function or pattern (string) e.g. `[name].[hash].js`.
 
-**Override example:**
+#### Override example:
 
 ```javascript 
 {
