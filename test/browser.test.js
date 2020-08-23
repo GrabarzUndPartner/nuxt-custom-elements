@@ -50,10 +50,9 @@ describe('browser (puppeteer)', () => {
 function startStaticServer (dist, port = 3000, host = 'localhost') {
   const app = express()
   app.use(express.static(dist))
-  app.listen(port, host, function () {
+  return app.listen(port, host, function () {
     const { address, port } = this.address()
     // eslint-disable-next-line no-console
     console.log(`server listening on http://${address}:${port} ; dist: ${dist}`)
   })
-  return express
 }
