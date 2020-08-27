@@ -4,13 +4,13 @@
   "warnings": [
   ],
   "version": "4.44.1",
-  "hash": "d3b6b2e7ddda33748e1c",
-  "time": 1731,
-  "builtAt": 1598532199357,
+  "hash": "a7a9e238320be9489e8a",
+  "time": 1684,
+  "builtAt": 1598555700054,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-history",
   "assetsByChunkName": {
-    "component-app-history": "component-app-history.modern.js"
+    "component-app-history": "component-app-history.js"
   },
   "assets": [
     {
@@ -86,8 +86,8 @@
       "emitted": true
     },
     {
-      "name": "component-app-history.modern.js",
-      "size": 130905,
+      "name": "component-app-history.js",
+      "size": 130914,
       "chunks": [
         4
       ],
@@ -111,7 +111,7 @@
     },
     {
       "name": "index.html",
-      "size": 624,
+      "size": 610,
       "chunks": [
       ],
       "chunkNames": [
@@ -128,7 +128,7 @@
         4
       ],
       "assets": [
-        "component-app-history.modern.js"
+        "component-app-history.js"
       ],
       "children": {
       },
@@ -142,7 +142,7 @@
         4
       ],
       "assets": [
-        "component-app-history.modern.js"
+        "component-app-history.js"
       ],
       "children": {
       },
@@ -8827,9 +8827,9 @@
         "component-app-history"
       ],
       "files": [
-        "component-app-history.modern.js"
+        "component-app-history.js"
       ],
-      "hash": "d7a08d72974c09aea24e",
+      "hash": "b00ca4d38671e97e02cb",
       "siblings": [
       ],
       "parents": [
@@ -29005,7 +29005,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "7726ec69b4c52d3c2b61",
+          "hash": "18cf517e65cb9e255ed0",
           "siblings": [
           ],
           "parents": [

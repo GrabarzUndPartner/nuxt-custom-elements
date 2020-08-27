@@ -4,13 +4,13 @@
   "warnings": [
   ],
   "version": "4.44.1",
-  "hash": "ea6dd701d592fb01db97",
-  "time": 1764,
-  "builtAt": 1598532192162,
+  "hash": "6c3bf7858c01a311156c",
+  "time": 1814,
+  "builtAt": 1598555692984,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-hash",
   "assetsByChunkName": {
-    "component-app-hash": "component-app-hash.modern.js"
+    "component-app-hash": "component-app-hash.js"
   },
   "assets": [
     {
@@ -86,8 +86,8 @@
       "emitted": true
     },
     {
-      "name": "component-app-hash.modern.js",
-      "size": 130881,
+      "name": "component-app-hash.js",
+      "size": 130890,
       "chunks": [
         4
       ],
@@ -111,7 +111,7 @@
     },
     {
       "name": "index.html",
-      "size": 612,
+      "size": 598,
       "chunks": [
       ],
       "chunkNames": [
@@ -128,7 +128,7 @@
         4
       ],
       "assets": [
-        "component-app-hash.modern.js"
+        "component-app-hash.js"
       ],
       "children": {
       },
@@ -142,7 +142,7 @@
         4
       ],
       "assets": [
-        "component-app-hash.modern.js"
+        "component-app-hash.js"
       ],
       "children": {
       },
@@ -8827,9 +8827,9 @@
         "component-app-hash"
       ],
       "files": [
-        "component-app-hash.modern.js"
+        "component-app-hash.js"
       ],
-      "hash": "fdf73517509ec57fcd7f",
+      "hash": "92fa00f8cc593dc927ba",
       "siblings": [
       ],
       "parents": [
@@ -29005,7 +29005,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "7726ec69b4c52d3c2b61",
+          "hash": "18cf517e65cb9e255ed0",
           "siblings": [
           ],
           "parents": [
