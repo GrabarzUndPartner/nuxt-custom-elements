@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.3.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.0...v1.3.1) (2020-08-27)
+
+
+### Bug Fixes
+
+* **webpack:** fix default webpack output options ([5148456](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/5148456ecb0c54405f9ba836e7aaa736beebccbe))
+
 # [1.3.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.2.2...v1.3.0) (2020-08-23)
 
 
