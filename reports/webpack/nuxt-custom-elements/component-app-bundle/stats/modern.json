@@ -5,8 +5,8 @@
   ],
   "version": "4.44.1",
   "hash": "87446b43b7dae9a049c1",
-  "time": 1588,
-  "builtAt": 1598208719829,
+  "time": 1623,
+  "builtAt": 1598532206296,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-bundle",
   "assetsByChunkName": {
@@ -2127,18 +2127,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
               "type": "import()",
               "userRequest": "@/components/organisms/ViewHeader",
               "loc": "16:30-73"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
               "type": "import()",
               "userRequest": "@/components/organisms/ViewHeader",
               "loc": "16:30-73"
@@ -2209,18 +2209,18 @@
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-                  "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-                  "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+                  "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+                  "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
                   "type": "import()",
                   "userRequest": "@/components/organisms/ViewHeader",
                   "loc": "16:30-73"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-                  "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-                  "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+                  "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+                  "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
                   "type": "import()",
                   "userRequest": "@/components/organisms/ViewHeader",
                   "loc": "16:30-73"
@@ -32742,18 +32742,18 @@
         },
         {
           "moduleId": null,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-          "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-          "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+          "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+          "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
           "type": "import()",
           "userRequest": "@/components/organisms/ViewHeader",
           "loc": "16:30-73"
         },
         {
           "moduleId": null,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-          "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-          "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+          "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+          "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
           "type": "import()",
           "userRequest": "@/components/organisms/ViewHeader",
           "loc": "16:30-73"
@@ -32824,18 +32824,18 @@
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
               "type": "import()",
               "userRequest": "@/components/organisms/ViewHeader",
               "loc": "16:30-73"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
-              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHash.vue?vue&type=script&lang=js&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "module": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
+              "moduleName": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppHistory.vue?vue&type=script&lang=js&",
               "type": "import()",
               "userRequest": "@/components/organisms/ViewHeader",
               "loc": "16:30-73"
