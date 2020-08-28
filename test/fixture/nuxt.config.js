@@ -4,9 +4,6 @@ const repository = require('../../package.json').repository
 
 module.exports = {
 
-  mode: 'spa',
-  modern: 'client',
-
   rootDir: resolve(__dirname, '..'),
   srcDir: resolve(__dirname, '../../example'),
 
