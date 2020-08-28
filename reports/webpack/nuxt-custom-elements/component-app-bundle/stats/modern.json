@@ -4,13 +4,13 @@
   "warnings": [
   ],
   "version": "4.44.1",
-  "hash": "174fd940079c2b278237",
-  "time": 1532,
-  "builtAt": 1598555706904,
+  "hash": "87446b43b7dae9a049c1",
+  "time": 1152,
+  "builtAt": 1598620077407,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-bundle",
   "assetsByChunkName": {
-    "component-app-bundle": "component-app-bundle.js"
+    "component-app-bundle": "component-app-bundle.modern.js"
   },
   "assets": [
     {
@@ -134,8 +134,8 @@
       "emitted": true
     },
     {
-      "name": "component-app-bundle.js",
-      "size": 82265,
+      "name": "component-app-bundle.modern.js",
+      "size": 82256,
       "chunks": [
         6
       ],
@@ -159,7 +159,7 @@
     },
     {
       "name": "index.html",
-      "size": 738,
+      "size": 752,
       "chunks": [
       ],
       "chunkNames": [
@@ -176,7 +176,7 @@
         6
       ],
       "assets": [
-        "component-app-bundle.js"
+        "component-app-bundle.modern.js"
       ],
       "children": {
       },
@@ -190,7 +190,7 @@
         6
       ],
       "assets": [
-        "component-app-bundle.js"
+        "component-app-bundle.modern.js"
       ],
       "children": {
       },
@@ -14338,9 +14338,9 @@
         "component-app-bundle"
       ],
       "files": [
-        "component-app-bundle.js"
+        "component-app-bundle.modern.js"
       ],
-      "hash": "0eae5a7f2d9a605c852e",
+      "hash": "1fc2c49e5cdda372bfee",
       "siblings": [
       ],
       "parents": [
@@ -36190,7 +36190,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "18cf517e65cb9e255ed0",
+          "hash": "7726ec69b4c52d3c2b61",
           "siblings": [
           ],
           "parents": [
