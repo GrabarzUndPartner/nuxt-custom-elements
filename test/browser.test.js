@@ -1,11 +1,11 @@
-const { join, resolve } = require('path')
+const { resolve } = require('path')
+const fsExtra = require('fs-extra')
 const { pathExists } = require('fs-extra')
 const puppeteer = require('puppeteer')
-const { setup, loadConfig, generatePort } = require('@nuxtjs/module-test-utils')
+const { build, loadConfig, generatePort } = require('@nuxtjs/module-test-utils')
 
-// const nuxtConfig = require('./fixture/nuxt.config')
+const { startStaticServer, getUrl, getBuildDir, getCustomElementsDir, getGeneratesDir, getDistDir } = require('./utils')
 const moduleConfig = require('./fixture/module.config')
-const { startStaticServer, getUrl } = require('./fixture/utils')
 
 jest.setTimeout(10000)
 
@@ -16,12 +16,13 @@ const VIEWPORT = {
 
 describe('browser (only client) (puppeteer)', () => {
   let nuxt, express, browser, page
-  const fixtureDir = resolve(__dirname, 'fixture', 'browser', 'client')
-  const buildDir = join(fixtureDir, '.nuxt')
-  const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist')
+  const generatesDir = getGeneratesDir('browser', 'client')
+  const buildDir = getBuildDir(generatesDir)
+  const customElementsDir = getCustomElementsDir(generatesDir, false, false)
 
   beforeAll(async () => {
     const overrides = {
+      modern: 'client',
       buildDir,
       modules: [
         [
@@ -30,9 +31,11 @@ describe('browser (only client) (puppeteer)', () => {
           })
         ]
       ]
-    };
+    }
 
-    ({ nuxt } = (await setup(loadConfig(__dirname, '.', overrides, { merge: true }))))
+    await fsExtra.remove(getDistDir(generatesDir));
+
+    ({ nuxt } = (await build(loadConfig(__dirname, '.', overrides, { merge: true }))))
     await nuxt.close()
 
     express = startStaticServer(customElementsDir, await generatePort())
@@ -66,12 +69,13 @@ describe('browser (only client) (puppeteer)', () => {
 
 describe('browser (client & modern) (puppeteer)', () => {
   let nuxt, express, browser, page
-  const fixtureDir = resolve(__dirname, 'fixture', 'browser', 'modern')
-  const buildDir = join(fixtureDir, '.nuxt')
-  const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist')
+  const generatesDir = getGeneratesDir('browser', 'modern')
+  const buildDir = getBuildDir(generatesDir)
+  const customElementsDir = getCustomElementsDir(generatesDir, false, false)
 
   beforeAll(async () => {
     const overrides = {
+      modern: 'client',
       buildDir,
       modules: [
         [
@@ -80,9 +84,11 @@ describe('browser (client & modern) (puppeteer)', () => {
           })
         ]
       ]
-    };
+    }
 
-    ({ nuxt } = (await setup(loadConfig(__dirname, '.', overrides, { merge: true }))))
+    await fsExtra.remove(getDistDir(generatesDir));
+
+    ({ nuxt } = (await build(loadConfig(__dirname, '.', overrides, { merge: true }))))
     await nuxt.close()
 
     express = startStaticServer(customElementsDir, await generatePort())

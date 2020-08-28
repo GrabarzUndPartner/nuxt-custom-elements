@@ -1,10 +1,6 @@
-import { resolve } from 'upath'
-
 module.exports = {
   analyzer: false,
-  modern: true,
   polyfill: true,
-  staticPath: resolve(__dirname, '../example/custom-element/static'),
   entries: [
     {
       name: 'ComponentAppAbstract',

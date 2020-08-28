@@ -63,7 +63,6 @@ module.exports = {
         webpackOutput: {
           publicPath: getPublicPath()
         },
-        staticPath: resolve(__dirname, '../example/custom-element/static'),
         entries: [
           {
             name: 'ComponentAppAbstract',
