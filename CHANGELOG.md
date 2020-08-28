@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.3.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.1...v1.3.2) (2020-08-28)
+
+
+### Bug Fixes
+
+* **build-path:** add option for custom build path ([ba40832](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/ba40832a01dd66fad9f65d8efcc8a6c2d7d8def1))
+
 ## [1.3.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.0...v1.3.1) (2020-08-27)
 
 
