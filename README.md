@@ -33,7 +33,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
         analyzer: true,
         modern: true,
         polyfill: true,
-        staticPath: 'path to static-dir',
         entries: [
 
           // Entry with single tag.
@@ -99,18 +98,14 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 
 ## Options
 
-> `staticPath` only available in generate or CLI build. For use in dev mode, the default static directory must be used.
->
-> **Example:** `@/static`
-
-| Property        | Type              | Description                                                                                                                                                          | Default Value                                                | Required |
-| --------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------- |
-| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                | `false`                                                      | `false`  |
-| `modern`        | `Boolean`         | Sets `true` for [modern build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                  | `false`  |
-| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                 | `false`                                                      | `false`  |
-| `staticPath`    | `String`          | Path to the `static` directory.                                                                                                                                      | `null`                                                       | `false`  |
-| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                        | `null`                                                       | `true`   |
-| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                      | [See webpackOutput Example](#override-example-with-function) | `false`  |
+| Property        | Type              | Description                                                                                                                                                                                                                                         | Default Value                                                | Required |
+| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------- |
+| `buildDir`      | `String`          | Sets destination for custom-element build.                                                                                                                                                                                                          | `undefined`                                                  |
+| `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                                                                                               | `false`                                                      | `false`  |
+| `modern`        | `Boolean`         | **Important**: To use `modern`, `modern` must be active in nuxt. <br>Sets `false` for only [client build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). <br>Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                  | `false`  |
+| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                                                                                                | `false`                                                      | `false`  |
+| `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                                                                                                       | `null`                                                       | `true`   |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                                                                                                     | [See webpackOutput Example](#override-example-with-function) | `false`  |
 
 
 ### Important `webpackOutput` Option
@@ -233,7 +228,6 @@ First of all, components that are to be exported as custom elements must be spec
     [
       'nuxt-custom-elements', {
         polyfill: true,
-        staticPath: path.resolve(__dirname, 'src/static'),
         entries: [
           {
             name: 'ComponentAppAbstract',
