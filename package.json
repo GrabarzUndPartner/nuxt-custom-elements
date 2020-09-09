@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "change-case": "4.1.1",
-    "document-register-element": "1.14.5",
+    "document-register-element": "1.14.6",
     "puppeteer": "^5.2.1",
     "vue-custom-element": "3.2.14"
   },
