@@ -5,8 +5,8 @@
   ],
   "version": "4.44.1",
   "hash": "5c4efa3cd2570c4b1af3",
-  "time": 1663,
-  "builtAt": 1598620060702,
+  "time": 2404,
+  "builtAt": 1599951853801,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-abstract",
   "assetsByChunkName": {
