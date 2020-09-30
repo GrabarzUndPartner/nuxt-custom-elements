@@ -413,3 +413,4 @@ or look here
 
 [license-src]: https://img.shields.io/npm/l/nuxt-custom-elements.svg?style=flat-square
 [license-href]: https://npmjs.com/package/nuxt-custom-elements
+
