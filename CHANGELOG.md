@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.3.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.2...v1.3.3) (2020-09-30)
+
+
+### Bug Fixes
+
+* **webpack:** force version ([3968c61](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/3968c61634b8b66243e6df12e47abc7817cced12))
+
 ## [1.3.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.1...v1.3.2) (2020-08-28)
 
 
