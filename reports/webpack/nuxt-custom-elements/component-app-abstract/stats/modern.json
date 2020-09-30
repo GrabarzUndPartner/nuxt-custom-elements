@@ -4,9 +4,9 @@
   "warnings": [
   ],
   "version": "4.44.2",
-  "hash": "5c4efa3cd2570c4b1af3",
-  "time": 2351,
-  "builtAt": 1600954389697,
+  "hash": "8e59ed2586c4cf8caabf",
+  "time": 2445,
+  "builtAt": 1601483810882,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-abstract",
   "assetsByChunkName": {
@@ -14,7 +14,7 @@
   },
   "assets": [
     {
-      "name": "0.js",
+      "name": "0.8e59ed2586c4cf8caabf.js",
       "size": 3897,
       "chunks": [
         0
@@ -22,11 +22,12 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
-      "name": "1.js",
+      "name": "1.8e59ed2586c4cf8caabf.js",
       "size": 2948,
       "chunks": [
         1
@@ -34,11 +35,12 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
-      "name": "2.js",
+      "name": "2.8e59ed2586c4cf8caabf.js",
       "size": 2948,
       "chunks": [
         2
@@ -46,11 +48,12 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
-      "name": "3.js",
+      "name": "3.8e59ed2586c4cf8caabf.js",
       "size": 2948,
       "chunks": [
         3
@@ -58,11 +61,12 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
-      "name": "5.js",
+      "name": "5.8e59ed2586c4cf8caabf.js",
       "size": 7989,
       "chunks": [
         5
@@ -70,11 +74,12 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
-      "name": "6.js",
+      "name": "6.8e59ed2586c4cf8caabf.js",
       "size": 13991,
       "chunks": [
         6
@@ -82,12 +87,13 @@
       "chunkNames": [
       ],
       "info": {
+        "immutable": true
       },
       "emitted": true
     },
     {
       "name": "component-app-abstract.modern.js",
-      "size": 130913,
+      "size": 130943,
       "chunks": [
         4
       ],
@@ -160,7 +166,7 @@
       "names": [
       ],
       "files": [
-        "0.js"
+        "0.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "b8dadaec135d25ca2ed4",
       "siblings": [
@@ -3087,7 +3093,7 @@
       "names": [
       ],
       "files": [
-        "1.js"
+        "1.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "1d0f3bde342c8b7055ce",
       "siblings": [
@@ -5000,7 +5006,7 @@
       "names": [
       ],
       "files": [
-        "2.js"
+        "2.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "1bad7665d26f0455127e",
       "siblings": [
@@ -6913,7 +6919,7 @@
       "names": [
       ],
       "files": [
-        "3.js"
+        "3.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "3ec9e0179e2bed2fae09",
       "siblings": [
@@ -8829,7 +8835,7 @@
       "files": [
         "component-app-abstract.modern.js"
       ],
-      "hash": "3114199469e179c78bd8",
+      "hash": "4bbbe75d8c9bf3d7a354",
       "siblings": [
       ],
       "parents": [
@@ -12649,7 +12655,7 @@
       "names": [
       ],
       "files": [
-        "5.js"
+        "5.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "958b0b1a82836c43277a",
       "siblings": [
@@ -16687,7 +16693,7 @@
       "names": [
       ],
       "files": [
-        "6.js"
+        "6.8e59ed2586c4cf8caabf.js"
       ],
       "hash": "a05c9682ce18813fb68a",
       "siblings": [
@@ -29005,7 +29011,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "7726ec69b4c52d3c2b61",
+          "hash": "18cf517e65cb9e255ed0",
           "siblings": [
           ],
           "parents": [
