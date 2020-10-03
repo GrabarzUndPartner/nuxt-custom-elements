@@ -17,9 +17,9 @@
 
 ## Browsers support
 
-For cross-browser compatibility (IE9+) the "client" build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
+For cross-browser compatibility (IE9+) the `client` build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
 
-> ⚠️&nbsp;&nbsp;Polyfill not included in the "modern" build.
+> ⚠️&nbsp;&nbsp;Polyfill not included in the `modern` build.
 
 ## Setup
 
