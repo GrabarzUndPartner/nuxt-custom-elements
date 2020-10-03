@@ -13,7 +13,7 @@
 
 `nuxt-custom-elements` is a Nuxt.js module that uses [vue-custom-element](https://github.com/karol-f/vue-custom-element) to publish single components as custom element / web-component.
 
-[📖 **Release Notes**](./CHANGELOG.md)
+[📖 &nbsp;**Release Notes**](./CHANGELOG.md)
 
 ## Setup
 
@@ -94,6 +94,12 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
   ]
 }
 ```
+
+## Browsers support
+
+For cross-browser compatibility (IE9+) the "client" build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
+
+> ⚠️&nbsp;Polyfill not included in the "modern" build.
 
 ## Options
 
