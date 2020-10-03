@@ -105,32 +105,20 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | `modern`        | `Boolean`         | **Important**: To use `modern`, `modern` must be active in nuxt. <br>Sets `false` for only [client build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). <br>Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                  | `false`  |
 | `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                                                                                                | `false`                                                      | `false`  |
 | `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                                                                                                       | `null`                                                       | `true`   |
-| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `publicPath`                                                                                                                                                                                     | [See webpackOutput Example](#override-example-with-function) | `false`  |
+| `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `chunkFilename`, `publicPath`                                                                                                                                                                    | [See webpackOutput Example](#override-example-with-function) | `false`  |
 
 
 ### Important `webpackOutput` Option
 
-The webpack `output.filename` is has default two outputs.
+You can override the pattern from `webpackOutput.filename` and `webpackOutput.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
 
-
-With `modern` entry files named with:
-
-- client: `[name].client.js`
-- modern: `[name].modern.js`
-
-Or simple `client` build:
-
-- client: `[name].js`
-
-You can override the pattern with own function or pattern (string) e.g. `[name].[hash].js`.
-
-#### Override example with function:
+#### Override example with functions:
 
 ```javascript 
 {
   webpackOutput: {
     publicPath: '/',
-    filename: (chunk, webpackConfig, moduleOptions) => {
+    filename: (webpackConfig, moduleOptions) => {
       if (moduleOptions.modern) {
         if (webpackConfig.name === 'modern') {
           return '[name].modern.js'
@@ -140,7 +128,14 @@ You can override the pattern with own function or pattern (string) e.g. `[name].
       } else {
         return '[name].js'
       }
-    }
+    },
+    chunkFilename: (webpackConfig, moduleOptions) => {
+      if (moduleOptions.modern) {
+        return '[name].[hash].js'
+      } else {
+        return '[name].js'
+      }
+    },
   }
 }
 ```

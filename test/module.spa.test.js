@@ -328,7 +328,7 @@ describe('spa (build) (client) with custom webpackOutput filename', () => {
           resolve(__dirname, '..'), Object.assign({}, moduleConfig, {
             buildDir: customElementsBuildDir,
             webpackOutput: {
-              filename: (chunk, webpackConfig, moduleOptions) => {
+              filename: (webpackConfig, moduleOptions) => {
                 if (moduleOptions.modern) {
                   if (webpackConfig.name === 'modern') {
                     return 'custom-name.[name].modern.js'
@@ -337,6 +337,17 @@ describe('spa (build) (client) with custom webpackOutput filename', () => {
                   }
                 } else {
                   return 'custom-name.[name].js'
+                }
+              },
+              chunkFilename: (webpackConfig, moduleOptions) => {
+                if (moduleOptions.modern) {
+                  if (webpackConfig.name === 'modern') {
+                    return 'custom-name.chunk.[name].modern.js'
+                  } else {
+                    return 'custom-name.chunk.[name].client.js'
+                  }
+                } else {
+                  return 'custom-name.chunk.[name].js'
                 }
               }
             },
@@ -370,6 +381,7 @@ describe('spa (build) (client) with custom webpackOutput filename', () => {
 
   test('check generated entry files', async () => {
     expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.component-app-abstract.js'))).not.toBeFalsy()
+    expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.chunk.NamedChunk.js'))).not.toBeFalsy()
   })
 })
 
@@ -393,7 +405,7 @@ describe('spa (build) (modern) with custom webpackOutput filename', () => {
             buildDir: customElementsBuildDir,
             modern: true,
             webpackOutput: {
-              filename: (chunk, webpackConfig, moduleOptions) => {
+              filename: (webpackConfig, moduleOptions) => {
                 if (moduleOptions.modern) {
                   if (webpackConfig.name === 'modern') {
                     return 'custom-name.[name].modern.js'
@@ -402,6 +414,17 @@ describe('spa (build) (modern) with custom webpackOutput filename', () => {
                   }
                 } else {
                   return 'custom-name.[name].js'
+                }
+              },
+              chunkFilename: (webpackConfig, moduleOptions) => {
+                if (moduleOptions.modern) {
+                  if (webpackConfig.name === 'modern') {
+                    return 'custom-name.chunk.[name].modern.js'
+                  } else {
+                    return 'custom-name.chunk.[name].client.js'
+                  }
+                } else {
+                  return 'custom-name.chunk.[name].js'
                 }
               }
             },
@@ -436,5 +459,8 @@ describe('spa (build) (modern) with custom webpackOutput filename', () => {
   test('check generated entry files', async () => {
     expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.component-app-abstract.client.js'))).not.toBeFalsy()
     expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.component-app-abstract.modern.js'))).not.toBeFalsy()
+
+    expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.chunk.NamedChunk.client.js'))).not.toBeFalsy()
+    expect(await fsExtra.pathExists(resolve(customElementsBuildDir, 'component-app-abstract/custom-name.chunk.NamedChunk.modern.js'))).not.toBeFalsy()
   })
 })

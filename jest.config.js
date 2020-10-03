@@ -18,7 +18,7 @@ module.exports = {
   testPathIgnorePatterns: [
     '/node_modules/'
     // 'test/browser.test.js',
-    // 'test/module.spa.test.js'
+    // 'test/module.spa.test.js',
     // 'test/module.universal.test.js'
   ]
 }
