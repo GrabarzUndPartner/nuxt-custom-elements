@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.3.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.3...v1.3.4) (2020-10-03)
+
+
+### Bug Fixes
+
+* **webpack:** add option for custom chunkFilename ([dd0a5d5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/dd0a5d5d195c89d0c605ad2bc3bfa2f0847fda0e))
+
 ## [1.3.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.2...v1.3.3) (2020-09-30)
 
 
