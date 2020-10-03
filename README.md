@@ -203,7 +203,7 @@ You can override the pattern with own function or pattern (string) e.g. `[name].
 | `shadow` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
 | `props`  | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
 
->⚠️ **Important:** CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
+>⚠️&nbsp;&nbsp;**Important:** CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
 >
 >For shadow CSS the vue-custom-element property `shadowCSS` must be used. 
 
@@ -354,7 +354,7 @@ The custom elements contained in the page template can now be called.
 </template>
 ```
 
-> Custom tags must be excluded from the `SSR` build.
+> Custom tags must be excluded from the `SSR` build.  
 > Use the `client-only` tag or `ssr: false` in the `nuxt.config`.
 
 ## Preview
