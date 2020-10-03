@@ -24,6 +24,10 @@ export default {
         subline: null
       }
     }
+  },
+  mounted () {
+    /* Generate Test for `webpackOutput.chunkFilename`; test/module.spa.test.js */
+    import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk')
   }
 }
 </script>
