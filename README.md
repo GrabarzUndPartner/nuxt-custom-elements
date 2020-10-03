@@ -13,7 +13,13 @@
 
 `nuxt-custom-elements` is a Nuxt.js module that uses [vue-custom-element](https://github.com/karol-f/vue-custom-element) to publish single components as custom element / web-component.
 
-[📖 &nbsp;**Release Notes**](./CHANGELOG.md)
+[📖 &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
+
+## Browsers support
+
+For cross-browser compatibility (IE9+) the "client" build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
+
+> ⚠️&nbsp;&nbsp;Polyfill not included in the "modern" build.
 
 ## Setup
 
@@ -94,12 +100,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
   ]
 }
 ```
-
-## Browsers support
-
-For cross-browser compatibility (IE9+) the "client" build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
-
-> ⚠️&nbsp;Polyfill not included in the "modern" build.
 
 ## Options
 
@@ -354,8 +354,8 @@ The custom elements contained in the page template can now be called.
 </template>
 ```
 
-> Custom tags must be excluded from the `SSR` build.  
-> Use an `SPA` mode or use `client-only` tag.
+> Custom tags must be excluded from the `SSR` build.
+> Use the `client-only` tag or `ssr: false` in the `nuxt.config`.
 
 ## Preview
 
