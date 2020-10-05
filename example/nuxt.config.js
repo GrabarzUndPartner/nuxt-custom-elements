@@ -6,7 +6,7 @@ const isTest = process.env.NODE_ENV === 'test'
 module.exports = {
   dev: isDev,
 
-  mode: 'spa',
+  ssr: false,
   modern: isDev ? false : 'client',
 
   rootDir: resolve(__dirname, '..'),
@@ -59,7 +59,6 @@ module.exports = {
       resolve(__dirname, '..'), {
         analyzer: !isTest,
         modern: true,
-        polyfill: true,
         webpackOutput: {
           publicPath: getPublicPath()
         },
