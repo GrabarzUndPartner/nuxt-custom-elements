@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.3.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.4...v1.3.5) (2020-10-05)
+
+
+### Bug Fixes
+
+* **polyfill:** exclude polyfill from modern build; polyfill is builtin in client build ([cd77a08](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cd77a0807af3c359df6c076fc5a6d17bd5df4497))
+
 ## [1.3.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.3...v1.3.4) (2020-10-03)
 
 
