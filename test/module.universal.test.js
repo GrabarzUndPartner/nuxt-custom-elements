@@ -16,7 +16,7 @@ describe('universal (generate) (client)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -64,7 +64,7 @@ describe('universal (generate) (modern)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       modern: 'client',
       generate: {
         dir: getGeneratedDir(generatesDir)
@@ -115,7 +115,7 @@ describe('universal (generate) (client) with buildDir', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -165,7 +165,7 @@ describe('universal (build) (client)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       buildDir,
       generate: {
         dir: getGeneratedDir(generatesDir)
@@ -214,7 +214,7 @@ describe('universal (build) (modern)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       modern: 'client',
       buildDir,
       generate: {
@@ -266,7 +266,7 @@ describe('universal (build) (client) with buildDir', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'universal',
+      ssr: true,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },

@@ -1,7 +1,5 @@
 module.exports = {
   analyzer: false,
-  polyfill: true,
-
   entries: [
     {
       name: 'ComponentAppAbstract',

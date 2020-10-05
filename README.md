@@ -13,7 +13,13 @@
 
 `nuxt-custom-elements` is a Nuxt.js module that uses [vue-custom-element](https://github.com/karol-f/vue-custom-element) to publish single components as custom element / web-component.
 
-[📖 **Release Notes**](./CHANGELOG.md)
+[📖 &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
+
+## Browsers support
+
+For cross-browser compatibility (IE9+) the `client` build uses the Polyfill [document-register-element](https://github.com/WebReflection/document-register-element)
+
+> ⚠️&nbsp;&nbsp;Polyfill not included in the `modern` build.
 
 ## Setup
 
@@ -32,7 +38,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
     ['nuxt-custom-elements', {
         analyzer: true,
         modern: true,
-        polyfill: true,
         entries: [
 
           // Entry with single tag.
@@ -103,7 +108,6 @@ yarn add nuxt-custom-elements # or npm install nuxt-custom-elements
 | `buildDir`      | `String`          | Sets destination for custom-element build.                                                                                                                                                                                                          | `undefined`                                                  |
 | `analyzer`      | `Boolean, Object` | Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration                                                                                                                                               | `false`                                                      | `false`  |
 | `modern`        | `Boolean`         | **Important**: To use `modern`, `modern` must be active in nuxt. <br>Sets `false` for only [client build](https://nuxtjs.org/guides/configuration-glossary/configuration-modern). <br>Default using nuxt option `nuxt.options.modern === 'client'`. | `undefined`                                                  | `false`  |
-| `polyfill`      | `Boolean`         | For cross-browser compatibility (IE9+) use Custom Elements polyfill.                                                                                                                                                                                | `false`                                                      | `false`  |
 | `entries`       | `Array`           | Defines the component bundles.<br><br>Components can be distributed in separate end points.<br>Allows the targeted distribution of resources.                                                                                                       | `null`                                                       | `true`   |
 | `webpackOutput` | `Object`          | Defines the webpack output options.<br>`filename`, `chunkFilename`, `publicPath`                                                                                                                                                                    | [See webpackOutput Example](#override-example-with-function) | `false`  |
 
@@ -194,7 +198,7 @@ You can override the pattern from `webpackOutput.filename` and `webpackOutput.ch
 | `shadow` | `Boolean`       | Sets `true` if Native Shadow-Dom is to be used.              | `false`       |
 | `props`  | `Array, Object` | Use array for prop definition and object for default values. | `[]`          |
 
->⚠️ **Important:** CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
+>⚠️&nbsp;&nbsp;**Important:** CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
 >
 >For shadow CSS the vue-custom-element property `shadowCSS` must be used. 
 
@@ -222,7 +226,6 @@ First of all, components that are to be exported as custom elements must be spec
   modules: [
     [
       'nuxt-custom-elements', {
-        polyfill: true,
         entries: [
           {
             name: 'ComponentAppAbstract',
@@ -347,7 +350,7 @@ The custom elements contained in the page template can now be called.
 ```
 
 > Custom tags must be excluded from the `SSR` build.  
-> Use an `SPA` mode or use `client-only` tag.
+> Use the `client-only` tag or `ssr: false` in the `nuxt.config`.
 
 ## Preview
 

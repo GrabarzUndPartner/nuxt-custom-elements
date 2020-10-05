@@ -16,7 +16,7 @@ describe('spa (generate) (client)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -65,7 +65,7 @@ describe('spa (generate) (modern)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       modern: 'client',
       generate: {
         dir: getGeneratedDir(generatesDir)
@@ -117,7 +117,7 @@ describe('spa (generate) (client) with buildDir', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -167,7 +167,7 @@ describe('spa (build) (client)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       buildDir,
       generate: {
         dir: getGeneratedDir(generatesDir)
@@ -216,7 +216,7 @@ describe('spa (build) (modern)', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       modern: 'client',
       buildDir,
       generate: {
@@ -268,7 +268,7 @@ describe('spa (build) (client) with buildDir', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -318,7 +318,7 @@ describe('spa (build) (client) with custom webpackOutput filename', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       generate: {
         dir: getGeneratedDir(generatesDir)
       },
@@ -393,7 +393,7 @@ describe('spa (build) (modern) with custom webpackOutput filename', () => {
 
   beforeAll(async () => {
     const overrides = {
-      mode: 'spa',
+      ssr: false,
       modern: 'client',
       generate: {
         dir: getGeneratedDir(generatesDir)
