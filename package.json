@@ -40,7 +40,7 @@
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
-    "@babel/core": "7.12.1",
+    "@babel/core": "7.12.3",
     "@babel/preset-env": "7.12.1",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
@@ -60,7 +60,7 @@
     "nuxt-edge": "latest",
     "standard-version": "9.0.0",
     "stylelint": "13.7.2",
-    "stylelint-config-recess-order": "2.1.0",
+    "stylelint-config-recess-order": "2.2.0",
     "stylelint-config-standard": "20.0.0",
     "puppeteer": "5.3.1"
   },
