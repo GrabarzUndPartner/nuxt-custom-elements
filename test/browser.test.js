@@ -7,7 +7,7 @@ const { build, loadConfig, generatePort } = require('@nuxtjs/module-test-utils')
 const { startStaticServer, getUrl, getBuildDir, getCustomElementsDir, getGeneratesDir, getDistDir } = require('./utils')
 const moduleConfig = require('./fixture/module.config')
 
-jest.setTimeout(10000)
+jest.setTimeout(20000)
 
 const VIEWPORT = {
   width: 1200,
