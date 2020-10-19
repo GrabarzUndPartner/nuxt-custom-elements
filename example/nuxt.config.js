@@ -46,6 +46,8 @@ module.exports = {
 
   },
 
+  components: ['~/components/auto-import/'],
+
   generate: {
     dir: getDistPath()
   },

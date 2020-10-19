@@ -13,19 +13,17 @@
         :list="navigation"
       />
     </nav>
-    <atom-github-corner />
+    <LazyGithubCorner />
   </div>
 </template>
 
 <script>
 import AtomHeadline from '@/components/atoms/Headline'
 import MoleculeLinkList from '@/components/molecules/LinkList'
-import AtomGithubCorner from '@/components/atoms/GithubCorner'
 export default {
   components: {
     AtomHeadline,
-    MoleculeLinkList,
-    AtomGithubCorner
+    MoleculeLinkList
   },
 
   props: {
