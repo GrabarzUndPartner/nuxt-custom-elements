@@ -6,7 +6,7 @@ const { getCustomElementsDir, getBuildDir, getGeneratedDir, getDistDir } = requi
 const moduleConfig = require('./fixture/module.config')
 const { getGeneratesDir } = require('./utils')
 
-jest.setTimeout(20000)
+jest.setTimeout(60000)
 
 describe('spa (generate) (client)', () => {
   let nuxt
