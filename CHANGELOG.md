@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.4.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.5...v1.4.0) (2020-10-20)
+
+
+### Features
+
+* **webpack:** fix webpack entry files ([66f8eca](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/66f8eca0c9d371d0821024b6172fb093cf574d0a)), closes [#177](https://github.com/GrabarzUndPartner/nuxt-custom-elements/issues/177)
+
 ## [1.3.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.4...v1.3.5) (2020-10-05)
 
 
