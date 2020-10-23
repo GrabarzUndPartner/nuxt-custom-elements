@@ -62,7 +62,7 @@
     "stylelint": "13.7.2",
     "stylelint-config-recess-order": "2.2.0",
     "stylelint-config-standard": "20.0.0",
-    "puppeteer": "5.3.1"
+    "puppeteer": "5.4.0"
   },
   "publishConfig": {
     "access": "public"
