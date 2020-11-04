@@ -61,6 +61,7 @@ module.exports = {
       resolve(__dirname, '..'), {
         analyzer: !isTest,
         modern: true,
+        modernPolyfill: true,
         webpackOutput: {
           publicPath: getPublicPath()
         },

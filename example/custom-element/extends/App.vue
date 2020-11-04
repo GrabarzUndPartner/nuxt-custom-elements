@@ -1,4 +1,8 @@
 <script>
+import 'core-js/features/object/assign'
+import 'core-js/features/object/entries'
+import 'core-js/features/array/from'
+import 'core-js/features/promise'
 import CustomElementRouterView from '../components/helpers/RouterView'
 import { getRoutesFromViews } from '../utils/router'
 import store from '../utils/store'
