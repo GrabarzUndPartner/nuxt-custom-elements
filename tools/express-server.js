@@ -15,13 +15,13 @@ app.listen(port, host, function () {
 })
 
 function getDist () {
-  return getArg('dist') || process.env.DIST || process.env.npm_config_dist || 'dist'
+  return process.env.npm_config_dist || getArg('dist') || process.env.DIST || 'dist'
 }
 
 function getHost () {
-  return getArg('host') || process.env.HOST || process.env.npm_config_host || 'localhost'
+  return process.env.npm_config_host || getArg('host') || process.env.HOST || 'localhost'
 }
 
 function getPort () {
-  return getArg('port') || process.env.PORT || process.env.npm_config_port || 3000
+  return process.env.npm_config_port || getArg('port') || process.env.PORT || 3000
 }
