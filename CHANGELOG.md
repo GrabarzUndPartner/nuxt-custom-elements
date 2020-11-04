@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.4.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.0...v1.4.1) (2020-11-04)
+
+
+### Bug Fixes
+
+* **polyfill:** add option for polyfill in modern build ([1346442](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/1346442e8c1e5f14dde0dce7fa567fc3b3e6d475))
+
 # [1.4.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.3.5...v1.4.0) (2020-10-20)
 
 
