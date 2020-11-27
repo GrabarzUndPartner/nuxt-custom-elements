@@ -35,7 +35,7 @@
     "jest": "jest"
   },
   "dependencies": {
-    "@ungap/custom-elements": "0.1.9",
+    "@ungap/custom-elements": "0.1.10",
     "change-case": "4.1.1",
     "vue-custom-element": "3.2.14"
   },
