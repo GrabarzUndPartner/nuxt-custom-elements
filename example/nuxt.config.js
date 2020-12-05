@@ -67,6 +67,34 @@ module.exports = {
         },
         entries: [
           {
+            name: 'ComponentAppShadow',
+            tags: [
+              {
+                async: false,
+                name: 'CustomElementAppShadowA',
+                path: '@/components/apps/AppShadow',
+                options: {
+                  shadow: true,
+                  props: {
+                    title: 'Shadow Element with vue-loader import, without css compiler.'
+                  }
+                }
+              },
+              {
+                async: false,
+                name: 'CustomElementAppShadowB',
+                path: '@/components/apps/AppShadow',
+                options: {
+                  shadow: true,
+                  shadowCss: '.shadow-element { display: flex; align-items: center; justify-content: center; color: white; background: blue;}.shadow-element span { font-weight: bold;}.shadow-element::before { display: block; padding-top: calc(9 / 16 * 100%); content: "";}',
+                  props: {
+                    title: 'Shadow Element with shadowCss option'
+                  }
+                }
+              }
+            ]
+          },
+          {
             name: 'ComponentAppAbstract',
             tags: [
               {
