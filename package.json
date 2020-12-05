@@ -37,6 +37,7 @@
   "dependencies": {
     "@ungap/custom-elements": "0.1.10",
     "change-case": "4.1.2",
+    "raw-loader": "4.0.2",
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
