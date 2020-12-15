@@ -83,7 +83,7 @@ jobs:
           npm run generate
           mkdir ghpages ghpages/reports
           cp -R dist/nuxt-custom-elements/* ghpages/
-          cp -R reports/* ghpages/reports/
+          cp -R .reports/* ghpages/reports/
         env:
           WEBSITE_HOST: https://grabarzundpartner.github.io/nuxt-custom-elements
           BASE_PATH: ./
