@@ -5,16 +5,18 @@
     :target="target || '_blank'"
     rel="noopener"
     :title="title"
+    @click="click"
   >
     <slot>{{ title }}</slot>
   </a>
-  <nuxt-link
+  <router-link
     v-else-if="!isExternal"
     :to="url"
     :title="title"
+    @click="click"
   >
     <slot>{{ title }}</slot>
-  </nuxt-link>
+  </router-link>
 </template>
 
 <script>
@@ -29,6 +31,10 @@ export default {
       type: String,
       required: false,
       default: null
+    },
+    click: {
+      type: Function,
+      default () {}
     },
     target: {
       type: String,

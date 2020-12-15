@@ -8,7 +8,7 @@
         v-for="(item) in list"
         :key="item.title"
       >
-        <atom-link-to :url="getUrl(item)">
+        <atom-link-to v-bind="item" :url="getUrl(item)">
           {{ item.title }}
         </atom-link-to>
       </li>
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     getUrl (item) {
-      if ('$i18n' in this) {
+      if ('$i18n' in this && this.$i18n && 'localePath' in this.$i18n) {
         // use when nuxtI18n exists
         this.localePath(item.url)
       } else {
@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .molecule-link-list {
   &.type--view-header {
     display: flex;
