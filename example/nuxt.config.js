@@ -67,6 +67,21 @@ module.exports = {
         },
         entries: [
           {
+            name: 'ComponentAppI18n',
+            tags: [
+              {
+                async: false,
+                name: 'CustomElementAppI18n',
+                path: '@/components/apps/AppI18n',
+                options: {
+                  props: {
+                    base: './'
+                  }
+                }
+              }
+            ]
+          },
+          {
             name: 'ComponentAppAbstract',
             tags: [
               {
@@ -114,6 +129,16 @@ module.exports = {
           {
             name: 'ComponentAppBundle',
             tags: [
+              {
+                async: true,
+                name: 'CustomElementAppI18n',
+                path: '@/components/apps/AppI18n',
+                options: {
+                  props: {
+                    base: './'
+                  }
+                }
+              },
               {
                 async: true,
                 name: 'CustomElementAppAbstract',

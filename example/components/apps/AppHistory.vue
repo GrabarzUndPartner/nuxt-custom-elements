@@ -10,14 +10,13 @@
 
 <script>
 
-import AppExtend from '@/custom-element/extends/App'
+import AppRouterExtend from '@/custom-element/extends/AppRouter'
 import { createRouter } from '@/custom-element/utils/router'
 
 export default {
-  name: 'AppTwo',
 
   components: { OrganismViewHeader: () => import('@/components/organisms/ViewHeader') },
-  extends: AppExtend,
+  extends: AppRouterExtend,
 
   router: createRouter('history'),
 
@@ -34,6 +33,7 @@ export default {
       return {
         header: {
           title: 'App with router mode "history"',
+          linksTitle: 'Views:',
           navigation: [
             { title: 'Home', url: '/' },
             { title: 'View 1', url: '/view-1' },
@@ -53,7 +53,7 @@ export default {
 
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .custom-element-app-history {
   padding: 15px;
   background: #eee;
