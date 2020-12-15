@@ -1,6 +1,9 @@
 <template>
   <div>
     <client-only>
+      <custom-element-app-i18n
+        class="application"
+      />
       <script type="text/javascript">
         <!-- Used in example/custom-element/utils/router.js:22 -->
         window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
@@ -12,7 +15,6 @@
           type="application/json"
           v-text="data"
         />
-        <!-- eslint-disable-next-line vue/html-indent -->
       </custom-element-app-abstract>
       <custom-element-app-hash
         class="application"
@@ -21,7 +23,6 @@
           type="application/json"
           v-text="data"
         />
-        <!-- eslint-disable-next-line vue/html-indent -->
       </custom-element-app-hash>
     </client-only>
   </div>
@@ -33,7 +34,8 @@ import Vue from 'vue'
 
 Vue.config.ignoredElements = [
   'custom-element-app-abstract',
-  'custom-element-app-hash'
+  'custom-element-app-hash',
+  'custom-element-app-i18n'
 ]
 
 export default {
@@ -50,6 +52,7 @@ export default {
   created () {
     this.$registerCustomElementsEntry('component-app-abstract')
     this.$registerCustomElementsEntry('component-app-hash')
+    this.$registerCustomElementsEntry('component-app-i18n')
   }
 }
 </script>

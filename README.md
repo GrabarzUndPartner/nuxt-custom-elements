@@ -254,21 +254,48 @@ Finally a `nuxt generate` or `nuxt build` must be executed. The custom-element b
 
 ### Integrations
 
-### Vue Router & Vuex Store
+### Using Vue i18n, Vue Router and Vuex Store
 
-To use `Vuex Store` or `Vue Router`, the store or router must be referenced on the top component (endpoint).
+To use `Vue i18n`, `Vue Router` or `Vuex Store`, the plugin must be referenced on the top component (endpoint).
 
-All child components have access to `this.$router` and `this.$store`.
+All child components have access to `this.$i18n`, `this.$router` and `this.$store`.
 
 ```html
 <script>
 
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VueI18n from 'vue-i18n'
 import VueRouter from 'vue-router'
 
 Vue.use(Vuex)
+Vue.use(VueI18n)
 Vue.use(VueRouter)
+
+// i18n
+
+const messages = {
+  de: {
+    message: {
+      hello: 'hallo welt'
+    }
+  },
+  en: {
+    message: {
+      hello: 'hello world'
+    }
+  },
+  ja: {
+    message: {
+      hello: 'こんにちは、世界'
+    }
+  }
+}
+
+const i18n = new VueI18n({
+  locale: 'en',
+  messages
+})
 
 // store
 
@@ -291,6 +318,8 @@ const router = new VueRouter({
 
 export default {
 
+  i18n,
+
   store,
 
   router,
@@ -298,7 +327,7 @@ export default {
   props: {...},
 
   mounted() {
-    console.log(this.$store, this.$router)
+    console.log(this.$i18n, this.$store, this.$router)
   }
   
 }
@@ -362,6 +391,7 @@ The custom elements contained in the page template can now be called.
 4. Open endpoints via `http://127.0.0.1:3000/` in Browser
 
 - [ComponentAppBundle](http://127.0.0.1:3000/nuxt-custom-elements/component-app-bundle)  
+- [ComponentAppI18n](http://127.0.0.1:3000/nuxt-custom-elements/component-app-i18n)  
 - [ComponentAppAbstract](http://127.0.0.1:3000/nuxt-custom-elements/component-app-abstract)  
 - [ComponentAppHash](http://127.0.0.1:3000/nuxt-custom-elements/component-app-hash)  
 - [ComponentAppHistory](http://127.0.0.1:3000/nuxt-custom-elements/component-app-history)
@@ -371,6 +401,9 @@ or look here
 - [ComponentAppBundle](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-bundle/)
   - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-bundle/client.html)
   - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-bundle/modern.html)
+- [ComponentAppI18n](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-i18n/)
+  - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-i18n/client.html)
+  - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-i18n/modern.html)
 - [ComponentAppAbstract](https://grabarzundpartner.github.io/nuxt-custom-elements/component-app-abstract/)
   - [Report Client](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-abstract/client.html)
   - [Report Modern](https://grabarzundpartner.github.io/nuxt-custom-elements/reports/webpack/nuxt-custom-elements/component-app-abstract/modern.html)
