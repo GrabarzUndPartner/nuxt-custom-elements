@@ -6,7 +6,7 @@
       style-type="view-header"
     />
     <nav>
-      <span>Views:</span>
+      <span>{{ linksTitle }}</span>
       <molecule-link-list
         class="links"
         type="view-header"
@@ -29,9 +29,11 @@ export default {
   props: {
     title: {
       type: String,
-      default () {
-        return 'Header Title'
-      }
+      default: 'Header Title'
+    },
+    linksTitle: {
+      type: String,
+      default: 'Links:'
     },
     navigation: {
       type: Array,
@@ -56,7 +58,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .organisms-view-header {
   position: relative;
 

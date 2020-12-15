@@ -62,7 +62,8 @@
     "standard-version": "9.0.0",
     "stylelint": "13.8.0",
     "stylelint-config-recess-order": "2.3.0",
-    "stylelint-config-standard": "20.0.0"
+    "stylelint-config-standard": "20.0.0",
+    "vue-i18n": "8.22.2"
   },
   "publishConfig": {
     "access": "public"
