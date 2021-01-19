@@ -60,7 +60,7 @@
     "nuxt-edge": "latest",
     "puppeteer": "5.5.0",
     "standard-version": "9.1.0",
-    "stylelint": "13.8.0",
+    "stylelint": "13.9.0",
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-config-standard": "20.0.0",
     "vue-i18n": "8.22.4"
