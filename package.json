@@ -35,7 +35,7 @@
     "jest": "jest"
   },
   "dependencies": {
-    "@ungap/custom-elements": "0.1.12",
+    "@ungap/custom-elements": "0.1.14",
     "change-case": "4.1.2",
     "vue-custom-element": "3.2.14"
   },
@@ -60,7 +60,7 @@
     "nuxt-edge": "latest",
     "puppeteer": "7.0.4",
     "standard-version": "9.1.0",
-    "stylelint": "13.9.0",
+    "stylelint": "13.10.0",
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-config-standard": "20.0.0",
     "vue-i18n": "8.22.4"
