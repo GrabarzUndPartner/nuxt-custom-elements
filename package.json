@@ -35,13 +35,13 @@
     "jest": "jest"
   },
   "dependencies": {
-    "@ungap/custom-elements": "0.1.10",
+    "@ungap/custom-elements": "0.1.14",
     "change-case": "4.1.2",
     "vue-custom-element": "3.2.14"
   },
   "devDependencies": {
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
+    "@babel/core": "7.12.16",
+    "@babel/preset-env": "7.12.16",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
     "@nuxt/builder": "2.14.12",
@@ -53,17 +53,17 @@
     "babel-eslint": "10.1.0",
     "babel-jest": "26.6.3",
     "codecov": "3.8.1",
-    "core-js": "3.8.1",
-    "eslint": "7.17.0",
-    "husky": "5.0.6",
+    "core-js": "3.8.3",
+    "eslint": "7.20.0",
+    "husky": "5.0.9",
     "jest": "26.6.3",
     "nuxt-edge": "latest",
-    "puppeteer": "5.5.0",
+    "puppeteer": "7.1.0",
     "standard-version": "9.1.0",
-    "stylelint": "13.8.0",
+    "stylelint": "13.10.0",
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-config-standard": "20.0.0",
-    "vue-i18n": "8.22.2"
+    "vue-i18n": "8.22.4"
   },
   "publishConfig": {
     "access": "public"
