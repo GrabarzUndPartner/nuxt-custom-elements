@@ -5,8 +5,8 @@
   ],
   "version": "4.44.2",
   "hash": "5646478720ef3e6768cc",
-  "time": 3103,
-  "builtAt": 1613218986401,
+  "time": 2788,
+  "builtAt": 1613225891411,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
