@@ -35,7 +35,7 @@
     "jest": "jest"
   },
   "dependencies": {
-    "@ungap/custom-elements": "0.1.14",
+    "@ungap/custom-elements": "0.1.15",
     "change-case": "4.1.2",
     "vue-custom-element": "3.2.14"
   },
@@ -44,10 +44,10 @@
     "@babel/preset-env": "7.12.16",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@nuxt/builder": "2.14.12",
-    "@nuxt/config": "2.14.12",
-    "@nuxt/core": "2.14.12",
-    "@nuxt/webpack": "2.14.12",
+    "@nuxt/builder": "2.15.0",
+    "@nuxt/config": "2.15.0",
+    "@nuxt/core": "2.15.0",
+    "@nuxt/webpack": "2.15.0",
     "@nuxtjs/eslint-config": "5.0.0",
     "@nuxtjs/module-test-utils": "1.6.3",
     "babel-eslint": "10.1.0",
@@ -59,7 +59,7 @@
     "jest": "26.6.3",
     "nuxt-edge": "latest",
     "puppeteer": "7.1.0",
-    "standard-version": "9.1.0",
+    "standard-version": "9.1.1",
     "stylelint": "13.10.0",
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-config-standard": "20.0.0",
