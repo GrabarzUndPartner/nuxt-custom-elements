@@ -62,6 +62,7 @@ module.exports = {
         analyzer: !isTest,
         modern: true,
         modernPolyfill: true,
+        publicPathOverride: () => { return global.test; },
         webpackOutput: {
           publicPath: getPublicPath()
         },
