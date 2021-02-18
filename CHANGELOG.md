@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [1.5.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.2...v1.5.0) (2021-02-18)
+
+
+### Features
+
+* **webpack:** add public-path override in entry ([045a656](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/045a656c1170c0bdeef47191dc766c3240f0e102))
+* **webpack:** rename property webpackPublicPathInject ([40d89d2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/40d89d2d80d516910abb92dcc91e1bac9cc9a0af))
+
 ## [1.4.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.1...v1.4.2) (2020-11-05)
 
 
