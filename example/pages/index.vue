@@ -13,16 +13,18 @@
       >
         <script
           type="application/json"
-          v-text="data"
-        />
+        >
+          {{ data }}
+        </script>
       </custom-element-app-abstract>
       <custom-element-app-hash
         class="application"
       >
         <script
           type="application/json"
-          v-text="data"
-        />
+        >
+          {{ data }}
+        </script>
       </custom-element-app-hash>
     </client-only>
   </div>
@@ -55,6 +57,7 @@ export default {
     this.$registerCustomElementsEntry('component-app-i18n');
   }
 };
+
 </script>
 
 <style lang="postcss">

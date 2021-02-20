@@ -25,7 +25,7 @@ export default {
     url: {
       type: String,
       required: false,
-      default: 'http://example.com'
+      default: '#url'
     },
     title: {
       type: String,

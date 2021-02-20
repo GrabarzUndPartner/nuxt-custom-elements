@@ -96,11 +96,11 @@ jobs:
       - name: Build
         run: |
           npm run generate --build-analyze --base=/example/ --website-host=https://nuxt-custom-elements.grabarzundpartner.dev
-          mkdir dist/reports dist/reports/webpack
-          cp -R .reports/webpack/* dist/reports/webpack
-          touch dist/.nojekyll
+          mkdir dist/nuxt-custom-elements/reports dist/nuxt-custom-elements/reports
+          cp -R .reports/* dist/nuxt-custom-elements/reports/
+          touch dist/nuxt-custom-elements/.nojekyll
         env:
-          DIST_PATH: dist
+          DIST_PATH: dist/nuxt-custom-elements
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
