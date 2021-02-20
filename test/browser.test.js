@@ -2,7 +2,7 @@
 import { setupTest } from '@nuxt/test-utils';
 import getPort from 'get-port';
 import express from 'express';
-const { join, resolve } = require('path');
+const { join, resolve: pathResolve } = require('path');
 const { chromium, firefox } = require('playwright');
 
 const CHROMIUM = 0;
@@ -19,9 +19,9 @@ describe('browser (client) (chromium and firefox)', () => {
 });
 
 function test (modern = true) {
-  let browsers, port, express;
+  let browsers, port, server;
 
-  const testDir = resolve(__dirname, `.browser${modern ? '-modern' : ''}`);
+  const testDir = pathResolve(__dirname, `.browser${modern ? '-modern' : ''}`);
   const buildDir = join(testDir, '.nuxt');
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
 
@@ -31,7 +31,12 @@ function test (modern = true) {
       firefox.launch()
     ]);
     port = await getPort();
-    express = startStaticServer(customElementsDir, port);
+    server = startStaticServer(customElementsDir, port);
+  });
+
+  afterAll(async () => {
+    await Promise.all(browsers.map(browser => browser.close()));
+    await new Promise(resolve => server.close(resolve));
   });
 
   setupTest({
@@ -113,13 +118,6 @@ function test (modern = true) {
   });
 
   // #endregion
-
-  afterAll(async () => {
-    await Promise.all(browsers.map(browser => browser.close()));
-    await new Promise((resolve) => {
-      express.close(resolve);
-    });
-  });
 }
 
 function getUrl (path, port) {
