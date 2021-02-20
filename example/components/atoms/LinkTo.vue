@@ -45,8 +45,8 @@ export default {
 
   computed: {
     isExternal () {
-      return /^(http(s)?|ftp):\/\//.test(this.url) || this.url.startsWith('#')
+      return /^(http(s)?|ftp):\/\//.test(this.url) || this.url.startsWith('#');
     }
   }
-}
+};
 </script>

@@ -10,8 +10,8 @@
 
 <script>
 
-import AppRouterExtend from '@/custom-element/extends/AppRouter'
-import { createRouter } from '@/custom-element/utils/router'
+import AppRouterExtend from '@/custom-element/extends/AppRouter';
+import { createRouter } from '@/custom-element/utils/router';
 
 export default {
 
@@ -25,7 +25,7 @@ export default {
       views: [
         'index', 'view-1', 'view-2', 'view-3'
       ]
-    }
+    };
   },
 
   computed: {
@@ -41,15 +41,15 @@ export default {
             { title: 'View 3', url: '/view-3' }
           ]
         }
-      }
+      };
     },
 
     header () {
-      return this.content.header
+      return this.content.header;
     }
   }
 
-}
+};
 
 </script>
 

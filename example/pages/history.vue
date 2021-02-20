@@ -20,11 +20,11 @@
 
 <script>
 
-import Vue from 'vue'
+import Vue from 'vue';
 
 Vue.config.ignoredElements = [
   'custom-element-app-history'
-]
+];
 
 export default {
   layout: 'blank',
@@ -35,12 +35,12 @@ export default {
       data: {
         script: 'tag'
       }
-    }
+    };
   },
   created () {
-    this.$registerCustomElementsEntry('component-app-history')
+    this.$registerCustomElementsEntry('component-app-history');
   }
-}
+};
 </script>
 
 <style lang="postcss">

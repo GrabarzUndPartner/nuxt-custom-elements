@@ -5,6 +5,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
+      "nuxt-custom-elements/*": [
+        "lib/*"
+      ],
       "@/*": [
         "example/*"
       ],

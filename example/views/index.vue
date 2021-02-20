@@ -11,8 +11,8 @@
 
 <script>
 
-import AtomHeadline from '@/components/atoms/Headline'
-import OrganismSharedStore from '@/components/organisms/SharedStore'
+import AtomHeadline from '@/components/atoms/Headline';
+import OrganismSharedStore from '@/components/organisms/SharedStore';
 
 export default {
   components: { AtomHeadline, OrganismSharedStore },
@@ -23,13 +23,13 @@ export default {
         headline: 'Custom-Element Example',
         subline: null
       }
-    }
+    };
   },
   mounted () {
     /* Generate Test for `webpackOutput.chunkFilename`; test/module.spa.test.js */
-    import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk')
+    import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk');
   }
-}
+};
 </script>
 
 <style lang="postcss">

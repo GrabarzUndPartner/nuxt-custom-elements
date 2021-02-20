@@ -1,1 +1,1 @@
-export default 'Named Chunk'
+export default 'Named Chunk';

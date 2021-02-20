@@ -40,46 +40,46 @@ export default {
       type: String,
       required: false,
       default () {
-        return 'h1'
+        return 'h1';
       }
     },
     styleType: {
       type: String,
       default () {
-        return null
+        return null;
       }
     },
     overline: {
       type: String,
       required: false,
       default () {
-        return 'Lorem Overline'
+        return 'Lorem Overline';
       }
     },
     headline: {
       type: String,
       required: false,
       default () {
-        return 'Lorem Headline'
+        return 'Lorem Headline';
       }
     },
     subline: {
       type: String,
       required: false,
       default () {
-        return 'Lorem Subline'
+        return 'Lorem Subline';
       }
     }
   },
   computed: {
     styleClasses () {
-      const classes = {}
-      classes[`headline--${this.tag}`] = true
-      classes[`headline--${this.styleType}`] = this.styleType
-      return classes
+      const classes = {};
+      classes[`headline--${this.tag}`] = true;
+      classes[`headline--${this.styleType}`] = this.styleType;
+      return classes;
     }
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

@@ -1,6 +1,5 @@
 module.exports = {
-  testEnvironment: 'node',
-  collectCoverage: true,
+  preset: '@nuxt/test-utils',
   collectCoverageFrom: [
     'lib/**/*.js',
     '!lib/plugin.js',
@@ -12,13 +11,9 @@ module.exports = {
     '^@@$': '<rootDir>',
     '^@/(.*)$': '<rootDir>/lib/$1'
   },
-  transform: {
-    '^.+\\.js$': 'babel-jest'
-  },
+  transformIgnorePatterns: [
+    `/node_modules/(?!${['@nuxt/i18m']})`],
   testPathIgnorePatterns: [
-    '/node_modules/'
-    // 'test/browser.test.js',
-    // 'test/module.spa.test.js',
-    // 'test/module.universal.test.js'
+    // 'test/browser.test.js'
   ]
-}
+};
