@@ -10,8 +10,9 @@
       >
         <script
           type="application/json"
-          v-text="data"
-        />
+        >
+          {{ data }}
+        </script>
         <!-- eslint-disable-next-line vue/html-indent -->
       </custom-element-app-history>
     </client-only>
@@ -41,6 +42,7 @@ export default {
     this.$registerCustomElementsEntry('component-app-history');
   }
 };
+
 </script>
 
 <style lang="postcss">

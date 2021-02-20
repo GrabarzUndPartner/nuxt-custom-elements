@@ -128,6 +128,7 @@ function getUrl (path, port) {
 
 function startStaticServer (dist, port = 3000, host = 'localhost') {
   const app = express();
+  app.disable('x-powered-by');
   app.use(express.static(dist));
   return app.listen(port, host);
 }

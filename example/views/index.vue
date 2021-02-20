@@ -4,7 +4,7 @@
       v-bind="headline"
       style-type="view"
     />
-    <img src="@/assets/image.png">
+    <img src="@/assets/image.png" alt="image">
     <organism-shared-store />
   </div>
 </template>
