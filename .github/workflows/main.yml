@@ -102,12 +102,12 @@ jobs:
           cp -R .reports/* dist/nuxt-custom-elements/reports/
           touch dist/nuxt-custom-elements/.nojekyll
         env:
-          DIST_PATH: dist/nuxt-custom-elements
+          DIST_PATH: dist
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
           name: exampleArtifact
-          path: dist
+          path: dist/nuxt-custom-elements
 
   build-docs:
     name: Build (Docs)
