@@ -3,7 +3,7 @@
     "@nuxtjs"
   ],
   "baseBranches": [
-    "release"
+    "develop"
   ],
   "automerge": true
 }
