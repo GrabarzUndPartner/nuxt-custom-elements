@@ -32,7 +32,7 @@ module.exports = {
         const targets = isServer ? { node: 'current' } : { ie: 11 };
         return [
           [
-            require.resolve('@nuxt/babel-preset-app-edge'), {
+            require.resolve('@nuxt/babel-preset-app'), {
               targets,
               useBuiltIns: isModern ? 'entry' : 'usage',
               corejs: { version: 3 }
