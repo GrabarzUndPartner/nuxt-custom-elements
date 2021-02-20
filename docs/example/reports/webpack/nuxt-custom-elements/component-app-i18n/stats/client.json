@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "1b0972ac2bca0c16796e",
-  "time": 3389,
-  "builtAt": 1613862156766,
+  "hash": "896244213bc2863de5ad",
+  "time": 3235,
+  "builtAt": 1613864192689,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
@@ -12,7 +12,7 @@
   },
   "assets": [
     {
-      "name": "1.1b0972ac2bca0c16796e.js",
+      "name": "1.896244213bc2863de5ad.js",
       "size": 6846,
       "chunks": [
         1
@@ -82,7 +82,7 @@
       "files": [
         "component-app-i18n.client.js"
       ],
-      "hash": "9f10efcb882004a3f1d1",
+      "hash": "c5d96b24d7d124e0c23d",
       "siblings": [],
       "parents": [],
       "children": [
@@ -3186,7 +3186,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -3195,7 +3195,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -3204,7 +3204,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -3213,7 +3213,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -3222,7 +3222,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony import specifier",
@@ -3231,7 +3231,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony import specifier",
@@ -3240,7 +3240,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony import specifier",
@@ -3249,7 +3249,7 @@
             },
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony import specifier",
@@ -12962,7 +12962,7 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./example/custom-element/store sync \\.js$ (referenced with context element)"
           ],
           "depth": 10,
-          "source": "export var state = function state() {\n  return {\n    value: true\n  };\n};\nexport var mutations = {\n  value: function value(state, data) {\n    state.value = Boolean(data);\n  }\n};\nexport var getters = {\n  value: function value(state) {\n    return state.value;\n  }\n};\nexport var actions = {\n  setValue: function setValue(context, toggle) {\n    context.commit('value', toggle);\n  }\n};"
+          "source": "export var state = function state() {\n  return {\n    value: true\n  };\n};\nexport var mutations = {\n  value: function value(scope, data) {\n    scope.value = Boolean(data);\n  }\n};\nexport var getters = {\n  value: function value(scope) {\n    return scope.value;\n  }\n};\nexport var actions = {\n  setValue: function setValue(context, toggle) {\n    context.commit('value', toggle);\n  }\n};"
         },
         {
           "id": 147,
@@ -14205,12 +14205,12 @@
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 19984,
+      "size": 20011,
       "names": [],
       "files": [
-        "1.1b0972ac2bca0c16796e.js"
+        "1.896244213bc2863de5ad.js"
       ],
-      "hash": "186ab3f44b72779a603e",
+      "hash": "f719bd62aea88f5f834b",
       "siblings": [],
       "parents": [
         0
@@ -14577,7 +14577,7 @@
           "reasons": [
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -14786,7 +14786,7 @@
           "reasons": [
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -15229,7 +15229,7 @@
           "reasons": [
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -15398,7 +15398,7 @@
           "reasons": [
             {
               "moduleId": 163,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
               "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
               "type": "harmony side effect evaluation",
@@ -15498,11 +15498,11 @@
         },
         {
           "id": 163,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "name": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "index": 163,
           "index2": 195,
-          "size": 11158,
+          "size": 11185,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -17160,12 +17160,12 @@
               ],
               "optimizationBailout": [],
               "depth": 11,
-              "source": "import { render, staticRenderFns } from \"./LinkTo.vue?vue&type=template&id=79e7369a&\"\nimport script from \"./LinkTo.vue?vue&type=script&lang=js&\"\nexport * from \"./LinkTo.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
+              "source": "import { render, staticRenderFns } from \"./LinkTo.vue?vue&type=template&id=0ae1b75c&\"\nimport script from \"./LinkTo.vue?vue&type=script&lang=js&\"\nexport * from \"./LinkTo.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
             },
             {
               "id": null,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "index": 182,
               "index2": 176,
               "size": 274,
@@ -17250,7 +17250,7 @@
                   "module": "./example/components/atoms/LinkTo.vue",
                   "moduleName": "./example/components/atoms/LinkTo.vue",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "loc": "1:0-85"
                 },
                 {
@@ -17259,7 +17259,7 @@
                   "module": "./example/components/atoms/LinkTo.vue",
                   "moduleName": "./example/components/atoms/LinkTo.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "loc": "10:2-8"
                 },
                 {
@@ -17268,7 +17268,7 @@
                   "module": "./example/components/atoms/LinkTo.vue",
                   "moduleName": "./example/components/atoms/LinkTo.vue",
                   "type": "harmony import specifier",
-                  "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "loc": "11:2-17"
                 }
               ],
@@ -17282,7 +17282,7 @@
               ],
               "optimizationBailout": [],
               "depth": 12,
-              "source": "export * from \"-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&\""
+              "source": "export * from \"-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&\""
             },
             {
               "id": null,
@@ -17415,8 +17415,8 @@
             },
             {
               "id": null,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "name": "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "name": "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "index": 183,
               "index2": 175,
               "size": 506,
@@ -17425,9 +17425,9 @@
               "optional": false,
               "prefetched": false,
               "chunks": [],
-              "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "issuerId": null,
-              "issuerName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "issuerName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "issuerPath": [
                 {
                   "id": 88,
@@ -17491,8 +17491,8 @@
                 },
                 {
                   "id": null,
-                  "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-                  "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&"
+                  "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+                  "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&"
                 }
               ],
               "failed": false,
@@ -17502,20 +17502,20 @@
               "reasons": [
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-                  "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-                  "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+                  "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+                  "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "type": "harmony side effect evaluation",
-                  "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "loc": "1:0-274"
                 },
                 {
                   "moduleId": null,
-                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-                  "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-                  "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+                  "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+                  "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "type": "harmony export imported specifier",
-                  "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&",
+                  "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&",
                   "loc": "1:0-274"
                 }
               ],
@@ -17537,7 +17537,7 @@
               "name": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=script&lang=js&",
               "index": 185,
               "index2": 181,
-              "size": 626,
+              "size": 653,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -17663,7 +17663,7 @@
               ],
               "optimizationBailout": [],
               "depth": 13,
-              "source": "import \"core-js/modules/es.string.starts-with.js\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nexport default {\n  props: {\n    url: {\n      type: String,\n      required: false,\n      default: '#url'\n    },\n    title: {\n      type: String,\n      required: false,\n      default: null\n    },\n    click: {\n      type: Function,\n      default: function _default() {}\n    },\n    target: {\n      type: String,\n      required: false,\n      default: '_blank'\n    }\n  },\n  computed: {\n    isExternal: function isExternal() {\n      return /^(http(s)?|ftp):\\/\\//.test(this.url) || this.url.startsWith('#');\n    }\n  }\n};"
+              "source": "import \"core-js/modules/es.string.starts-with.js\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nexport default {\n  props: {\n    url: {\n      type: String,\n      required: false,\n      default: '#url'\n    },\n    title: {\n      type: String,\n      required: false,\n      default: null\n    },\n    click: {\n      type: Function,\n      default: function _default() {\n        /* empty */\n      }\n    },\n    target: {\n      type: String,\n      required: false,\n      default: '_blank'\n    }\n  },\n  computed: {\n    isExternal: function isExternal() {\n      return /^(http(s)?|ftp):\\/\\//.test(this.url) || this.url.startsWith('#');\n    }\n  }\n};"
             }
           ],
           "filteredModules": 0
@@ -20780,7 +20780,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -20789,7 +20789,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -20798,7 +20798,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -20807,7 +20807,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -20816,7 +20816,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony import specifier",
@@ -20825,7 +20825,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony import specifier",
@@ -20834,7 +20834,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony import specifier",
@@ -20843,7 +20843,7 @@
         },
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony import specifier",
@@ -30556,7 +30556,7 @@
         "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./example/custom-element/store sync \\.js$ (referenced with context element)"
       ],
       "depth": 10,
-      "source": "export var state = function state() {\n  return {\n    value: true\n  };\n};\nexport var mutations = {\n  value: function value(state, data) {\n    state.value = Boolean(data);\n  }\n};\nexport var getters = {\n  value: function value(state) {\n    return state.value;\n  }\n};\nexport var actions = {\n  setValue: function setValue(context, toggle) {\n    context.commit('value', toggle);\n  }\n};"
+      "source": "export var state = function state() {\n  return {\n    value: true\n  };\n};\nexport var mutations = {\n  value: function value(scope, data) {\n    scope.value = Boolean(data);\n  }\n};\nexport var getters = {\n  value: function value(scope) {\n    return scope.value;\n  }\n};\nexport var actions = {\n  setValue: function setValue(context, toggle) {\n    context.commit('value', toggle);\n  }\n};"
     },
     {
       "id": 147,
@@ -32140,7 +32140,7 @@
       "reasons": [
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -32349,7 +32349,7 @@
       "reasons": [
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -32792,7 +32792,7 @@
       "reasons": [
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -32961,7 +32961,7 @@
       "reasons": [
         {
           "moduleId": 163,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
           "module": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "moduleName": "./example/components/organisms/ViewHeader.vue + 19 modules",
           "type": "harmony side effect evaluation",
@@ -33061,11 +33061,11 @@
     },
     {
       "id": 163,
-      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue d082a6a41d174a73fe06b6c12688bfc1",
+      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/organisms/ViewHeader.vue 8e85437f4cb8964b330f2777ac5aefe8",
       "name": "./example/components/organisms/ViewHeader.vue + 19 modules",
       "index": 163,
       "index2": 195,
-      "size": 11158,
+      "size": 11185,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -34723,12 +34723,12 @@
           ],
           "optimizationBailout": [],
           "depth": 11,
-          "source": "import { render, staticRenderFns } from \"./LinkTo.vue?vue&type=template&id=79e7369a&\"\nimport script from \"./LinkTo.vue?vue&type=script&lang=js&\"\nexport * from \"./LinkTo.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
+          "source": "import { render, staticRenderFns } from \"./LinkTo.vue?vue&type=template&id=0ae1b75c&\"\nimport script from \"./LinkTo.vue?vue&type=script&lang=js&\"\nexport * from \"./LinkTo.vue?vue&type=script&lang=js&\"\n\n\n/* normalize component */\nimport normalizer from \"!../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js\"\nvar component = normalizer(\n  script,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  null,\n  null\n  \n)\n\nexport default component.exports"
         },
         {
           "id": null,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-          "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+          "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
           "index": 182,
           "index2": 176,
           "size": 274,
@@ -34813,7 +34813,7 @@
               "module": "./example/components/atoms/LinkTo.vue",
               "moduleName": "./example/components/atoms/LinkTo.vue",
               "type": "harmony side effect evaluation",
-              "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+              "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "loc": "1:0-85"
             },
             {
@@ -34822,7 +34822,7 @@
               "module": "./example/components/atoms/LinkTo.vue",
               "moduleName": "./example/components/atoms/LinkTo.vue",
               "type": "harmony import specifier",
-              "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+              "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "loc": "10:2-8"
             },
             {
@@ -34831,7 +34831,7 @@
               "module": "./example/components/atoms/LinkTo.vue",
               "moduleName": "./example/components/atoms/LinkTo.vue",
               "type": "harmony import specifier",
-              "userRequest": "./LinkTo.vue?vue&type=template&id=79e7369a&",
+              "userRequest": "./LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "loc": "11:2-17"
             }
           ],
@@ -34845,7 +34845,7 @@
           ],
           "optimizationBailout": [],
           "depth": 12,
-          "source": "export * from \"-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&\""
+          "source": "export * from \"-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&\""
         },
         {
           "id": null,
@@ -34978,8 +34978,8 @@
         },
         {
           "id": null,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-          "name": "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+          "name": "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
           "index": 183,
           "index2": 175,
           "size": 506,
@@ -34988,9 +34988,9 @@
           "optional": false,
           "prefetched": false,
           "chunks": [],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
           "issuerId": null,
-          "issuerName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+          "issuerName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
           "issuerPath": [
             {
               "id": 88,
@@ -35054,8 +35054,8 @@
             },
             {
               "id": null,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&"
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "name": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&"
             }
           ],
           "failed": false,
@@ -35065,20 +35065,20 @@
           "reasons": [
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "type": "harmony side effect evaluation",
-              "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&",
+              "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "loc": "1:0-274"
             },
             {
               "moduleId": null,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
-              "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=79e7369a&",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/loaders/pitcher.js??ref--4!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/@nuxt/components/dist/loader.js??ref--0-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "module": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
+              "moduleName": "./example/components/atoms/LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "type": "harmony export imported specifier",
-              "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=79e7369a&",
+              "userRequest": "-!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/@nuxt/components/dist/loader.js??ref--0-0!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LinkTo.vue?vue&type=template&id=0ae1b75c&",
               "loc": "1:0-274"
             }
           ],
@@ -35100,7 +35100,7 @@
           "name": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/atoms/LinkTo.vue?vue&type=script&lang=js&",
           "index": 185,
           "index2": 181,
-          "size": 626,
+          "size": 653,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -35226,7 +35226,7 @@
           ],
           "optimizationBailout": [],
           "depth": 13,
-          "source": "import \"core-js/modules/es.string.starts-with.js\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nexport default {\n  props: {\n    url: {\n      type: String,\n      required: false,\n      default: '#url'\n    },\n    title: {\n      type: String,\n      required: false,\n      default: null\n    },\n    click: {\n      type: Function,\n      default: function _default() {}\n    },\n    target: {\n      type: String,\n      required: false,\n      default: '_blank'\n    }\n  },\n  computed: {\n    isExternal: function isExternal() {\n      return /^(http(s)?|ftp):\\/\\//.test(this.url) || this.url.startsWith('#');\n    }\n  }\n};"
+          "source": "import \"core-js/modules/es.string.starts-with.js\";\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\nexport default {\n  props: {\n    url: {\n      type: String,\n      required: false,\n      default: '#url'\n    },\n    title: {\n      type: String,\n      required: false,\n      default: null\n    },\n    click: {\n      type: Function,\n      default: function _default() {\n        /* empty */\n      }\n    },\n    target: {\n      type: String,\n      required: false,\n      default: '_blank'\n    }\n  },\n  computed: {\n    isExternal: function isExternal() {\n      return /^(http(s)?|ftp):\\/\\//.test(this.url) || this.url.startsWith('#');\n    }\n  }\n};"
         }
       ],
       "filteredModules": 0
