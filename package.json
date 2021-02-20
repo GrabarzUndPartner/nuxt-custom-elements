@@ -21,10 +21,7 @@
       "email": "lammpee@gmail.de"
     }
   ],
-  "files": [
-    "lib"
-  ],
-  "main": "lib/module.js",
+  "main": "index.js",
   "scripts": {
     "postinstall": "node ./install.js",
     "postversion": "cp -r ./package.json ..",
