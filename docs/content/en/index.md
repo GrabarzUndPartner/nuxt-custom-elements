@@ -4,8 +4,8 @@ description: ''
 position: 11
 category: ''
 features:
-  - using modern and client build
-  - build your own widgets with components
+  - Using modern and client build
+  - Build your own widgets with components
 ---
 
 <!-- <img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
