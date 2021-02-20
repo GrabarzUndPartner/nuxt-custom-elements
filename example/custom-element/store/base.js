@@ -4,14 +4,14 @@ export const state = () => ({
 });
 
 export const mutations = {
-  value (state, data) {
-    state.value = Boolean(data);
+  value (scope, data) {
+    scope.value = Boolean(data);
   }
 };
 
 export const getters = {
-  value (state) {
-    return state.value;
+  value (scope) {
+    return scope.value;
   }
 };
 

@@ -4,11 +4,9 @@ const app = express();
 app.disable('x-powered-by');
 
 const dist = getDist();
-const host = getHost();
-const port = getPort();
 
 app.use(express.static(dist));
-app.listen(port, host, function () {
+app.listen(getPort(), getHost(), function () {
   const { address, port } = this.address();
   // eslint-disable-next-line no-console
   console.log(`server listening on http://${address}:${port} ; dist: ${dist}`);

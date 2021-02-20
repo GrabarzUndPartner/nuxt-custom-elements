@@ -34,7 +34,7 @@ export default {
     },
     click: {
       type: Function,
-      default () {}
+      default () { /* empty */ }
     },
     target: {
       type: String,
