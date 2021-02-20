@@ -36,7 +36,7 @@ function test (modern = true) {
 
   afterAll(async () => {
     await Promise.all(browsers.map(browser => browser.close()));
-    await new Promise(resolve => server.close(r));
+    await new Promise(resolve => server.close(resolve));
   });
 
   setupTest({
