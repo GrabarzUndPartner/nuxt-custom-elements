@@ -32,7 +32,7 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 For cross-browser [compatibility](https://github.com/ungap/custom-elements#compatibility) (IE11+) the `client` build uses the Polyfill [custom-elements](https://github.com/ungap/custom-elements)
 
-> Polyfill not included in the `modern` build, optional include by option `modernPolyfill` ([Learn more](#)).
+> Polyfill not included in the `modern` build, optional include by option `modernPolyfill` ([Learn more](https://nuxt-custom-elements.grabarzundpartner.dev/options/#modernpolyfill)).
 
 ## Development
 

@@ -5,5 +5,5 @@
   "baseBranches": [
     "develop"
   ],
-  "automerge": true
+  "automerge": false
 }
