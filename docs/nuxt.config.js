@@ -3,10 +3,6 @@ import nuxtCustomElementsPkg from '../package.json';
 
 export default withDocus({
 
-  env: {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN
-  },
-
   docus: {
     colors: {
       primary: '#51bbaf',
