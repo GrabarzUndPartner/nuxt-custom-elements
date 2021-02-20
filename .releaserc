@@ -1,4 +1,11 @@
 {
+  "branches": [
+    {
+      "name": "main",
+      "channel": "latest",
+      "prerelease": false
+    }
+  ],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -10,12 +17,11 @@
       }
     ],
     [
-      "@semantic-release/exec",
+      "@semantic-release/npm",
       {
-        "verifyReleaseCmd": "echo '{\"version\": \"${nextRelease.version}\", \"branch\": \"${options.branch}\", \"date\": \"${Date.now()}\"}' > release.json"
+        "pkgRoot": "./publish"
       }
     ],
-    "@semantic-release/npm",
     [
       "@semantic-release/git",
       {
