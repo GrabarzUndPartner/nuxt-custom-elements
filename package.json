@@ -26,18 +26,24 @@
   ],
   "main": "lib/module.js",
   "scripts": {
+    "postinstall": "node ./install.js",
+    "postversion": "cp -r ./package.json ..",
     "dev": "nuxt example",
     "generate": "nuxt generate --config-file example/nuxt.config.js",
     "build": "nuxt build --config-file example/nuxt.config.js",
     "start:build": "npm run build && npm run express-server",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint --ext .js,.vue example lib test",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:es": "eslint --ext .js,.vue .",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
+    "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
     "express-server": "node ./tools/express-server.js --dist dist",
     "test": "npm run lint && jest",
     "jest": "jest"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.12.17",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "@ungap/custom-elements": "0.1.15",
     "change-case": "4.1.2",
     "vue-custom-element": "3.2.14"
@@ -50,7 +56,7 @@
     "@nuxt/test-utils": "0.1.3",
     "@nuxtjs/eslint-config": "5.0.0",
     "babel-eslint": "10.1.0",
-    "babel-jest": "26.6.3",
+    "babel-jest": "^26.6.3",
     "core-js": "3.8.3",
     "eslint": "7.20.0",
     "eslint-formatter-json-relative": "^0.1.0",
@@ -69,8 +75,5 @@
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-config-standard": "20.0.0",
     "vue-i18n": "8.22.4"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
