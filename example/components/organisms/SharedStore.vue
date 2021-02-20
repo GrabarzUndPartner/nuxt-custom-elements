@@ -13,15 +13,15 @@
 export default {
   computed: {
     storeValue () {
-      return this.$store.getters['base/value']
+      return this.$store.getters['base/value'];
     }
   },
   methods: {
     onClick () {
-      this.$store.dispatch('base/setValue', !this.storeValue)
+      this.$store.dispatch('base/setValue', !this.storeValue);
     }
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

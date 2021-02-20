@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import AtomLinkTo from '@/components/atoms/LinkTo'
+import AtomLinkTo from '@/components/atoms/LinkTo';
 
 export default {
   components: {
@@ -27,34 +27,34 @@ export default {
     type: {
       type: String,
       default () {
-        return null
+        return null;
       }
     },
     list: {
       type: Array,
       default () {
-        return []
+        return [];
       }
     }
   },
   computed: {
     styleClasses () {
-      const classes = {}
-      classes[`type--${this.type}`] = this.type
-      return classes
+      const classes = {};
+      classes[`type--${this.type}`] = this.type;
+      return classes;
     }
   },
   methods: {
     getUrl (item) {
       if ('$i18n' in this && this.$i18n && 'localePath' in this.$i18n) {
         // use when nuxtI18n exists
-        this.localePath(item.url)
+        this.localePath(item.url);
       } else {
-        return item.url
+        return item.url;
       }
     }
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import AtomHeadline from '@/components/atoms/Headline'
-import MoleculeLinkList from '@/components/molecules/LinkList'
+import AtomHeadline from '@/components/atoms/Headline';
+import MoleculeLinkList from '@/components/molecules/LinkList';
 export default {
   components: {
     AtomHeadline,
@@ -42,7 +42,7 @@ export default {
           { title: 'Link 1.', url: '#link-1', target: '_self' },
           { title: 'Link 2.', url: '#link-2', target: '_self' },
           { title: 'Link 3.', url: '#link-3', target: '_self' }
-        ]
+        ];
       }
     }
   },
@@ -52,10 +52,10 @@ export default {
         overline: null,
         headline: this.title,
         subline: null
-      }
+      };
     }
   }
-}
+};
 </script>
 
 <style lang="postcss" scoped>

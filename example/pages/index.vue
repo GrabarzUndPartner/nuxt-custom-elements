@@ -30,13 +30,13 @@
 
 <script>
 
-import Vue from 'vue'
+import Vue from 'vue';
 
 Vue.config.ignoredElements = [
   'custom-element-app-abstract',
   'custom-element-app-hash',
   'custom-element-app-i18n'
-]
+];
 
 export default {
   layout: 'blank',
@@ -47,14 +47,14 @@ export default {
       data: {
         script: 'tag'
       }
-    }
+    };
   },
   created () {
-    this.$registerCustomElementsEntry('component-app-abstract')
-    this.$registerCustomElementsEntry('component-app-hash')
-    this.$registerCustomElementsEntry('component-app-i18n')
+    this.$registerCustomElementsEntry('component-app-abstract');
+    this.$registerCustomElementsEntry('component-app-hash');
+    this.$registerCustomElementsEntry('component-app-i18n');
   }
-}
+};
 </script>
 
 <style lang="postcss">

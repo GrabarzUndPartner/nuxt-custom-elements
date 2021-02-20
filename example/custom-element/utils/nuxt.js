@@ -1,7 +1,7 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
 function isProduction () {
-  return process.env.NODE_ENV === 'production'
+  return process.env.NODE_ENV === 'production';
 }
 
 /**
@@ -11,6 +11,6 @@ export function setup () {
   if (isProduction()) {
     Vue.component('NuxtLink', {
       extends: Vue.component('RouterLink')
-    })
+    });
   }
 }

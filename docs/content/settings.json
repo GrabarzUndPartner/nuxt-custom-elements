@@ -1,0 +1,9 @@
+{
+  "title": "Nuxt Custom-Elements",
+  "url": "https://nuxt-custom-elements.grabarzundpartner.dev/",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "GrabarzUndPartner/nuxt-custom-elements"
+}

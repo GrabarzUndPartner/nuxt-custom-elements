@@ -4,4 +4,4 @@ module.exports = {
     'pre-commit': 'yarn lint',
     'pre-push': 'yarn lint && npx branch-name-lint .branchlintrc'
   }
-}
+};
