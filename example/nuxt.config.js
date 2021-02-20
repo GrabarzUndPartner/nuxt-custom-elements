@@ -1,7 +1,7 @@
-const { resolve } = require('upath')
-const repository = require('../package.json').repository
-const isDev = process.env.NODE_ENV === 'development'
-const isTest = process.env.NODE_ENV === 'test'
+const { resolve } = require('upath');
+const repository = require('../package.json').repository;
+const isDev = process.env.NODE_ENV === 'development';
+const isTest = process.env.NODE_ENV === 'test';
 
 module.exports = {
   dev: isDev,
@@ -12,6 +12,10 @@ module.exports = {
   rootDir: resolve(__dirname, '..'),
   buildDir: resolve(__dirname, '.nuxt'),
   srcDir: __dirname,
+
+  server: {
+    port: getPort()
+  },
 
   render: {
     resourceHints: false
@@ -25,7 +29,7 @@ module.exports = {
 
     babel: {
       presets ({ isServer, isModern }) {
-        const targets = isServer ? { node: 'current' } : { ie: 11 }
+        const targets = isServer ? { node: 'current' } : { ie: 11 };
         return [
           [
             require.resolve('@nuxt/babel-preset-app-edge'), {
@@ -34,7 +38,7 @@ module.exports = {
               corejs: { version: 3 }
             }
           ]
-        ]
+        ];
       }
     },
 
@@ -56,135 +60,139 @@ module.exports = {
     base: getBasePath()
   },
 
-  modules: [
-    [
-      resolve(__dirname, '..'), {
-        analyzer: !isTest,
-        modern: true,
-        modernPolyfill: true,
-        webpackOutput: {
-          publicPath: getPublicPath()
-        },
-        entries: [
+  customElements: {
+    analyzer: !isTest,
+    modern: true,
+    modernPolyfill: true,
+    webpackOutput: {
+      publicPath: getPublicPath()
+    },
+    entries: [
+      ...((!isTest && [{
+        name: 'ComponentAppI18n',
+        tags: [
           {
-            name: 'ComponentAppI18n',
-            tags: [
-              {
-                async: false,
-                name: 'CustomElementAppI18n',
-                path: '@/components/apps/AppI18n',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
+            async: false,
+            name: 'CustomElementAppI18n',
+            path: '@/components/apps/AppI18n',
+            options: {
+              props: {
+                base: './'
               }
-            ]
+            }
+          }
+        ]
+      },
+      {
+        name: 'ComponentAppAbstract',
+        tags: [
+          {
+            async: false,
+            name: 'CustomElementAppAbstract',
+            path: '@/components/apps/AppAbstract',
+            options: {
+              props: {
+                base: './'
+              }
+            }
+          }
+        ]
+      },
+      {
+        name: 'ComponentAppHash',
+        tags: [
+          {
+            async: false,
+            name: 'CustomElementAppHash',
+            path: '@/components/apps/AppHash',
+            options: {
+              props: {
+                base: './'
+              }
+            }
+          }
+        ]
+      },
+      {
+        name: 'ComponentAppHistory',
+        tags: [
+          {
+            async: false,
+            name: 'CustomElementAppHistory',
+            path: '@/components/apps/AppHistory',
+            options: {
+              props: {
+                base: './'
+              }
+            }
+          }
+        ]
+      }]) || []),
+      {
+        name: 'ComponentAppBundle',
+        tags: [
+          {
+            async: true,
+            name: 'CustomElementAppI18n',
+            path: '@/components/apps/AppI18n',
+            options: {
+              props: {
+                base: './'
+              }
+            }
           },
           {
-            name: 'ComponentAppAbstract',
-            tags: [
-              {
-                async: false,
-                name: 'CustomElementAppAbstract',
-                path: '@/components/apps/AppAbstract',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
+            async: true,
+            name: 'CustomElementAppAbstract',
+            path: '@/components/apps/AppAbstract',
+            options: {
+              props: {
+                base: './'
               }
-            ]
+            }
           },
           {
-            name: 'ComponentAppHash',
-            tags: [
-              {
-                async: false,
-                name: 'CustomElementAppHash',
-                path: '@/components/apps/AppHash',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
+            async: true,
+            name: 'CustomElementAppHash',
+            path: '@/components/apps/AppHash',
+            options: {
+              props: {
+                base: './'
               }
-            ]
+            }
           },
           {
-            name: 'ComponentAppHistory',
-            tags: [
-              {
-                async: false,
-                name: 'CustomElementAppHistory',
-                path: '@/components/apps/AppHistory',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
+            async: true,
+            name: 'CustomElementAppHistory',
+            path: '@/components/apps/AppHistory',
+            options: {
+              props: {
+                base: './'
               }
-            ]
-          },
-          {
-            name: 'ComponentAppBundle',
-            tags: [
-              {
-                async: true,
-                name: 'CustomElementAppI18n',
-                path: '@/components/apps/AppI18n',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
-              },
-              {
-                async: true,
-                name: 'CustomElementAppAbstract',
-                path: '@/components/apps/AppAbstract',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
-              },
-              {
-                async: true,
-                name: 'CustomElementAppHash',
-                path: '@/components/apps/AppHash',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
-              },
-              {
-                async: true,
-                name: 'CustomElementAppHistory',
-                path: '@/components/apps/AppHistory',
-                options: {
-                  props: {
-                    base: './'
-                  }
-                }
-              }
-            ]
+            }
           }
         ]
       }
     ]
+  },
+
+  modules: [
+    [resolve(__dirname, '..')]
   ]
-}
+};
 
 function getBasePath () {
-  return process.env.npm_config_base || process.env.BASE_PATH || '/'
+  return process.env.npm_config_base || process.env.BASE_PATH || '/';
 }
 
 function getPublicPath () {
-  return process.env.npm_config_base || process.env.PUBLIC_PATH || './'
+  return process.env.npm_config_base || process.env.PUBLIC_PATH || './';
 }
 
 function getDistPath () {
-  return process.env.npm_config_dist || process.env.DIST_PATH || 'dist'
+  return process.env.npm_config_dist || process.env.DIST_PATH || 'dist';
+}
+
+function getPort () {
+  return process.env.npm_config_port || process.env.PORT || 3000;
 }

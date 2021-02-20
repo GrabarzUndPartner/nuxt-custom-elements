@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'CustomElementRouterView'
-}
+};
 </script>
 
 <style lang="postcss" scoped>

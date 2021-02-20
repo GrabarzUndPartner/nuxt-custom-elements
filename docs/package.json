@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-custum-elements-docs",
+  "version": "1.0.0-beta.x",
+  "description": "Publish your Components as a vue-custom-element standalone build.",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Thorn-Welf Walli",
+      "email": "lammpee@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrabarzUndPartner/nuxt-custom-elements"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "docus": "0.0.8",
+    "nuxt": "2.15.0",
+    "tailwindcss": "2.0.3"
+  }
+}

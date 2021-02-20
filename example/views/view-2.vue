@@ -9,7 +9,7 @@
 
 <script>
 
-import AtomHeadline from '@/components/atoms/Headline'
+import AtomHeadline from '@/components/atoms/Headline';
 
 export default {
   components: { AtomHeadline },
@@ -20,9 +20,9 @@ export default {
         headline: 'View 2',
         subline: null
       }
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="postcss">

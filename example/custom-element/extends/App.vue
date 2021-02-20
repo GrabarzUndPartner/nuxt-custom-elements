@@ -1,12 +1,12 @@
 <script>
-import 'core-js/features/object/assign'
-import 'core-js/features/object/entries'
-import 'core-js/features/array/from'
-import 'core-js/features/promise'
-import store from '../utils/store'
-import { setup } from '../utils/nuxt'
+import 'core-js/features/object/assign';
+import 'core-js/features/object/entries';
+import 'core-js/features/array/from';
+import 'core-js/features/promise';
+import store from '../utils/store';
+import { setup } from '../utils/nuxt';
 
-setup()
+setup();
 
 export default {
 
@@ -15,10 +15,10 @@ export default {
     basePath: {
       type: String,
       default () {
-        return '/'
+        return '/';
       }
     }
   }
 
-}
+};
 </script>

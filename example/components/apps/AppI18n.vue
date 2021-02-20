@@ -12,11 +12,11 @@
 
 <script>
 
-import AppExtend from '@/custom-element/extends/App'
-import Vue from 'vue'
-import VueI18n from 'vue-i18n'
+import AppExtend from '@/custom-element/extends/App';
+import Vue from 'vue';
+import VueI18n from 'vue-i18n';
 
-Vue.use(VueI18n)
+Vue.use(VueI18n);
 
 const messages = {
   de: {
@@ -34,12 +34,12 @@ const messages = {
       hello: 'こんにちは、世界'
     }
   }
-}
+};
 
 const i18n = new VueI18n({
   locale: 'en',
   messages
-})
+});
 
 export default {
 
@@ -60,22 +60,19 @@ export default {
               class: locale === this.$i18n.locale ? 'router-link-exact-active router-link-active' : '',
               title: locale,
               url: `#${locale}`,
-              click: (e) => { e.preventDefault(); this.$i18n.locale = locale; return false }
-            }
+              click: (e) => { e.preventDefault(); this.$i18n.locale = locale; return false; }
+            };
           })
         }
-      }
+      };
     },
 
     header () {
-      return this.content.header
+      return this.content.header;
     }
-  },
-  mounted () {
-    console.log()
   }
 
-}
+};
 
 </script>
 
