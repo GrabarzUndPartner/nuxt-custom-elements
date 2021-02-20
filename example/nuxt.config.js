@@ -191,7 +191,7 @@ function getBasePath () {
 }
 
 function getPublicPath () {
-  return process.env.npm_config_base || process.env.PUBLIC_PATH || './';
+  return process.env.npm_config_public_path || process.env.PUBLIC_PATH || './';
 }
 
 function getDistPath () {
