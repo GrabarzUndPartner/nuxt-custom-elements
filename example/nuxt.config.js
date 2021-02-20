@@ -176,6 +176,11 @@ module.exports = {
     ]
   },
 
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module'
+  ],
+
   modules: [
     [resolve(__dirname, '..')]
   ]
