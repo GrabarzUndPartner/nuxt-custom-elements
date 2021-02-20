@@ -2,17 +2,17 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "6a88118ddc8f9cae1cbd",
-  "time": 2118,
-  "builtAt": 1613858785150,
-  "publicPath": "/example/",
+  "hash": "e2eccac18e559c318c6c",
+  "time": 2397,
+  "builtAt": 1613859194927,
+  "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
     "component-app-i18n": "component-app-i18n.modern.js"
   },
   "assets": [
     {
-      "name": "1.6a88118ddc8f9cae1cbd.js",
+      "name": "1.e2eccac18e559c318c6c.js",
       "size": 5822,
       "chunks": [
         1
@@ -25,7 +25,7 @@
     },
     {
       "name": "component-app-i18n.modern.js",
-      "size": 159187,
+      "size": 159180,
       "chunks": [
         0
       ],
@@ -37,7 +37,7 @@
     },
     {
       "name": "index.html",
-      "size": 636,
+      "size": 622,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -82,7 +82,7 @@
       "files": [
         "component-app-i18n.modern.js"
       ],
-      "hash": "75bc07811e4067cc6980",
+      "hash": "d57dac58ab3f7ba51ad6",
       "siblings": [],
       "parents": [],
       "children": [
@@ -13446,7 +13446,7 @@
       "size": 17174,
       "names": [],
       "files": [
-        "1.6a88118ddc8f9cae1cbd.js"
+        "1.e2eccac18e559c318c6c.js"
       ],
       "hash": "3e526656df147371e5d7",
       "siblings": [],
@@ -32784,7 +32784,7 @@
     {
       "errors": [],
       "warnings": [],
-      "publicPath": "/example/",
+      "publicPath": "./",
       "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
       "assetsByChunkName": {
         "HtmlWebpackPlugin_0": "__child-HtmlWebpackPlugin_0"
@@ -32792,7 +32792,7 @@
       "assets": [
         {
           "name": "__child-HtmlWebpackPlugin_0",
-          "size": 4481,
+          "size": 4474,
           "chunks": [
             0
           ],
@@ -32841,7 +32841,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "5b1c527474559b58868a",
+          "hash": "487fea6d0e3072ed9e8f",
           "siblings": [],
           "parents": [],
           "children": [],
