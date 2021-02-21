@@ -67,6 +67,7 @@ module.exports = {
     webpackOutput: {
       publicPath: getPublicPath()
     },
+    webpackPublicPathInject: () => global.customPublicPath,
     entries: [
       ...((!isTest && [{
         name: 'ComponentAppI18n',
@@ -77,7 +78,6 @@ module.exports = {
             path: '@/components/apps/AppI18n',
             options: {
               props: {
-                base: './'
               }
             }
           }

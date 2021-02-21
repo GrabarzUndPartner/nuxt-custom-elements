@@ -32,7 +32,7 @@ export default {
     content () {
       return {
         header: {
-          title: 'App with router mode "history"',
+          title: this.title || 'App with router mode "history"',
           linksTitle: 'Views:',
           navigation: [
             { title: 'Home', url: '/' },
