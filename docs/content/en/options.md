@@ -13,7 +13,7 @@ category: Guide
 Sets destination for custom-element build.
 
 ## `analyzer`
-- Type: `Boolean || Object`
+- Type: `Boolean`, `Object`
   - Default: `false`
 
 Sets `true` for default module config or `object` with custom `webpack-bundle-analyzer` configuration.
@@ -100,6 +100,7 @@ Value will be converted to ParamCase later.
 Name of the Tag.<br>Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`
 #### `async`
 - Type: `Boolean`
+  - Default: `false`
 
 Components are loaded asynchronously.<br><br>If there is more than one entry the async will lead to unwanted webpack chunk splitting.
 #### `path`
@@ -107,7 +108,8 @@ Components are loaded asynchronously.<br><br>If there is more than one entry the
 
  Path to the component to be called by the tag. 
 #### `options`
-- Type: `Function, Object`
+- Type: `Function`, `Object`
+  - Default: `undefined` 
 
 Options from custom-element.  
 
