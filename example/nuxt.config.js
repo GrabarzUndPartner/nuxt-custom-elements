@@ -78,7 +78,6 @@ module.exports = {
             path: '@/components/apps/AppI18n',
             options: {
               props: {
-                base: './'
               }
             }
           }
