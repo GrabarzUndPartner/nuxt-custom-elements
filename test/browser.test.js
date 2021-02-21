@@ -46,56 +46,7 @@ function test (modern = true) {
     fixture: '../example',
     config: {
       modern: modern ? 'client' : false,
-      buildDir,
-
-      customElements: {
-        entries: [{
-          name: 'ComponentAppBundle',
-          tags: [
-            {
-              async: true,
-              name: 'CustomElementAppI18n',
-              path: '@/components/apps/AppI18n',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppAbstract',
-              path: '@/components/apps/AppAbstract',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppHash',
-              path: '@/components/apps/AppHash',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppHistory',
-              path: '@/components/apps/AppHistory',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            }
-          ]
-        }
-        ]
-      }
+      buildDir
     }
   });
 
