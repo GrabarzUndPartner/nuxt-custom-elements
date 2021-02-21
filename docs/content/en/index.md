@@ -5,7 +5,7 @@ position: 11
 category: ''
 features:
   - Using modern and client build
-  - Build your own widgets with components
+  - Export components as widgets
 ---
 
 <!-- <img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
