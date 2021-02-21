@@ -53,7 +53,7 @@ export default {
     content () {
       return {
         header: {
-          title: 'App with i18n',
+          title: this.title || 'App with i18n',
           linksTitle: 'Locales:',
           navigation: this.$i18n.availableLocales.map((locale) => {
             return {

@@ -14,9 +14,11 @@ export default {
   props: {
     basePath: {
       type: String,
-      default () {
-        return '/';
-      }
+      default: '/'
+    },
+    title: {
+      type: String,
+      default: null
     }
   }
 
