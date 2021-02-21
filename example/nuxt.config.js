@@ -141,6 +141,7 @@ module.exports = {
                   base: './'
                 },
                 vueInstanceCreatedCallback () {
+                  // eslint-disable-next-line no-console
                   console.info('constructorCallback', this);
                 }
               };
