@@ -67,6 +67,7 @@ module.exports = {
     webpackOutput: {
       publicPath: getPublicPath()
     },
+    webpackPublicPathInject: () => global.customPublicPath,
     entries: [
       ...((!isTest && [{
         name: 'ComponentAppI18n',
