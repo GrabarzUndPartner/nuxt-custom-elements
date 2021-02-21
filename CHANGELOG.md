@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.6.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.1...v1.6.0) (2021-02-21)
+
+
+### Features
+
+* **tag-option:** remove shadow prop; add function options ([9a4a4b7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/9a4a4b76410bffe5ece8feec6047f0eb201b528f))
+
 ## [1.5.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.0...v1.5.1) (2021-02-20)
 
 
