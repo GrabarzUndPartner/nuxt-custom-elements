@@ -29,6 +29,34 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 ## Preview
 
+
+### Live Example
+
+<client-only>
+  <custom-element-app-i18n title="Live Example"></custom-element-app-i18n>
+</client-only>
+
+<script type=text/javascript>
+  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/';
+</script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.modern.js" type="module"></script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.client.js" nomodule></script>
+
+
+#### Code
+
+```html
+<custom-element-app-i18n title="Live Example"></custom-element-app-i18n>
+<script type=text/javascript>
+  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/';
+</script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.modern.js" type="module"></script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.client.js" nomodule></script>
+<script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+```
+
+### Links
+
 - [ComponentAppBundle](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-bundle/)
   - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-bundle/client.html)
   - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-bundle/modern.html)
