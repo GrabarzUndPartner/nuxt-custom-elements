@@ -4,6 +4,8 @@ dist
 .nuxt
 coverage
 reports
+sw.*
+
 
 # Plugin
 lib/plugin.js

@@ -11,9 +11,9 @@ components:
 
 ---
 
-First of all, components that are to be exported as custom elements must be specified in the nuxt.config in the module settings.
+First of all, components that are to be exported as custom elements must be specified in the `nuxt.config` in the module settings.
 
-```javascript
+```javascript[nuxt.config]
 {
   customElements: {
     entries: [
@@ -40,9 +40,51 @@ Finally a `nuxt generate` or `nuxt build` must be executed. The custom-element b
 
 ## Integrations
 
+### Public path on the fly
+
+You can inject the public paht from webpack build over a function, that the called client side.
+
+In this example, the variable `window.customPublicPath` is defined before the custom-elements resources are loaded.
+
+```html[index.html]
+
+<custom-app-bundle />
+
+<script type="text/javascript">
+  window.customPublicPath = '/assets/custom-app-bundle/'
+</script>
+
+<script src="/assets/component-app-bundle/component-app-bundle.client.js"></script>
+``` 
+
+<br>
+
+```javascript[nuxt.config]
+{
+  customElements: {
+    webpackPublicPathInject: () => global.customPublicPath
+  } 
+}
+```
+
+Alternatively, the publicPath can be defined permanently in the [webpack output](/options#webpackoutput) config.
+
+```javascript[nuxt.config]
+{
+  customElements: {
+    webpackOutput: {
+      publicPath: '/assets/component-app-bundle/'
+    } 
+  } 
+}
+```
+
+
 ### Vue i18n, Vue Router and Vuex Store
 
-To integrate `Vue i18n`, `Vue Router` or `Vuex Store`, the plugins must be referenced on the top component (endpoint).
+To integrate `Vue i18n`, `Vue Router` or `Vuex Store`, the plugins must be referenced on the top component (entry tag).  
+
+[Learn more about the Entry](/options#entry) 
 
 All child components have access to `this.$i18n`, `this.$router` and `this.$store`.
 
@@ -124,13 +166,13 @@ export default {
 
 ## Development
 
-To develop a custom component in dev mode, the endpoint must be called in the `create` or `mounted`.
+To develop a custom component in dev mode, the `entry` must be called in the `create` or `mounted`.
 
 [Learn more](/plugin/registerCustomElementsEntry) about use of `$registerCustomElementsEntry`.
 
 ```html
 <script>
-export {
+export default {
   data () {
     return {
       base: '/', // router base
@@ -146,7 +188,7 @@ export {
 </script>
 ```
 
-The custom elements contained in the page template can now be called.
+The custom elements ([entry tags](/options#tag)) contained in the page template can now be called.
 
 ```html
 <template>
@@ -169,5 +211,7 @@ The custom elements contained in the page template can now be called.
 </template>
 ```
 
-> Custom tags must be excluded from the `SSR` build.  
-> Use the `client-only` tag or `ssr: false` in the `nuxt.config`.
+<alert type="warning">
+Custom tags must be excluded from the `SSR` build. 
+Use the `client-only` tag or `ssr: false` in the `nuxt.config`.
+</alert>

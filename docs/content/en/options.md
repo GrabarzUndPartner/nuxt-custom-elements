@@ -107,31 +107,48 @@ Components are loaded asynchronously.<br><br>If there is more than one entry the
 
  Path to the component to be called by the tag. 
 #### `options`
-- Type: `Object`
+- Type: `Function, Object`
 
-Options from Options.  
+Options from custom-element.  
 
+[Learn more](https://github.com/karol-f/vue-custom-element#options)  about `vue-custom-element` options.
 
-### Tag Options
+You can set as `object` or when using functions in options, use `function`.
 
-#### `shadow`
-- Type: `Boolean`
-  - Default: `false` 
-
-Sets `true` if Native Shadow-Dom is to be used. 
-
-For shadow CSS the vue-custom-element property `shadowCSS` must be used. [Learn more](https://github.com/karol-f/vue-custom-element#options)
-
-<alert type="warning">
-CSS from the SingleFile (.vue) cannot be used, this will be included by the `vue-loader` by using the `style-loader`.  
-</alert>
-
-
-#### `props`
-- Type: `Array, Object`
-  - Default: `[]` 
-
-Use array for prop definition and object for default values. 
+```js
+{
+  name: 'ComponentAppBundle',
+  tags: [
+    // with function call
+    {
+      async: true,
+      name: 'CustomElementAppI18n',
+      path: '@/components/apps/AppI18n',
+      options () {
+        return {
+          props: {
+            base: './'
+          },
+          vueInstanceCreatedCallback () {
+            console.info('constructorCallback', this);
+          }
+        };
+      }
+    },
+    // without function call
+    {
+      async: true,
+      name: 'CustomElementAppI18n',
+      path: '@/components/apps/AppI18n',
+      options: {
+        props: {
+          base: './'
+        }
+      }
+    }
+  ]
+}
+```
 
 ## `webpackOutput`
 - Type: `Object`

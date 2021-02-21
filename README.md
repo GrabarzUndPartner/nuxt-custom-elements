@@ -24,7 +24,7 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 ## Features
 
 - Using modern and client build
-- Build your own widgets with components
+- Export components as widgets
 
 📖 &nbsp;&nbsp;[Read more](https://nuxt-custom-elements.grabarzundpartner.dev/)
 

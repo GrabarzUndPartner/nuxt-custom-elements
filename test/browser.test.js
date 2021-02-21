@@ -1,9 +1,9 @@
 
+import { join, resolve as pathResolve } from 'path';
 import { setupTest } from '@nuxt/test-utils';
 import getPort from 'get-port';
 import express from 'express';
-const { join, resolve: pathResolve } = require('path');
-const { chromium, firefox } = require('playwright');
+import { chromium, firefox } from 'playwright';
 
 const CHROMIUM = 0;
 const FIREFOX = 1;
@@ -46,56 +46,7 @@ function test (modern = true) {
     fixture: '../example',
     config: {
       modern: modern ? 'client' : false,
-      buildDir,
-
-      customElements: {
-        entries: [{
-          name: 'ComponentAppBundle',
-          tags: [
-            {
-              async: true,
-              name: 'CustomElementAppI18n',
-              path: '@/components/apps/AppI18n',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppAbstract',
-              path: '@/components/apps/AppAbstract',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppHash',
-              path: '@/components/apps/AppHash',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            },
-            {
-              async: true,
-              name: 'CustomElementAppHistory',
-              path: '@/components/apps/AppHistory',
-              options: {
-                props: {
-                  base: './'
-                }
-              }
-            }
-          ]
-        }
-        ]
-      }
+      buildDir
     }
   });
 
