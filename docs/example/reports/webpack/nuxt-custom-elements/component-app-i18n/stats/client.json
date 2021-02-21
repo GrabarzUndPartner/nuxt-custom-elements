@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "2f7428df92a6a83dcb92",
-  "time": 3867,
-  "builtAt": 1613921512580,
+  "time": 3664,
+  "builtAt": 1613930028107,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
@@ -7036,9 +7036,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "issuerId": 105,
-          "issuerName": "./node_modules/core-js/internals/microtask.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "issuerId": 72,
+          "issuerName": "./node_modules/core-js/internals/task.js",
           "issuerPath": [
             {
               "id": 88,
@@ -7056,9 +7056,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 105,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-              "name": "./node_modules/core-js/internals/microtask.js"
+              "id": 72,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+              "name": "./node_modules/core-js/internals/task.js"
             }
           ],
           "failed": false,
@@ -24630,9 +24630,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-      "issuerId": 105,
-      "issuerName": "./node_modules/core-js/internals/microtask.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+      "issuerId": 72,
+      "issuerName": "./node_modules/core-js/internals/task.js",
       "issuerPath": [
         {
           "id": 88,
@@ -24650,9 +24650,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 105,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "name": "./node_modules/core-js/internals/microtask.js"
+          "id": 72,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "name": "./node_modules/core-js/internals/task.js"
         }
       ],
       "failed": false,
