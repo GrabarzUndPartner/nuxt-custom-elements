@@ -5,5 +5,9 @@
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
   },
-  "github": "GrabarzUndPartner/nuxt-custom-elements"
+  "github": {
+    "repo": "GrabarzUndPartner/nuxt-custom-elements",
+    "branch": "main",
+    "dir": "docs"
+  }
 }
