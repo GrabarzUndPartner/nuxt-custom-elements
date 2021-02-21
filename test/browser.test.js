@@ -1,9 +1,9 @@
 
+import { join, resolve as pathResolve } from 'path';
 import { setupTest } from '@nuxt/test-utils';
 import getPort from 'get-port';
 import express from 'express';
-const { join, resolve: pathResolve } = require('path');
-const { chromium, firefox } = require('playwright');
+import { chromium, firefox } from 'playwright';
 
 const CHROMIUM = 0;
 const FIREFOX = 1;
