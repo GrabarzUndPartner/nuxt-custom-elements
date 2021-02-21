@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.5.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.0...v1.5.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* **sonar:** fix songar bugs ([cd777da](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cd777daf5c64ba4836da70d1f65172c0f174d6ac))
+
 # [1.5.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.2...v1.5.0) (2021-02-18)
 
 

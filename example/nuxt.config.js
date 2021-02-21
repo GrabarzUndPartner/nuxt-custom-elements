@@ -135,10 +135,16 @@ module.exports = {
             async: true,
             name: 'CustomElementAppI18n',
             path: '@/components/apps/AppI18n',
-            options: {
-              props: {
-                base: './'
-              }
+            options () {
+              return {
+                props: {
+                  base: './'
+                },
+                vueInstanceCreatedCallback () {
+                  // eslint-disable-next-line no-console
+                  console.info('constructorCallback', this);
+                }
+              };
             }
           },
           {
