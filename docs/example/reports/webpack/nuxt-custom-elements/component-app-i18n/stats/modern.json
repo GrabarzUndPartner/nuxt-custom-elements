@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "48bb5616b6fd2b7726f2",
-  "time": 2253,
-  "builtAt": 1613864195437,
+  "hash": "b1a36dc3732a725e703f",
+  "time": 2858,
+  "builtAt": 1613921516265,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
@@ -12,7 +12,7 @@
   },
   "assets": [
     {
-      "name": "1.48bb5616b6fd2b7726f2.js",
+      "name": "1.b1a36dc3732a725e703f.js",
       "size": 5822,
       "chunks": [
         1
@@ -25,7 +25,7 @@
     },
     {
       "name": "component-app-i18n.modern.js",
-      "size": 159180,
+      "size": 159170,
       "chunks": [
         0
       ],
@@ -75,14 +75,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 475889,
+      "size": 475870,
       "names": [
         "component-app-i18n"
       ],
       "files": [
         "component-app-i18n.modern.js"
       ],
-      "hash": "95f89fbb97c371ae07a7",
+      "hash": "9bfc5c131be8de8f862c",
       "siblings": [],
       "parents": [],
       "children": [
@@ -620,7 +620,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "13:4-7"
+              "loc": "13:0-3"
             },
             {
               "moduleId": 117,
@@ -629,7 +629,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "14:0-3"
+              "loc": "13:4-7"
             },
             {
               "moduleId": 117,
@@ -647,7 +647,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "14:15-18"
+              "loc": "14:11-14"
             },
             {
               "moduleId": 117,
@@ -656,7 +656,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "15:11-14"
+              "loc": "14:15-18"
             },
             {
               "moduleId": 117,
@@ -12332,7 +12332,7 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
           "index": 3,
           "index2": 129,
-          "size": 87298,
+          "size": 87279,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -12374,7 +12374,7 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js",
               "index": 3,
               "index2": 129,
-              "size": 556,
+              "size": 537,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -12411,7 +12411,7 @@
                 "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./node_modules/@nuxt/components/lib/installComponents.js ./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js (referenced with single entry)"
               ],
               "depth": 1,
-              "source": "import Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"shadow\": false,\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
+              "source": "import Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
             },
             {
               "id": null,
@@ -13446,7 +13446,7 @@
       "size": 17201,
       "names": [],
       "files": [
-        "1.48bb5616b6fd2b7726f2.js"
+        "1.b1a36dc3732a725e703f.js"
       ],
       "hash": "053122d3810ecf4235b0",
       "siblings": [],
@@ -16984,7 +16984,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "13:4-7"
+          "loc": "13:0-3"
         },
         {
           "moduleId": 117,
@@ -16993,7 +16993,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "14:0-3"
+          "loc": "13:4-7"
         },
         {
           "moduleId": 117,
@@ -17011,7 +17011,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "14:15-18"
+          "loc": "14:11-14"
         },
         {
           "moduleId": 117,
@@ -17020,7 +17020,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "15:11-14"
+          "loc": "14:15-18"
         },
         {
           "moduleId": 117,
@@ -28696,7 +28696,7 @@
       "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js + 12 modules",
       "index": 3,
       "index2": 129,
-      "size": 87298,
+      "size": 87279,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -28738,7 +28738,7 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js",
           "index": 3,
           "index2": 129,
-          "size": 556,
+          "size": 537,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -28775,7 +28775,7 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./node_modules/@nuxt/components/lib/installComponents.js ./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.modern.js (referenced with single entry)"
           ],
           "depth": 1,
-          "source": "import Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"shadow\": false,\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
+          "source": "import Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
         },
         {
           "id": null,

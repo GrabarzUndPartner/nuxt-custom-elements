@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "896244213bc2863de5ad",
-  "time": 3235,
-  "builtAt": 1613864192689,
+  "hash": "2f7428df92a6a83dcb92",
+  "time": 3867,
+  "builtAt": 1613921512580,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
@@ -12,7 +12,7 @@
   },
   "assets": [
     {
-      "name": "1.896244213bc2863de5ad.js",
+      "name": "1.2f7428df92a6a83dcb92.js",
       "size": 6846,
       "chunks": [
         1
@@ -25,7 +25,7 @@
     },
     {
       "name": "component-app-i18n.client.js",
-      "size": 167943,
+      "size": 167933,
       "chunks": [
         0
       ],
@@ -75,14 +75,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 505423,
+      "size": 505404,
       "names": [
         "component-app-i18n"
       ],
       "files": [
         "component-app-i18n.client.js"
       ],
-      "hash": "c5d96b24d7d124e0c23d",
+      "hash": "762c84114e8de6d87496",
       "siblings": [],
       "parents": [],
       "children": [
@@ -1123,7 +1123,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "18:0-3"
+              "loc": "17:0-3"
             },
             {
               "moduleId": 149,
@@ -1141,7 +1141,7 @@
               "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
               "type": "harmony import specifier",
               "userRequest": "vue",
-              "loc": "19:11-14"
+              "loc": "18:11-14"
             }
           ],
           "usedExports": [
@@ -7036,9 +7036,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
-          "issuerId": 72,
-          "issuerName": "./node_modules/core-js/internals/task.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
+          "issuerId": 105,
+          "issuerName": "./node_modules/core-js/internals/microtask.js",
           "issuerPath": [
             {
               "id": 88,
@@ -7056,9 +7056,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 72,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
-              "name": "./node_modules/core-js/internals/task.js"
+              "id": 105,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
+              "name": "./node_modules/core-js/internals/microtask.js"
             }
           ],
           "failed": false,
@@ -13094,7 +13094,7 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
           "index": 3,
           "index2": 161,
-          "size": 87743,
+          "size": 87724,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -13136,7 +13136,7 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js",
               "index": 3,
               "index2": 161,
-              "size": 737,
+              "size": 718,
               "cacheable": true,
               "built": true,
               "optional": false,
@@ -13173,7 +13173,7 @@
                 "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./node_modules/@nuxt/components/lib/installComponents.js ./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js (referenced with single entry)"
               ],
               "depth": 1,
-              "source": "import \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.promise.js\";\nimport \"core-js/modules/es.object.assign.js\";\nimport \"core-js/modules/es.promise.finally.js\";\nimport Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"shadow\": false,\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
+              "source": "import \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.promise.js\";\nimport \"core-js/modules/es.object.assign.js\";\nimport \"core-js/modules/es.promise.finally.js\";\nimport Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
             },
             {
               "id": null,
@@ -14208,7 +14208,7 @@
       "size": 20011,
       "names": [],
       "files": [
-        "1.896244213bc2863de5ad.js"
+        "1.2f7428df92a6a83dcb92.js"
       ],
       "hash": "f719bd62aea88f5f834b",
       "siblings": [],
@@ -18717,7 +18717,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "18:0-3"
+          "loc": "17:0-3"
         },
         {
           "moduleId": 149,
@@ -18735,7 +18735,7 @@
           "moduleName": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
           "type": "harmony import specifier",
           "userRequest": "vue",
-          "loc": "19:11-14"
+          "loc": "18:11-14"
         }
       ],
       "usedExports": [
@@ -24630,9 +24630,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
-      "issuerId": 72,
-      "issuerName": "./node_modules/core-js/internals/task.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
+      "issuerId": 105,
+      "issuerName": "./node_modules/core-js/internals/microtask.js",
       "issuerPath": [
         {
           "id": 88,
@@ -24650,9 +24650,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 72,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
-          "name": "./node_modules/core-js/internals/task.js"
+          "id": 105,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
+          "name": "./node_modules/core-js/internals/microtask.js"
         }
       ],
       "failed": false,
@@ -30688,7 +30688,7 @@
       "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js + 12 modules",
       "index": 3,
       "index2": 161,
-      "size": 87743,
+      "size": 87724,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -30730,7 +30730,7 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js",
           "index": 3,
           "index2": 161,
-          "size": 737,
+          "size": 718,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -30767,7 +30767,7 @@
             "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./node_modules/@nuxt/components/lib/installComponents.js ./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js (referenced with single entry)"
           ],
           "depth": 1,
-          "source": "import \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.promise.js\";\nimport \"core-js/modules/es.object.assign.js\";\nimport \"core-js/modules/es.promise.finally.js\";\nimport Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"shadow\": false,\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
+          "source": "import \"core-js/modules/es.array.iterator.js\";\nimport \"core-js/modules/es.promise.js\";\nimport \"core-js/modules/es.object.assign.js\";\nimport \"core-js/modules/es.promise.finally.js\";\nimport Vue from 'vue';\nimport VueCustomElement from 'vue-custom-element';\nimport '@ungap/custom-elements'; // For cross-browser compatibility https://github.com/ungap/custom-elements.\n\nimport Component0 from '@/components/apps/AppI18n';\nVue.use(VueCustomElement);\nVue.customElement('custom-element-app-i18n', typeof Component0 === 'function' ? new Component0().$options : Component0, {\n  \"props\": {\n    \"base\": \"./\"\n  }\n}); // Create missing NuxtLink as RouterLink.\n\nVue.component('NuxtLink', {\n  extends: Vue.component('RouterLink')\n});"
         },
         {
           "id": null,
