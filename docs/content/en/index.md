@@ -52,7 +52,14 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 #### Code
 
 ```html
-<custom-element-app-i18n title="Live Example"></custom-element-app-i18n>
+<custom-element-app-example
+  title="Live Example"
+>
+  <div>
+    Live Example Content
+  </div>
+</custom-element-app-example>
+
 <script type=text/javascript>
   window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/';
 </script>
