@@ -33,14 +33,20 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 ### Live Example
 
 <client-only>
-  <custom-element-app-i18n title="Live Example"></custom-element-app-i18n>
+  <custom-element-app-example
+    title="Live Example"
+  >
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; font-family: sans-serif; font-size: 30px; font-weight: 700;">
+      Live Example Content
+    </div>
+  </custom-element-app-example>
 </client-only>
 
 <script type=text/javascript>
-  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/';
+  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/';
 </script>
-<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.modern.js" type="module"></script>
-<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/component-app-i18n.client.js" nomodule></script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.modern.js" type="module"></script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.client.js" nomodule></script>
 
 
 #### Code

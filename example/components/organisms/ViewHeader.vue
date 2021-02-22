@@ -5,7 +5,7 @@
       tag="div"
       style-type="view-header"
     />
-    <nav>
+    <nav v-if="navigation.length > 0">
       <span>{{ linksTitle }}</span>
       <molecule-link-list
         class="links"

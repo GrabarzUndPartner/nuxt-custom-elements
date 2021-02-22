@@ -127,6 +127,16 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        name: 'ComponentAppExample',
+        tags: [
+          {
+            async: false,
+            name: 'CustomElementAppExample',
+            path: '@/components/apps/AppExample'
+          }
+        ]
       }]) || []),
       {
         name: 'ComponentAppBundle',
@@ -171,6 +181,16 @@ module.exports = {
             async: true,
             name: 'CustomElementAppHistory',
             path: '@/components/apps/AppHistory',
+            options: {
+              props: {
+                base: './'
+              }
+            }
+          },
+          {
+            async: true,
+            name: 'CustomElementAppExample',
+            path: '@/components/apps/AppExample',
             options: {
               props: {
                 base: './'
