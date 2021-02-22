@@ -52,9 +52,7 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 #### Code
 
 ```html
-<custom-element-app-example
-  title="Live Example"
->
+<custom-element-app-example title="Live Example" >
   <div>
     Live Example Content
   </div>
@@ -85,6 +83,3 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 - [ComponentAppHistory](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-history/)
   - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-history/client.html)
   - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-history/modern.html)
-
-
-
