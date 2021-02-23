@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "ae7aa65bcbe52d829446",
-  "time": 3775,
-  "builtAt": 1614015264623,
+  "time": 3582,
+  "builtAt": 1614117388430,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-i18n",
   "assetsByChunkName": {
@@ -689,9 +689,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "issuerId": 77,
-          "issuerName": "./node_modules/core-js/modules/es.object.assign.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -704,9 +704,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -854,9 +854,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/species-constructor.js",
-          "issuerId": 72,
-          "issuerName": "./node_modules/core-js/internals/species-constructor.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterate.js",
+          "issuerId": 28,
+          "issuerName": "./node_modules/core-js/internals/iterate.js",
           "issuerPath": [
             {
               "id": 90,
@@ -869,14 +869,14 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 72,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/species-constructor.js",
-              "name": "./node_modules/core-js/internals/species-constructor.js"
+              "id": 28,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterate.js",
+              "name": "./node_modules/core-js/internals/iterate.js"
             }
           ],
           "failed": false,
@@ -1567,9 +1567,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-          "issuerId": 111,
-          "issuerName": "./node_modules/core-js/internals/object-assign.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+          "issuerId": 106,
+          "issuerName": "./node_modules/core-js/internals/set-species.js",
           "issuerPath": [
             {
               "id": 90,
@@ -1582,14 +1582,14 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 111,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-              "name": "./node_modules/core-js/internals/object-assign.js"
+              "id": 106,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+              "name": "./node_modules/core-js/internals/set-species.js"
             }
           ],
           "failed": false,
@@ -1914,9 +1914,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -1929,9 +1929,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -2025,9 +2025,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -2040,9 +2040,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -2345,9 +2345,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -2360,9 +2360,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -2765,9 +2765,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 12,
@@ -4862,9 +4862,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 3,
@@ -5111,9 +5111,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 3,
@@ -7516,9 +7516,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -7531,9 +7531,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -7937,9 +7937,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -7952,9 +7952,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -8140,9 +8140,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "issuerId": 78,
-          "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "issuerId": 65,
+          "issuerName": "./node_modules/core-js/modules/es.promise.js",
           "issuerPath": [
             {
               "id": 90,
@@ -8155,9 +8155,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 78,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-              "name": "./node_modules/core-js/modules/es.promise.finally.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             }
           ],
           "failed": false,
@@ -10126,9 +10126,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 3,
@@ -10188,9 +10188,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 3,
@@ -10255,9 +10255,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
             },
             {
-              "id": 77,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-              "name": "./node_modules/core-js/modules/es.object.assign.js"
+              "id": 65,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
               "id": 3,
@@ -18327,9 +18327,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-      "issuerId": 77,
-      "issuerName": "./node_modules/core-js/modules/es.object.assign.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -18342,9 +18342,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -18492,9 +18492,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/species-constructor.js",
-      "issuerId": 72,
-      "issuerName": "./node_modules/core-js/internals/species-constructor.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterate.js",
+      "issuerId": 28,
+      "issuerName": "./node_modules/core-js/internals/iterate.js",
       "issuerPath": [
         {
           "id": 90,
@@ -18507,14 +18507,14 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 72,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/species-constructor.js",
-          "name": "./node_modules/core-js/internals/species-constructor.js"
+          "id": 28,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterate.js",
+          "name": "./node_modules/core-js/internals/iterate.js"
         }
       ],
       "failed": false,
@@ -19205,9 +19205,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-      "issuerId": 111,
-      "issuerName": "./node_modules/core-js/internals/object-assign.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+      "issuerId": 106,
+      "issuerName": "./node_modules/core-js/internals/set-species.js",
       "issuerPath": [
         {
           "id": 90,
@@ -19220,14 +19220,14 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 111,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-          "name": "./node_modules/core-js/internals/object-assign.js"
+          "id": 106,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+          "name": "./node_modules/core-js/internals/set-species.js"
         }
       ],
       "failed": false,
@@ -19552,9 +19552,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -19567,9 +19567,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -19663,9 +19663,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -19678,9 +19678,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -19983,9 +19983,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -19998,9 +19998,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -20403,9 +20403,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 12,
@@ -22500,9 +22500,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 3,
@@ -22749,9 +22749,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 3,
@@ -25154,9 +25154,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -25169,9 +25169,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -25575,9 +25575,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -25590,9 +25590,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -25778,9 +25778,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-      "issuerId": 78,
-      "issuerName": "./node_modules/core-js/modules/es.promise.finally.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+      "issuerId": 65,
+      "issuerName": "./node_modules/core-js/modules/es.promise.js",
       "issuerPath": [
         {
           "id": 90,
@@ -25793,9 +25793,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 78,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.finally.js",
-          "name": "./node_modules/core-js/modules/es.promise.finally.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         }
       ],
       "failed": false,
@@ -27764,9 +27764,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 3,
@@ -27826,9 +27826,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 3,
@@ -27893,9 +27893,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/component-app-i18n.client.js"
         },
         {
-          "id": 77,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.assign.js",
-          "name": "./node_modules/core-js/modules/es.object.assign.js"
+          "id": 65,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
           "id": 3,
