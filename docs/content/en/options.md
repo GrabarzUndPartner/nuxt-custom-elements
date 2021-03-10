@@ -1,7 +1,7 @@
 ---
 title: Options
 description: ''
-position: 21
+position: 12
 category: Guide
 
 ---
@@ -78,42 +78,24 @@ Allows the targeted distribution of resources.
 }
 ```
 
+| Key    | Type     | Requried | Description                                                       | Default |
+| ------ | -------- | -------- | ----------------------------------------------------------------- | ------- |
+| `name` | `String` | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
+| `tags` | `Array`  |          | Tag Definitions.                                                  | `[]`    |
 
-#### `name`
-- Type: `String`
-  
-Name of the endpoint.  
-Value will be converted to ParamCase later.  
 
-#### `tags`
-- Type: `Array`
-  - Default: `[]` 
-  
- Tag Definitions.
+
 
 ### Tag
 
+| Key       | Type                 | Requried | Description                                                                                                                              | Default     |
+| --------- | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `name`    | `String`             | yes      | Name of the Tag. Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`                                     |             |
+| `async`   | `Boolean`            |          | Components are loaded asynchronously. If there is more than one entry the async will lead to unwanted webpack chunk splitting.           | `false`     |
+| `path`    | `String`             |          | Path to the component to be called by the tag.                                                                                           | `false`     |
+| `options` | `Function`, `Object` |          | Options from custom-element. <br>[Learn more](https://github.com/karol-f/vue-custom-element#options) about `vue-custom-element` options. | `undefined` |
 
-#### `name`
-- Type: `String`
-
-Name of the Tag.<br>Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`
-#### `async`
-- Type: `Boolean`
-  - Default: `false`
-
-Components are loaded asynchronously.<br><br>If there is more than one entry the async will lead to unwanted webpack chunk splitting.
-#### `path`
-- Type: `String`
-
- Path to the component to be called by the tag. 
-#### `options`
-- Type: `Function`, `Object`
-  - Default: `undefined` 
-
-Options from custom-element.  
-
-[Learn more](https://github.com/karol-f/vue-custom-element#options)  about `vue-custom-element` options.
+#### Important
 
 You can set as `object` or when using functions in options, use `function`.
 
@@ -193,7 +175,7 @@ You can override the pattern from `webpackOutput.filename` and `webpackOutput.ch
 - Type: `Function`
   - Default: `undefined`
 
-Inject webpack public path over entry file. [Learn more](https://webpack.js.org/guides/public-path/#on-the-fly)  
+Inject webpack public path over entry file.
 
 Using `Function` call client side. 
 

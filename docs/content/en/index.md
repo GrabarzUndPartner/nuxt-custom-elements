@@ -1,7 +1,7 @@
 ---
 title: Introduction
 description: ''
-position: 11
+position: 1
 category: ''
 features:
   - Using modern and client build
@@ -47,7 +47,6 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 </script>
 <script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.modern.js" type="module"></script>
 <script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.client.js" nomodule></script>
-
 
 #### Code
 
