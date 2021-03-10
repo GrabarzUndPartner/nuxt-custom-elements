@@ -3,13 +3,6 @@ import nuxtCustomElementsPkg from '../package.json';
 
 export default withDocus({
 
-  docus: {
-    colors: {
-      primary: '#51bbaf',
-      code: '#51bbaf'
-    }
-  },
-
   pwa: {
     manifest: {
       name: nuxtCustomElementsPkg.name,
