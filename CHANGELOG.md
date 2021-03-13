@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.6.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.0...v1.6.1) (2021-03-13)
+
+
+### Bug Fixes
+
+* **build:** fix custom-tag props by function ([5b6cfe6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/5b6cfe6c02f1aa91ff3c081f1daeb3f9220557d5)), closes [#304](https://github.com/GrabarzUndPartner/nuxt-custom-elements/issues/304)
+
 # [1.6.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.1...v1.6.0) (2021-02-21)
 
 
