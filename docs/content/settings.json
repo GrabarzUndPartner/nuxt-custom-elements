@@ -8,6 +8,11 @@
   "github": {
     "repo": "GrabarzUndPartner/nuxt-custom-elements",
     "branch": "main",
-    "dir": "docs"
+    "dir": "docs",
+    "releases": false
+  },
+  "colors": {
+    "primary": "#51bbaf",
+    "code": "#51bbaf"
   }
 }
