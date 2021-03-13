@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-element-app-abstract">
+  <div class="custom-element-app-example">
     <organism-view-header
       v-bind="header"
       class="header"
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.custom-element-app-abstract {
+.custom-element-app-example {
   padding: 15px;
   background: #eee;
   border: solid #eee 1px;
