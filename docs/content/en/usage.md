@@ -1,7 +1,7 @@
 ---
 title: Usage
 description: ''
-position: 4
+position: 13
 category: Guide
 components:
   - "Directive zum anwenden von Fonts"
