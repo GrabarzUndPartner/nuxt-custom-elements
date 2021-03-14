@@ -59,6 +59,17 @@ export default {
     min-height: 160px;
     padding: 15px;
     margin-top: 20px;
+
+    & > div,
+    & >>> div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+    }
   }
 }
 </style>
