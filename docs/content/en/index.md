@@ -30,19 +30,8 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 ### Live Example
 
-<client-only>
-  <custom-element-app-example title="Live Example">
-    <div>
-      Live Example Content
-    </div>
-  </custom-element-app-example>
-</client-only>
+<iframe style="width: 100%; height: 320px; border: none;" src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/"></iframe>
 
-<script type=text/javascript>
-  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/';
-</script>
-<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.modern.js" type="module"></script>
-<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.client.js" nomodule></script>
 
 #### Code
 

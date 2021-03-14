@@ -133,9 +133,10 @@ module.exports = {
             path: '@/components/apps/AppExample',
             options: {
               props: {
-                title: 'Prop. Title'
+                title: 'Live Example'
               }
-            }
+            },
+            slotContent: '<div>Live Example Content</div>'
           }
         ]
       }]) || []),
