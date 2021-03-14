@@ -1,6 +1,9 @@
 const { paramCase } = require('change-case');
 const express = require('express');
+const cors = require('cors');
 const app = express();
+
+app.use(cors());
 app.disable('x-powered-by');
 
 const dist = getDist();

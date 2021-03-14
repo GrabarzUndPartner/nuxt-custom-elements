@@ -88,12 +88,13 @@ Allows the targeted distribution of resources.
 
 ### Tag
 
-| Key       | Type                 | Requried | Description                                                                                                                              | Default     |
-| --------- | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `name`    | `String`             | yes      | Name of the Tag. Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`                                     |             |
-| `async`   | `Boolean`            |          | Components are loaded asynchronously. If there is more than one entry the async will lead to unwanted webpack chunk splitting.           | `false`     |
-| `path`    | `String`             |          | Path to the component to be called by the tag.                                                                                           | `false`     |
-| `options` | `Function`, `Object` |          | Options from custom-element. <br>[Learn more](https://github.com/karol-f/vue-custom-element#options) about `vue-custom-element` options. | `undefined` |
+| Key           | Type                 | Requried | Description                                                                                                                              | Default     |
+| ------------- | -------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `name`        | `String`             | yes      | Name of the Tag. Value will be converted to ParamCase later.<br><br>Example: `TagName` -> `tag-name`                                     |             |
+| `async`       | `Boolean`            |          | Components are loaded asynchronously. If there is more than one entry the async will lead to unwanted webpack chunk splitting.           | `false`     |
+| `path`        | `String`             |          | Path to the component to be called by the tag.                                                                                           | `false`     |
+| `options`     | `Function`, `Object` |          | Options from custom-element. <br>[Learn more](https://github.com/karol-f/vue-custom-element#options) about `vue-custom-element` options. | `undefined` |
+| `slotContent` | `String`             |          | Default slot content for generated html entry output.                                                                                    | `undefined` |
 
 #### Important
 
@@ -101,13 +102,13 @@ You can set as `object` or when using functions in options, use `function`.
 
 ```js
 {
-  name: 'ComponentAppBundle',
+  name: 'ComponentAppExample',
   tags: [
     // with function call
     {
       async: true,
-      name: 'CustomElementAppI18n',
-      path: '@/components/apps/AppI18n',
+      name: 'CustomElementAppExample',
+      path: '@/components/apps/AppExample',
       options () {
         return {
           props: {
@@ -117,18 +118,20 @@ You can set as `object` or when using functions in options, use `function`.
             console.info('constructorCallback', this);
           }
         };
-      }
+      },
+      slotContent: '<div>Slot Content!</div>'
     },
     // without function call
     {
       async: true,
-      name: 'CustomElementAppI18n',
-      path: '@/components/apps/AppI18n',
+      name: 'CustomElementAppExample',
+      path: '@/components/apps/AppExample',
       options: {
         props: {
           base: './'
         }
-      }
+      },
+      slotContent: '<div>Slot Content!</div>'
     }
   ]
 }
