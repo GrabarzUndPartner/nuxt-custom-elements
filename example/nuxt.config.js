@@ -75,11 +75,7 @@ module.exports = {
           {
             async: false,
             name: 'CustomElementAppI18n',
-            path: '@/components/apps/AppI18n',
-            options: {
-              props: {
-              }
-            }
+            path: '@/components/apps/AppI18n'
           }
         ]
       },
@@ -134,7 +130,12 @@ module.exports = {
           {
             async: false,
             name: 'CustomElementAppExample',
-            path: '@/components/apps/AppExample'
+            path: '@/components/apps/AppExample',
+            options: {
+              props: {
+                title: 'Prop. Title'
+              }
+            }
           }
         ]
       }]) || []),
