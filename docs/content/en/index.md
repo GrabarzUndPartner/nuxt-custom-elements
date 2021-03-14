@@ -32,7 +32,6 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 <iframe style="width: 100%; height: 320px; border: none;" src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/"></iframe>
 
-
 #### Code
 
 ```html
