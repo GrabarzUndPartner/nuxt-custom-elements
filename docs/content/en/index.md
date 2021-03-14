@@ -28,6 +28,27 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 ## Preview
 
+### Live Example
+
+<iframe style="width: 100%; height: 320px; border: none;" src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/"></iframe>
+
+#### Code
+
+```html
+<custom-element-app-example title="Live Example" >
+  <div>
+    Live Example Content
+  </div>
+</custom-element-app-example>
+
+<script type=text/javascript>
+  window.customPublicPath = 'https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/';
+</script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.modern.js" type="module"></script>
+<script src="https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-example/component-app-example.client.js" nomodule></script>
+<script>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()},!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+```
+
 ### Links
 
 - [ComponentAppBundle](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-bundle/)
