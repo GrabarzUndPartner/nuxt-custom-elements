@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.6.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.1...v1.6.2) (2021-03-14)
+
+
+### Bug Fixes
+
+* **output:** add prop slotContent for default slot content in output html ([d8f6c5b](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/d8f6c5b4613ba62218987d90ec4e21ab607509dc))
+
 ## [1.6.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.0...v1.6.1) (2021-03-13)
 
 
