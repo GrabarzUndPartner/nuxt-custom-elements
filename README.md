@@ -1,6 +1,6 @@
 ![nuxt-custom-elements][logo]
 
-# nuxt-custom-elements
+# Nuxt Custom-Elements
 
 [![Grabarz & Partner - Module][grabarz-partner-module-src]][grabarz-partner-href] 
 

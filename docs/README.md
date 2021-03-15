@@ -1,4 +1,5 @@
-# nuxt-custom-elements-docs
+
+# Nuxt Custom-Elements Docs
 
 ## Setup
 
