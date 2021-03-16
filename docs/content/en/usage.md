@@ -197,15 +197,14 @@ You can inject the public paht from webpack build over a function, that the call
 
 In this example, the variable `window.customPublicPath` is defined before the custom-elements resources are loaded.
 
-```html[index.html]
-
-<custom-app-bundle />
+```html[html]
+<custom-element-example />
 
 <script type="text/javascript">
-  window.customPublicPath = '/assets/custom-app-bundle/'
+  window.customPublicPath = '/assets/custom-app-example/';
 </script>
 
-<script src="/assets/component-app-bundle/component-app-bundle.client.js"></script>
+<script src="/assets/custom-app-example/custom-app-example.js"></script>
 ``` 
 
 <br>
@@ -218,7 +217,7 @@ In this example, the variable `window.customPublicPath` is defined before the cu
 }
 ```
 
-Alternatively, the publicPath can be defined permanently in the [webpack output](/options#webpackoutput) config.
+Alternatively, the `publicPath` can be defined permanently in the [webpack output](/options#webpackoutput) config.
 
 ```javascript[nuxt.config]
 {

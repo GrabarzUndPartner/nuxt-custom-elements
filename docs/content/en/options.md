@@ -111,9 +111,7 @@ You can set as `object` or when using functions in options, use `function`.
       path: '@/components/apps/AppExample',
       options () {
         return {
-          props: {
-            base: './'
-          },
+          props: ['prop1', 'prop2'],
           vueInstanceCreatedCallback () {
             console.info('constructorCallback', this);
           }
@@ -128,7 +126,8 @@ You can set as `object` or when using functions in options, use `function`.
       path: '@/components/apps/AppExample',
       options: {
         props: {
-          base: './'
+          'prop1': 'Value 1',
+          'prop2': 'Value 2'
         }
       },
       slotContent: '<div>Slot Content!</div>'
