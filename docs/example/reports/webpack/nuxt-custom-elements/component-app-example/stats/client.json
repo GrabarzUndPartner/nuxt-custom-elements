@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "c08237c407737107e76a",
-  "time": 1822,
-  "builtAt": 1615852884888,
+  "time": 1261,
+  "builtAt": 1615854477508,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/component-app-example",
   "assetsByChunkName": {
@@ -284,9 +284,9 @@
           "chunks": [
             0
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/redefine.js",
-          "issuerId": 21,
-          "issuerName": "./node_modules/core-js/internals/redefine.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/internal-state.js",
+          "issuerId": 22,
+          "issuerName": "./node_modules/core-js/internals/internal-state.js",
           "issuerPath": [
             {
               "id": 49,
@@ -314,14 +314,14 @@
               "name": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppExample.vue?vue&type=script&lang=js&"
             },
             {
-              "id": 53,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.to-string.js",
-              "name": "./node_modules/core-js/modules/es.object.to-string.js"
+              "id": 62,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.string.iterator.js",
+              "name": "./node_modules/core-js/modules/es.string.iterator.js"
             },
             {
-              "id": 21,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/redefine.js",
-              "name": "./node_modules/core-js/internals/redefine.js"
+              "id": 22,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/internal-state.js",
+              "name": "./node_modules/core-js/internals/internal-state.js"
             }
           ],
           "failed": false,
@@ -12432,9 +12432,9 @@
       "chunks": [
         0
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/redefine.js",
-      "issuerId": 21,
-      "issuerName": "./node_modules/core-js/internals/redefine.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/internal-state.js",
+      "issuerId": 22,
+      "issuerName": "./node_modules/core-js/internals/internal-state.js",
       "issuerPath": [
         {
           "id": 49,
@@ -12462,14 +12462,14 @@
           "name": "./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./example/components/apps/AppExample.vue?vue&type=script&lang=js&"
         },
         {
-          "id": 53,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.to-string.js",
-          "name": "./node_modules/core-js/modules/es.object.to-string.js"
+          "id": 62,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.string.iterator.js",
+          "name": "./node_modules/core-js/modules/es.string.iterator.js"
         },
         {
-          "id": 21,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/redefine.js",
-          "name": "./node_modules/core-js/internals/redefine.js"
+          "id": 22,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/internal-state.js",
+          "name": "./node_modules/core-js/internals/internal-state.js"
         }
       ],
       "failed": false,
