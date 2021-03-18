@@ -6,7 +6,7 @@ category: Guide
 components:
   - "Directive zum anwenden von Fonts"
   - Komponenten mit Lazy funktionialität
-developmentSandboxUrl: https://codesandbox.io/embed/github/GrabarzUndPartner/nuxt-custom-elements-example/tree/main/?hidenavigation=1&theme=dark
+developmentSandboxUrl: https://codesandbox.io/embed/github/GrabarzUndPartner/nuxt-custom-elements/tree/main/?fontsize=14&hidenavigation=1&module=%2Fexample%2Fcomponents%2FExample.vue&theme=dark
 ---
 
 Nuxt Custom-Elements is used to export components from a [Nuxt.js](https://nuxtjs.org) project as custom elements, this is used when providing widgets.
