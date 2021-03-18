@@ -2,7 +2,7 @@
   <div>
     <github-corner />
     <div class="logo">
-      <img src="@/assets/logo.svg">
+      <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements">
     </div>
     <div class="container">
       <client-only>
