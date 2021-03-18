@@ -6,7 +6,7 @@ category: ''
 features:
   - Using modern and client build
   - Export components as widgets
-  - Using Vuetify and TailwindCSS for your widgets
+  - Use TailwindCSS and Vuetify for your widgets
 developmentSandboxUrl: https://codesandbox.io/embed/github/GrabarzUndPartner/nuxt-custom-elements/tree/main/?fontsize=14&hidenavigation=1&module=%2Fexample%2Fcomponents%2FExample.vue&theme=dark
 ---
 
