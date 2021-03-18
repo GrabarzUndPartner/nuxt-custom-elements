@@ -5,23 +5,27 @@ position: 31
 category: 'Plugin'
 ---
 
-Registers an entry for testing as a custom element during development.
+`$registerCustomElementsEntry` is used to include the defined entries during development. 
 
-<alert>If `SSR` is active, integration must be implemented in a `client-only` tag. ([See Example](/plugin/registerCustomElementsEntry#example))</alert>
+This allows you to include the components without a separate import and allows you to test as a custom-elements integration.
 
-[Learn more](/plugin/registerCustomElementsEntry) about the use in development.
+The registration is called in `created` or `mounted`. After registration it is possible to call the custom-element tags in the template. Only the tags that have been added to the entry are available.
+
+Place the relevant tags in a `client-only` tag, this is important so that the tag is not resolved in `SSR`.  
+Alternatively, [SSR can be disabled](https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-ssr) if possible.
+
+<alert>Remember to ignore the specified tags with `Vue.config.ignoredElements` in Vue. For the local Vue instance the respective tag is unknown.</alert>
 
 ## Arguments
 
 ### Name
 - Type: `String`
 
-Name of Custom Element Entry.
-
+Name of custom-element Entry. ([Lean more about custom-element Entry](/options#entry))
 
 The name can be specified in `PascalCase`or `ParamCase`.
 
-e.g. `ComponentAppAbstract` or `component-app-abstract`.
+e.g. `CustomElementExample` or `custom-element-example`.
 
 ## Example
 
@@ -29,9 +33,9 @@ e.g. `ComponentAppAbstract` or `component-app-abstract`.
 <template>
   <div>
     <client-only>
-      <ComponentAppAbstract />
+      <CustomElementExample />
       <!-- or -->
-      <component-app-abstract />
+      <custom-element-example/>
     </client-only>
   </div>
 </template>
@@ -40,15 +44,15 @@ e.g. `ComponentAppAbstract` or `component-app-abstract`.
 import Vue from 'vue';
 
 Vue.config.ignoredElements = [
-  'ComponentAppAbstract',
-  'component-app-abstract'
+  'CustomElementExample',
+  'custom-element-example'
 ];
 
 export default {
-  mounted() {
-    this.$registerCustomElementsEntry('ComponentAppAbstract')
+  created () {
+    this.$registerCustomElementsEntry('Example')
     // or
-    this.$registerCustomElementsEntry('component-app-abstract')
+    this.$registerCustomElementsEntry('example')
   }
 }
 </script>
