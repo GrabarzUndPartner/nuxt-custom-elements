@@ -189,23 +189,21 @@ Alternatively, [SSR can be disabled](https://nuxtjs.org/docs/2.x/configuration-g
 </template>
 ```
 
-## Integrations
 
-### Public path on the fly
+## Webpack Public inject
 
 You can inject the public paht from webpack build over a function, that the called client side.
 
 In this example, the variable `window.customPublicPath` is defined before the custom-elements resources are loaded.
 
-```html[index.html]
-
-<custom-app-bundle />
+```html[html]
+<custom-element-example />
 
 <script type="text/javascript">
-  window.customPublicPath = '/assets/custom-app-bundle/'
+  window.customPublicPath = '/assets/custom-app-example/';
 </script>
 
-<script src="/assets/component-app-bundle/component-app-bundle.client.js"></script>
+<script src="/assets/custom-app-example/custom-app-example.js"></script>
 ``` 
 
 <br>
@@ -217,8 +215,13 @@ In this example, the variable `window.customPublicPath` is defined before the cu
   } 
 }
 ```
+In the background, the webpack variable `__webpack_public_path__` is set with the value from the function.
 
-Alternatively, the publicPath can be defined permanently in the [webpack output](/options#webpackoutput) config.
+```js
+__webpack_public_path__ = webpackPublicPathInject();
+```
+
+Alternatively, the `publicPath` can be defined permanently in the [webpack output](/options#webpackoutput) config.
 
 ```javascript[nuxt.config]
 {
@@ -231,84 +234,14 @@ Alternatively, the publicPath can be defined permanently in the [webpack output]
 ```
 
 
-### Vue i18n, Vue Router and Vuex Store
+## Integrations
 
-To integrate `Vue i18n`, `Vue Router` or `Vuex Store`, the plugins must be referenced on the top component (entry tag).  
+Nuxt Custom-Elements can also be used with other plugins. 
 
-[Learn more about the Entry](/options#entry) 
+- [TailwindCSS](https://tailwindcss.com/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/tailwind-css/))
+- [Vuetify](https://vuetifyjs.com/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vuetify/))
+- [VueRouter](https://router.vuejs.org/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vue-router/))
+- [VueI18n](https://kazupon.github.io/vue-i18n/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vue-i18n/))
+- [Vuex](https://vuex.vuejs.org/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vuex/))
 
-All child components have access to `this.$i18n`, `this.$router` and `this.$store`.
-
-```html
-<script>
-
-import Vue from 'vue'
-import Vuex from 'vuex'
-import VueI18n from 'vue-i18n'
-import VueRouter from 'vue-router'
-
-Vue.use(Vuex)
-Vue.use(VueI18n)
-Vue.use(VueRouter)
-
-// i18n
-
-const messages = {
-  de: {
-    message: {
-      hello: 'hallo welt'
-    }
-  },
-  en: {
-    message: {
-      hello: 'hello world'
-    }
-  },
-  ja: {
-    message: {
-      hello: 'こんにちは、世界'
-    }
-  }
-}
-
-const i18n = new VueI18n({
-  locale: 'en',
-  messages
-})
-
-// store
-
-const store = new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  }
-})
-
-// router
-
-const router = new VueRouter({
-  routes: [...]
-})
-
-export default {
-
-  i18n,
-  store,
-  router,
-
-  props: {...},
-
-  mounted() {
-    console.log(this.$i18n, this.$store, this.$router)
-  }
-  
-}
-
-</script>
-```
-
+At [Nuxt Custom-Elements Example](https://github.com/GrabarzUndPartner/nuxt-custom-elements-example) you can view configurations for the examples.

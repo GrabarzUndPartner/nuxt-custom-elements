@@ -16,6 +16,7 @@
 
 - [✨ &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
 - [📖 &nbsp;&nbsp;**Documentation**](https://nuxt-custom-elements.grabarzundpartner.dev/)
+- [👁 &nbsp;&nbsp;**Preview**](https://grabarzundpartner.github.io/nuxt-custom-elements-example/)
 
 > Publish your Components as a [vue-custom-element](https://github.com/karol-f/vue-custom-element) standalone build.
 
@@ -46,30 +47,6 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 2. Install dependencies using `yarn install` or `npm install`
 3. Build and start with express `yarn start:build` or `npm run start:build`
 4. Open endpoints via `http://127.0.0.1:3000/` in Browser
-
-- [ComponentAppBundle](http://127.0.0.1:3000/nuxt-custom-elements/component-app-bundle)  
-- [ComponentAppI18n](http://127.0.0.1:3000/nuxt-custom-elements/component-app-i18n)  
-- [ComponentAppAbstract](http://127.0.0.1:3000/nuxt-custom-elements/component-app-abstract)  
-- [ComponentAppHash](http://127.0.0.1:3000/nuxt-custom-elements/component-app-hash)  
-- [ComponentAppHistory](http://127.0.0.1:3000/nuxt-custom-elements/component-app-history)
-
-or look here
-
-- [ComponentAppBundle](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-bundle/)
-  - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-bundle/client.html)
-  - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-bundle/modern.html)
-- [ComponentAppI18n](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-i18n/)
-  - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-i18n/client.html)
-  - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-i18n/modern.html)
-- [ComponentAppAbstract](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-abstract/)
-  - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-abstract/client.html)
-  - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-abstract/modern.html)
-- [ComponentAppHash](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-hash/)
-  - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-hash/client.html)
-  - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-hash/modern.html) 
-- [ComponentAppHistory](https://nuxt-custom-elements.grabarzundpartner.dev/example/component-app-history/)
-  - [Report Client](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-history/client.html)
-  - [Report Modern](https://nuxt-custom-elements.grabarzundpartner.dev/example/reports/webpack/nuxt-custom-elements/component-app-history/modern.html)
 
 ## License
 
