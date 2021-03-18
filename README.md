@@ -26,9 +26,9 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 - Using modern and client build
 - Export components as widgets
-- Using [Vuetify](https://vuetifyjs.com/) and [TailwindCSS](https://tailwindcss.com/) for your widgets
-
-📖 &nbsp;&nbsp;[Read more](https://nuxt-custom-elements.grabarzundpartner.dev/)
+- Use [TailwindCSS](https://tailwindcss.com/) and [Vuetify](https://vuetifyjs.com/) for your widgets
+  
+📖 &nbsp;&nbsp;[Learn more in the documentation](https://nuxt-custom-elements.grabarzundpartner.dev/)
 
 ## Browsers support
 
