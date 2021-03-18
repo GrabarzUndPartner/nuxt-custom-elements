@@ -54,18 +54,14 @@ function test (modern = true) {
 
   it('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(CHROMIUM)]).newPage();
-    page.goto(getUrl('/component-app-bundle/', port));
-    await page.waitForSelector('.custom-element-app-abstract');
-    await page.waitForSelector('.custom-element-app-hash');
-    await page.waitForSelector('.custom-element-app-history');
+    page.goto(getUrl('/example/', port));
+    await page.waitForSelector('.custom-element-example');
   });
 
   it('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(FIREFOX)]).newPage();
-    page.goto(getUrl('/component-app-bundle/', port));
-    await page.waitForSelector('.custom-element-app-abstract');
-    await page.waitForSelector('.custom-element-app-hash');
-    await page.waitForSelector('.custom-element-app-history');
+    page.goto(getUrl('/example/', port));
+    await page.waitForSelector('.custom-element-example');
   });
 
   // #endregion

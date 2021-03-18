@@ -50,8 +50,6 @@ module.exports = {
 
   },
 
-  components: ['~/components/auto-import/'],
-
   generate: {
     dir: getDistPath()
   },
@@ -69,135 +67,19 @@ module.exports = {
     },
     webpackPublicPathInject: () => global.customPublicPath,
     entries: [
-      ...((!isTest && [{
-        name: 'ComponentAppI18n',
-        tags: [
-          {
-            async: false,
-            name: 'CustomElementAppI18n',
-            path: '@/components/apps/AppI18n'
-          }
-        ]
-      },
       {
-        name: 'ComponentAppAbstract',
+        name: 'Example',
         tags: [
           {
             async: false,
-            name: 'CustomElementAppAbstract',
-            path: '@/components/apps/AppAbstract',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          }
-        ]
-      },
-      {
-        name: 'ComponentAppHash',
-        tags: [
-          {
-            async: false,
-            name: 'CustomElementAppHash',
-            path: '@/components/apps/AppHash',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          }
-        ]
-      },
-      {
-        name: 'ComponentAppHistory',
-        tags: [
-          {
-            async: false,
-            name: 'CustomElementAppHistory',
-            path: '@/components/apps/AppHistory',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          }
-        ]
-      },
-      {
-        name: 'ComponentAppExample',
-        tags: [
-          {
-            async: false,
-            name: 'CustomElementAppExample',
-            path: '@/components/apps/AppExample',
+            name: 'CustomElementExample',
+            path: '@/components/Example',
             options: {
               props: {
                 title: 'Live Example'
               }
             },
             slotContent: '<div>Live Example Content</div>'
-          }
-        ]
-      }]) || []),
-      {
-        name: 'ComponentAppBundle',
-        tags: [
-          {
-            async: true,
-            name: 'CustomElementAppI18n',
-            path: '@/components/apps/AppI18n',
-            options () {
-              return {
-                props: {
-                  base: './'
-                },
-                vueInstanceCreatedCallback () {
-                  // eslint-disable-next-line no-console
-                  console.info('constructorCallback', this);
-                }
-              };
-            }
-          },
-          {
-            async: true,
-            name: 'CustomElementAppAbstract',
-            path: '@/components/apps/AppAbstract',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          },
-          {
-            async: true,
-            name: 'CustomElementAppHash',
-            path: '@/components/apps/AppHash',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          },
-          {
-            async: true,
-            name: 'CustomElementAppHistory',
-            path: '@/components/apps/AppHistory',
-            options: {
-              props: {
-                base: './'
-              }
-            }
-          },
-          {
-            async: true,
-            name: 'CustomElementAppExample',
-            path: '@/components/apps/AppExample',
-            options: {
-              props: {
-                base: './'
-              }
-            }
           }
         ]
       }

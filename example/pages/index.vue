@@ -1,39 +1,16 @@
 <template>
   <div>
-    <client-only>
-      <script type="text/javascript">
-        <!-- Used in example/custom-element/utils/router.js:22 -->
-        window.CUSTOM_ELEMENT_ROUTER_BASE = '{{ base }}';
-      </script>
-      <custom-element-app-i18n
-        class="application"
-      />
-      <custom-element-app-abstract
-        class="application"
-      >
-        <script
-          type="application/json"
-        >
-          {{ data }}
-        </script>
-      </custom-element-app-abstract>
-      <custom-element-app-hash
-        class="application"
-      >
-        <script
-          type="application/json"
-        >
-          {{ data }}
-        </script>
-      </custom-element-app-hash>
-      <custom-element-app-example
-        class="application"
-      >
-        <div style="display: flex; align-items: center; justify-content: center; width: 100%; font-family: sans-serif; font-size: 30px; font-weight: 700;">
-          Custom Content
-        </div>
-      </custom-element-app-example>
-    </client-only>
+    <github-corner />
+    <div class="logo">
+      <img src="@/assets/logo.svg">
+    </div>
+    <div class="container">
+      <client-only>
+        <custom-element-example title="Custom Title">
+          Custom Slot Content
+        </custom-element-example>
+      </client-only>
+    </div>
   </div>
 </template>
 
@@ -41,41 +18,96 @@
 
 import Vue from 'vue';
 
+import GithubCorner from '@/components/GithubCorner';
+
 Vue.config.ignoredElements = [
-  'custom-element-app-abstract',
-  'custom-element-app-hash',
-  'custom-element-app-i18n',
-  'custom-element-app-example'
+  'custom-element-example'
 ];
 
 export default {
-  layout: 'blank',
-
-  data () {
-    return {
-      base: '/', // router base
-      data: {
-        script: 'tag'
-      }
-    };
-  },
+  components: { GithubCorner },
   created () {
-    this.$registerCustomElementsEntry('component-app-abstract');
-    this.$registerCustomElementsEntry('component-app-hash');
-    this.$registerCustomElementsEntry('component-app-i18n');
-    this.$registerCustomElementsEntry('component-app-example');
+    this.$registerCustomElementsEntry('example');
   }
 };
 
 </script>
 
 <style lang="postcss">
-.application {
-  display: block;
-  padding: 20px;
 
-  @media screen and (min-width: 992px) {
-    padding: 20px 100px;
-  }
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  background: rgb(255 255 255 / 60%);
 }
+
+.logo img {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+  font-family:
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+fieldset,
+.container > fieldset {
+  width: 100%;
+  max-width: 640px;
+  padding: 30px;
+  padding-top: 0;
+  color: #3b8070;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpi/P//PwM6OHv2HIYgEwORYAAVsmBzuLGxEeNQ9AxAgAEAG1wKejjL7dsAAAAASUVORK5CYII=');
+  border: 1px solid #3b8070;
+  border-radius: 4px;
+}
+
+fieldset legend {
+  padding: 5px 15px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #3b8070;
+  border: 1px solid #3b8070;
+  border-radius: 4px;
+}
+
 </style>
