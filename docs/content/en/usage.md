@@ -21,7 +21,7 @@ Create a component that you want to use as custom element.
 
 <alert type="warning">There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/usage#integrations).</alert>
 
-```vue[nuxt-custom-elements-starter/components/Example.vue]
+```vue[nuxt-custom-elements-starter/examples/default/components/Example.vue]
 <template>
   <div class="example">
     <div class="title">
@@ -48,20 +48,29 @@ export default {
 .example {
   padding: 10px;
   font-family:
-    'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  font-size: 16px;
   color: #35495e;
   background: #35495e;
   border-radius: 4px;
-  font-size: 16px;
 }
+
 .title {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.title, .content {
+
+.title,
+.content {
   padding: 5px;
   color: white;
   background: #3b8070;
@@ -103,9 +112,6 @@ If necessary you can also define multiple custom elements in `tags` and deliver 
 
 ```js[nuxt.config.js]
 {
-  modules: [
-    'nuxt-custom-elements'
-  ],
   customElements: {
      entries: [
        {
@@ -124,7 +130,10 @@ If necessary you can also define multiple custom elements in `tags` and deliver 
         ]
       }
     ]
-  }
+  },
+  modules: [
+    'nuxt-custom-elements'
+  ]
 }
 ```
 
@@ -133,7 +142,7 @@ If necessary you can also define multiple custom elements in `tags` and deliver 
 After the module is installed & configured, the generation of the custom element can be started.  
 For this purpose a `nuxt build` or `nuxt generate` can be used.
 
-> The generation of the custom element takes place only in `nuxt build`, in `nuxt generate` the result is copied to the `dist` folder.
+> The generation of the custom element takes place only in `nuxt build`, in `nuxt generate` the result is copied to the `dist` directory.
 
 ### Finished
 
@@ -150,7 +159,7 @@ After the `build` or `generate` has run, you will find the export under followin
 
 ## Development
 
-To develop a custom component in dev mode, the `entry` in the `create` or `mounted` method must be called.  
+To develop a custom component in Dev mode, you must call the `entry` in the`create` or `mounted` method.
 This contains all the `tags` that can be called in the `template`.
 
 [Learn more about `$registerCustomElementsEntry`](/plugin/registerCustomElementsEntry)
@@ -190,11 +199,11 @@ Alternatively, [SSR can be disabled](https://nuxtjs.org/docs/2.x/configuration-g
 ```
 
 
-## Webpack Public inject
+## Webpack Public Path Inject
 
-You can inject the public paht from webpack build over a function, that the called client side.
+You can inject the public paht from webpack build over a `function`, that the called client side.
 
-In this example, the variable `window.customPublicPath` is defined before the custom-elements resources are loaded.
+The variable `window.customPublicPath` must be defined before the scripts have been loaded.
 
 ```html[html]
 <custom-element-example />
@@ -215,7 +224,7 @@ In this example, the variable `window.customPublicPath` is defined before the cu
   } 
 }
 ```
-In the background, the webpack variable `__webpack_public_path__` is set with the value from the function.
+In the background, the webpack variable `__webpack_public_path__` is set with the value from the `function`.
 
 ```js
 __webpack_public_path__ = webpackPublicPathInject();
@@ -235,8 +244,9 @@ Alternatively, the `publicPath` can be defined permanently in the [webpack outpu
 
 
 ## Integrations
+You can use other plugins with Nuxt Custom-Elements. 
 
-Nuxt Custom-Elements can also be used with other plugins. 
+Look here for integration examples:
 
 - [TailwindCSS](https://tailwindcss.com/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/tailwind-css/))
 - [Vuetify](https://vuetifyjs.com/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vuetify/))
@@ -244,4 +254,4 @@ Nuxt Custom-Elements can also be used with other plugins.
 - [VueI18n](https://kazupon.github.io/vue-i18n/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vue-i18n/))
 - [Vuex](https://vuex.vuejs.org/) ([Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/vuex/))
 
-At [Nuxt Custom-Elements Example](https://github.com/GrabarzUndPartner/nuxt-custom-elements-example) you can view configurations for the examples.
+At [Nuxt Custom-Elements Example](https://github.com/GrabarzUndPartner/nuxt-custom-elements-example)  you can find configurations for the examples.
