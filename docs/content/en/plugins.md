@@ -1,9 +1,11 @@
 ---
-title: $registerCustomElementsEntry
+title: Plugins
 description: ''
-position: 31
-category: 'Plugin'
+position: 14
+category: 'Guide'
 ---
+
+## $registerCustomElementsEntry
 
 `$registerCustomElementsEntry` is used to include the defined entries during development. 
 
@@ -16,18 +18,20 @@ Alternatively, [SSR can be disabled](https://nuxtjs.org/docs/2.x/configuration-g
 
 <alert>Remember to ignore the specified tags with `Vue.config.ignoredElements` in Vue. For the local Vue instance the respective tag is unknown.</alert>
 
-## Arguments
+### Arguments
 
-### Name
+#### Name
 - Type: `String`
 
-Name of custom-element Entry. ([Lean more about custom-element Entry](/options#entry))
+Name of custom-element Entry.
 
 The name can be specified in `PascalCase`or `ParamCase`.
 
 e.g. `CustomElementExample` or `custom-element-example`.
 
-## Example
+[Learn more about Entry.](/options#entry)
+
+### Example
 
 ```vue
 <template>
