@@ -30,7 +30,7 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 ## Preview
 
-For a quick project integration you can look at [Nuxt Custom-Elements Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/).
+For a quick integration, see [Nuxt Custom-Elements Example](https://grabarzundpartner.github.io/nuxt-custom-elements-example/) for more examples.
 ### Example Sandbox
 
 <code-sandbox :src="developmentSandboxUrl"></code-sandbox>
