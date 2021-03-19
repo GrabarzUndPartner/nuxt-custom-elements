@@ -37,8 +37,8 @@ export default {
         More: [
           {
             icon: 'IconExternalLink',
-            url: 'https://github.com/GrabarzUndPartner/nuxt-custom-elements-example',
-            title: 'Example Project',
+            url: 'https://grabarzundpartner.github.io/nuxt-custom-elements-example/',
+            title: 'Example',
             target: '_blank'
           }
         ]

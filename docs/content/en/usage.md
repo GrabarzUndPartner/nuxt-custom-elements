@@ -21,11 +21,11 @@ Create a component that you want to use as custom element.
 
 <alert type="warning">There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/usage#integrations).</alert>
 
-```vue[nuxt-custom-elements-starter/examples/default/components/Example.vue]
+```vue[example/components/Example.vue]
 <template>
-  <div class="example">
+  <div class="custom-element-example">
     <div class="title">
-      {{ title }}
+      {{ exampleTitle }}
     </div>
     <div class="content">
       <slot>Default Content</slot>
@@ -38,14 +38,20 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'Default Title'
+      default: null
+    }
+  },
+  computed: {
+    exampleTitle () {
+      return this.title || 'Default Title';
     }
   }
 };
 </script>
 
 <style scoped>
-.example {
+.custom-element-example {
+  min-width: 300px;
   padding: 10px;
   font-family:
     'Source Sans Pro',
@@ -58,6 +64,7 @@ export default {
     sans-serif;
   font-size: 16px;
   color: #35495e;
+  text-align: center;
   background: #35495e;
   border-radius: 4px;
 }
@@ -76,7 +83,6 @@ export default {
   background: #3b8070;
 }
 </style>
-
 ```
 
 ### Add Module with Configuration
@@ -162,7 +168,7 @@ After the `build` or `generate` has run, you will find the export under followin
 To develop a custom component in Dev mode, you must call the `entry` in the`create` or `mounted` method.
 This contains all the `tags` that can be called in the `template`.
 
-[Learn more about `$registerCustomElementsEntry`](/plugin/registerCustomElementsEntry)
+[Learn more about `$registerCustomElementsEntry`](/plugins#registerCustomElementsEntry)
 
 <alert>Remember to ignore the specified tags with `Vue.config.ignoredElements` in Vue. For the local Vue instance the respective tag is unknown.</alert>
 
