@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "03c04808507bfdda15ef",
-  "time": 1623,
-  "builtAt": 1616164330278,
+  "time": 1572,
+  "builtAt": 1617090659779,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
