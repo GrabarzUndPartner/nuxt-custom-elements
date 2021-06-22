@@ -59,7 +59,7 @@ Allows the targeted distribution of resources.
       options: {
         props: ['prop1', 'prop2'],
         shadow: false
-      }
+      } 
     },
     // Extended props, with default values and with native shadow dom
     {
@@ -185,6 +185,58 @@ Using `Function` call client side.
 {
   webpackPublicPathInject: () => global.customPublicPath, // or
   webpackPublicPathInject: function () { return global.customPublicPath; }
+}
+```
+
+
+## `webpackOptimization`
+- Type: `Object`
+  - Default: `undefined`
+
+Defines the webpack optimization options, see [webpack optimization](https://webpack.js.org/configuration/optimization/).
+
+Example to create several chunks with minimum size of 100kb. 
+One of the chunks contains all vue and vuetify related vendor libraries:
+
+```js
+{
+  webpackOptimization: {
+    splitChunks: {
+      automaticNameDelimiter: '.',
+      minChunks: 1,
+      minSize: 100_000,
+      chunks: 'all',
+      cacheGroups: {
+        uiFrameworks: {
+          test: /[/\\]node_modules[/\\](vuetify.*|vue.*)[/\\]/,
+          name: 'ui',
+          chunks: 'all',
+          priority: 10,
+          enforce: true
+        },
+      },
+    }
+  },
+}
+```
+
+## `webpackPlugins`
+- Type: `Object`
+  - Default: `undefined`
+
+Defines webpack plugins, see [webpack plugins](https://webpack.js.org/configuration/plugins/).
+
+The following example includes the `compression-webpack-plugin`:
+
+```js
+{
+  webpackPlugins: [
+    new (require('compression-webpack-plugin'))({
+      filename: '[path][base].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|css)$/,
+    })
+  ]
 }
 ```
 
