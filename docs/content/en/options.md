@@ -136,19 +136,55 @@ You can set as `object` or when using functions in options, use `function`.
 }
 ```
 
-## `webpackOutput`
+
+## `webpack`
+
+Customize the Webpack configuration.
+
+```javascript 
+{
+  webpack: {
+
+    publicPathInject: () => global.customPublicPath,
+
+    output: { … },
+
+    optimization: { … },
+
+    plugins: [ … ]
+
+  }
+}
+```
+
+### `publicPathInject`
+- Type: `Function`
+  - Default: `undefined`
+
+Inject webpack public path over entry file.
+
+Using `Function` call client side. 
+
+```js
+{
+  publicPathInject: () => global.customPublicPath, // or
+  publicPathInject: function () { return global.customPublicPath; }
+}
+```
+
+### `output`
 - Type: `Object`
-  - Default: [See webpackOutput Example](#override-example-with-function)
+  - Default: [See webpack output Example](#override-example-with-functions)
 
 Defines the webpack output options (`filename`, `chunkFilename` and `publicPath`).
 
-You can override the pattern from `webpackOutput.filename` and `webpackOutput.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
+You can override the pattern from `webpack.output.filename` and `webpack.output.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
 
 #### Override example with functions:
 
 ```javascript 
 {
-  webpackOutput: {
+  output: {
     publicPath: '/',
     filename: (webpackConfig, moduleOptions) => {
       if (moduleOptions.modern) {
@@ -168,28 +204,11 @@ You can override the pattern from `webpackOutput.filename` and `webpackOutput.ch
         return '[name].js'
       }
     },
-  }
+  },
 }
 ```
 
-
-## `webpackPublicPathInject`
-- Type: `Function`
-  - Default: `undefined`
-
-Inject webpack public path over entry file.
-
-Using `Function` call client side. 
-
-```js
-{
-  webpackPublicPathInject: () => global.customPublicPath, // or
-  webpackPublicPathInject: function () { return global.customPublicPath; }
-}
-```
-
-
-## `webpackOptimization`
+### `optimization`
 - Type: `Object`
   - Default: `undefined`
 
@@ -200,7 +219,7 @@ One of the chunks contains all vue and vuetify related vendor libraries:
 
 ```js
 {
-  webpackOptimization: {
+  optimization: {
     splitChunks: {
       automaticNameDelimiter: '.',
       minChunks: 1,
@@ -220,7 +239,7 @@ One of the chunks contains all vue and vuetify related vendor libraries:
 }
 ```
 
-## `webpackPlugins`
+### `plugins`
 - Type: `Object`
   - Default: `undefined`
 
@@ -230,13 +249,13 @@ The following example includes the `compression-webpack-plugin`:
 
 ```js
 {
-  webpackPlugins: [
+  plugins: [
     new (require('compression-webpack-plugin'))({
       filename: '[path][base].gz[query]',
       algorithm: 'gzip',
       test: /\.(js|css)$/,
     })
-  ]
+  ],
 }
 ```
 
@@ -247,6 +266,11 @@ The following example includes the `compression-webpack-plugin`:
   customElements: {
     analyzer: true,
     modern: true,
+
+    webpack: {
+      publicPathInject: function () { return global.customPublicPath; }
+    },
+
     entries: [
 
       // Entry with single tag.
