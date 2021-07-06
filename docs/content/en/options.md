@@ -59,7 +59,7 @@ Allows the targeted distribution of resources.
       options: {
         props: ['prop1', 'prop2'],
         shadow: false
-      }
+      } 
     },
     // Extended props, with default values and with native shadow dom
     {
@@ -136,19 +136,55 @@ You can set as `object` or when using functions in options, use `function`.
 }
 ```
 
-## `webpackOutput`
+
+## `webpack`
+
+Customize the Webpack configuration.
+
+```javascript 
+{
+  webpack: {
+
+    publicPathInject: () => global.customPublicPath,
+
+    output: { … },
+
+    optimization: { … },
+
+    plugins: [ … ]
+
+  }
+}
+```
+
+### `publicPathInject`
+- Type: `Function`
+  - Default: `undefined`
+
+Inject webpack public path over entry file.
+
+Using `Function` call client side. 
+
+```js
+{
+  publicPathInject: () => global.customPublicPath, // or
+  publicPathInject: function () { return global.customPublicPath; }
+}
+```
+
+### `output`
 - Type: `Object`
-  - Default: [See webpackOutput Example](#override-example-with-function)
+  - Default: [See webpack output Example](#override-example-with-functions)
 
 Defines the webpack output options (`filename`, `chunkFilename` and `publicPath`).
 
-You can override the pattern from `webpackOutput.filename` and `webpackOutput.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
+You can override the pattern from `webpack.output.filename` and `webpack.output.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
 
 #### Override example with functions:
 
 ```javascript 
 {
-  webpackOutput: {
+  output: {
     publicPath: '/',
     filename: (webpackConfig, moduleOptions) => {
       if (moduleOptions.modern) {
@@ -168,23 +204,58 @@ You can override the pattern from `webpackOutput.filename` and `webpackOutput.ch
         return '[name].js'
       }
     },
-  }
+  },
 }
 ```
 
-
-## `webpackPublicPathInject`
-- Type: `Function`
+### `optimization`
+- Type: `Object`
   - Default: `undefined`
 
-Inject webpack public path over entry file.
+Defines the webpack optimization options, see [webpack optimization](https://webpack.js.org/configuration/optimization/).
 
-Using `Function` call client side. 
+Example to create several chunks with minimum size of 100kb. 
+One of the chunks contains all vue and vuetify related vendor libraries:
 
 ```js
 {
-  webpackPublicPathInject: () => global.customPublicPath, // or
-  webpackPublicPathInject: function () { return global.customPublicPath; }
+  optimization: {
+    splitChunks: {
+      automaticNameDelimiter: '.',
+      minChunks: 1,
+      minSize: 100_000,
+      chunks: 'all',
+      cacheGroups: {
+        uiFrameworks: {
+          test: /[/\\]node_modules[/\\](vuetify.*|vue.*)[/\\]/,
+          name: 'ui',
+          chunks: 'all',
+          priority: 10,
+          enforce: true
+        },
+      },
+    }
+  },
+}
+```
+
+### `plugins`
+- Type: `Object`
+  - Default: `undefined`
+
+Defines webpack plugins, see [webpack plugins](https://webpack.js.org/configuration/plugins/).
+
+The following example includes the `compression-webpack-plugin`:
+
+```js
+{
+  plugins: [
+    new (require('compression-webpack-plugin'))({
+      filename: '[path][base].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|css)$/,
+    })
+  ],
 }
 ```
 
@@ -195,6 +266,11 @@ Using `Function` call client side.
   customElements: {
     analyzer: true,
     modern: true,
+
+    webpack: {
+      publicPathInject: function () { return global.customPublicPath; }
+    },
+
     entries: [
 
       // Entry with single tag.

@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted () {
-    /* Generate Test for `webpackOutput.chunkFilename`; test/module.spa.test.js */
+    /* Generate Test for `webpack.output.chunkFilename`; test/module.spa.test.js */
     import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk');
   }
 };
@@ -61,5 +61,14 @@ export default {
   padding: 5px;
   color: white;
   background: #3b8070;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+.content a {
+  margin-top: 10px;
+  color: currentColor;
 }
 </style>
