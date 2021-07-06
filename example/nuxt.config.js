@@ -62,10 +62,12 @@ module.exports = {
     analyzer: !isTest,
     modern: true,
     modernPolyfill: true,
-    webpackOutput: {
-      publicPath: getPublicPath()
+    webpack: {
+      output: {
+        publicPath: getPublicPath()
+      },
+      publicPathInject: () => global.customPublicPath
     },
-    webpackPublicPathInject: () => global.customPublicPath,
     entries: [
       {
         name: 'Example',

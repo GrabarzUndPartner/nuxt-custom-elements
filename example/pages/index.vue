@@ -7,7 +7,8 @@
     <div class="container">
       <client-only>
         <custom-element-example title="Custom Title">
-          Custom Slot Content
+          Custom Slot Content<br>
+          <a href="./nuxt-custom-elements/example/">Go to Real Example</a>
         </custom-element-example>
       </client-only>
     </div>
