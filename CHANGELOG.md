@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.7.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.2...v1.7.0) (2021-07-06)
+
+
+### Features
+
+* **webpack:** add webpack option object, remove single options ([2c2b088](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/2c2b088bfb21a372ca01a1fb909a95b6795e2e31))
+
 ## [1.6.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.1...v1.6.2) (2021-03-14)
 
 
