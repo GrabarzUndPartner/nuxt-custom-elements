@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.1...v1.7.2) (2021-07-12)
+
+
+### Bug Fixes
+
+* **webpack:** remove chunk name comment, define chunkname in webpack config ([5432657](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/543265705585100c089393aa0d4c8e0b8c1e88f6))
+
 ## [1.7.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.0...v1.7.1) (2021-07-09)
 
 
