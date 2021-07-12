@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.0...v1.7.1) (2021-07-09)
+
+
+### Bug Fixes
+
+* **module:** fix deprecated warning ([50056e7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/50056e7f90661147aab9583709e0cbd30be1ddf8))
+
 # [1.7.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.2...v1.7.0) (2021-07-06)
 
 
