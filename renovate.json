@@ -3,7 +3,10 @@
     "@nuxtjs"
   ],
   "baseBranches": [
-    "release"
+    "develop"
   ],
-  "automerge": true
+  "rangeStrategy": "pin",
+  "ignoreDeps": [
+    "docus"
+  ]
 }

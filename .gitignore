@@ -7,7 +7,9 @@ node_modules
 .vscode/settings.json
 !.vscode/launch.json
 .DS_Store
+.eslintcache
 coverage
 dist
-reports
-test/generates
+.reports
+test/.*
+sw.*

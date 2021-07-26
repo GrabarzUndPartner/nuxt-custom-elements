@@ -1,6 +1,6 @@
 {
   "name": "nuxt-custom-elements",
-  "version": "1.4.2",
+  "version": "1.7.2",
   "description": "Publish your Components as a vue-custom-element standalone build.",
   "keywords": [
     "nuxtjs",
@@ -9,63 +9,71 @@
     "custom-element",
     "shadow-dom"
   ],
-  "repository": "GrabarzUndPartner/nuxt-custom-elements",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GrabarzUndPartner/nuxt-custom-elements"
+  },
   "license": "MIT",
   "author": "Thorn-Welf Walli",
   "contributors": [
     {
       "name": "Thorn-Welf Walli",
-      "email": "thorn.walli@grabarzundpartner.de"
+      "email": "lammpee@gmail.de"
     }
   ],
-  "files": [
-    "lib"
-  ],
-  "main": "lib/module.js",
+  "main": "index.js",
   "scripts": {
+    "postinstall": "node ./install.js",
+    "postversion": "cp -r ./package.json ..",
     "dev": "nuxt example",
     "generate": "nuxt generate --config-file example/nuxt.config.js",
     "build": "nuxt build --config-file example/nuxt.config.js",
-    "start:build": "yarn build && yarn express-server",
-    "lint": "yarn lint:js && yarn lint:css",
-    "lint:js": "eslint --ext .js,.vue example lib test",
+    "start:build": "npm run build && npm run express-server",
+    "lint": "npm run lint:es && npm run lint:css",
+    "lint:es": "eslint --ext .js,.vue .",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
-    "express-server": "node ./tools/express-server.js --dist dist",
-    "test": "yarn lint && jest",
-    "jest": "jest"
+    "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
+    "test": "npm run lint && jest",
+    "jest": "jest",
+    "express-server": "node ./tools/express-server.js --dist dist"
   },
   "dependencies": {
-    "@ungap/custom-elements": "0.1.10",
+    "@ungap/custom-elements": "1.0.0",
     "change-case": "4.1.2",
     "raw-loader": "4.0.2",
-    "vue-custom-element": "3.2.14"
+    "vue-custom-element": "3.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.9",
-    "@babel/preset-env": "7.12.7",
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "@nuxt/builder": "2.14.9",
-    "@nuxt/config": "2.14.9",
-    "@nuxt/core": "2.14.9",
-    "@nuxt/webpack": "2.14.9",
-    "@nuxtjs/eslint-config": "5.0.0",
-    "@nuxtjs/module-test-utils": "1.6.3",
+    "@babel/core": "7.14.6",
+    "@babel/preset-env": "7.14.7",
+    "@babel/preset-typescript": "7.14.5",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
+    "@nuxt/test-utils": "0.2.2",
+    "@nuxtjs/eslint-config": "6.0.1",
+    "@nuxtjs/eslint-module": "3.0.2",
+    "@nuxtjs/stylelint-module": "4.0.0",
     "babel-eslint": "10.1.0",
-    "babel-jest": "26.6.3",
-    "codecov": "3.8.1",
-    "core-js": "3.8.0",
-    "eslint": "7.15.0",
-    "husky": "4.3.4",
-    "jest": "26.6.3",
-    "nuxt-edge": "latest",
-    "puppeteer": "5.5.0",
-    "standard-version": "9.0.0",
-    "stylelint": "13.8.0",
-    "stylelint-config-recess-order": "2.3.0",
-    "stylelint-config-standard": "20.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
+    "babel-jest": "27.0.6",
+    "commitlint": "12.1.4",
+    "core-js": "3.15.2",
+    "cors": "2.8.5",
+    "eslint": "7.30.0",
+    "eslint-formatter-json-relative": "0.1.0",
+    "eslint-plugin-no-secrets": "0.8.9",
+    "eslint-plugin-scanjs-rules": "0.2.1",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-sonarjs": "0.9.1",
+    "eslint-plugin-xss": "0.1.10",
+    "express": "4.17.1",
+    "husky": "7.0.1",
+    "jest": "27.0.6",
+    "lint-staged": "11.0.0",
+    "nuxt": "2.15.7",
+    "playwright": "1.12.3",
+    "standard-version": "9.3.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-recess-order": "2.4.0",
+    "stylelint-config-standard": "22.0.0"
   }
 }

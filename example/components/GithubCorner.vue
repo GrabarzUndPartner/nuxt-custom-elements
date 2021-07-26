@@ -17,11 +17,11 @@ export default {
       default: process.env.GITHUB_REPO_URL || 'https://your-url'
     }
   }
-}
+};
 
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .atom-github-corner {
   &:hover {
     & .octo-arm { animation: octocat-wave 560ms ease-in-out; }

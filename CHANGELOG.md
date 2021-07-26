@@ -1,5 +1,62 @@
 # Project Changelog
 
+## [1.7.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.1...v1.7.2) (2021-07-12)
+
+
+### Bug Fixes
+
+* **webpack:** remove chunk name comment, define chunkname in webpack config ([5432657](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/543265705585100c089393aa0d4c8e0b8c1e88f6))
+
+## [1.7.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.0...v1.7.1) (2021-07-09)
+
+
+### Bug Fixes
+
+* **module:** fix deprecated warning ([50056e7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/50056e7f90661147aab9583709e0cbd30be1ddf8))
+
+# [1.7.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.2...v1.7.0) (2021-07-06)
+
+
+### Features
+
+* **webpack:** add webpack option object, remove single options ([2c2b088](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/2c2b088bfb21a372ca01a1fb909a95b6795e2e31))
+
+## [1.6.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.1...v1.6.2) (2021-03-14)
+
+
+### Bug Fixes
+
+* **output:** add prop slotContent for default slot content in output html ([d8f6c5b](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/d8f6c5b4613ba62218987d90ec4e21ab607509dc))
+
+## [1.6.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.6.0...v1.6.1) (2021-03-13)
+
+
+### Bug Fixes
+
+* **build:** fix custom-tag props by function ([5b6cfe6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/5b6cfe6c02f1aa91ff3c081f1daeb3f9220557d5)), closes [#304](https://github.com/GrabarzUndPartner/nuxt-custom-elements/issues/304)
+
+# [1.6.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.1...v1.6.0) (2021-02-21)
+
+
+### Features
+
+* **tag-option:** remove shadow prop; add function options ([9a4a4b7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/9a4a4b76410bffe5ece8feec6047f0eb201b528f))
+
+## [1.5.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.5.0...v1.5.1) (2021-02-20)
+
+
+### Bug Fixes
+
+* **sonar:** fix songar bugs ([cd777da](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cd777daf5c64ba4836da70d1f65172c0f174d6ac))
+
+# [1.5.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.2...v1.5.0) (2021-02-18)
+
+
+### Features
+
+* **webpack:** add public-path override in entry ([045a656](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/045a656c1170c0bdeef47191dc766c3240f0e102))
+* **webpack:** rename property webpackPublicPathInject ([40d89d2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/40d89d2d80d516910abb92dcc91e1bac9cc9a0af))
+
 ## [1.4.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.4.1...v1.4.2) (2020-11-05)
 
 
