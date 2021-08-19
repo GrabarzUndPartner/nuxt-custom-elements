@@ -26,6 +26,12 @@ If `true`, a `modern` build is generated, sets `false` for only [client build](h
 
  <alert>To use `modern`, `modern` must be active in nuxt. </alert>
 
+## `polyfill`
+- Type: `Boolean`
+  - Default: `true`
+
+Set `false` to disable polyfill for [custom elements](https://github.com/ungap/custom-elements). 
+
 ## `modernPolyfill`
 - Type: `Boolean`
   - Default: `false`
