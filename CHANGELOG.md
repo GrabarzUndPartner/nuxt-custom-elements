@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.3...v1.7.4) (2021-08-19)
+
+
+### Bug Fixes
+
+* **extractCSS:** fix extractCSS for build with target static ([cee5765](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cee5765f4d5811d03951882c19b77845f9bb9786))
+
 ## [1.7.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.2...v1.7.3) (2021-08-19)
 
 
