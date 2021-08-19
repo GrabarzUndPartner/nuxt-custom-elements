@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.2...v1.7.3) (2021-08-19)
+
+
+### Bug Fixes
+
+* **polyfill:** add option for disable polyfill ([7be72b2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/7be72b2a6a6e980da1136d00ee874f4daa151c4a))
+
 ## [1.7.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.1...v1.7.2) (2021-07-12)
 
 
