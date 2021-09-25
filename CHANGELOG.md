@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.5-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.4...v1.7.5-beta.1) (2021-09-25)
+
+
+### Bug Fixes
+
+* **plugin:** renaming plugin call ([598616f](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/598616f216989da1e7a54b8e6dd1eaadbb963d6a))
+
 ## [1.7.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.3...v1.7.4) (2021-08-19)
 
 
