@@ -28,7 +28,7 @@ Vue.config.ignoredElements = [
 export default {
   components: { GithubCorner },
   created () {
-    this.$registerCustomElementsEntry('example');
+    this.$customElements.registerEntry('example');
   }
 };
 
