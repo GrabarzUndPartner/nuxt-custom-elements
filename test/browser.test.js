@@ -7,7 +7,7 @@ import { chromium, firefox } from 'playwright';
 
 const CHROMIUM = 0;
 const FIREFOX = 1;
-// eslint-disable-next-line scanjs-rules/call_setTimeout
+
 jest.setTimeout(20000);
 
 describe('browser (client & modern) (chromium and firefox)', () => {
