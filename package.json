@@ -35,6 +35,7 @@
     "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
     "test": "npm run lint && jest",
     "jest": "jest",
+    "start": "nuxt start --config-file example/nuxt.config.js",
     "express-server": "node ./tools/express-server.js --dist dist"
   },
   "dependencies": {

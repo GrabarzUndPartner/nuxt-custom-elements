@@ -5,9 +5,11 @@ position: 14
 category: 'Guide'
 ---
 
-## $registerCustomElementsEntry
+## 
 
-`$registerCustomElementsEntry` is used to include the defined entries during development. 
+## $customElements.registerEntry
+
+`$customElements.registerEntry` is used to include the defined entries during development. 
 
 This allows you to include the components without a separate import and allows you to test as a custom-elements integration.
 
@@ -54,9 +56,9 @@ Vue.config.ignoredElements = [
 
 export default {
   created () {
-    this.$registerCustomElementsEntry('Example')
+    this.$customElements.registerEntry('Example');
     // or
-    this.$registerCustomElementsEntry('example')
+    this.$customElements.registerEntry('example');
   }
 }
 </script>
