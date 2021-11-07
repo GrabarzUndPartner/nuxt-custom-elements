@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.6-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.5...v1.7.6-beta.1) (2021-11-07)
+
+
+### Bug Fixes
+
+* **docs:** replace docus with nuxt docs theme ([2d1d2fc](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/2d1d2fc575f2a08f73a8f06c9771043ae63028a0))
+
 ## [1.7.5-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.5-beta.1...v1.7.5-beta.2) (2021-11-07)
 ## [1.7.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.4...v1.7.5) (2021-09-25)
 
