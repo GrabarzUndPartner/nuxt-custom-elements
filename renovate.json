@@ -5,8 +5,5 @@
   "baseBranches": [
     "beta"
   ],
-  "rangeStrategy": "pin",
-  "ignoreDeps": [
-    "docus"
-  ]
+  "rangeStrategy": "pin"
 }
