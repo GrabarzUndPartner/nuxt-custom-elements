@@ -72,6 +72,6 @@
     "standard-version": "9.3.2",
     "stylelint": "13.13.1",
     "stylelint-config-recess-order": "2.5.0",
-    "stylelint-config-standard": "22.0.0"
+    "stylelint-config-standard": "23.0.0"
   }
 }
