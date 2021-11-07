@@ -1,7 +1,12 @@
-import { withDocus } from 'docus';
+
+import theme from '@nuxt/content-theme-docs';
 import nuxtCustomElementsPkg from '../package.json';
 
-export default withDocus({
+export default theme({
+  docs: {
+    primaryColor: '#51bbaf',
+    codeColor: '#51bbaf'
+  },
 
   pwa: {
     manifest: {
