@@ -5,14 +5,7 @@
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
   },
-  "github": {
-    "repo": "GrabarzUndPartner/nuxt-custom-elements",
-    "branch": "main",
-    "dir": "docs",
-    "releases": false
-  },
-  "colors": {
-    "primary": "#51bbaf",
-    "code": "#51bbaf"
-  }
+  "github": "GrabarzUndPartner/nuxt-custom-elements",
+  "defaultBranch": "main",
+  "defaultDir": "docs"
 }
