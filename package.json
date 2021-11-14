@@ -70,7 +70,7 @@
     "nuxt": "2.15.8",
     "playwright": "1.16.3",
     "standard-version": "9.3.2",
-    "stylelint": "13.13.1",
+    "stylelint": "14.1.0",
     "stylelint-config-recess-order": "2.5.0",
     "stylelint-config-standard": "22.0.0"
   }
