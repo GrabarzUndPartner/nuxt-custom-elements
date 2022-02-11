@@ -3,8 +3,16 @@
     "stylelint-config-standard",
     "stylelint-config-recess-order"
   ],
+  "customSyntax": "postcss-html",
   "ignoreFiles": [
     "./**/*.js"
   ],
-  "rules": {}
+  "rules": {
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true
+      }
+    ]
+  }
 }

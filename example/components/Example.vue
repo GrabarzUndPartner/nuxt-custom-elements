@@ -29,17 +29,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .custom-element-example {
   min-width: 300px;
   padding: 10px;
   font-family:
-    'Source Sans Pro',
+    "Source Sans Pro",
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial,
     sans-serif;
   font-size: 16px;
