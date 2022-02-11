@@ -7,5 +7,12 @@
   "ignoreFiles": [
     "./**/*.js"
   ],
-  "rules": {}
+  "rules": {
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true
+      }
+    ]
+  }
 }
