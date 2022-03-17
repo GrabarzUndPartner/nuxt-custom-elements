@@ -16,11 +16,11 @@ jobs:
         node: [14]
 
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: cache node_modules (Example)
         uses: actions/cache@v2
         id: cache
@@ -56,11 +56,11 @@ jobs:
         node: [14]
 
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Versioning
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -81,11 +81,11 @@ jobs:
         node: [14]
 
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: cache node_modules
         uses: actions/cache@v2
         id: cache
@@ -120,11 +120,11 @@ jobs:
         node: [14]
 
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: cache docs/node_modules
         uses: actions/cache@v2
         id: cacheDocs
