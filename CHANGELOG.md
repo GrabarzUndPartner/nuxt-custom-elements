@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.7.7-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.7-beta.1...v1.7.7-beta.2) (2022-03-29)
+
+
+### Bug Fixes
+
+* **npm:** force publish ([134060d](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/134060d9f37bcd058f8f49f560d4320073d0fb3d))
+
 ## [1.7.7-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.6...v1.7.7-beta.1) (2022-03-29)
 
 
