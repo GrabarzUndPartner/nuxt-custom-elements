@@ -11,8 +11,6 @@ module.exports = {
     '^@@$': '<rootDir>',
     '^@/(.*)$': '<rootDir>/lib/$1'
   },
-  transformIgnorePatterns: [
-    `/node_modules/(?!${['@nuxt/i18m']})`],
   testPathIgnorePatterns: [
     // 'test/browser.test.js'
   ]
