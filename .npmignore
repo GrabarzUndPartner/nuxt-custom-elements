@@ -30,12 +30,15 @@ jsconfig.json
 jest.config.js
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+CHANGELOG.md
 README.md
 commitlint.config.js
 renovate.json
 vetur.config.json
+sandbox.config.json
 
 /docs
 /lib
 /example
 /test
+/tools
