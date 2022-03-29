@@ -81,3 +81,4 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-custom-elements.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/nuxt-custom-elements
+
