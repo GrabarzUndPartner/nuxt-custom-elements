@@ -21,10 +21,7 @@
       }
     ],
     [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "./publish"
-      }
+      "@semantic-release/npm"
     ],
     [
       "@semantic-release/git",
