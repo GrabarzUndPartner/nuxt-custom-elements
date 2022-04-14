@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "1669dd4a7b794ef010ab",
-  "time": 2151,
-  "builtAt": 1649714194382,
+  "time": 2465,
+  "builtAt": 1649951335017,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
@@ -4805,9 +4805,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterator-close.js",
-          "issuerId": 103,
-          "issuerName": "./node_modules/core-js/internals/iterator-close.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-iterator-method.js",
+          "issuerId": 71,
+          "issuerName": "./node_modules/core-js/internals/get-iterator-method.js",
           "issuerPath": [
             {
               "id": 80,
@@ -4830,9 +4830,9 @@
               "name": "./node_modules/core-js/internals/iterate.js"
             },
             {
-              "id": 103,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterator-close.js",
-              "name": "./node_modules/core-js/internals/iterator-close.js"
+              "id": 71,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-iterator-method.js",
+              "name": "./node_modules/core-js/internals/get-iterator-method.js"
             }
           ],
           "failed": false,
@@ -16163,9 +16163,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterator-close.js",
-      "issuerId": 103,
-      "issuerName": "./node_modules/core-js/internals/iterator-close.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-iterator-method.js",
+      "issuerId": 71,
+      "issuerName": "./node_modules/core-js/internals/get-iterator-method.js",
       "issuerPath": [
         {
           "id": 80,
@@ -16188,9 +16188,9 @@
           "name": "./node_modules/core-js/internals/iterate.js"
         },
         {
-          "id": 103,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/iterator-close.js",
-          "name": "./node_modules/core-js/internals/iterator-close.js"
+          "id": 71,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-iterator-method.js",
+          "name": "./node_modules/core-js/internals/get-iterator-method.js"
         }
       ],
       "failed": false,
