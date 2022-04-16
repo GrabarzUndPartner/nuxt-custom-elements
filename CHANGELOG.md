@@ -1,5 +1,17 @@
 # Project Changelog
 
+# [1.8.0-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.7...v1.8.0-beta.1) (2022-04-16)
+
+
+### Bug Fixes
+
+* **webpack:** remove conditional operator, remove node 12 from test ([cadcda5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cadcda5312434e5b71d2a3c15ca4d45fa9f1de82))
+
+
+### Features
+
+* **shadow:** shadowDom integration improved; update test framework ([a32bcd9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/a32bcd9a5336afe2cdcae70931abf9a06080be8b))
+
 ## [1.7.7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.6...v1.7.7) (2022-03-29)
 
 
