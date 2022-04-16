@@ -43,6 +43,7 @@
     "@ungap/custom-elements": "1.0.2",
     "change-case": "4.1.2",
     "clone": "^2.1.2",
+    "defu": "^6.0.0",
     "vue-custom-element": "3.3.0"
   },
   "devDependencies": {
@@ -58,7 +59,6 @@
     "commitlint": "16.2.3",
     "core-js": "3.21.1",
     "cors": "2.8.5",
-    "defu": "^6.0.0",
     "eslint": "8.13.0",
     "eslint-formatter-json-relative": "0.1.0",
     "eslint-plugin-no-secrets": "0.8.9",
