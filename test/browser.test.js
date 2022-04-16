@@ -12,11 +12,11 @@ import nuxtConfig from '../example/nuxt.config';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
-describe('browser (client & modern) (chromium and firefox)', () => {
+describe('🧐 inspect browser (client & modern) (chromium and firefox)', () => {
   startTest();
 });
 
-describe('browser (client) (chromium and firefox)', () => {
+describe('🧐 inspect browser (client) (chromium and firefox)', () => {
   startTest(false);
 });
 
@@ -50,31 +50,27 @@ function startTest (modern = true) {
 
   test('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
-    page.goto(getURL(serverUrl, '/example/'));
+    await page.goto(joinURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
-    page.goto(getURL(serverUrl, '/example/'));
+    await page.goto(joinURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
-    page.goto(getURL(serverUrl, '/example-shadow/'));
+    await page.goto(joinURL(serverUrl, '/example-shadow/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
-    page.goto(getURL(serverUrl, '/example-shadow/'));
+    await page.goto(joinURL(serverUrl, '/example-shadow/'));
     await page.waitForSelector('.custom-element-example');
   });
-}
-
-function getURL (url, path) {
-  return joinURL(url, path);
 }
 
 function startStaticServer (dist, port = 3000, hostname = 'localhost') {
