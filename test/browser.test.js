@@ -1,7 +1,7 @@
 
 import { join, resolve as pathResolve } from 'path';
+import { joinURL } from 'ufo';
 import { Nuxt, Builder } from 'nuxt';
-import getPort from 'get-port';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
@@ -21,7 +21,7 @@ describe('browser (client) (chromium and firefox)', () => {
 });
 
 function startTest (modern = true) {
-  let browsers, port, nuxt;
+  let browsers, nuxt, serverUrl;
 
   const testDir = pathResolve(__dirname, `.browser${modern ? '-modern' : ''}`);
   const buildDir = join(testDir, '.nuxt');
@@ -40,8 +40,8 @@ function startTest (modern = true) {
       chromium.launch(),
       firefox.launch()
     ]);
-    port = await getPort();
-    await startStaticServer(customElementsDir, port);
+    const { url } = await startStaticServer(customElementsDir);
+    serverUrl = url;
   });
 
   afterAll(async () => {
@@ -50,31 +50,31 @@ function startTest (modern = true) {
 
   test('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
-    page.goto(getUrl('/example/', port));
+    page.goto(getURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
-    page.goto(getUrl('/example/', port));
+    page.goto(getURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
-    page.goto(getUrl('/example-shadow/', port));
+    page.goto(getURL(serverUrl, '/example-shadow/'));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
-    page.goto(getUrl('/example-shadow/', port));
+    page.goto(getURL(serverUrl, '/example-shadow/'));
     await page.waitForSelector('.custom-element-example');
   });
 }
 
-function getUrl (path, port) {
-  return `http://localhost:${port}${path}`;
+function getURL (url, path) {
+  return joinURL(url, path);
 }
 
 function startStaticServer (dist, port = 3000, hostname = 'localhost') {
