@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.8.0-beta.6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.5...v1.8.0-beta.6) (2022-04-16)
+
+
+### Bug Fixes
+
+* **server:** replace `express` with `h3` ([68ee459](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/68ee4594298df9340d80782ce66c036bce716238))
+
 # [1.8.0-beta.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.4...v1.8.0-beta.5) (2022-04-16)
 
 
