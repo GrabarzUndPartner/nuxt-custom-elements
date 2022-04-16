@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.8.0-beta.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2022-04-16)
+
+
+### Bug Fixes
+
+* **webpack:** improve code ([6899f63](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/6899f637356bcfd21d108472b24dd9fe2bcc98c9))
+
 # [1.8.0-beta.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2022-04-16)
 
 
