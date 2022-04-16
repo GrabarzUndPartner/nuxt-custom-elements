@@ -56,6 +56,7 @@ Allows the targeted distribution of resources.
 ```js
 {
   name: 'EndpointName',
+  shadow: true,
   tags: [
     // Simplified props, definition only
     {
@@ -63,11 +64,10 @@ Allows the targeted distribution of resources.
       name: 'TagName',
       path: 'component path',
       options: {
-        props: ['prop1', 'prop2'],
-        shadow: false
+        props: ['prop1', 'prop2']
       } 
     },
-    // Extended props, with default values and with native shadow dom
+    // Extended props, with default values
     {
       async: true,
       name: 'AnotherTagName',
@@ -76,21 +76,29 @@ Allows the targeted distribution of resources.
         props: {
           prop1: false,
           prop2: true
-        },
-        shadow: true
+        }
       }
     }
   ]
 }
 ```
 
-| Key    | Type     | Requried | Description                                                       | Default |
-| ------ | -------- | -------- | ----------------------------------------------------------------- | ------- |
-| `name` | `String` | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
-| `tags` | `Array`  |          | Tag Definitions.                                                  | `[]`    |
+| Key      | Type      | Requried | Description                                                       | Default |
+| -------- | --------- | -------- | ----------------------------------------------------------------- | ------- |
+| `name`   | `String`  | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
+| `shadow` | `Boolean` |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
+| `tags`   | `Array`   |          | Tag Definitions.                                                  | `[]`    |
 
 
-
+<alert type="warning">
+  <strong>Beware for the use of <code>Shadow DOM</code></strong>
+  <br>The following customizations are made for the use of <code>Shadow DOM</code>:
+  <br>
+  <ul>
+  <li>CustomElement hook <code>beforeCreateVueInstance</code> is set.<br><em>A set via the tag options will be overridden.</em><br><a href="https://github.com/karol-f/vue-custom-element#shadowdom-example">https://github.com/karol-f/vue-custom-element#shadowdom-example</a></li>
+  <li>Webpack rules of <code>vue-loader</code> and <code>vue-style-loader</code> are extended with <code>shadowMode</code> option.</li>
+  </ul>
+</alert>
 
 ### Tag
 

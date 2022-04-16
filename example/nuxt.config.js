@@ -88,6 +88,23 @@ module.exports = {
             slotContent: '<div>Live Example Content</div>'
           }
         ]
+      },
+      {
+        name: 'ExampleShadow',
+        shadow: true,
+        tags: [
+          {
+            async: false,
+            name: 'CustomElementExampleShadow',
+            path: '@/components/Example',
+            options: {
+              props: {
+                title: 'Live Example'
+              }
+            },
+            slotContent: '<div>Live Shadow Example Content</div>'
+          }
+        ]
       }
     ]
   },

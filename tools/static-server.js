@@ -1,18 +1,15 @@
 const { paramCase } = require('change-case');
-const express = require('express');
-const cors = require('cors');
-const app = express();
-
-app.use(cors());
-app.disable('x-powered-by');
+const { createApp } = require('h3');
+const { listen } = require('listhen');
+const serveStatic = require('serve-static');
 
 const dist = getDist();
 
-app.use(express.static(dist));
-app.listen(getPort(), getHost(), function () {
-  const { address, port } = this.address();
-  // eslint-disable-next-line no-console
-  console.log(`server listening on http://${address}:${port} ; dist: ${dist}`);
+const app = createApp();
+app.use(serveStatic(dist));
+
+listen(app, {
+  hostname: getHost(), port: getPort()
 });
 
 function getDist () {

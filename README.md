@@ -26,6 +26,7 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 - Using modern and client build
 - Export components as widgets
+- Use the `Shadow DOM` 🥷
 - Use [TailwindCSS](https://tailwindcss.com/) and [Vuetify](https://vuetifyjs.com/) for your widgets
   
 📖 &nbsp;&nbsp;[Learn more in the documentation](https://nuxt-custom-elements.grabarzundpartner.dev/)

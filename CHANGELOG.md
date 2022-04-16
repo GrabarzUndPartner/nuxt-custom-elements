@@ -1,5 +1,52 @@
 # Project Changelog
 
+# [1.8.0-beta.6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.5...v1.8.0-beta.6) (2022-04-16)
+
+
+### Bug Fixes
+
+* **server:** replace `express` with `h3` ([68ee459](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/68ee4594298df9340d80782ce66c036bce716238))
+
+# [1.8.0-beta.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.4...v1.8.0-beta.5) (2022-04-16)
+
+
+### Bug Fixes
+
+* **module:** update deprecated error ([c369a09](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/c369a0990c086c6783cb83b6501a6fc35d2d8ec0))
+
+# [1.8.0-beta.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2022-04-16)
+
+
+### Bug Fixes
+
+* **webpack:** improve code ([6899f63](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/6899f637356bcfd21d108472b24dd9fe2bcc98c9))
+
+# [1.8.0-beta.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2022-04-16)
+
+
+### Bug Fixes
+
+* **deps:** add missing dep ([d2eb0bb](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/d2eb0bb48a15451685062c16cd4ed93a1b038bff))
+
+# [1.8.0-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.1...v1.8.0-beta.2) (2022-04-16)
+
+
+### Bug Fixes
+
+* **deps:** fix missing dep ([61c6120](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/61c6120bd3790c8960c0dbe38a4369fb0727db10))
+
+# [1.8.0-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.7...v1.8.0-beta.1) (2022-04-16)
+
+
+### Bug Fixes
+
+* **webpack:** remove conditional operator, remove node 12 from test ([cadcda5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cadcda5312434e5b71d2a3c15ca4d45fa9f1de82))
+
+
+### Features
+
+* **shadow:** shadowDom integration improved; update test framework ([a32bcd9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/a32bcd9a5336afe2cdcae70931abf9a06080be8b))
+
 ## [1.7.7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.6...v1.7.7) (2022-03-29)
 
 
