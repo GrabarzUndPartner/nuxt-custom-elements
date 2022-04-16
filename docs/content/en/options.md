@@ -86,12 +86,19 @@ Allows the targeted distribution of resources.
 | Key      | Type      | Requried | Description                                                       | Default |
 | -------- | --------- | -------- | ----------------------------------------------------------------- | ------- |
 | `name`   | `String`  | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
-| `shadow` | `Boolean` |          | If set, the tags are used with the ShadowDom.                     | `false` |
+| `shadow` | `Boolean` |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
 | `tags`   | `Array`   |          | Tag Definitions.                                                  | `[]`    |
 
 
-<alert type="warning">Beware for the use of ShadowDom, the webpack rules of `vue-loader` and `vue-style-loader` are extended with the option `shadowMode`.<br><br>For possible problems you might find the approach [here](#).</alert>
-
+<alert type="warning">
+  <strong>Beware for the use of <code>Shadow DOM</code></strong>
+  <br>The following customizations are made for the use of <code>Shadow DOM</code>:
+  <br>
+  <ul>
+  <li>CustomElement hook <code>beforeCreateVueInstance</code> is set.<br><em>A set via the tag options will be overridden.</em><br><a href="https://github.com/karol-f/vue-custom-element#shadowdom-example">https://github.com/karol-f/vue-custom-element#shadowdom-example</a></li>
+  <li>Webpack rules of <code>vue-loader</code> and <code>vue-style-loader</code> are extended with <code>shadowMode</code> option.</li>
+  </ul>
+</alert>
 
 ### Tag
 
