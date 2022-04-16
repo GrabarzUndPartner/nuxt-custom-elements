@@ -6,9 +6,9 @@ import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
 import { createApp } from 'h3';
+import { listen } from 'listhen';
+import serveStatic from 'serve-static';
 import nuxtConfig from '../example/nuxt.config';
-const { listen } = require('listhen');
-const serveStatic = require('serve-static');
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 

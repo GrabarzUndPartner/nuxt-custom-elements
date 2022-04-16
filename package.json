@@ -34,7 +34,7 @@
     "lint:es": "eslint --ext .js,.vue .",
     "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
     "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
-    "test": "npm run lint && vitest:run",
+    "test": "npm run lint && npm run vitest:run",
     "vitest:run": "vitest run",
     "vitest:dev": "vitest dev",
     "start": "nuxt start --config-file example/nuxt.config.js",
