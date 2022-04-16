@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "fa25cd5944f3295a9dee",
-  "time": 1485,
-  "builtAt": 1650143922729,
+  "time": 1342,
+  "builtAt": 1650146476979,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
@@ -3933,9 +3933,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-apply.js",
-          "issuerId": 69,
-          "issuerName": "./node_modules/core-js/internals/function-apply.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-call.js",
+          "issuerId": 8,
+          "issuerName": "./node_modules/core-js/internals/function-call.js",
           "issuerPath": [
             {
               "id": 95,
@@ -3953,9 +3953,9 @@
               "name": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "id": 69,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-apply.js",
-              "name": "./node_modules/core-js/internals/function-apply.js"
+              "id": 8,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-call.js",
+              "name": "./node_modules/core-js/internals/function-call.js"
             }
           ],
           "failed": false,
@@ -16958,9 +16958,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-apply.js",
-      "issuerId": 69,
-      "issuerName": "./node_modules/core-js/internals/function-apply.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-call.js",
+      "issuerId": 8,
+      "issuerName": "./node_modules/core-js/internals/function-call.js",
       "issuerPath": [
         {
           "id": 95,
@@ -16978,9 +16978,9 @@
           "name": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "id": 69,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-apply.js",
-          "name": "./node_modules/core-js/internals/function-apply.js"
+          "id": 8,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-call.js",
+          "name": "./node_modules/core-js/internals/function-call.js"
         }
       ],
       "failed": false,
