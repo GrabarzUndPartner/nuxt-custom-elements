@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.8.0-beta.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2022-04-16)
+
+
+### Bug Fixes
+
+* **deps:** add missing dep ([d2eb0bb](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/d2eb0bb48a15451685062c16cd4ed93a1b038bff))
+
 # [1.8.0-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.1...v1.8.0-beta.2) (2022-04-16)
 
 
