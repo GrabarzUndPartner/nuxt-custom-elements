@@ -2,16 +2,15 @@
 import { join, resolve as pathResolve } from 'path';
 import { Nuxt, Builder } from 'nuxt';
 import getPort from 'get-port';
-import express from 'express';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
+import { createApp } from 'h3';
 import nuxtConfig from '../example/nuxt.config';
+const { listen } = require('listhen');
+const serveStatic = require('serve-static');
 
-const CHROMIUM = 0;
-const FIREFOX = 1;
-
-let nuxt;
+const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
 describe('browser (client & modern) (chromium and firefox)', () => {
   startTest();
@@ -22,7 +21,7 @@ describe('browser (client) (chromium and firefox)', () => {
 });
 
 function startTest (modern = true) {
-  let browsers, port, server;
+  let browsers, port, nuxt;
 
   const testDir = pathResolve(__dirname, `.browser${modern ? '-modern' : ''}`);
   const buildDir = join(testDir, '.nuxt');
@@ -42,50 +41,46 @@ function startTest (modern = true) {
       firefox.launch()
     ]);
     port = await getPort();
-    server = startStaticServer(customElementsDir, port);
+    await startStaticServer(customElementsDir, port);
   });
 
   afterAll(async () => {
     await Promise.all(browsers.map(browser => browser.close()));
-    await new Promise(resolve => server.close(resolve));
   });
 
-  // #region /component-app-bundle
-
   test('check bundle initialization (chrome)', async () => {
-    const page = await (browsers[Number(CHROMIUM)]).newPage();
+    const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
     page.goto(getUrl('/example/', port));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
-    const page = await (browsers[Number(FIREFOX)]).newPage();
+    const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
     page.goto(getUrl('/example/', port));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (chrome)', async () => {
-    const page = await (browsers[Number(CHROMIUM)]).newPage();
+    const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
     page.goto(getUrl('/example-shadow/', port));
     await page.waitForSelector('.custom-element-example');
   });
 
   test('check bundle initialization (firefox)', async () => {
-    const page = await (browsers[Number(FIREFOX)]).newPage();
+    const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
     page.goto(getUrl('/example-shadow/', port));
     await page.waitForSelector('.custom-element-example');
   });
-
-  // #endregion
 }
 
 function getUrl (path, port) {
   return `http://localhost:${port}${path}`;
 }
 
-function startStaticServer (dist, port = 3000, host = 'localhost') {
-  const app = express();
-  app.disable('x-powered-by');
-  app.use(express.static(dist));
-  return app.listen(port, host);
+function startStaticServer (dist, port = 3000, hostname = 'localhost') {
+  const app = createApp();
+  app.use(serveStatic(dist));
+  return listen(app, {
+    hostname, port
+  });
 }
