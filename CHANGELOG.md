@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.8.0-beta.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.4...v1.8.0-beta.5) (2022-04-16)
+
+
+### Bug Fixes
+
+* **module:** update deprecated error ([c369a09](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/c369a0990c086c6783cb83b6501a6fc35d2d8ec0))
+
 # [1.8.0-beta.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2022-04-16)
 
 
