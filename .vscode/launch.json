@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Express-Server (dist)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "program": "${workspaceFolder}/tools/express-server",
       "outputCapture": "std",
       "args": [
@@ -17,7 +17,7 @@
       "type": "node",
       "request": "launch",
       "name": "Express-Server (build/dist)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "program": "${workspaceFolder}/tools/express-server",
       "outputCapture": "std",
       "args": [
@@ -29,7 +29,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (CLI)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -40,7 +40,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (build)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -56,7 +56,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (generate)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -72,7 +72,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxt)",
-      "runtimeVersion": "12.1.0",
+      "runtimeVersion": "16.14.2",
       "runtimeArgs": [
         "--inspect"
       ],
