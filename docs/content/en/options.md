@@ -39,12 +39,64 @@ Set `false` to disable polyfill for [custom elements](https://github.com/ungap/c
 Set `true` for all browsers that require a polyfill for [custom elements](https://github.com/ungap/custom-elements). 
 <alert type="warning">For older `IE Edge` versions, the modern files are loaded. Therefore the use of polyfills is essential.</alert>
 
+## `entries`
+- Type: `Array`
+  - Default: `[]`
+  - <badge>required</badge>
 
-## `webpackExtend`
-- Type: `Function`
+Defines the component bundles.
 
-Called before the `build` and allows to customize the configuration before build. Return value is the `config`. `async` is supported. [Learn more](/options#entry-webpack-extend-example) 
+Components can be distributed in separate endpoints.  
+Allows the targeted distribution of resources.    
 
+### Entry
+
+```js
+{
+  name: 'EndpointName',
+  shadow: true,
+  webpackExtend(config) { … },
+  tags: [
+    // Simplified props, definition only
+    {
+      async: false,
+      name: 'TagName',
+      path: 'component path',
+      options: {
+        props: ['prop1', 'prop2']
+      } 
+    },
+    // Extended props, with default values
+    {
+      async: true,
+      name: 'AnotherTagName',
+      path: 'component path',
+      options: {
+        props: {
+          prop1: false,
+          prop2: true
+        }
+      }
+    }
+  ]
+}
+```
+
+| Key             | Type       | Requried | Description                                                       | Default |
+| --------------- | ---------- | -------- | ----------------------------------------------------------------- | ------- |
+| `name`          | `String`   | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
+| `shadow`        | `Boolean`  |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
+| `webpackExtend` | `Function` |          | [Learn more](/options#more-about-webpackextend)                   |         |
+| `tags`          | `Array`    |          | Tag Definitions.                                                  | `[]`    |
+
+
+#### More about `webpackExtend`
+
+Called before the `build` and allows to customize the configuration before build.  
+Return value is the `config`. `async` is supported. [Learn more](/options#entry-webpack-extend-example) 
+
+
+**Example Configuration:**
 
 ```javascript
 {
@@ -116,61 +168,6 @@ Called before the `build` and allows to customize the configuration before build
   }
 }
 ```
-
-
-## `entries`
-- Type: `Array`
-  - Default: `[]`
-  - <badge>required</badge>
-
-Defines the component bundles.
-
-Components can be distributed in separate endpoints.  
-Allows the targeted distribution of resources.    
-
-### Entry
-
-```js
-{
-  name: 'EndpointName',
-  shadow: true,
-  webpackExtend(config, {client, modern}) {
-    return config;
-  },
-  tags: [
-    // Simplified props, definition only
-    {
-      async: false,
-      name: 'TagName',
-      path: 'component path',
-      options: {
-        props: ['prop1', 'prop2']
-      } 
-    },
-    // Extended props, with default values
-    {
-      async: true,
-      name: 'AnotherTagName',
-      path: 'component path',
-      options: {
-        props: {
-          prop1: false,
-          prop2: true
-        }
-      }
-    }
-  ]
-}
-```
-
-| Key             | Type       | Requried | Description                                                                                                                                                                | Default |
-| --------------- | ---------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| `name`          | `String`   | yes      | Name of the endpoint. Value will be converted to ParamCase later.                                                                                                          |         |
-| `shadow`        | `Boolean`  |          | If set, the tags are used with the <code>Shadow DOM</code>.                                                                                                                | `false` |
-| `webpackExtend` | `Function` |          | Called before the `build` and allows to customize the configuration before build. Return value is the `config`. `async` is supported. [Learn more](/options#webpackextend) |         |
-| `tags`          | `Array`    |          | Tag Definitions.                                                                                                                                                           | `[]`    |
-
-
 
 <alert type="warning">
   <strong>Beware for the use of <code>Shadow DOM</code></strong>
