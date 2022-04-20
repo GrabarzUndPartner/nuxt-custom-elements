@@ -247,9 +247,9 @@ Normally this Public Path is located at `./`, if I include an entry externally, 
 
 To solve this, the build must be told what the correct Public Path is.
 
-Example: An entry from `https://<your-domain>/custom-elements/my-entry/my-entry.js` is included, so the public path must also be defined with this url as root.
-
 **Example:**
+
+An entry from `https://<your-domain>/custom-elements/my-entry/my-entry.js` is included, so the public path must also be defined with this url as root.
 
 ```javascript
 {
