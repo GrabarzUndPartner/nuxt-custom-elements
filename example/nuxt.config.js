@@ -68,17 +68,11 @@ export default {
     analyzer: !isTest,
     modern: true,
     modernPolyfill: true,
-    webpack: {
-      output: {
-        publicPath: getPublicPath()
-      },
-      publicPathInject: () => global.customPublicPath
-    },
     entries: [
       {
         name: 'Example',
         webpackExtend (config) {
-          config.output.publicPath = './';
+          config.output.publicPath = getPublicPath();
 
           config.plugins.push(new WebpackDynamicPublicPathPlugin({
             externalPublicPath: 'window.externalPublicPath'
