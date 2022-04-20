@@ -1,9 +1,11 @@
-const { resolve } = require('upath');
-const repository = require('../package.json').repository;
+import WebpackDynamicPublicPathPlugin from 'webpack-dynamic-public-path';
+import { resolve } from 'upath';
+import nuxtBabelPresetApp from '@nuxt/babel-preset-app';
+import { repository } from '../package.json';
 const isDev = process.env.NODE_ENV === 'development';
-const isTest = process.env.NODE_ENV === 'test';
+const isTest = process.env.NODE_ENV === 'test'; ;
 
-module.exports = {
+export default {
   dev: isDev,
 
   ssr: false,
@@ -32,7 +34,7 @@ module.exports = {
         const targets = isServer ? { node: 'current' } : { ie: 11 };
         return [
           [
-            require.resolve('@nuxt/babel-preset-app'), {
+            nuxtBabelPresetApp, {
               targets,
               useBuiltIns: isModern ? 'entry' : 'usage',
               corejs: { version: 3 }
@@ -75,6 +77,15 @@ module.exports = {
     entries: [
       {
         name: 'Example',
+        webpackExtend (config) {
+          config.output.publicPath = './';
+
+          config.plugins.push(new WebpackDynamicPublicPathPlugin({
+            externalPublicPath: 'window.externalPublicPath'
+          }));
+
+          return config;
+        },
         tags: [
           {
             async: false,

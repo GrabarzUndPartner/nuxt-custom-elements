@@ -45,21 +45,45 @@ export default {
     exampleTitle () {
       return this.title || 'Default Title';
     }
+  },
+  mounted () {
+    import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk');
   }
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
+/* lato-regular - latin */
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("~assets/fonts/lato-v22-latin/lato-v22-latin-regular.woff2") format("woff2"),
+    url("~assets/fonts/lato-v22-latin/lato-v22-latin-regular.woff") format("woff");
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url("~assets/fonts/lato-v22-latin/lato-v22-latin-700.woff2") format("woff2"),
+    url("~assets/fonts/lato-v22-latin/lato-v22-latin-700.woff") format("woff");
+}
+
 .custom-element-example {
   min-width: 300px;
   padding: 10px;
   font-family:
-    'Source Sans Pro',
+    Lato,
+    "Source Sans Pro",
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     Arial,
     sans-serif;
   font-size: 16px;
@@ -81,6 +105,15 @@ export default {
   padding: 5px;
   color: white;
   background: #3b8070;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+.content a {
+  margin-top: 10px;
+  color: currentColor;
 }
 </style>
 ```
@@ -204,49 +237,76 @@ Alternatively, [SSR can be disabled](https://nuxtjs.org/docs/2.x/configuration-g
 </template>
 ```
 
+## Webpack Public Path
 
-## Webpack Public Path Inject
+The Webpack Public Path is important for the integration of a custom element entry on an external page.
 
-You can inject the public paht from webpack build over a `function`, that the called client side.
+It defines from which origin the resources (fonts, images, scripts) should be loaded.
 
-The variable `window.customPublicPath` must be defined before the scripts have been loaded.
+Normally this Public Path is located at `./`, if I include an entry externally, all resources on the external page will be loaded.
+
+To solve this, the build must be told what the correct Public Path is.
+
+Example: An entry from `https://<your-domain>/custom-elements/my-entry/my-entry.js` is included, so the public path must also be defined with this url as root.
+
+**Example:**
+
+```javascript
+{
+  publicPath: 'https://<your-domain>/custom-elements/my-entry/'
+}
+```
+
+The modification can be done in two ways:
+
+### Define fixed public path in the build
+
+For a fixed definition of the publich path, the `output` option must be extended in the entry in [`webpackExtend`](/options#webpackextend).
+
+
+```javascript
+{
+  webpackExtend (config) {
+
+    config.output.publicPath = 'https://<your-domain>/custom-elements/my-entry/'
+
+    return config
+  }
+}
+```
+
+### Define Public Path dynamically
+
+Alternatively, the public path can be set dynamically in the [`webpackExtend`](/options#webpackextend) of Entry. The Webpack plugin [`webpack-dynamic-public-path`](https://github.com/zahorovskyi/webpack-dynamic-public-path) can be used for this.
+
+**Konfiguration Beispiel:**
+
+```javascript
+{
+  webpackExtend (config){
+
+    config.output.publicPath= "publicPathPlaceholder";
+    
+    config.plugins.push(new WebpackDynamicPublicPathPlugin({
+      externalPublicPath: "window.externalPublicPath"
+    }));
+
+    return config
+  }
+}
+```
+
+**Usage Example:**
 
 ```html[html]
 <custom-element-example />
 
 <script type="text/javascript">
-  window.customPublicPath = '/assets/custom-app-example/';
+  window.externalPublicPath = 'https://<your-domain>/custom-elements/my-entry';
 </script>
 
-<script src="/assets/custom-app-example/custom-app-example.js"></script>
+<script src="https://<your-domain>/custom-elements/my-entry/my-entry.js"></script>
 ``` 
-
-<br>
-
-```javascript[nuxt.config]
-{
-  customElements: {
-    webpackPublicPathInject: () => global.customPublicPath
-  } 
-}
-```
-In the background, the webpack variable `__webpack_public_path__` is set with the value from the `function`.
-
-```js
-__webpack_public_path__ = webpackPublicPathInject();
-```
-
-Alternatively, the `publicPath` can be defined permanently in the [webpack output](/options#webpackoutput) config.
-
-```javascript[nuxt.config]
-{
-  customElements: {
-    webpackOutput: {
-      publicPath: '/assets/component-app-bundle/'
-    } 
-  } 
-}
-```
 
 
 ## Integrations

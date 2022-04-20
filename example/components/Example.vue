@@ -23,7 +23,6 @@ export default {
     }
   },
   mounted () {
-    /* Generate Test for `webpack.output.chunkFilename`; test/module.spa.test.js */
     import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk');
   }
 };
