@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "823fe0bbc91bf3990bd9",
-  "time": 1746,
-  "builtAt": 1650439520947,
+  "time": 1383,
+  "builtAt": 1650474894699,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
@@ -3152,9 +3152,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
-          "issuerId": 120,
-          "issuerName": "./node_modules/core-js/modules/es.json.stringify.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.constructor.js",
+          "issuerId": 135,
+          "issuerName": "./node_modules/core-js/modules/es.promise.constructor.js",
           "issuerPath": [
             {
               "id": 100,
@@ -3167,14 +3167,14 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
             },
             {
-              "id": 109,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.js",
-              "name": "./node_modules/core-js/modules/es.symbol.js"
+              "id": 134,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+              "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 120,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
-              "name": "./node_modules/core-js/modules/es.json.stringify.js"
+              "id": 135,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.constructor.js",
+              "name": "./node_modules/core-js/modules/es.promise.constructor.js"
             }
           ],
           "failed": false,
@@ -10041,9 +10041,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "issuerId": 141,
-          "issuerName": "./node_modules/core-js/internals/microtask.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "issuerId": 91,
+          "issuerName": "./node_modules/core-js/internals/task.js",
           "issuerPath": [
             {
               "id": 100,
@@ -10066,9 +10066,9 @@
               "name": "./node_modules/core-js/modules/es.promise.constructor.js"
             },
             {
-              "id": 141,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-              "name": "./node_modules/core-js/internals/microtask.js"
+              "id": 91,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+              "name": "./node_modules/core-js/internals/task.js"
             }
           ],
           "failed": false,
@@ -17914,9 +17914,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
-      "issuerId": 120,
-      "issuerName": "./node_modules/core-js/modules/es.json.stringify.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.constructor.js",
+      "issuerId": 135,
+      "issuerName": "./node_modules/core-js/modules/es.promise.constructor.js",
       "issuerPath": [
         {
           "id": 100,
@@ -17929,14 +17929,14 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
         },
         {
-          "id": 109,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.js",
-          "name": "./node_modules/core-js/modules/es.symbol.js"
+          "id": 134,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.js",
+          "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 120,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
-          "name": "./node_modules/core-js/modules/es.json.stringify.js"
+          "id": 135,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.constructor.js",
+          "name": "./node_modules/core-js/modules/es.promise.constructor.js"
         }
       ],
       "failed": false,
@@ -24803,9 +24803,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-      "issuerId": 141,
-      "issuerName": "./node_modules/core-js/internals/microtask.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+      "issuerId": 91,
+      "issuerName": "./node_modules/core-js/internals/task.js",
       "issuerPath": [
         {
           "id": 100,
@@ -24828,9 +24828,9 @@
           "name": "./node_modules/core-js/modules/es.promise.constructor.js"
         },
         {
-          "id": 141,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "name": "./node_modules/core-js/internals/microtask.js"
+          "id": 91,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "name": "./node_modules/core-js/internals/task.js"
         }
       ],
       "failed": false,
