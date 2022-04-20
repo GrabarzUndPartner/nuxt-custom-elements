@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [1.9.0-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0...v1.9.0-beta.1) (2022-04-20)
+
+
+### Features
+
+* **module:** refactor `webpack` configuration ([1c2bdd2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/1c2bdd2dbf388799c306aee2420f303b2242da2b))
+
 # [1.8.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.7.7...v1.8.0) (2022-04-16)
 
 
