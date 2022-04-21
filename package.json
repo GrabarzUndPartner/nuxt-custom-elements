@@ -58,7 +58,7 @@
     "@nuxtjs/stylelint-module": "4.1.0",
     "babel-eslint": "10.1.0",
     "commitlint": "16.2.3",
-    "core-js": "3.22.1",
+    "core-js": "3.22.2",
     "eslint": "8.13.0",
     "eslint-formatter-json-relative": "0.1.0",
     "eslint-plugin-no-secrets": "0.8.9",
@@ -79,6 +79,6 @@
     "stylelint": "14.7.1",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard": "25.0.0",
-    "vitest": "0.9.3"
+    "vitest": "0.9.4"
   }
 }
