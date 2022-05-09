@@ -1,9 +1,10 @@
-const { resolve } = require('upath');
-const repository = require('../package.json').repository;
+import { resolve } from 'upath';
+import nuxtBabelPresetApp from '@nuxt/babel-preset-app';
+import { repository } from '../package.json';
 const isDev = process.env.NODE_ENV === 'development';
 const isTest = process.env.NODE_ENV === 'test';
 
-module.exports = {
+export default {
   dev: isDev,
 
   ssr: false,
@@ -32,7 +33,7 @@ module.exports = {
         const targets = isServer ? { node: 'current' } : { ie: 11 };
         return [
           [
-            require.resolve('@nuxt/babel-preset-app'), {
+            nuxtBabelPresetApp, {
               targets,
               useBuiltIns: isModern ? 'entry' : 'usage',
               corejs: { version: 3 }
