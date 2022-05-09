@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "6d55ba869a4a870ea621",
-  "time": 2406,
-  "builtAt": 1651693911403,
+  "time": 2281,
+  "builtAt": 1652091295455,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
@@ -9181,9 +9181,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-          "issuerId": 120,
-          "issuerName": "./node_modules/core-js/modules/es.symbol.key-for.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.for.js",
+          "issuerId": 119,
+          "issuerName": "./node_modules/core-js/modules/es.symbol.for.js",
           "issuerPath": [
             {
               "id": 100,
@@ -9201,9 +9201,9 @@
               "name": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "id": 120,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-              "name": "./node_modules/core-js/modules/es.symbol.key-for.js"
+              "id": 119,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.for.js",
+              "name": "./node_modules/core-js/modules/es.symbol.for.js"
             }
           ],
           "failed": false,
@@ -23975,9 +23975,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-      "issuerId": 120,
-      "issuerName": "./node_modules/core-js/modules/es.symbol.key-for.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.for.js",
+      "issuerId": 119,
+      "issuerName": "./node_modules/core-js/modules/es.symbol.for.js",
       "issuerPath": [
         {
           "id": 100,
@@ -23995,9 +23995,9 @@
           "name": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "id": 120,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-          "name": "./node_modules/core-js/modules/es.symbol.key-for.js"
+          "id": 119,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.for.js",
+          "name": "./node_modules/core-js/modules/es.symbol.for.js"
         }
       ],
       "failed": false,
