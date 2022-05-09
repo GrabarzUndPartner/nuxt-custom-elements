@@ -1,3 +1,26 @@
+<p align="right">
+  share me:
+  <a href="https://twitter.com/intent/tweet?url=https://github.com/GrabarzUndPartner/nuxt-custom-elements&text=Nuxt Custom-Elements allows you to export your existing project components as custom elements for integration into external pages.&via=grabarzpartner&hashtags=vue,nuxt,customElement">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/twitter.svg?sanitize=true"/>
+  </a>
+  <a href="https://news.ycombinator.com/submitlink?u=https://github.com/GrabarzUndPartner/nuxt-custom-elements&t=nuxt-custom-elements will help you to improve the lighthouse performance score">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/hackernews.svg?sanitize=true"/>
+  </a>
+  <a href="https://reddit.com/submit?url=https://github.com/GrabarzUndPartner/nuxt-custom-elements&title=Nuxt Custom-Elements allows you to export your existing project components as custom elements for integration into external pages.">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/reddit.svg?sanitize=true"/>
+  </a>
+  <a href="https://www.facebook.com/sharer.php?u=https://github.com/GrabarzUndPartner/nuxt-custom-elements">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/facebook.svg?sanitize=true"/>
+  </a>
+  <a href="https://www.xing.com/spi/shares/new?url=https://github.com/GrabarzUndPartner/nuxt-custom-elements">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/xing.svg?sanitize=true"/>
+  </a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://github.com/GrabarzUndPartner/nuxt-custom-elements&title=nuxt-custom-elements&summary=Nuxt Custom-Elements allows you to export your existing project components as custom elements for integration into external pages.">
+    <img width="24" height="24" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg?sanitize=true"/>
+  </a>
+</p>
+
+
 ![nuxt-custom-elements][logo]
 
 # Nuxt Custom-Elements

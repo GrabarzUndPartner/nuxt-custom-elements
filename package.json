@@ -1,6 +1,6 @@
 {
   "name": "nuxt-custom-elements",
-  "version": "1.8.0",
+  "version": "1.9.0-beta.2",
   "description": "Publish your Components as a vue-custom-element standalone build.",
   "keywords": [
     "nuxtjs",
@@ -79,6 +79,7 @@
     "stylelint": "14.8.2",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard": "25.0.0",
-    "vitest": "0.12.0"
+    "vitest": "0.12.0",
+    "webpack-dynamic-public-path": "^1.0.8"
   }
 }

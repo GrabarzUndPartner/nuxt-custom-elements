@@ -1,3 +1,4 @@
+import WebpackDynamicPublicPathPlugin from 'webpack-dynamic-public-path';
 import { resolve } from 'upath';
 import nuxtBabelPresetApp from '@nuxt/babel-preset-app';
 import { repository } from '../package.json';
@@ -67,15 +68,18 @@ export default {
     analyzer: !isTest,
     modern: true,
     modernPolyfill: true,
-    webpack: {
-      output: {
-        publicPath: getPublicPath()
-      },
-      publicPathInject: () => global.customPublicPath
-    },
     entries: [
       {
         name: 'Example',
+        webpackExtend (config) {
+          config.output.publicPath = getPublicPath();
+
+          config.plugins.push(new WebpackDynamicPublicPathPlugin({
+            externalPublicPath: 'window.externalPublicPath'
+          }));
+
+          return config;
+        },
         tags: [
           {
             async: false,

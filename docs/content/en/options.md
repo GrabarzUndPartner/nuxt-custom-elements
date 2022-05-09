@@ -39,8 +39,6 @@ Set `false` to disable polyfill for [custom elements](https://github.com/ungap/c
 Set `true` for all browsers that require a polyfill for [custom elements](https://github.com/ungap/custom-elements). 
 <alert type="warning">For older `IE Edge` versions, the modern files are loaded. Therefore the use of polyfills is essential.</alert>
 
-Example: 
-
 ## `entries`
 - Type: `Array`
   - Default: `[]`
@@ -57,6 +55,7 @@ Allows the targeted distribution of resources.
 {
   name: 'EndpointName',
   shadow: true,
+  webpackExtend(config) { … },
   tags: [
     // Simplified props, definition only
     {
@@ -83,12 +82,92 @@ Allows the targeted distribution of resources.
 }
 ```
 
-| Key      | Type      | Requried | Description                                                       | Default |
-| -------- | --------- | -------- | ----------------------------------------------------------------- | ------- |
-| `name`   | `String`  | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
-| `shadow` | `Boolean` |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
-| `tags`   | `Array`   |          | Tag Definitions.                                                  | `[]`    |
+| Key             | Type       | Requried | Description                                                       | Default |
+| --------------- | ---------- | -------- | ----------------------------------------------------------------- | ------- |
+| `name`          | `String`   | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
+| `shadow`        | `Boolean`  |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
+| `webpackExtend` | `Function` |          | [Learn more](/options#more-about-webpackextend)                   |         |
+| `tags`          | `Array`    |          | Tag Definitions.                                                  | `[]`    |
 
+
+#### More about `webpackExtend`
+
+Called before the `build` and allows to customize the configuration before build.  
+Return value is the `config`. `async` is supported. [Learn more](/options#entry-webpack-extend-example) 
+
+
+**Example Configuration:**
+
+```javascript
+{
+  webpackExtend(config, {client, modern}) {
+
+    /**
+     * Defines the webpack output options (`publicPath`, `filename`, `chunkFilename`).
+     **/
+    config.output = {
+      ...config.output, 
+      publicPath: 'https://domain/nuxt-custom-elements/example/',
+      filename: (webpackConfig, moduleOptions) => {
+        if (moduleOptions.modern) {
+          if (webpackConfig.name === 'modern') {
+            return '[name].modern.js'
+          } else {
+            return '[name].client.js'
+          }
+        } else {
+          return '[name].js'
+        }
+      },
+      chunkFilename: (webpackConfig, moduleOptions) => {
+        if (moduleOptions.modern) {
+          return '[name].[hash].js'
+        } else {
+          return '[name].js'
+        }
+      }
+    };
+
+    /**
+     * Defines the webpack optimization options, see [webpack optimization](https://webpack.js.org/configuration/optimization/).
+     * Example to create several chunks with minimum size of 100kb. 
+     * One of the chunks contains all vue and vuetify related vendor libraries:
+     **/
+    config.optimization.splitChunks = {
+      ...config.optimization.splitChunks,
+      automaticNameDelimiter: '.',
+      minChunks: 1,
+      minSize: 100_000,
+      chunks: 'all',
+      cacheGroups: {
+        uiFrameworks: {
+          test: /[/\\]node_modules[/\\](vuetify.*|vue.*)[/\\]/,
+          name: 'ui',
+          chunks: 'all',
+          priority: 10,
+          enforce: true
+        }
+      }
+    };
+
+    /**
+     * Defines webpack plugins, see [webpack plugins](https://webpack.js.org/configuration/plugins/).
+     * The following example includes the `compression-webpack-plugin`:
+     **/
+    config.plugins = [
+      ...config.plugins, 
+      new (require('compression-webpack-plugin'))({
+        filename: '[path][base].gz[query]',
+        algorithm: 'gzip',
+        test: /\.(js|css)$/,
+      })
+    ];
+
+    return config;
+
+  }
+}
+```
 
 <alert type="warning">
   <strong>Beware for the use of <code>Shadow DOM</code></strong>
@@ -151,127 +230,6 @@ You can set as `object` or when using functions in options, use `function`.
 ```
 
 
-## `webpack`
-
-Customize the Webpack configuration.
-
-```javascript 
-{
-  webpack: {
-
-    publicPathInject: () => global.customPublicPath,
-
-    output: { … },
-
-    optimization: { … },
-
-    plugins: [ … ]
-
-  }
-}
-```
-
-### `publicPathInject`
-- Type: `Function`
-  - Default: `undefined`
-
-Inject webpack public path over entry file.
-
-Using `Function` call client side. 
-
-```js
-{
-  publicPathInject: () => global.customPublicPath, // or
-  publicPathInject: function () { return global.customPublicPath; }
-}
-```
-
-### `output`
-- Type: `Object`
-  - Default: [See webpack output Example](#override-example-with-functions)
-
-Defines the webpack output options (`filename`, `chunkFilename` and `publicPath`).
-
-You can override the pattern from `webpack.output.filename` and `webpack.output.chunkFilename` with own function or pattern (string) e.g. `[name].[hash].js`.
-
-#### Override example with functions:
-
-```javascript 
-{
-  output: {
-    publicPath: '/',
-    filename: (webpackConfig, moduleOptions) => {
-      if (moduleOptions.modern) {
-        if (webpackConfig.name === 'modern') {
-          return '[name].modern.js'
-        } else {
-          return '[name].client.js'
-        }
-      } else {
-        return '[name].js'
-      }
-    },
-    chunkFilename: (webpackConfig, moduleOptions) => {
-      if (moduleOptions.modern) {
-        return '[name].[hash].js'
-      } else {
-        return '[name].js'
-      }
-    },
-  },
-}
-```
-
-### `optimization`
-- Type: `Object`
-  - Default: `undefined`
-
-Defines the webpack optimization options, see [webpack optimization](https://webpack.js.org/configuration/optimization/).
-
-Example to create several chunks with minimum size of 100kb. 
-One of the chunks contains all vue and vuetify related vendor libraries:
-
-```js
-{
-  optimization: {
-    splitChunks: {
-      automaticNameDelimiter: '.',
-      minChunks: 1,
-      minSize: 100_000,
-      chunks: 'all',
-      cacheGroups: {
-        uiFrameworks: {
-          test: /[/\\]node_modules[/\\](vuetify.*|vue.*)[/\\]/,
-          name: 'ui',
-          chunks: 'all',
-          priority: 10,
-          enforce: true
-        },
-      },
-    }
-  },
-}
-```
-
-### `plugins`
-- Type: `Object`
-  - Default: `undefined`
-
-Defines webpack plugins, see [webpack plugins](https://webpack.js.org/configuration/plugins/).
-
-The following example includes the `compression-webpack-plugin`:
-
-```js
-{
-  plugins: [
-    new (require('compression-webpack-plugin'))({
-      filename: '[path][base].gz[query]',
-      algorithm: 'gzip',
-      test: /\.(js|css)$/,
-    })
-  ],
-}
-```
 
 ## Example Configuration
 
@@ -280,10 +238,6 @@ The following example includes the `compression-webpack-plugin`:
   customElements: {
     analyzer: true,
     modern: true,
-
-    webpack: {
-      publicPathInject: function () { return global.customPublicPath; }
-    },
 
     entries: [
 
