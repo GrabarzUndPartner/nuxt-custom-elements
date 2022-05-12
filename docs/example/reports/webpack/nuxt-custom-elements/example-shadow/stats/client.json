@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "ce0384165fa5ca6bce7b",
-  "time": 1521,
-  "builtAt": 1652098920100,
+  "hash": "1e29c516e18838879dc8",
+  "time": 2035,
+  "builtAt": 1652340243642,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
-    "NamedChunk": "NamedChunk.ce0384165fa5ca6bce7b.js",
+    "NamedChunk": "NamedChunk.1e29c516e18838879dc8.js",
     "example-shadow": "example-shadow.client.js"
   },
   "assets": [
     {
-      "name": "NamedChunk.ce0384165fa5ca6bce7b.js",
+      "name": "NamedChunk.1e29c516e18838879dc8.js",
       "size": 125,
       "chunks": [
         0
@@ -28,7 +28,7 @@
     },
     {
       "name": "example-shadow.client.js",
-      "size": 132854,
+      "size": 133024,
       "chunks": [
         1
       ],
@@ -120,7 +120,7 @@
         0
       ],
       "assets": [
-        "NamedChunk.ce0384165fa5ca6bce7b.js"
+        "NamedChunk.1e29c516e18838879dc8.js"
       ],
       "children": {},
       "childAssets": {}
@@ -137,7 +137,7 @@
         "NamedChunk"
       ],
       "files": [
-        "NamedChunk.ce0384165fa5ca6bce7b.js"
+        "NamedChunk.1e29c516e18838879dc8.js"
       ],
       "hash": "a84425df0cf805964d86",
       "siblings": [],
@@ -235,14 +235,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 428120,
+      "size": 428505,
       "names": [
         "example-shadow"
       ],
       "files": [
         "example-shadow.client.js"
       ],
-      "hash": "e39b7c2d49e7c5d0e00c",
+      "hash": "f54ed8f5842e11e5e1db",
       "siblings": [],
       "parents": [],
       "children": [
@@ -318,18 +318,18 @@
             },
             {
               "moduleId": 10,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-              "module": "./node_modules/core-js/internals/object-define-property.js",
-              "moduleName": "./node_modules/core-js/internals/object-define-property.js",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
+              "module": "./node_modules/core-js/internals/an-object.js",
+              "moduleName": "./node_modules/core-js/internals/an-object.js",
               "type": "cjs require",
               "userRequest": "../internals/global",
               "loc": "1:13-43"
             },
             {
-              "moduleId": 11,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
-              "module": "./node_modules/core-js/internals/an-object.js",
-              "moduleName": "./node_modules/core-js/internals/an-object.js",
+              "moduleId": 12,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+              "module": "./node_modules/core-js/internals/object-define-property.js",
+              "moduleName": "./node_modules/core-js/internals/object-define-property.js",
               "type": "cjs require",
               "userRequest": "../internals/global",
               "loc": "1:13-43"
@@ -971,7 +971,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 8,
+              "moduleId": 7,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
               "module": "./node_modules/core-js/internals/descriptors.js",
               "moduleName": "./node_modules/core-js/internals/descriptors.js",
@@ -1647,7 +1647,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 7,
+              "moduleId": 8,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
               "module": "./node_modules/core-js/internals/has-own-property.js",
               "moduleName": "./node_modules/core-js/internals/has-own-property.js",
@@ -2007,6 +2007,180 @@
         },
         {
           "id": 7,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
+          "name": "./node_modules/core-js/internals/descriptors.js",
+          "index": 7,
+          "index2": 3,
+          "size": 310,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "issuerId": 122,
+          "issuerName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "issuerPath": [
+            {
+              "id": 97,
+              "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+              "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+            },
+            {
+              "id": null,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+              "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+            },
+            {
+              "id": 122,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+              "name": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 12,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+              "module": "./node_modules/core-js/internals/object-define-property.js",
+              "moduleName": "./node_modules/core-js/internals/object-define-property.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "2:18-53"
+            },
+            {
+              "moduleId": 17,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-get-own-property-descriptor.js",
+              "module": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
+              "moduleName": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 20,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
+              "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+              "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 65,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/ie8-dom-define.js",
+              "module": "./node_modules/core-js/internals/ie8-dom-define.js",
+              "moduleName": "./node_modules/core-js/internals/ie8-dom-define.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 66,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/v8-prototype-define-bug.js",
+              "module": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
+              "moduleName": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 67,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-name.js",
+              "module": "./node_modules/core-js/internals/function-name.js",
+              "moduleName": "./node_modules/core-js/internals/function-name.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 72,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
+              "module": "./node_modules/core-js/internals/object-define-properties.js",
+              "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "1:18-53"
+            },
+            {
+              "moduleId": 84,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+              "module": "./node_modules/core-js/modules/es.array.iterator.js",
+              "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "9:18-53"
+            },
+            {
+              "moduleId": 101,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/make-built-in.js",
+              "module": "./node_modules/core-js/internals/make-built-in.js",
+              "moduleName": "./node_modules/core-js/internals/make-built-in.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "4:18-53"
+            },
+            {
+              "moduleId": 107,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
+              "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
+              "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "7:18-53"
+            },
+            {
+              "moduleId": 122,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+              "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+              "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "5:18-53"
+            },
+            {
+              "moduleId": 126,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+              "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+              "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "2:18-53"
+            },
+            {
+              "moduleId": 133,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+              "module": "./node_modules/core-js/internals/set-species.js",
+              "moduleName": "./node_modules/core-js/internals/set-species.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "5:18-53"
+            },
+            {
+              "moduleId": 153,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
+              "module": "./node_modules/core-js/internals/object-assign.js",
+              "moduleName": "./node_modules/core-js/internals/object-assign.js",
+              "type": "cjs require",
+              "userRequest": "../internals/descriptors",
+              "loc": "2:18-53"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3,
+          "source": "var fails = require('../internals/fails');\n\n// Detect IE8's incomplete defineProperty implementation\nmodule.exports = !fails(function () {\n  // eslint-disable-next-line es-x/no-object-defineproperty -- required for testing\n  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;\n});\n"
+        },
+        {
+          "id": 8,
           "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
           "name": "./node_modules/core-js/internals/has-own-property.js",
           "index": 38,
@@ -2185,171 +2359,6 @@
           "source": "var uncurryThis = require('../internals/function-uncurry-this');\nvar toObject = require('../internals/to-object');\n\nvar hasOwnProperty = uncurryThis({}.hasOwnProperty);\n\n// `HasOwnProperty` abstract operation\n// https://tc39.es/ecma262/#sec-hasownproperty\n// eslint-disable-next-line es-x/no-object-hasown -- safe\nmodule.exports = Object.hasOwn || function hasOwn(it, key) {\n  return hasOwnProperty(toObject(it), key);\n};\n"
         },
         {
-          "id": 8,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
-          "name": "./node_modules/core-js/internals/descriptors.js",
-          "index": 7,
-          "index2": 3,
-          "size": 310,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            1
-          ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "issuerId": 122,
-          "issuerName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "issuerPath": [
-            {
-              "id": 97,
-              "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-              "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-            },
-            {
-              "id": null,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-              "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-            },
-            {
-              "id": 122,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-              "name": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": 10,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-              "module": "./node_modules/core-js/internals/object-define-property.js",
-              "moduleName": "./node_modules/core-js/internals/object-define-property.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "2:18-53"
-            },
-            {
-              "moduleId": 17,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-get-own-property-descriptor.js",
-              "module": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
-              "moduleName": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 20,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
-              "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-              "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 65,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/ie8-dom-define.js",
-              "module": "./node_modules/core-js/internals/ie8-dom-define.js",
-              "moduleName": "./node_modules/core-js/internals/ie8-dom-define.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 66,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/v8-prototype-define-bug.js",
-              "module": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
-              "moduleName": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 67,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-name.js",
-              "module": "./node_modules/core-js/internals/function-name.js",
-              "moduleName": "./node_modules/core-js/internals/function-name.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 72,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
-              "module": "./node_modules/core-js/internals/object-define-properties.js",
-              "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "1:18-53"
-            },
-            {
-              "moduleId": 84,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-              "module": "./node_modules/core-js/modules/es.array.iterator.js",
-              "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "9:18-53"
-            },
-            {
-              "moduleId": 107,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
-              "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
-              "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "7:18-53"
-            },
-            {
-              "moduleId": 122,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-              "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-              "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "5:18-53"
-            },
-            {
-              "moduleId": 126,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-              "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-              "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "2:18-53"
-            },
-            {
-              "moduleId": 133,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
-              "module": "./node_modules/core-js/internals/set-species.js",
-              "moduleName": "./node_modules/core-js/internals/set-species.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "5:18-53"
-            },
-            {
-              "moduleId": 153,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-              "module": "./node_modules/core-js/internals/object-assign.js",
-              "moduleName": "./node_modules/core-js/internals/object-assign.js",
-              "type": "cjs require",
-              "userRequest": "../internals/descriptors",
-              "loc": "2:18-53"
-            }
-          ],
-          "usedExports": true,
-          "providedExports": null,
-          "optimizationBailout": [
-            "ModuleConcatenation bailout: Module is not an ECMAScript module"
-          ],
-          "depth": 3,
-          "source": "var fails = require('../internals/fails');\n\n// Detect IE8's incomplete defineProperty implementation\nmodule.exports = !fails(function () {\n  // eslint-disable-next-line es-x/no-object-defineproperty -- required for testing\n  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;\n});\n"
-        },
-        {
           "id": 9,
           "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-built-in.js",
           "name": "./node_modules/core-js/internals/get-built-in.js",
@@ -2507,153 +2516,6 @@
         },
         {
           "id": 10,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-          "name": "./node_modules/core-js/internals/object-define-property.js",
-          "index": 44,
-          "index2": 41,
-          "size": 1931,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            1
-          ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-          "issuerId": 84,
-          "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
-          "issuerPath": [
-            {
-              "id": 97,
-              "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-              "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-            },
-            {
-              "id": null,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-              "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-            },
-            {
-              "id": 84,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-              "name": "./node_modules/core-js/modules/es.array.iterator.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": 20,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
-              "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-              "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "2:27-73"
-            },
-            {
-              "moduleId": 47,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-to-string-tag.js",
-              "module": "./node_modules/core-js/internals/set-to-string-tag.js",
-              "moduleName": "./node_modules/core-js/internals/set-to-string-tag.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "1:21-67"
-            },
-            {
-              "moduleId": 72,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
-              "module": "./node_modules/core-js/internals/object-define-properties.js",
-              "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "3:27-73"
-            },
-            {
-              "moduleId": 74,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-property.js",
-              "module": "./node_modules/core-js/internals/create-property.js",
-              "moduleName": "./node_modules/core-js/internals/create-property.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "3:27-73"
-            },
-            {
-              "moduleId": 84,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-              "module": "./node_modules/core-js/modules/es.array.iterator.js",
-              "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "6:21-67"
-            },
-            {
-              "moduleId": 101,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/make-built-in.js",
-              "module": "./node_modules/core-js/internals/make-built-in.js",
-              "moduleName": "./node_modules/core-js/internals/make-built-in.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "4:21-67"
-            },
-            {
-              "moduleId": 103,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/copy-constructor-properties.js",
-              "module": "./node_modules/core-js/internals/copy-constructor-properties.js",
-              "moduleName": "./node_modules/core-js/internals/copy-constructor-properties.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "4:27-73"
-            },
-            {
-              "moduleId": 107,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
-              "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
-              "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "23:27-73"
-            },
-            {
-              "moduleId": 110,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/define-well-known-symbol.js",
-              "module": "./node_modules/core-js/internals/define-well-known-symbol.js",
-              "moduleName": "./node_modules/core-js/internals/define-well-known-symbol.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "4:21-67"
-            },
-            {
-              "moduleId": 127,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/add-to-unscopables.js",
-              "module": "./node_modules/core-js/internals/add-to-unscopables.js",
-              "moduleName": "./node_modules/core-js/internals/add-to-unscopables.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "3:27-73"
-            },
-            {
-              "moduleId": 133,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
-              "module": "./node_modules/core-js/internals/set-species.js",
-              "moduleName": "./node_modules/core-js/internals/set-species.js",
-              "type": "cjs require",
-              "userRequest": "../internals/object-define-property",
-              "loc": "3:27-73"
-            }
-          ],
-          "usedExports": true,
-          "providedExports": null,
-          "optimizationBailout": [
-            "ModuleConcatenation bailout: Module is not an ECMAScript module"
-          ],
-          "depth": 3,
-          "source": "var global = require('../internals/global');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar IE8_DOM_DEFINE = require('../internals/ie8-dom-define');\nvar V8_PROTOTYPE_DEFINE_BUG = require('../internals/v8-prototype-define-bug');\nvar anObject = require('../internals/an-object');\nvar toPropertyKey = require('../internals/to-property-key');\n\nvar TypeError = global.TypeError;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar $defineProperty = Object.defineProperty;\n// eslint-disable-next-line es-x/no-object-getownpropertydescriptor -- safe\nvar $getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\nvar ENUMERABLE = 'enumerable';\nvar CONFIGURABLE = 'configurable';\nvar WRITABLE = 'writable';\n\n// `Object.defineProperty` method\n// https://tc39.es/ecma262/#sec-object.defineproperty\nexports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (typeof O === 'function' && P === 'prototype' && 'value' in Attributes && WRITABLE in Attributes && !Attributes[WRITABLE]) {\n    var current = $getOwnPropertyDescriptor(O, P);\n    if (current && current[WRITABLE]) {\n      O[P] = Attributes.value;\n      Attributes = {\n        configurable: CONFIGURABLE in Attributes ? Attributes[CONFIGURABLE] : current[CONFIGURABLE],\n        enumerable: ENUMERABLE in Attributes ? Attributes[ENUMERABLE] : current[ENUMERABLE],\n        writable: false\n      };\n    }\n  } return $defineProperty(O, P, Attributes);\n} : $defineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return $defineProperty(O, P, Attributes);\n  } catch (error) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n"
-        },
-        {
-          "id": 11,
           "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
           "name": "./node_modules/core-js/internals/an-object.js",
           "index": 46,
@@ -2697,7 +2559,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 10,
+              "moduleId": 12,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
               "module": "./node_modules/core-js/internals/object-define-property.js",
               "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -2805,7 +2667,7 @@
           "source": "var global = require('../internals/global');\nvar isObject = require('../internals/is-object');\n\nvar String = global.String;\nvar TypeError = global.TypeError;\n\n// `Assert: Type(argument) is Object`\nmodule.exports = function (argument) {\n  if (isObject(argument)) return argument;\n  throw TypeError(String(argument) + ' is not an object');\n};\n"
         },
         {
-          "id": 12,
+          "id": 11,
           "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/is-pure.js",
           "name": "./node_modules/core-js/internals/is-pure.js",
           "index": 35,
@@ -2941,6 +2803,144 @@
           ],
           "depth": 3,
           "source": "module.exports = false;\n"
+        },
+        {
+          "id": 12,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+          "name": "./node_modules/core-js/internals/object-define-property.js",
+          "index": 44,
+          "index2": 41,
+          "size": 1931,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+          "issuerId": 84,
+          "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "issuerPath": [
+            {
+              "id": 97,
+              "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+              "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+            },
+            {
+              "id": null,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+              "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+            },
+            {
+              "id": 84,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+              "name": "./node_modules/core-js/modules/es.array.iterator.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 20,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
+              "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+              "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "2:27-73"
+            },
+            {
+              "moduleId": 47,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-to-string-tag.js",
+              "module": "./node_modules/core-js/internals/set-to-string-tag.js",
+              "moduleName": "./node_modules/core-js/internals/set-to-string-tag.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "1:21-67"
+            },
+            {
+              "moduleId": 72,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
+              "module": "./node_modules/core-js/internals/object-define-properties.js",
+              "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "3:27-73"
+            },
+            {
+              "moduleId": 74,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-property.js",
+              "module": "./node_modules/core-js/internals/create-property.js",
+              "moduleName": "./node_modules/core-js/internals/create-property.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "3:27-73"
+            },
+            {
+              "moduleId": 84,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+              "module": "./node_modules/core-js/modules/es.array.iterator.js",
+              "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "6:21-67"
+            },
+            {
+              "moduleId": 103,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/copy-constructor-properties.js",
+              "module": "./node_modules/core-js/internals/copy-constructor-properties.js",
+              "moduleName": "./node_modules/core-js/internals/copy-constructor-properties.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "4:27-73"
+            },
+            {
+              "moduleId": 107,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
+              "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
+              "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "23:27-73"
+            },
+            {
+              "moduleId": 110,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/define-well-known-symbol.js",
+              "module": "./node_modules/core-js/internals/define-well-known-symbol.js",
+              "moduleName": "./node_modules/core-js/internals/define-well-known-symbol.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "4:21-67"
+            },
+            {
+              "moduleId": 127,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/add-to-unscopables.js",
+              "module": "./node_modules/core-js/internals/add-to-unscopables.js",
+              "moduleName": "./node_modules/core-js/internals/add-to-unscopables.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "3:27-73"
+            },
+            {
+              "moduleId": 133,
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+              "module": "./node_modules/core-js/internals/set-species.js",
+              "moduleName": "./node_modules/core-js/internals/set-species.js",
+              "type": "cjs require",
+              "userRequest": "../internals/object-define-property",
+              "loc": "3:27-73"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 3,
+          "source": "var global = require('../internals/global');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar IE8_DOM_DEFINE = require('../internals/ie8-dom-define');\nvar V8_PROTOTYPE_DEFINE_BUG = require('../internals/v8-prototype-define-bug');\nvar anObject = require('../internals/an-object');\nvar toPropertyKey = require('../internals/to-property-key');\n\nvar TypeError = global.TypeError;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar $defineProperty = Object.defineProperty;\n// eslint-disable-next-line es-x/no-object-getownpropertydescriptor -- safe\nvar $getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\nvar ENUMERABLE = 'enumerable';\nvar CONFIGURABLE = 'configurable';\nvar WRITABLE = 'writable';\n\n// `Object.defineProperty` method\n// https://tc39.es/ecma262/#sec-object.defineproperty\nexports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (typeof O === 'function' && P === 'prototype' && 'value' in Attributes && WRITABLE in Attributes && !Attributes[WRITABLE]) {\n    var current = $getOwnPropertyDescriptor(O, P);\n    if (current && current[WRITABLE]) {\n      O[P] = Attributes.value;\n      Attributes = {\n        configurable: CONFIGURABLE in Attributes ? Attributes[CONFIGURABLE] : current[CONFIGURABLE],\n        enumerable: ENUMERABLE in Attributes ? Attributes[ENUMERABLE] : current[ENUMERABLE],\n        writable: false\n      };\n    }\n  } return $defineProperty(O, P, Attributes);\n} : $defineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return $defineProperty(O, P, Attributes);\n  } catch (error) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n"
         },
         {
           "id": 13,
@@ -3116,7 +3116,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 11,
+              "moduleId": 10,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
               "module": "./node_modules/core-js/internals/an-object.js",
               "moduleName": "./node_modules/core-js/internals/an-object.js",
@@ -3699,7 +3699,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 7,
+              "moduleId": 8,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
               "module": "./node_modules/core-js/internals/has-own-property.js",
               "moduleName": "./node_modules/core-js/internals/has-own-property.js",
@@ -4360,7 +4360,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.4',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.4/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.5',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.5/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
         },
         {
           "id": 26,
@@ -5064,7 +5064,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 10,
+              "moduleId": 12,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
               "module": "./node_modules/core-js/internals/object-define-property.js",
               "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -7784,7 +7784,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 10,
+              "moduleId": 12,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
               "module": "./node_modules/core-js/internals/object-define-property.js",
               "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -7825,7 +7825,7 @@
             1
           ],
           "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-          "issuerId": 10,
+          "issuerId": 12,
           "issuerName": "./node_modules/core-js/internals/object-define-property.js",
           "issuerPath": [
             {
@@ -7844,7 +7844,7 @@
               "name": "./node_modules/core-js/modules/es.array.iterator.js"
             },
             {
-              "id": 10,
+              "id": 12,
               "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
               "name": "./node_modules/core-js/internals/object-define-property.js"
             }
@@ -7855,7 +7855,7 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": 10,
+              "moduleId": 12,
               "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
               "module": "./node_modules/core-js/internals/object-define-property.js",
               "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -10220,7 +10220,7 @@
           "name": "./node_modules/core-js/internals/make-built-in.js",
           "index": 48,
           "index2": 49,
-          "size": 1869,
+          "size": 2216,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -10274,7 +10274,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar defineProperty = require('../internals/object-define-property').f;\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n\nvar CONFIGURABLE_LENGTH = !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
+          "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  if (options && hasOwn(options, 'constructor') && options.constructor) {\n    if (DESCRIPTORS) try {\n      defineProperty(value, 'prototype', { writable: false });\n    } catch (error) { /* empty */ }\n  } else value.prototype = undefined;\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
         },
         {
           "id": 102,
@@ -10592,7 +10592,7 @@
           "name": "./node_modules/core-js/modules/es.symbol.constructor.js",
           "index": 69,
           "index2": 86,
-          "size": 10521,
+          "size": 10540,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -10641,7 +10641,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 3,
-          "source": "'use strict';\nvar $ = require('../internals/export');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar uncurryThis = require('../internals/function-uncurry-this');\nvar IS_PURE = require('../internals/is-pure');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar NATIVE_SYMBOL = require('../internals/native-symbol');\nvar fails = require('../internals/fails');\nvar hasOwn = require('../internals/has-own-property');\nvar isPrototypeOf = require('../internals/object-is-prototype-of');\nvar anObject = require('../internals/an-object');\nvar toIndexedObject = require('../internals/to-indexed-object');\nvar toPropertyKey = require('../internals/to-property-key');\nvar $toString = require('../internals/to-string');\nvar createPropertyDescriptor = require('../internals/create-property-descriptor');\nvar nativeObjectCreate = require('../internals/object-create');\nvar objectKeys = require('../internals/object-keys');\nvar getOwnPropertyNamesModule = require('../internals/object-get-own-property-names');\nvar getOwnPropertyNamesExternal = require('../internals/object-get-own-property-names-external');\nvar getOwnPropertySymbolsModule = require('../internals/object-get-own-property-symbols');\nvar getOwnPropertyDescriptorModule = require('../internals/object-get-own-property-descriptor');\nvar definePropertyModule = require('../internals/object-define-property');\nvar definePropertiesModule = require('../internals/object-define-properties');\nvar propertyIsEnumerableModule = require('../internals/object-property-is-enumerable');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar shared = require('../internals/shared');\nvar sharedKey = require('../internals/shared-key');\nvar hiddenKeys = require('../internals/hidden-keys');\nvar uid = require('../internals/uid');\nvar wellKnownSymbol = require('../internals/well-known-symbol');\nvar wrappedWellKnownSymbolModule = require('../internals/well-known-symbol-wrapped');\nvar defineWellKnownSymbol = require('../internals/define-well-known-symbol');\nvar defineSymbolToPrimitive = require('../internals/symbol-define-to-primitive');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar InternalStateModule = require('../internals/internal-state');\nvar $forEach = require('../internals/array-iteration').forEach;\n\nvar HIDDEN = sharedKey('hidden');\nvar SYMBOL = 'Symbol';\nvar PROTOTYPE = 'prototype';\n\nvar setInternalState = InternalStateModule.set;\nvar getInternalState = InternalStateModule.getterFor(SYMBOL);\n\nvar ObjectPrototype = Object[PROTOTYPE];\nvar $Symbol = global.Symbol;\nvar SymbolPrototype = $Symbol && $Symbol[PROTOTYPE];\nvar TypeError = global.TypeError;\nvar QObject = global.QObject;\nvar nativeGetOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;\nvar nativeDefineProperty = definePropertyModule.f;\nvar nativeGetOwnPropertyNames = getOwnPropertyNamesExternal.f;\nvar nativePropertyIsEnumerable = propertyIsEnumerableModule.f;\nvar push = uncurryThis([].push);\n\nvar AllSymbols = shared('symbols');\nvar ObjectPrototypeSymbols = shared('op-symbols');\nvar WellKnownSymbolsStore = shared('wks');\n\n// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173\nvar USE_SETTER = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;\n\n// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687\nvar setSymbolDescriptor = DESCRIPTORS && fails(function () {\n  return nativeObjectCreate(nativeDefineProperty({}, 'a', {\n    get: function () { return nativeDefineProperty(this, 'a', { value: 7 }).a; }\n  })).a != 7;\n}) ? function (O, P, Attributes) {\n  var ObjectPrototypeDescriptor = nativeGetOwnPropertyDescriptor(ObjectPrototype, P);\n  if (ObjectPrototypeDescriptor) delete ObjectPrototype[P];\n  nativeDefineProperty(O, P, Attributes);\n  if (ObjectPrototypeDescriptor && O !== ObjectPrototype) {\n    nativeDefineProperty(ObjectPrototype, P, ObjectPrototypeDescriptor);\n  }\n} : nativeDefineProperty;\n\nvar wrap = function (tag, description) {\n  var symbol = AllSymbols[tag] = nativeObjectCreate(SymbolPrototype);\n  setInternalState(symbol, {\n    type: SYMBOL,\n    tag: tag,\n    description: description\n  });\n  if (!DESCRIPTORS) symbol.description = description;\n  return symbol;\n};\n\nvar $defineProperty = function defineProperty(O, P, Attributes) {\n  if (O === ObjectPrototype) $defineProperty(ObjectPrototypeSymbols, P, Attributes);\n  anObject(O);\n  var key = toPropertyKey(P);\n  anObject(Attributes);\n  if (hasOwn(AllSymbols, key)) {\n    if (!Attributes.enumerable) {\n      if (!hasOwn(O, HIDDEN)) nativeDefineProperty(O, HIDDEN, createPropertyDescriptor(1, {}));\n      O[HIDDEN][key] = true;\n    } else {\n      if (hasOwn(O, HIDDEN) && O[HIDDEN][key]) O[HIDDEN][key] = false;\n      Attributes = nativeObjectCreate(Attributes, { enumerable: createPropertyDescriptor(0, false) });\n    } return setSymbolDescriptor(O, key, Attributes);\n  } return nativeDefineProperty(O, key, Attributes);\n};\n\nvar $defineProperties = function defineProperties(O, Properties) {\n  anObject(O);\n  var properties = toIndexedObject(Properties);\n  var keys = objectKeys(properties).concat($getOwnPropertySymbols(properties));\n  $forEach(keys, function (key) {\n    if (!DESCRIPTORS || call($propertyIsEnumerable, properties, key)) $defineProperty(O, key, properties[key]);\n  });\n  return O;\n};\n\nvar $create = function create(O, Properties) {\n  return Properties === undefined ? nativeObjectCreate(O) : $defineProperties(nativeObjectCreate(O), Properties);\n};\n\nvar $propertyIsEnumerable = function propertyIsEnumerable(V) {\n  var P = toPropertyKey(V);\n  var enumerable = call(nativePropertyIsEnumerable, this, P);\n  if (this === ObjectPrototype && hasOwn(AllSymbols, P) && !hasOwn(ObjectPrototypeSymbols, P)) return false;\n  return enumerable || !hasOwn(this, P) || !hasOwn(AllSymbols, P) || hasOwn(this, HIDDEN) && this[HIDDEN][P]\n    ? enumerable : true;\n};\n\nvar $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(O, P) {\n  var it = toIndexedObject(O);\n  var key = toPropertyKey(P);\n  if (it === ObjectPrototype && hasOwn(AllSymbols, key) && !hasOwn(ObjectPrototypeSymbols, key)) return;\n  var descriptor = nativeGetOwnPropertyDescriptor(it, key);\n  if (descriptor && hasOwn(AllSymbols, key) && !(hasOwn(it, HIDDEN) && it[HIDDEN][key])) {\n    descriptor.enumerable = true;\n  }\n  return descriptor;\n};\n\nvar $getOwnPropertyNames = function getOwnPropertyNames(O) {\n  var names = nativeGetOwnPropertyNames(toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (!hasOwn(AllSymbols, key) && !hasOwn(hiddenKeys, key)) push(result, key);\n  });\n  return result;\n};\n\nvar $getOwnPropertySymbols = function (O) {\n  var IS_OBJECT_PROTOTYPE = O === ObjectPrototype;\n  var names = nativeGetOwnPropertyNames(IS_OBJECT_PROTOTYPE ? ObjectPrototypeSymbols : toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (hasOwn(AllSymbols, key) && (!IS_OBJECT_PROTOTYPE || hasOwn(ObjectPrototype, key))) {\n      push(result, AllSymbols[key]);\n    }\n  });\n  return result;\n};\n\n// `Symbol` constructor\n// https://tc39.es/ecma262/#sec-symbol-constructor\nif (!NATIVE_SYMBOL) {\n  $Symbol = function Symbol() {\n    if (isPrototypeOf(SymbolPrototype, this)) throw TypeError('Symbol is not a constructor');\n    var description = !arguments.length || arguments[0] === undefined ? undefined : $toString(arguments[0]);\n    var tag = uid(description);\n    var setter = function (value) {\n      if (this === ObjectPrototype) call(setter, ObjectPrototypeSymbols, value);\n      if (hasOwn(this, HIDDEN) && hasOwn(this[HIDDEN], tag)) this[HIDDEN][tag] = false;\n      setSymbolDescriptor(this, tag, createPropertyDescriptor(1, value));\n    };\n    if (DESCRIPTORS && USE_SETTER) setSymbolDescriptor(ObjectPrototype, tag, { configurable: true, set: setter });\n    return wrap(tag, description);\n  };\n\n  SymbolPrototype = $Symbol[PROTOTYPE];\n\n  defineBuiltIn(SymbolPrototype, 'toString', function toString() {\n    return getInternalState(this).tag;\n  });\n\n  defineBuiltIn($Symbol, 'withoutSetter', function (description) {\n    return wrap(uid(description), description);\n  });\n\n  propertyIsEnumerableModule.f = $propertyIsEnumerable;\n  definePropertyModule.f = $defineProperty;\n  definePropertiesModule.f = $defineProperties;\n  getOwnPropertyDescriptorModule.f = $getOwnPropertyDescriptor;\n  getOwnPropertyNamesModule.f = getOwnPropertyNamesExternal.f = $getOwnPropertyNames;\n  getOwnPropertySymbolsModule.f = $getOwnPropertySymbols;\n\n  wrappedWellKnownSymbolModule.f = function (name) {\n    return wrap(wellKnownSymbol(name), name);\n  };\n\n  if (DESCRIPTORS) {\n    // https://github.com/tc39/proposal-Symbol-description\n    nativeDefineProperty(SymbolPrototype, 'description', {\n      configurable: true,\n      get: function description() {\n        return getInternalState(this).description;\n      }\n    });\n    if (!IS_PURE) {\n      defineBuiltIn(ObjectPrototype, 'propertyIsEnumerable', $propertyIsEnumerable, { unsafe: true });\n    }\n  }\n}\n\n$({ global: true, wrap: true, forced: !NATIVE_SYMBOL, sham: !NATIVE_SYMBOL }, {\n  Symbol: $Symbol\n});\n\n$forEach(objectKeys(WellKnownSymbolsStore), function (name) {\n  defineWellKnownSymbol(name);\n});\n\n$({ target: SYMBOL, stat: true, forced: !NATIVE_SYMBOL }, {\n  useSetter: function () { USE_SETTER = true; },\n  useSimple: function () { USE_SETTER = false; }\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL, sham: !DESCRIPTORS }, {\n  // `Object.create` method\n  // https://tc39.es/ecma262/#sec-object.create\n  create: $create,\n  // `Object.defineProperty` method\n  // https://tc39.es/ecma262/#sec-object.defineproperty\n  defineProperty: $defineProperty,\n  // `Object.defineProperties` method\n  // https://tc39.es/ecma262/#sec-object.defineproperties\n  defineProperties: $defineProperties,\n  // `Object.getOwnPropertyDescriptor` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertydescriptors\n  getOwnPropertyDescriptor: $getOwnPropertyDescriptor\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL }, {\n  // `Object.getOwnPropertyNames` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertynames\n  getOwnPropertyNames: $getOwnPropertyNames\n});\n\n// `Symbol.prototype[@@toPrimitive]` method\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@toprimitive\ndefineSymbolToPrimitive();\n\n// `Symbol.prototype[@@toStringTag]` property\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@tostringtag\nsetToStringTag($Symbol, SYMBOL);\n\nhiddenKeys[HIDDEN] = true;\n"
+          "source": "'use strict';\nvar $ = require('../internals/export');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar uncurryThis = require('../internals/function-uncurry-this');\nvar IS_PURE = require('../internals/is-pure');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar NATIVE_SYMBOL = require('../internals/native-symbol');\nvar fails = require('../internals/fails');\nvar hasOwn = require('../internals/has-own-property');\nvar isPrototypeOf = require('../internals/object-is-prototype-of');\nvar anObject = require('../internals/an-object');\nvar toIndexedObject = require('../internals/to-indexed-object');\nvar toPropertyKey = require('../internals/to-property-key');\nvar $toString = require('../internals/to-string');\nvar createPropertyDescriptor = require('../internals/create-property-descriptor');\nvar nativeObjectCreate = require('../internals/object-create');\nvar objectKeys = require('../internals/object-keys');\nvar getOwnPropertyNamesModule = require('../internals/object-get-own-property-names');\nvar getOwnPropertyNamesExternal = require('../internals/object-get-own-property-names-external');\nvar getOwnPropertySymbolsModule = require('../internals/object-get-own-property-symbols');\nvar getOwnPropertyDescriptorModule = require('../internals/object-get-own-property-descriptor');\nvar definePropertyModule = require('../internals/object-define-property');\nvar definePropertiesModule = require('../internals/object-define-properties');\nvar propertyIsEnumerableModule = require('../internals/object-property-is-enumerable');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar shared = require('../internals/shared');\nvar sharedKey = require('../internals/shared-key');\nvar hiddenKeys = require('../internals/hidden-keys');\nvar uid = require('../internals/uid');\nvar wellKnownSymbol = require('../internals/well-known-symbol');\nvar wrappedWellKnownSymbolModule = require('../internals/well-known-symbol-wrapped');\nvar defineWellKnownSymbol = require('../internals/define-well-known-symbol');\nvar defineSymbolToPrimitive = require('../internals/symbol-define-to-primitive');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar InternalStateModule = require('../internals/internal-state');\nvar $forEach = require('../internals/array-iteration').forEach;\n\nvar HIDDEN = sharedKey('hidden');\nvar SYMBOL = 'Symbol';\nvar PROTOTYPE = 'prototype';\n\nvar setInternalState = InternalStateModule.set;\nvar getInternalState = InternalStateModule.getterFor(SYMBOL);\n\nvar ObjectPrototype = Object[PROTOTYPE];\nvar $Symbol = global.Symbol;\nvar SymbolPrototype = $Symbol && $Symbol[PROTOTYPE];\nvar TypeError = global.TypeError;\nvar QObject = global.QObject;\nvar nativeGetOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;\nvar nativeDefineProperty = definePropertyModule.f;\nvar nativeGetOwnPropertyNames = getOwnPropertyNamesExternal.f;\nvar nativePropertyIsEnumerable = propertyIsEnumerableModule.f;\nvar push = uncurryThis([].push);\n\nvar AllSymbols = shared('symbols');\nvar ObjectPrototypeSymbols = shared('op-symbols');\nvar WellKnownSymbolsStore = shared('wks');\n\n// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173\nvar USE_SETTER = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;\n\n// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687\nvar setSymbolDescriptor = DESCRIPTORS && fails(function () {\n  return nativeObjectCreate(nativeDefineProperty({}, 'a', {\n    get: function () { return nativeDefineProperty(this, 'a', { value: 7 }).a; }\n  })).a != 7;\n}) ? function (O, P, Attributes) {\n  var ObjectPrototypeDescriptor = nativeGetOwnPropertyDescriptor(ObjectPrototype, P);\n  if (ObjectPrototypeDescriptor) delete ObjectPrototype[P];\n  nativeDefineProperty(O, P, Attributes);\n  if (ObjectPrototypeDescriptor && O !== ObjectPrototype) {\n    nativeDefineProperty(ObjectPrototype, P, ObjectPrototypeDescriptor);\n  }\n} : nativeDefineProperty;\n\nvar wrap = function (tag, description) {\n  var symbol = AllSymbols[tag] = nativeObjectCreate(SymbolPrototype);\n  setInternalState(symbol, {\n    type: SYMBOL,\n    tag: tag,\n    description: description\n  });\n  if (!DESCRIPTORS) symbol.description = description;\n  return symbol;\n};\n\nvar $defineProperty = function defineProperty(O, P, Attributes) {\n  if (O === ObjectPrototype) $defineProperty(ObjectPrototypeSymbols, P, Attributes);\n  anObject(O);\n  var key = toPropertyKey(P);\n  anObject(Attributes);\n  if (hasOwn(AllSymbols, key)) {\n    if (!Attributes.enumerable) {\n      if (!hasOwn(O, HIDDEN)) nativeDefineProperty(O, HIDDEN, createPropertyDescriptor(1, {}));\n      O[HIDDEN][key] = true;\n    } else {\n      if (hasOwn(O, HIDDEN) && O[HIDDEN][key]) O[HIDDEN][key] = false;\n      Attributes = nativeObjectCreate(Attributes, { enumerable: createPropertyDescriptor(0, false) });\n    } return setSymbolDescriptor(O, key, Attributes);\n  } return nativeDefineProperty(O, key, Attributes);\n};\n\nvar $defineProperties = function defineProperties(O, Properties) {\n  anObject(O);\n  var properties = toIndexedObject(Properties);\n  var keys = objectKeys(properties).concat($getOwnPropertySymbols(properties));\n  $forEach(keys, function (key) {\n    if (!DESCRIPTORS || call($propertyIsEnumerable, properties, key)) $defineProperty(O, key, properties[key]);\n  });\n  return O;\n};\n\nvar $create = function create(O, Properties) {\n  return Properties === undefined ? nativeObjectCreate(O) : $defineProperties(nativeObjectCreate(O), Properties);\n};\n\nvar $propertyIsEnumerable = function propertyIsEnumerable(V) {\n  var P = toPropertyKey(V);\n  var enumerable = call(nativePropertyIsEnumerable, this, P);\n  if (this === ObjectPrototype && hasOwn(AllSymbols, P) && !hasOwn(ObjectPrototypeSymbols, P)) return false;\n  return enumerable || !hasOwn(this, P) || !hasOwn(AllSymbols, P) || hasOwn(this, HIDDEN) && this[HIDDEN][P]\n    ? enumerable : true;\n};\n\nvar $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(O, P) {\n  var it = toIndexedObject(O);\n  var key = toPropertyKey(P);\n  if (it === ObjectPrototype && hasOwn(AllSymbols, key) && !hasOwn(ObjectPrototypeSymbols, key)) return;\n  var descriptor = nativeGetOwnPropertyDescriptor(it, key);\n  if (descriptor && hasOwn(AllSymbols, key) && !(hasOwn(it, HIDDEN) && it[HIDDEN][key])) {\n    descriptor.enumerable = true;\n  }\n  return descriptor;\n};\n\nvar $getOwnPropertyNames = function getOwnPropertyNames(O) {\n  var names = nativeGetOwnPropertyNames(toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (!hasOwn(AllSymbols, key) && !hasOwn(hiddenKeys, key)) push(result, key);\n  });\n  return result;\n};\n\nvar $getOwnPropertySymbols = function (O) {\n  var IS_OBJECT_PROTOTYPE = O === ObjectPrototype;\n  var names = nativeGetOwnPropertyNames(IS_OBJECT_PROTOTYPE ? ObjectPrototypeSymbols : toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (hasOwn(AllSymbols, key) && (!IS_OBJECT_PROTOTYPE || hasOwn(ObjectPrototype, key))) {\n      push(result, AllSymbols[key]);\n    }\n  });\n  return result;\n};\n\n// `Symbol` constructor\n// https://tc39.es/ecma262/#sec-symbol-constructor\nif (!NATIVE_SYMBOL) {\n  $Symbol = function Symbol() {\n    if (isPrototypeOf(SymbolPrototype, this)) throw TypeError('Symbol is not a constructor');\n    var description = !arguments.length || arguments[0] === undefined ? undefined : $toString(arguments[0]);\n    var tag = uid(description);\n    var setter = function (value) {\n      if (this === ObjectPrototype) call(setter, ObjectPrototypeSymbols, value);\n      if (hasOwn(this, HIDDEN) && hasOwn(this[HIDDEN], tag)) this[HIDDEN][tag] = false;\n      setSymbolDescriptor(this, tag, createPropertyDescriptor(1, value));\n    };\n    if (DESCRIPTORS && USE_SETTER) setSymbolDescriptor(ObjectPrototype, tag, { configurable: true, set: setter });\n    return wrap(tag, description);\n  };\n\n  SymbolPrototype = $Symbol[PROTOTYPE];\n\n  defineBuiltIn(SymbolPrototype, 'toString', function toString() {\n    return getInternalState(this).tag;\n  });\n\n  defineBuiltIn($Symbol, 'withoutSetter', function (description) {\n    return wrap(uid(description), description);\n  });\n\n  propertyIsEnumerableModule.f = $propertyIsEnumerable;\n  definePropertyModule.f = $defineProperty;\n  definePropertiesModule.f = $defineProperties;\n  getOwnPropertyDescriptorModule.f = $getOwnPropertyDescriptor;\n  getOwnPropertyNamesModule.f = getOwnPropertyNamesExternal.f = $getOwnPropertyNames;\n  getOwnPropertySymbolsModule.f = $getOwnPropertySymbols;\n\n  wrappedWellKnownSymbolModule.f = function (name) {\n    return wrap(wellKnownSymbol(name), name);\n  };\n\n  if (DESCRIPTORS) {\n    // https://github.com/tc39/proposal-Symbol-description\n    nativeDefineProperty(SymbolPrototype, 'description', {\n      configurable: true,\n      get: function description() {\n        return getInternalState(this).description;\n      }\n    });\n    if (!IS_PURE) {\n      defineBuiltIn(ObjectPrototype, 'propertyIsEnumerable', $propertyIsEnumerable, { unsafe: true });\n    }\n  }\n}\n\n$({ global: true, constructor: true, wrap: true, forced: !NATIVE_SYMBOL, sham: !NATIVE_SYMBOL }, {\n  Symbol: $Symbol\n});\n\n$forEach(objectKeys(WellKnownSymbolsStore), function (name) {\n  defineWellKnownSymbol(name);\n});\n\n$({ target: SYMBOL, stat: true, forced: !NATIVE_SYMBOL }, {\n  useSetter: function () { USE_SETTER = true; },\n  useSimple: function () { USE_SETTER = false; }\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL, sham: !DESCRIPTORS }, {\n  // `Object.create` method\n  // https://tc39.es/ecma262/#sec-object.create\n  create: $create,\n  // `Object.defineProperty` method\n  // https://tc39.es/ecma262/#sec-object.defineproperty\n  defineProperty: $defineProperty,\n  // `Object.defineProperties` method\n  // https://tc39.es/ecma262/#sec-object.defineproperties\n  defineProperties: $defineProperties,\n  // `Object.getOwnPropertyDescriptor` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertydescriptors\n  getOwnPropertyDescriptor: $getOwnPropertyDescriptor\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL }, {\n  // `Object.getOwnPropertyNames` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertynames\n  getOwnPropertyNames: $getOwnPropertyNames\n});\n\n// `Symbol.prototype[@@toPrimitive]` method\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@toprimitive\ndefineSymbolToPrimitive();\n\n// `Symbol.prototype[@@toStringTag]` property\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@tostringtag\nsetToStringTag($Symbol, SYMBOL);\n\nhiddenKeys[HIDDEN] = true;\n"
         },
         {
           "id": 108,
@@ -12072,7 +12072,7 @@
           "name": "./node_modules/core-js/modules/es.promise.constructor.js",
           "index": 120,
           "index2": 135,
-          "size": 9746,
+          "size": 9765,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -12121,7 +12121,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 3,
-          "source": "'use strict';\nvar $ = require('../internals/export');\nvar IS_PURE = require('../internals/is-pure');\nvar IS_NODE = require('../internals/engine-is-node');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar setPrototypeOf = require('../internals/object-set-prototype-of');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar setSpecies = require('../internals/set-species');\nvar aCallable = require('../internals/a-callable');\nvar isCallable = require('../internals/is-callable');\nvar isObject = require('../internals/is-object');\nvar anInstance = require('../internals/an-instance');\nvar speciesConstructor = require('../internals/species-constructor');\nvar task = require('../internals/task').set;\nvar microtask = require('../internals/microtask');\nvar hostReportErrors = require('../internals/host-report-errors');\nvar perform = require('../internals/perform');\nvar Queue = require('../internals/queue');\nvar InternalStateModule = require('../internals/internal-state');\nvar NativePromiseConstructor = require('../internals/promise-native-constructor');\nvar PromiseConstructorDetection = require('../internals/promise-constructor-detection');\nvar newPromiseCapabilityModule = require('../internals/new-promise-capability');\n\nvar PROMISE = 'Promise';\nvar FORCED_PROMISE_CONSTRUCTOR = PromiseConstructorDetection.CONSTRUCTOR;\nvar NATIVE_PROMISE_REJECTION_EVENT = PromiseConstructorDetection.REJECTION_EVENT;\nvar NATIVE_PROMISE_SUBCLASSING = PromiseConstructorDetection.SUBCLASSING;\nvar getInternalPromiseState = InternalStateModule.getterFor(PROMISE);\nvar setInternalState = InternalStateModule.set;\nvar NativePromisePrototype = NativePromiseConstructor && NativePromiseConstructor.prototype;\nvar PromiseConstructor = NativePromiseConstructor;\nvar PromisePrototype = NativePromisePrototype;\nvar TypeError = global.TypeError;\nvar document = global.document;\nvar process = global.process;\nvar newPromiseCapability = newPromiseCapabilityModule.f;\nvar newGenericPromiseCapability = newPromiseCapability;\n\nvar DISPATCH_EVENT = !!(document && document.createEvent && global.dispatchEvent);\nvar UNHANDLED_REJECTION = 'unhandledrejection';\nvar REJECTION_HANDLED = 'rejectionhandled';\nvar PENDING = 0;\nvar FULFILLED = 1;\nvar REJECTED = 2;\nvar HANDLED = 1;\nvar UNHANDLED = 2;\n\nvar Internal, OwnPromiseCapability, PromiseWrapper, nativeThen;\n\n// helpers\nvar isThenable = function (it) {\n  var then;\n  return isObject(it) && isCallable(then = it.then) ? then : false;\n};\n\nvar callReaction = function (reaction, state) {\n  var value = state.value;\n  var ok = state.state == FULFILLED;\n  var handler = ok ? reaction.ok : reaction.fail;\n  var resolve = reaction.resolve;\n  var reject = reaction.reject;\n  var domain = reaction.domain;\n  var result, then, exited;\n  try {\n    if (handler) {\n      if (!ok) {\n        if (state.rejection === UNHANDLED) onHandleUnhandled(state);\n        state.rejection = HANDLED;\n      }\n      if (handler === true) result = value;\n      else {\n        if (domain) domain.enter();\n        result = handler(value); // can throw\n        if (domain) {\n          domain.exit();\n          exited = true;\n        }\n      }\n      if (result === reaction.promise) {\n        reject(TypeError('Promise-chain cycle'));\n      } else if (then = isThenable(result)) {\n        call(then, result, resolve, reject);\n      } else resolve(result);\n    } else reject(value);\n  } catch (error) {\n    if (domain && !exited) domain.exit();\n    reject(error);\n  }\n};\n\nvar notify = function (state, isReject) {\n  if (state.notified) return;\n  state.notified = true;\n  microtask(function () {\n    var reactions = state.reactions;\n    var reaction;\n    while (reaction = reactions.get()) {\n      callReaction(reaction, state);\n    }\n    state.notified = false;\n    if (isReject && !state.rejection) onUnhandled(state);\n  });\n};\n\nvar dispatchEvent = function (name, promise, reason) {\n  var event, handler;\n  if (DISPATCH_EVENT) {\n    event = document.createEvent('Event');\n    event.promise = promise;\n    event.reason = reason;\n    event.initEvent(name, false, true);\n    global.dispatchEvent(event);\n  } else event = { promise: promise, reason: reason };\n  if (!NATIVE_PROMISE_REJECTION_EVENT && (handler = global['on' + name])) handler(event);\n  else if (name === UNHANDLED_REJECTION) hostReportErrors('Unhandled promise rejection', reason);\n};\n\nvar onUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    var value = state.value;\n    var IS_UNHANDLED = isUnhandled(state);\n    var result;\n    if (IS_UNHANDLED) {\n      result = perform(function () {\n        if (IS_NODE) {\n          process.emit('unhandledRejection', value, promise);\n        } else dispatchEvent(UNHANDLED_REJECTION, promise, value);\n      });\n      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should\n      state.rejection = IS_NODE || isUnhandled(state) ? UNHANDLED : HANDLED;\n      if (result.error) throw result.value;\n    }\n  });\n};\n\nvar isUnhandled = function (state) {\n  return state.rejection !== HANDLED && !state.parent;\n};\n\nvar onHandleUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    if (IS_NODE) {\n      process.emit('rejectionHandled', promise);\n    } else dispatchEvent(REJECTION_HANDLED, promise, state.value);\n  });\n};\n\nvar bind = function (fn, state, unwrap) {\n  return function (value) {\n    fn(state, value, unwrap);\n  };\n};\n\nvar internalReject = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  state.value = value;\n  state.state = REJECTED;\n  notify(state, true);\n};\n\nvar internalResolve = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  try {\n    if (state.facade === value) throw TypeError(\"Promise can't be resolved itself\");\n    var then = isThenable(value);\n    if (then) {\n      microtask(function () {\n        var wrapper = { done: false };\n        try {\n          call(then, value,\n            bind(internalResolve, wrapper, state),\n            bind(internalReject, wrapper, state)\n          );\n        } catch (error) {\n          internalReject(wrapper, error, state);\n        }\n      });\n    } else {\n      state.value = value;\n      state.state = FULFILLED;\n      notify(state, false);\n    }\n  } catch (error) {\n    internalReject({ done: false }, error, state);\n  }\n};\n\n// constructor polyfill\nif (FORCED_PROMISE_CONSTRUCTOR) {\n  // 25.4.3.1 Promise(executor)\n  PromiseConstructor = function Promise(executor) {\n    anInstance(this, PromisePrototype);\n    aCallable(executor);\n    call(Internal, this);\n    var state = getInternalPromiseState(this);\n    try {\n      executor(bind(internalResolve, state), bind(internalReject, state));\n    } catch (error) {\n      internalReject(state, error);\n    }\n  };\n\n  PromisePrototype = PromiseConstructor.prototype;\n\n  // eslint-disable-next-line no-unused-vars -- required for `.length`\n  Internal = function Promise(executor) {\n    setInternalState(this, {\n      type: PROMISE,\n      done: false,\n      notified: false,\n      parent: false,\n      reactions: new Queue(),\n      rejection: false,\n      state: PENDING,\n      value: undefined\n    });\n  };\n\n  // `Promise.prototype.then` method\n  // https://tc39.es/ecma262/#sec-promise.prototype.then\n  Internal.prototype = defineBuiltIn(PromisePrototype, 'then', function then(onFulfilled, onRejected) {\n    var state = getInternalPromiseState(this);\n    var reaction = newPromiseCapability(speciesConstructor(this, PromiseConstructor));\n    state.parent = true;\n    reaction.ok = isCallable(onFulfilled) ? onFulfilled : true;\n    reaction.fail = isCallable(onRejected) && onRejected;\n    reaction.domain = IS_NODE ? process.domain : undefined;\n    if (state.state == PENDING) state.reactions.add(reaction);\n    else microtask(function () {\n      callReaction(reaction, state);\n    });\n    return reaction.promise;\n  });\n\n  OwnPromiseCapability = function () {\n    var promise = new Internal();\n    var state = getInternalPromiseState(promise);\n    this.promise = promise;\n    this.resolve = bind(internalResolve, state);\n    this.reject = bind(internalReject, state);\n  };\n\n  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {\n    return C === PromiseConstructor || C === PromiseWrapper\n      ? new OwnPromiseCapability(C)\n      : newGenericPromiseCapability(C);\n  };\n\n  if (!IS_PURE && isCallable(NativePromiseConstructor) && NativePromisePrototype !== Object.prototype) {\n    nativeThen = NativePromisePrototype.then;\n\n    if (!NATIVE_PROMISE_SUBCLASSING) {\n      // make `Promise#then` return a polyfilled `Promise` for native promise-based APIs\n      defineBuiltIn(NativePromisePrototype, 'then', function then(onFulfilled, onRejected) {\n        var that = this;\n        return new PromiseConstructor(function (resolve, reject) {\n          call(nativeThen, that, resolve, reject);\n        }).then(onFulfilled, onRejected);\n      // https://github.com/zloirock/core-js/issues/640\n      }, { unsafe: true });\n    }\n\n    // make `.constructor === Promise` work for native promise-based APIs\n    try {\n      delete NativePromisePrototype.constructor;\n    } catch (error) { /* empty */ }\n\n    // make `instanceof Promise` work for native promise-based APIs\n    if (setPrototypeOf) {\n      setPrototypeOf(NativePromisePrototype, PromisePrototype);\n    }\n  }\n}\n\n$({ global: true, wrap: true, forced: FORCED_PROMISE_CONSTRUCTOR }, {\n  Promise: PromiseConstructor\n});\n\nsetToStringTag(PromiseConstructor, PROMISE, false, true);\nsetSpecies(PROMISE);\n"
+          "source": "'use strict';\nvar $ = require('../internals/export');\nvar IS_PURE = require('../internals/is-pure');\nvar IS_NODE = require('../internals/engine-is-node');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar setPrototypeOf = require('../internals/object-set-prototype-of');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar setSpecies = require('../internals/set-species');\nvar aCallable = require('../internals/a-callable');\nvar isCallable = require('../internals/is-callable');\nvar isObject = require('../internals/is-object');\nvar anInstance = require('../internals/an-instance');\nvar speciesConstructor = require('../internals/species-constructor');\nvar task = require('../internals/task').set;\nvar microtask = require('../internals/microtask');\nvar hostReportErrors = require('../internals/host-report-errors');\nvar perform = require('../internals/perform');\nvar Queue = require('../internals/queue');\nvar InternalStateModule = require('../internals/internal-state');\nvar NativePromiseConstructor = require('../internals/promise-native-constructor');\nvar PromiseConstructorDetection = require('../internals/promise-constructor-detection');\nvar newPromiseCapabilityModule = require('../internals/new-promise-capability');\n\nvar PROMISE = 'Promise';\nvar FORCED_PROMISE_CONSTRUCTOR = PromiseConstructorDetection.CONSTRUCTOR;\nvar NATIVE_PROMISE_REJECTION_EVENT = PromiseConstructorDetection.REJECTION_EVENT;\nvar NATIVE_PROMISE_SUBCLASSING = PromiseConstructorDetection.SUBCLASSING;\nvar getInternalPromiseState = InternalStateModule.getterFor(PROMISE);\nvar setInternalState = InternalStateModule.set;\nvar NativePromisePrototype = NativePromiseConstructor && NativePromiseConstructor.prototype;\nvar PromiseConstructor = NativePromiseConstructor;\nvar PromisePrototype = NativePromisePrototype;\nvar TypeError = global.TypeError;\nvar document = global.document;\nvar process = global.process;\nvar newPromiseCapability = newPromiseCapabilityModule.f;\nvar newGenericPromiseCapability = newPromiseCapability;\n\nvar DISPATCH_EVENT = !!(document && document.createEvent && global.dispatchEvent);\nvar UNHANDLED_REJECTION = 'unhandledrejection';\nvar REJECTION_HANDLED = 'rejectionhandled';\nvar PENDING = 0;\nvar FULFILLED = 1;\nvar REJECTED = 2;\nvar HANDLED = 1;\nvar UNHANDLED = 2;\n\nvar Internal, OwnPromiseCapability, PromiseWrapper, nativeThen;\n\n// helpers\nvar isThenable = function (it) {\n  var then;\n  return isObject(it) && isCallable(then = it.then) ? then : false;\n};\n\nvar callReaction = function (reaction, state) {\n  var value = state.value;\n  var ok = state.state == FULFILLED;\n  var handler = ok ? reaction.ok : reaction.fail;\n  var resolve = reaction.resolve;\n  var reject = reaction.reject;\n  var domain = reaction.domain;\n  var result, then, exited;\n  try {\n    if (handler) {\n      if (!ok) {\n        if (state.rejection === UNHANDLED) onHandleUnhandled(state);\n        state.rejection = HANDLED;\n      }\n      if (handler === true) result = value;\n      else {\n        if (domain) domain.enter();\n        result = handler(value); // can throw\n        if (domain) {\n          domain.exit();\n          exited = true;\n        }\n      }\n      if (result === reaction.promise) {\n        reject(TypeError('Promise-chain cycle'));\n      } else if (then = isThenable(result)) {\n        call(then, result, resolve, reject);\n      } else resolve(result);\n    } else reject(value);\n  } catch (error) {\n    if (domain && !exited) domain.exit();\n    reject(error);\n  }\n};\n\nvar notify = function (state, isReject) {\n  if (state.notified) return;\n  state.notified = true;\n  microtask(function () {\n    var reactions = state.reactions;\n    var reaction;\n    while (reaction = reactions.get()) {\n      callReaction(reaction, state);\n    }\n    state.notified = false;\n    if (isReject && !state.rejection) onUnhandled(state);\n  });\n};\n\nvar dispatchEvent = function (name, promise, reason) {\n  var event, handler;\n  if (DISPATCH_EVENT) {\n    event = document.createEvent('Event');\n    event.promise = promise;\n    event.reason = reason;\n    event.initEvent(name, false, true);\n    global.dispatchEvent(event);\n  } else event = { promise: promise, reason: reason };\n  if (!NATIVE_PROMISE_REJECTION_EVENT && (handler = global['on' + name])) handler(event);\n  else if (name === UNHANDLED_REJECTION) hostReportErrors('Unhandled promise rejection', reason);\n};\n\nvar onUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    var value = state.value;\n    var IS_UNHANDLED = isUnhandled(state);\n    var result;\n    if (IS_UNHANDLED) {\n      result = perform(function () {\n        if (IS_NODE) {\n          process.emit('unhandledRejection', value, promise);\n        } else dispatchEvent(UNHANDLED_REJECTION, promise, value);\n      });\n      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should\n      state.rejection = IS_NODE || isUnhandled(state) ? UNHANDLED : HANDLED;\n      if (result.error) throw result.value;\n    }\n  });\n};\n\nvar isUnhandled = function (state) {\n  return state.rejection !== HANDLED && !state.parent;\n};\n\nvar onHandleUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    if (IS_NODE) {\n      process.emit('rejectionHandled', promise);\n    } else dispatchEvent(REJECTION_HANDLED, promise, state.value);\n  });\n};\n\nvar bind = function (fn, state, unwrap) {\n  return function (value) {\n    fn(state, value, unwrap);\n  };\n};\n\nvar internalReject = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  state.value = value;\n  state.state = REJECTED;\n  notify(state, true);\n};\n\nvar internalResolve = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  try {\n    if (state.facade === value) throw TypeError(\"Promise can't be resolved itself\");\n    var then = isThenable(value);\n    if (then) {\n      microtask(function () {\n        var wrapper = { done: false };\n        try {\n          call(then, value,\n            bind(internalResolve, wrapper, state),\n            bind(internalReject, wrapper, state)\n          );\n        } catch (error) {\n          internalReject(wrapper, error, state);\n        }\n      });\n    } else {\n      state.value = value;\n      state.state = FULFILLED;\n      notify(state, false);\n    }\n  } catch (error) {\n    internalReject({ done: false }, error, state);\n  }\n};\n\n// constructor polyfill\nif (FORCED_PROMISE_CONSTRUCTOR) {\n  // 25.4.3.1 Promise(executor)\n  PromiseConstructor = function Promise(executor) {\n    anInstance(this, PromisePrototype);\n    aCallable(executor);\n    call(Internal, this);\n    var state = getInternalPromiseState(this);\n    try {\n      executor(bind(internalResolve, state), bind(internalReject, state));\n    } catch (error) {\n      internalReject(state, error);\n    }\n  };\n\n  PromisePrototype = PromiseConstructor.prototype;\n\n  // eslint-disable-next-line no-unused-vars -- required for `.length`\n  Internal = function Promise(executor) {\n    setInternalState(this, {\n      type: PROMISE,\n      done: false,\n      notified: false,\n      parent: false,\n      reactions: new Queue(),\n      rejection: false,\n      state: PENDING,\n      value: undefined\n    });\n  };\n\n  // `Promise.prototype.then` method\n  // https://tc39.es/ecma262/#sec-promise.prototype.then\n  Internal.prototype = defineBuiltIn(PromisePrototype, 'then', function then(onFulfilled, onRejected) {\n    var state = getInternalPromiseState(this);\n    var reaction = newPromiseCapability(speciesConstructor(this, PromiseConstructor));\n    state.parent = true;\n    reaction.ok = isCallable(onFulfilled) ? onFulfilled : true;\n    reaction.fail = isCallable(onRejected) && onRejected;\n    reaction.domain = IS_NODE ? process.domain : undefined;\n    if (state.state == PENDING) state.reactions.add(reaction);\n    else microtask(function () {\n      callReaction(reaction, state);\n    });\n    return reaction.promise;\n  });\n\n  OwnPromiseCapability = function () {\n    var promise = new Internal();\n    var state = getInternalPromiseState(promise);\n    this.promise = promise;\n    this.resolve = bind(internalResolve, state);\n    this.reject = bind(internalReject, state);\n  };\n\n  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {\n    return C === PromiseConstructor || C === PromiseWrapper\n      ? new OwnPromiseCapability(C)\n      : newGenericPromiseCapability(C);\n  };\n\n  if (!IS_PURE && isCallable(NativePromiseConstructor) && NativePromisePrototype !== Object.prototype) {\n    nativeThen = NativePromisePrototype.then;\n\n    if (!NATIVE_PROMISE_SUBCLASSING) {\n      // make `Promise#then` return a polyfilled `Promise` for native promise-based APIs\n      defineBuiltIn(NativePromisePrototype, 'then', function then(onFulfilled, onRejected) {\n        var that = this;\n        return new PromiseConstructor(function (resolve, reject) {\n          call(nativeThen, that, resolve, reject);\n        }).then(onFulfilled, onRejected);\n      // https://github.com/zloirock/core-js/issues/640\n      }, { unsafe: true });\n    }\n\n    // make `.constructor === Promise` work for native promise-based APIs\n    try {\n      delete NativePromisePrototype.constructor;\n    } catch (error) { /* empty */ }\n\n    // make `instanceof Promise` work for native promise-based APIs\n    if (setPrototypeOf) {\n      setPrototypeOf(NativePromisePrototype, PromisePrototype);\n    }\n  }\n}\n\n$({ global: true, constructor: true, wrap: true, forced: FORCED_PROMISE_CONSTRUCTOR }, {\n  Promise: PromiseConstructor\n});\n\nsetToStringTag(PromiseConstructor, PROMISE, false, true);\nsetSpecies(PROMISE);\n"
         },
         {
           "id": 133,
@@ -15437,18 +15437,18 @@
         },
         {
           "moduleId": 10,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-          "module": "./node_modules/core-js/internals/object-define-property.js",
-          "moduleName": "./node_modules/core-js/internals/object-define-property.js",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
+          "module": "./node_modules/core-js/internals/an-object.js",
+          "moduleName": "./node_modules/core-js/internals/an-object.js",
           "type": "cjs require",
           "userRequest": "../internals/global",
           "loc": "1:13-43"
         },
         {
-          "moduleId": 11,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
-          "module": "./node_modules/core-js/internals/an-object.js",
-          "moduleName": "./node_modules/core-js/internals/an-object.js",
+          "moduleId": 12,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+          "module": "./node_modules/core-js/internals/object-define-property.js",
+          "moduleName": "./node_modules/core-js/internals/object-define-property.js",
           "type": "cjs require",
           "userRequest": "../internals/global",
           "loc": "1:13-43"
@@ -16090,7 +16090,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 8,
+          "moduleId": 7,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
           "module": "./node_modules/core-js/internals/descriptors.js",
           "moduleName": "./node_modules/core-js/internals/descriptors.js",
@@ -16766,7 +16766,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 7,
+          "moduleId": 8,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
           "module": "./node_modules/core-js/internals/has-own-property.js",
           "moduleName": "./node_modules/core-js/internals/has-own-property.js",
@@ -17126,6 +17126,180 @@
     },
     {
       "id": 7,
+      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
+      "name": "./node_modules/core-js/internals/descriptors.js",
+      "index": 7,
+      "index2": 3,
+      "size": 310,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+      "issuerId": 122,
+      "issuerName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+      "issuerPath": [
+        {
+          "id": 97,
+          "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+          "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+        },
+        {
+          "id": null,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+          "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+        },
+        {
+          "id": 122,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "name": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 12,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+          "module": "./node_modules/core-js/internals/object-define-property.js",
+          "moduleName": "./node_modules/core-js/internals/object-define-property.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "2:18-53"
+        },
+        {
+          "moduleId": 17,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-get-own-property-descriptor.js",
+          "module": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
+          "moduleName": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 20,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
+          "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+          "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 65,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/ie8-dom-define.js",
+          "module": "./node_modules/core-js/internals/ie8-dom-define.js",
+          "moduleName": "./node_modules/core-js/internals/ie8-dom-define.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 66,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/v8-prototype-define-bug.js",
+          "module": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
+          "moduleName": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 67,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-name.js",
+          "module": "./node_modules/core-js/internals/function-name.js",
+          "moduleName": "./node_modules/core-js/internals/function-name.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 72,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
+          "module": "./node_modules/core-js/internals/object-define-properties.js",
+          "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "1:18-53"
+        },
+        {
+          "moduleId": 84,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+          "module": "./node_modules/core-js/modules/es.array.iterator.js",
+          "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "9:18-53"
+        },
+        {
+          "moduleId": 101,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/make-built-in.js",
+          "module": "./node_modules/core-js/internals/make-built-in.js",
+          "moduleName": "./node_modules/core-js/internals/make-built-in.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "4:18-53"
+        },
+        {
+          "moduleId": 107,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
+          "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
+          "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "7:18-53"
+        },
+        {
+          "moduleId": 122,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "5:18-53"
+        },
+        {
+          "moduleId": 126,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+          "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+          "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "2:18-53"
+        },
+        {
+          "moduleId": 133,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+          "module": "./node_modules/core-js/internals/set-species.js",
+          "moduleName": "./node_modules/core-js/internals/set-species.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "5:18-53"
+        },
+        {
+          "moduleId": 153,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
+          "module": "./node_modules/core-js/internals/object-assign.js",
+          "moduleName": "./node_modules/core-js/internals/object-assign.js",
+          "type": "cjs require",
+          "userRequest": "../internals/descriptors",
+          "loc": "2:18-53"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3,
+      "source": "var fails = require('../internals/fails');\n\n// Detect IE8's incomplete defineProperty implementation\nmodule.exports = !fails(function () {\n  // eslint-disable-next-line es-x/no-object-defineproperty -- required for testing\n  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;\n});\n"
+    },
+    {
+      "id": 8,
       "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
       "name": "./node_modules/core-js/internals/has-own-property.js",
       "index": 38,
@@ -17304,171 +17478,6 @@
       "source": "var uncurryThis = require('../internals/function-uncurry-this');\nvar toObject = require('../internals/to-object');\n\nvar hasOwnProperty = uncurryThis({}.hasOwnProperty);\n\n// `HasOwnProperty` abstract operation\n// https://tc39.es/ecma262/#sec-hasownproperty\n// eslint-disable-next-line es-x/no-object-hasown -- safe\nmodule.exports = Object.hasOwn || function hasOwn(it, key) {\n  return hasOwnProperty(toObject(it), key);\n};\n"
     },
     {
-      "id": 8,
-      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/descriptors.js",
-      "name": "./node_modules/core-js/internals/descriptors.js",
-      "index": 7,
-      "index2": 3,
-      "size": 310,
-      "cacheable": true,
-      "built": true,
-      "optional": false,
-      "prefetched": false,
-      "chunks": [
-        1
-      ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-      "issuerId": 122,
-      "issuerName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-      "issuerPath": [
-        {
-          "id": 97,
-          "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-          "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-        },
-        {
-          "id": null,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-          "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-        },
-        {
-          "id": 122,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "name": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "assets": [],
-      "reasons": [
-        {
-          "moduleId": 10,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-          "module": "./node_modules/core-js/internals/object-define-property.js",
-          "moduleName": "./node_modules/core-js/internals/object-define-property.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "2:18-53"
-        },
-        {
-          "moduleId": 17,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-get-own-property-descriptor.js",
-          "module": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
-          "moduleName": "./node_modules/core-js/internals/object-get-own-property-descriptor.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 20,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
-          "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-          "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 65,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/ie8-dom-define.js",
-          "module": "./node_modules/core-js/internals/ie8-dom-define.js",
-          "moduleName": "./node_modules/core-js/internals/ie8-dom-define.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 66,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/v8-prototype-define-bug.js",
-          "module": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
-          "moduleName": "./node_modules/core-js/internals/v8-prototype-define-bug.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 67,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/function-name.js",
-          "module": "./node_modules/core-js/internals/function-name.js",
-          "moduleName": "./node_modules/core-js/internals/function-name.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 72,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
-          "module": "./node_modules/core-js/internals/object-define-properties.js",
-          "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "1:18-53"
-        },
-        {
-          "moduleId": 84,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-          "module": "./node_modules/core-js/modules/es.array.iterator.js",
-          "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "9:18-53"
-        },
-        {
-          "moduleId": 107,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
-          "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
-          "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "7:18-53"
-        },
-        {
-          "moduleId": 122,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptor.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "5:18-53"
-        },
-        {
-          "moduleId": 126,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-          "module": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-          "moduleName": "./node_modules/core-js/modules/es.object.get-own-property-descriptors.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "2:18-53"
-        },
-        {
-          "moduleId": 133,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
-          "module": "./node_modules/core-js/internals/set-species.js",
-          "moduleName": "./node_modules/core-js/internals/set-species.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "5:18-53"
-        },
-        {
-          "moduleId": 153,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-assign.js",
-          "module": "./node_modules/core-js/internals/object-assign.js",
-          "moduleName": "./node_modules/core-js/internals/object-assign.js",
-          "type": "cjs require",
-          "userRequest": "../internals/descriptors",
-          "loc": "2:18-53"
-        }
-      ],
-      "usedExports": true,
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module is not an ECMAScript module"
-      ],
-      "depth": 3,
-      "source": "var fails = require('../internals/fails');\n\n// Detect IE8's incomplete defineProperty implementation\nmodule.exports = !fails(function () {\n  // eslint-disable-next-line es-x/no-object-defineproperty -- required for testing\n  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;\n});\n"
-    },
-    {
       "id": 9,
       "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/get-built-in.js",
       "name": "./node_modules/core-js/internals/get-built-in.js",
@@ -17626,153 +17635,6 @@
     },
     {
       "id": 10,
-      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-      "name": "./node_modules/core-js/internals/object-define-property.js",
-      "index": 44,
-      "index2": 41,
-      "size": 1931,
-      "cacheable": true,
-      "built": true,
-      "optional": false,
-      "prefetched": false,
-      "chunks": [
-        1
-      ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-      "issuerId": 84,
-      "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
-      "issuerPath": [
-        {
-          "id": 97,
-          "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-          "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-        },
-        {
-          "id": null,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
-          "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
-        },
-        {
-          "id": 84,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-          "name": "./node_modules/core-js/modules/es.array.iterator.js"
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "assets": [],
-      "reasons": [
-        {
-          "moduleId": 20,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
-          "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-          "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "2:27-73"
-        },
-        {
-          "moduleId": 47,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-to-string-tag.js",
-          "module": "./node_modules/core-js/internals/set-to-string-tag.js",
-          "moduleName": "./node_modules/core-js/internals/set-to-string-tag.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "1:21-67"
-        },
-        {
-          "moduleId": 72,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
-          "module": "./node_modules/core-js/internals/object-define-properties.js",
-          "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "3:27-73"
-        },
-        {
-          "moduleId": 74,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-property.js",
-          "module": "./node_modules/core-js/internals/create-property.js",
-          "moduleName": "./node_modules/core-js/internals/create-property.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "3:27-73"
-        },
-        {
-          "moduleId": 84,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
-          "module": "./node_modules/core-js/modules/es.array.iterator.js",
-          "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "6:21-67"
-        },
-        {
-          "moduleId": 101,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/make-built-in.js",
-          "module": "./node_modules/core-js/internals/make-built-in.js",
-          "moduleName": "./node_modules/core-js/internals/make-built-in.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "4:21-67"
-        },
-        {
-          "moduleId": 103,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/copy-constructor-properties.js",
-          "module": "./node_modules/core-js/internals/copy-constructor-properties.js",
-          "moduleName": "./node_modules/core-js/internals/copy-constructor-properties.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "4:27-73"
-        },
-        {
-          "moduleId": 107,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
-          "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
-          "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "23:27-73"
-        },
-        {
-          "moduleId": 110,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/define-well-known-symbol.js",
-          "module": "./node_modules/core-js/internals/define-well-known-symbol.js",
-          "moduleName": "./node_modules/core-js/internals/define-well-known-symbol.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "4:21-67"
-        },
-        {
-          "moduleId": 127,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/add-to-unscopables.js",
-          "module": "./node_modules/core-js/internals/add-to-unscopables.js",
-          "moduleName": "./node_modules/core-js/internals/add-to-unscopables.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "3:27-73"
-        },
-        {
-          "moduleId": 133,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
-          "module": "./node_modules/core-js/internals/set-species.js",
-          "moduleName": "./node_modules/core-js/internals/set-species.js",
-          "type": "cjs require",
-          "userRequest": "../internals/object-define-property",
-          "loc": "3:27-73"
-        }
-      ],
-      "usedExports": true,
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module is not an ECMAScript module"
-      ],
-      "depth": 3,
-      "source": "var global = require('../internals/global');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar IE8_DOM_DEFINE = require('../internals/ie8-dom-define');\nvar V8_PROTOTYPE_DEFINE_BUG = require('../internals/v8-prototype-define-bug');\nvar anObject = require('../internals/an-object');\nvar toPropertyKey = require('../internals/to-property-key');\n\nvar TypeError = global.TypeError;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar $defineProperty = Object.defineProperty;\n// eslint-disable-next-line es-x/no-object-getownpropertydescriptor -- safe\nvar $getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\nvar ENUMERABLE = 'enumerable';\nvar CONFIGURABLE = 'configurable';\nvar WRITABLE = 'writable';\n\n// `Object.defineProperty` method\n// https://tc39.es/ecma262/#sec-object.defineproperty\nexports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (typeof O === 'function' && P === 'prototype' && 'value' in Attributes && WRITABLE in Attributes && !Attributes[WRITABLE]) {\n    var current = $getOwnPropertyDescriptor(O, P);\n    if (current && current[WRITABLE]) {\n      O[P] = Attributes.value;\n      Attributes = {\n        configurable: CONFIGURABLE in Attributes ? Attributes[CONFIGURABLE] : current[CONFIGURABLE],\n        enumerable: ENUMERABLE in Attributes ? Attributes[ENUMERABLE] : current[ENUMERABLE],\n        writable: false\n      };\n    }\n  } return $defineProperty(O, P, Attributes);\n} : $defineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return $defineProperty(O, P, Attributes);\n  } catch (error) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n"
-    },
-    {
-      "id": 11,
       "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
       "name": "./node_modules/core-js/internals/an-object.js",
       "index": 46,
@@ -17816,7 +17678,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 10,
+          "moduleId": 12,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
           "module": "./node_modules/core-js/internals/object-define-property.js",
           "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -17924,7 +17786,7 @@
       "source": "var global = require('../internals/global');\nvar isObject = require('../internals/is-object');\n\nvar String = global.String;\nvar TypeError = global.TypeError;\n\n// `Assert: Type(argument) is Object`\nmodule.exports = function (argument) {\n  if (isObject(argument)) return argument;\n  throw TypeError(String(argument) + ' is not an object');\n};\n"
     },
     {
-      "id": 12,
+      "id": 11,
       "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/is-pure.js",
       "name": "./node_modules/core-js/internals/is-pure.js",
       "index": 35,
@@ -18060,6 +17922,144 @@
       ],
       "depth": 3,
       "source": "module.exports = false;\n"
+    },
+    {
+      "id": 12,
+      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
+      "name": "./node_modules/core-js/internals/object-define-property.js",
+      "index": 44,
+      "index2": 41,
+      "size": 1931,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+      "issuerId": 84,
+      "issuerName": "./node_modules/core-js/modules/es.array.iterator.js",
+      "issuerPath": [
+        {
+          "id": 97,
+          "identifier": "multi /home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+          "name": "multi ./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+        },
+        {
+          "id": null,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/babel-loader/lib/index.js??ref--2-0!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js",
+          "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
+        },
+        {
+          "id": 84,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+          "name": "./node_modules/core-js/modules/es.array.iterator.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 20,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-non-enumerable-property.js",
+          "module": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+          "moduleName": "./node_modules/core-js/internals/create-non-enumerable-property.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "2:27-73"
+        },
+        {
+          "moduleId": 47,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-to-string-tag.js",
+          "module": "./node_modules/core-js/internals/set-to-string-tag.js",
+          "moduleName": "./node_modules/core-js/internals/set-to-string-tag.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "1:21-67"
+        },
+        {
+          "moduleId": 72,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-properties.js",
+          "module": "./node_modules/core-js/internals/object-define-properties.js",
+          "moduleName": "./node_modules/core-js/internals/object-define-properties.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "3:27-73"
+        },
+        {
+          "moduleId": 74,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/create-property.js",
+          "module": "./node_modules/core-js/internals/create-property.js",
+          "moduleName": "./node_modules/core-js/internals/create-property.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "3:27-73"
+        },
+        {
+          "moduleId": 84,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.iterator.js",
+          "module": "./node_modules/core-js/modules/es.array.iterator.js",
+          "moduleName": "./node_modules/core-js/modules/es.array.iterator.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "6:21-67"
+        },
+        {
+          "moduleId": 103,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/copy-constructor-properties.js",
+          "module": "./node_modules/core-js/internals/copy-constructor-properties.js",
+          "moduleName": "./node_modules/core-js/internals/copy-constructor-properties.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "4:27-73"
+        },
+        {
+          "moduleId": 107,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.constructor.js",
+          "module": "./node_modules/core-js/modules/es.symbol.constructor.js",
+          "moduleName": "./node_modules/core-js/modules/es.symbol.constructor.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "23:27-73"
+        },
+        {
+          "moduleId": 110,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/define-well-known-symbol.js",
+          "module": "./node_modules/core-js/internals/define-well-known-symbol.js",
+          "moduleName": "./node_modules/core-js/internals/define-well-known-symbol.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "4:21-67"
+        },
+        {
+          "moduleId": 127,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/add-to-unscopables.js",
+          "module": "./node_modules/core-js/internals/add-to-unscopables.js",
+          "moduleName": "./node_modules/core-js/internals/add-to-unscopables.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "3:27-73"
+        },
+        {
+          "moduleId": 133,
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/set-species.js",
+          "module": "./node_modules/core-js/internals/set-species.js",
+          "moduleName": "./node_modules/core-js/internals/set-species.js",
+          "type": "cjs require",
+          "userRequest": "../internals/object-define-property",
+          "loc": "3:27-73"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 3,
+      "source": "var global = require('../internals/global');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar IE8_DOM_DEFINE = require('../internals/ie8-dom-define');\nvar V8_PROTOTYPE_DEFINE_BUG = require('../internals/v8-prototype-define-bug');\nvar anObject = require('../internals/an-object');\nvar toPropertyKey = require('../internals/to-property-key');\n\nvar TypeError = global.TypeError;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar $defineProperty = Object.defineProperty;\n// eslint-disable-next-line es-x/no-object-getownpropertydescriptor -- safe\nvar $getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;\nvar ENUMERABLE = 'enumerable';\nvar CONFIGURABLE = 'configurable';\nvar WRITABLE = 'writable';\n\n// `Object.defineProperty` method\n// https://tc39.es/ecma262/#sec-object.defineproperty\nexports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (typeof O === 'function' && P === 'prototype' && 'value' in Attributes && WRITABLE in Attributes && !Attributes[WRITABLE]) {\n    var current = $getOwnPropertyDescriptor(O, P);\n    if (current && current[WRITABLE]) {\n      O[P] = Attributes.value;\n      Attributes = {\n        configurable: CONFIGURABLE in Attributes ? Attributes[CONFIGURABLE] : current[CONFIGURABLE],\n        enumerable: ENUMERABLE in Attributes ? Attributes[ENUMERABLE] : current[ENUMERABLE],\n        writable: false\n      };\n    }\n  } return $defineProperty(O, P, Attributes);\n} : $defineProperty : function defineProperty(O, P, Attributes) {\n  anObject(O);\n  P = toPropertyKey(P);\n  anObject(Attributes);\n  if (IE8_DOM_DEFINE) try {\n    return $defineProperty(O, P, Attributes);\n  } catch (error) { /* empty */ }\n  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');\n  if ('value' in Attributes) O[P] = Attributes.value;\n  return O;\n};\n"
     },
     {
       "id": 13,
@@ -18235,7 +18235,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 11,
+          "moduleId": 10,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/an-object.js",
           "module": "./node_modules/core-js/internals/an-object.js",
           "moduleName": "./node_modules/core-js/internals/an-object.js",
@@ -18818,7 +18818,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 7,
+          "moduleId": 8,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/has-own-property.js",
           "module": "./node_modules/core-js/internals/has-own-property.js",
           "moduleName": "./node_modules/core-js/internals/has-own-property.js",
@@ -19479,7 +19479,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.4',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.4/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.5',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.5/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
     },
     {
       "id": 26,
@@ -20183,7 +20183,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 10,
+          "moduleId": 12,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
           "module": "./node_modules/core-js/internals/object-define-property.js",
           "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -22903,7 +22903,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 10,
+          "moduleId": 12,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
           "module": "./node_modules/core-js/internals/object-define-property.js",
           "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -22944,7 +22944,7 @@
         1
       ],
       "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
-      "issuerId": 10,
+      "issuerId": 12,
       "issuerName": "./node_modules/core-js/internals/object-define-property.js",
       "issuerPath": [
         {
@@ -22963,7 +22963,7 @@
           "name": "./node_modules/core-js/modules/es.array.iterator.js"
         },
         {
-          "id": 10,
+          "id": 12,
           "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
           "name": "./node_modules/core-js/internals/object-define-property.js"
         }
@@ -22974,7 +22974,7 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": 10,
+          "moduleId": 12,
           "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/object-define-property.js",
           "module": "./node_modules/core-js/internals/object-define-property.js",
           "moduleName": "./node_modules/core-js/internals/object-define-property.js",
@@ -25339,7 +25339,7 @@
       "name": "./node_modules/core-js/internals/make-built-in.js",
       "index": 48,
       "index2": 49,
-      "size": 1869,
+      "size": 2216,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -25393,7 +25393,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar defineProperty = require('../internals/object-define-property').f;\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n\nvar CONFIGURABLE_LENGTH = !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
+      "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  if (options && hasOwn(options, 'constructor') && options.constructor) {\n    if (DESCRIPTORS) try {\n      defineProperty(value, 'prototype', { writable: false });\n    } catch (error) { /* empty */ }\n  } else value.prototype = undefined;\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
     },
     {
       "id": 102,
@@ -25711,7 +25711,7 @@
       "name": "./node_modules/core-js/modules/es.symbol.constructor.js",
       "index": 69,
       "index2": 86,
-      "size": 10521,
+      "size": 10540,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -25760,7 +25760,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 3,
-      "source": "'use strict';\nvar $ = require('../internals/export');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar uncurryThis = require('../internals/function-uncurry-this');\nvar IS_PURE = require('../internals/is-pure');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar NATIVE_SYMBOL = require('../internals/native-symbol');\nvar fails = require('../internals/fails');\nvar hasOwn = require('../internals/has-own-property');\nvar isPrototypeOf = require('../internals/object-is-prototype-of');\nvar anObject = require('../internals/an-object');\nvar toIndexedObject = require('../internals/to-indexed-object');\nvar toPropertyKey = require('../internals/to-property-key');\nvar $toString = require('../internals/to-string');\nvar createPropertyDescriptor = require('../internals/create-property-descriptor');\nvar nativeObjectCreate = require('../internals/object-create');\nvar objectKeys = require('../internals/object-keys');\nvar getOwnPropertyNamesModule = require('../internals/object-get-own-property-names');\nvar getOwnPropertyNamesExternal = require('../internals/object-get-own-property-names-external');\nvar getOwnPropertySymbolsModule = require('../internals/object-get-own-property-symbols');\nvar getOwnPropertyDescriptorModule = require('../internals/object-get-own-property-descriptor');\nvar definePropertyModule = require('../internals/object-define-property');\nvar definePropertiesModule = require('../internals/object-define-properties');\nvar propertyIsEnumerableModule = require('../internals/object-property-is-enumerable');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar shared = require('../internals/shared');\nvar sharedKey = require('../internals/shared-key');\nvar hiddenKeys = require('../internals/hidden-keys');\nvar uid = require('../internals/uid');\nvar wellKnownSymbol = require('../internals/well-known-symbol');\nvar wrappedWellKnownSymbolModule = require('../internals/well-known-symbol-wrapped');\nvar defineWellKnownSymbol = require('../internals/define-well-known-symbol');\nvar defineSymbolToPrimitive = require('../internals/symbol-define-to-primitive');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar InternalStateModule = require('../internals/internal-state');\nvar $forEach = require('../internals/array-iteration').forEach;\n\nvar HIDDEN = sharedKey('hidden');\nvar SYMBOL = 'Symbol';\nvar PROTOTYPE = 'prototype';\n\nvar setInternalState = InternalStateModule.set;\nvar getInternalState = InternalStateModule.getterFor(SYMBOL);\n\nvar ObjectPrototype = Object[PROTOTYPE];\nvar $Symbol = global.Symbol;\nvar SymbolPrototype = $Symbol && $Symbol[PROTOTYPE];\nvar TypeError = global.TypeError;\nvar QObject = global.QObject;\nvar nativeGetOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;\nvar nativeDefineProperty = definePropertyModule.f;\nvar nativeGetOwnPropertyNames = getOwnPropertyNamesExternal.f;\nvar nativePropertyIsEnumerable = propertyIsEnumerableModule.f;\nvar push = uncurryThis([].push);\n\nvar AllSymbols = shared('symbols');\nvar ObjectPrototypeSymbols = shared('op-symbols');\nvar WellKnownSymbolsStore = shared('wks');\n\n// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173\nvar USE_SETTER = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;\n\n// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687\nvar setSymbolDescriptor = DESCRIPTORS && fails(function () {\n  return nativeObjectCreate(nativeDefineProperty({}, 'a', {\n    get: function () { return nativeDefineProperty(this, 'a', { value: 7 }).a; }\n  })).a != 7;\n}) ? function (O, P, Attributes) {\n  var ObjectPrototypeDescriptor = nativeGetOwnPropertyDescriptor(ObjectPrototype, P);\n  if (ObjectPrototypeDescriptor) delete ObjectPrototype[P];\n  nativeDefineProperty(O, P, Attributes);\n  if (ObjectPrototypeDescriptor && O !== ObjectPrototype) {\n    nativeDefineProperty(ObjectPrototype, P, ObjectPrototypeDescriptor);\n  }\n} : nativeDefineProperty;\n\nvar wrap = function (tag, description) {\n  var symbol = AllSymbols[tag] = nativeObjectCreate(SymbolPrototype);\n  setInternalState(symbol, {\n    type: SYMBOL,\n    tag: tag,\n    description: description\n  });\n  if (!DESCRIPTORS) symbol.description = description;\n  return symbol;\n};\n\nvar $defineProperty = function defineProperty(O, P, Attributes) {\n  if (O === ObjectPrototype) $defineProperty(ObjectPrototypeSymbols, P, Attributes);\n  anObject(O);\n  var key = toPropertyKey(P);\n  anObject(Attributes);\n  if (hasOwn(AllSymbols, key)) {\n    if (!Attributes.enumerable) {\n      if (!hasOwn(O, HIDDEN)) nativeDefineProperty(O, HIDDEN, createPropertyDescriptor(1, {}));\n      O[HIDDEN][key] = true;\n    } else {\n      if (hasOwn(O, HIDDEN) && O[HIDDEN][key]) O[HIDDEN][key] = false;\n      Attributes = nativeObjectCreate(Attributes, { enumerable: createPropertyDescriptor(0, false) });\n    } return setSymbolDescriptor(O, key, Attributes);\n  } return nativeDefineProperty(O, key, Attributes);\n};\n\nvar $defineProperties = function defineProperties(O, Properties) {\n  anObject(O);\n  var properties = toIndexedObject(Properties);\n  var keys = objectKeys(properties).concat($getOwnPropertySymbols(properties));\n  $forEach(keys, function (key) {\n    if (!DESCRIPTORS || call($propertyIsEnumerable, properties, key)) $defineProperty(O, key, properties[key]);\n  });\n  return O;\n};\n\nvar $create = function create(O, Properties) {\n  return Properties === undefined ? nativeObjectCreate(O) : $defineProperties(nativeObjectCreate(O), Properties);\n};\n\nvar $propertyIsEnumerable = function propertyIsEnumerable(V) {\n  var P = toPropertyKey(V);\n  var enumerable = call(nativePropertyIsEnumerable, this, P);\n  if (this === ObjectPrototype && hasOwn(AllSymbols, P) && !hasOwn(ObjectPrototypeSymbols, P)) return false;\n  return enumerable || !hasOwn(this, P) || !hasOwn(AllSymbols, P) || hasOwn(this, HIDDEN) && this[HIDDEN][P]\n    ? enumerable : true;\n};\n\nvar $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(O, P) {\n  var it = toIndexedObject(O);\n  var key = toPropertyKey(P);\n  if (it === ObjectPrototype && hasOwn(AllSymbols, key) && !hasOwn(ObjectPrototypeSymbols, key)) return;\n  var descriptor = nativeGetOwnPropertyDescriptor(it, key);\n  if (descriptor && hasOwn(AllSymbols, key) && !(hasOwn(it, HIDDEN) && it[HIDDEN][key])) {\n    descriptor.enumerable = true;\n  }\n  return descriptor;\n};\n\nvar $getOwnPropertyNames = function getOwnPropertyNames(O) {\n  var names = nativeGetOwnPropertyNames(toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (!hasOwn(AllSymbols, key) && !hasOwn(hiddenKeys, key)) push(result, key);\n  });\n  return result;\n};\n\nvar $getOwnPropertySymbols = function (O) {\n  var IS_OBJECT_PROTOTYPE = O === ObjectPrototype;\n  var names = nativeGetOwnPropertyNames(IS_OBJECT_PROTOTYPE ? ObjectPrototypeSymbols : toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (hasOwn(AllSymbols, key) && (!IS_OBJECT_PROTOTYPE || hasOwn(ObjectPrototype, key))) {\n      push(result, AllSymbols[key]);\n    }\n  });\n  return result;\n};\n\n// `Symbol` constructor\n// https://tc39.es/ecma262/#sec-symbol-constructor\nif (!NATIVE_SYMBOL) {\n  $Symbol = function Symbol() {\n    if (isPrototypeOf(SymbolPrototype, this)) throw TypeError('Symbol is not a constructor');\n    var description = !arguments.length || arguments[0] === undefined ? undefined : $toString(arguments[0]);\n    var tag = uid(description);\n    var setter = function (value) {\n      if (this === ObjectPrototype) call(setter, ObjectPrototypeSymbols, value);\n      if (hasOwn(this, HIDDEN) && hasOwn(this[HIDDEN], tag)) this[HIDDEN][tag] = false;\n      setSymbolDescriptor(this, tag, createPropertyDescriptor(1, value));\n    };\n    if (DESCRIPTORS && USE_SETTER) setSymbolDescriptor(ObjectPrototype, tag, { configurable: true, set: setter });\n    return wrap(tag, description);\n  };\n\n  SymbolPrototype = $Symbol[PROTOTYPE];\n\n  defineBuiltIn(SymbolPrototype, 'toString', function toString() {\n    return getInternalState(this).tag;\n  });\n\n  defineBuiltIn($Symbol, 'withoutSetter', function (description) {\n    return wrap(uid(description), description);\n  });\n\n  propertyIsEnumerableModule.f = $propertyIsEnumerable;\n  definePropertyModule.f = $defineProperty;\n  definePropertiesModule.f = $defineProperties;\n  getOwnPropertyDescriptorModule.f = $getOwnPropertyDescriptor;\n  getOwnPropertyNamesModule.f = getOwnPropertyNamesExternal.f = $getOwnPropertyNames;\n  getOwnPropertySymbolsModule.f = $getOwnPropertySymbols;\n\n  wrappedWellKnownSymbolModule.f = function (name) {\n    return wrap(wellKnownSymbol(name), name);\n  };\n\n  if (DESCRIPTORS) {\n    // https://github.com/tc39/proposal-Symbol-description\n    nativeDefineProperty(SymbolPrototype, 'description', {\n      configurable: true,\n      get: function description() {\n        return getInternalState(this).description;\n      }\n    });\n    if (!IS_PURE) {\n      defineBuiltIn(ObjectPrototype, 'propertyIsEnumerable', $propertyIsEnumerable, { unsafe: true });\n    }\n  }\n}\n\n$({ global: true, wrap: true, forced: !NATIVE_SYMBOL, sham: !NATIVE_SYMBOL }, {\n  Symbol: $Symbol\n});\n\n$forEach(objectKeys(WellKnownSymbolsStore), function (name) {\n  defineWellKnownSymbol(name);\n});\n\n$({ target: SYMBOL, stat: true, forced: !NATIVE_SYMBOL }, {\n  useSetter: function () { USE_SETTER = true; },\n  useSimple: function () { USE_SETTER = false; }\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL, sham: !DESCRIPTORS }, {\n  // `Object.create` method\n  // https://tc39.es/ecma262/#sec-object.create\n  create: $create,\n  // `Object.defineProperty` method\n  // https://tc39.es/ecma262/#sec-object.defineproperty\n  defineProperty: $defineProperty,\n  // `Object.defineProperties` method\n  // https://tc39.es/ecma262/#sec-object.defineproperties\n  defineProperties: $defineProperties,\n  // `Object.getOwnPropertyDescriptor` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertydescriptors\n  getOwnPropertyDescriptor: $getOwnPropertyDescriptor\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL }, {\n  // `Object.getOwnPropertyNames` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertynames\n  getOwnPropertyNames: $getOwnPropertyNames\n});\n\n// `Symbol.prototype[@@toPrimitive]` method\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@toprimitive\ndefineSymbolToPrimitive();\n\n// `Symbol.prototype[@@toStringTag]` property\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@tostringtag\nsetToStringTag($Symbol, SYMBOL);\n\nhiddenKeys[HIDDEN] = true;\n"
+      "source": "'use strict';\nvar $ = require('../internals/export');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar uncurryThis = require('../internals/function-uncurry-this');\nvar IS_PURE = require('../internals/is-pure');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar NATIVE_SYMBOL = require('../internals/native-symbol');\nvar fails = require('../internals/fails');\nvar hasOwn = require('../internals/has-own-property');\nvar isPrototypeOf = require('../internals/object-is-prototype-of');\nvar anObject = require('../internals/an-object');\nvar toIndexedObject = require('../internals/to-indexed-object');\nvar toPropertyKey = require('../internals/to-property-key');\nvar $toString = require('../internals/to-string');\nvar createPropertyDescriptor = require('../internals/create-property-descriptor');\nvar nativeObjectCreate = require('../internals/object-create');\nvar objectKeys = require('../internals/object-keys');\nvar getOwnPropertyNamesModule = require('../internals/object-get-own-property-names');\nvar getOwnPropertyNamesExternal = require('../internals/object-get-own-property-names-external');\nvar getOwnPropertySymbolsModule = require('../internals/object-get-own-property-symbols');\nvar getOwnPropertyDescriptorModule = require('../internals/object-get-own-property-descriptor');\nvar definePropertyModule = require('../internals/object-define-property');\nvar definePropertiesModule = require('../internals/object-define-properties');\nvar propertyIsEnumerableModule = require('../internals/object-property-is-enumerable');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar shared = require('../internals/shared');\nvar sharedKey = require('../internals/shared-key');\nvar hiddenKeys = require('../internals/hidden-keys');\nvar uid = require('../internals/uid');\nvar wellKnownSymbol = require('../internals/well-known-symbol');\nvar wrappedWellKnownSymbolModule = require('../internals/well-known-symbol-wrapped');\nvar defineWellKnownSymbol = require('../internals/define-well-known-symbol');\nvar defineSymbolToPrimitive = require('../internals/symbol-define-to-primitive');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar InternalStateModule = require('../internals/internal-state');\nvar $forEach = require('../internals/array-iteration').forEach;\n\nvar HIDDEN = sharedKey('hidden');\nvar SYMBOL = 'Symbol';\nvar PROTOTYPE = 'prototype';\n\nvar setInternalState = InternalStateModule.set;\nvar getInternalState = InternalStateModule.getterFor(SYMBOL);\n\nvar ObjectPrototype = Object[PROTOTYPE];\nvar $Symbol = global.Symbol;\nvar SymbolPrototype = $Symbol && $Symbol[PROTOTYPE];\nvar TypeError = global.TypeError;\nvar QObject = global.QObject;\nvar nativeGetOwnPropertyDescriptor = getOwnPropertyDescriptorModule.f;\nvar nativeDefineProperty = definePropertyModule.f;\nvar nativeGetOwnPropertyNames = getOwnPropertyNamesExternal.f;\nvar nativePropertyIsEnumerable = propertyIsEnumerableModule.f;\nvar push = uncurryThis([].push);\n\nvar AllSymbols = shared('symbols');\nvar ObjectPrototypeSymbols = shared('op-symbols');\nvar WellKnownSymbolsStore = shared('wks');\n\n// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173\nvar USE_SETTER = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;\n\n// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687\nvar setSymbolDescriptor = DESCRIPTORS && fails(function () {\n  return nativeObjectCreate(nativeDefineProperty({}, 'a', {\n    get: function () { return nativeDefineProperty(this, 'a', { value: 7 }).a; }\n  })).a != 7;\n}) ? function (O, P, Attributes) {\n  var ObjectPrototypeDescriptor = nativeGetOwnPropertyDescriptor(ObjectPrototype, P);\n  if (ObjectPrototypeDescriptor) delete ObjectPrototype[P];\n  nativeDefineProperty(O, P, Attributes);\n  if (ObjectPrototypeDescriptor && O !== ObjectPrototype) {\n    nativeDefineProperty(ObjectPrototype, P, ObjectPrototypeDescriptor);\n  }\n} : nativeDefineProperty;\n\nvar wrap = function (tag, description) {\n  var symbol = AllSymbols[tag] = nativeObjectCreate(SymbolPrototype);\n  setInternalState(symbol, {\n    type: SYMBOL,\n    tag: tag,\n    description: description\n  });\n  if (!DESCRIPTORS) symbol.description = description;\n  return symbol;\n};\n\nvar $defineProperty = function defineProperty(O, P, Attributes) {\n  if (O === ObjectPrototype) $defineProperty(ObjectPrototypeSymbols, P, Attributes);\n  anObject(O);\n  var key = toPropertyKey(P);\n  anObject(Attributes);\n  if (hasOwn(AllSymbols, key)) {\n    if (!Attributes.enumerable) {\n      if (!hasOwn(O, HIDDEN)) nativeDefineProperty(O, HIDDEN, createPropertyDescriptor(1, {}));\n      O[HIDDEN][key] = true;\n    } else {\n      if (hasOwn(O, HIDDEN) && O[HIDDEN][key]) O[HIDDEN][key] = false;\n      Attributes = nativeObjectCreate(Attributes, { enumerable: createPropertyDescriptor(0, false) });\n    } return setSymbolDescriptor(O, key, Attributes);\n  } return nativeDefineProperty(O, key, Attributes);\n};\n\nvar $defineProperties = function defineProperties(O, Properties) {\n  anObject(O);\n  var properties = toIndexedObject(Properties);\n  var keys = objectKeys(properties).concat($getOwnPropertySymbols(properties));\n  $forEach(keys, function (key) {\n    if (!DESCRIPTORS || call($propertyIsEnumerable, properties, key)) $defineProperty(O, key, properties[key]);\n  });\n  return O;\n};\n\nvar $create = function create(O, Properties) {\n  return Properties === undefined ? nativeObjectCreate(O) : $defineProperties(nativeObjectCreate(O), Properties);\n};\n\nvar $propertyIsEnumerable = function propertyIsEnumerable(V) {\n  var P = toPropertyKey(V);\n  var enumerable = call(nativePropertyIsEnumerable, this, P);\n  if (this === ObjectPrototype && hasOwn(AllSymbols, P) && !hasOwn(ObjectPrototypeSymbols, P)) return false;\n  return enumerable || !hasOwn(this, P) || !hasOwn(AllSymbols, P) || hasOwn(this, HIDDEN) && this[HIDDEN][P]\n    ? enumerable : true;\n};\n\nvar $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(O, P) {\n  var it = toIndexedObject(O);\n  var key = toPropertyKey(P);\n  if (it === ObjectPrototype && hasOwn(AllSymbols, key) && !hasOwn(ObjectPrototypeSymbols, key)) return;\n  var descriptor = nativeGetOwnPropertyDescriptor(it, key);\n  if (descriptor && hasOwn(AllSymbols, key) && !(hasOwn(it, HIDDEN) && it[HIDDEN][key])) {\n    descriptor.enumerable = true;\n  }\n  return descriptor;\n};\n\nvar $getOwnPropertyNames = function getOwnPropertyNames(O) {\n  var names = nativeGetOwnPropertyNames(toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (!hasOwn(AllSymbols, key) && !hasOwn(hiddenKeys, key)) push(result, key);\n  });\n  return result;\n};\n\nvar $getOwnPropertySymbols = function (O) {\n  var IS_OBJECT_PROTOTYPE = O === ObjectPrototype;\n  var names = nativeGetOwnPropertyNames(IS_OBJECT_PROTOTYPE ? ObjectPrototypeSymbols : toIndexedObject(O));\n  var result = [];\n  $forEach(names, function (key) {\n    if (hasOwn(AllSymbols, key) && (!IS_OBJECT_PROTOTYPE || hasOwn(ObjectPrototype, key))) {\n      push(result, AllSymbols[key]);\n    }\n  });\n  return result;\n};\n\n// `Symbol` constructor\n// https://tc39.es/ecma262/#sec-symbol-constructor\nif (!NATIVE_SYMBOL) {\n  $Symbol = function Symbol() {\n    if (isPrototypeOf(SymbolPrototype, this)) throw TypeError('Symbol is not a constructor');\n    var description = !arguments.length || arguments[0] === undefined ? undefined : $toString(arguments[0]);\n    var tag = uid(description);\n    var setter = function (value) {\n      if (this === ObjectPrototype) call(setter, ObjectPrototypeSymbols, value);\n      if (hasOwn(this, HIDDEN) && hasOwn(this[HIDDEN], tag)) this[HIDDEN][tag] = false;\n      setSymbolDescriptor(this, tag, createPropertyDescriptor(1, value));\n    };\n    if (DESCRIPTORS && USE_SETTER) setSymbolDescriptor(ObjectPrototype, tag, { configurable: true, set: setter });\n    return wrap(tag, description);\n  };\n\n  SymbolPrototype = $Symbol[PROTOTYPE];\n\n  defineBuiltIn(SymbolPrototype, 'toString', function toString() {\n    return getInternalState(this).tag;\n  });\n\n  defineBuiltIn($Symbol, 'withoutSetter', function (description) {\n    return wrap(uid(description), description);\n  });\n\n  propertyIsEnumerableModule.f = $propertyIsEnumerable;\n  definePropertyModule.f = $defineProperty;\n  definePropertiesModule.f = $defineProperties;\n  getOwnPropertyDescriptorModule.f = $getOwnPropertyDescriptor;\n  getOwnPropertyNamesModule.f = getOwnPropertyNamesExternal.f = $getOwnPropertyNames;\n  getOwnPropertySymbolsModule.f = $getOwnPropertySymbols;\n\n  wrappedWellKnownSymbolModule.f = function (name) {\n    return wrap(wellKnownSymbol(name), name);\n  };\n\n  if (DESCRIPTORS) {\n    // https://github.com/tc39/proposal-Symbol-description\n    nativeDefineProperty(SymbolPrototype, 'description', {\n      configurable: true,\n      get: function description() {\n        return getInternalState(this).description;\n      }\n    });\n    if (!IS_PURE) {\n      defineBuiltIn(ObjectPrototype, 'propertyIsEnumerable', $propertyIsEnumerable, { unsafe: true });\n    }\n  }\n}\n\n$({ global: true, constructor: true, wrap: true, forced: !NATIVE_SYMBOL, sham: !NATIVE_SYMBOL }, {\n  Symbol: $Symbol\n});\n\n$forEach(objectKeys(WellKnownSymbolsStore), function (name) {\n  defineWellKnownSymbol(name);\n});\n\n$({ target: SYMBOL, stat: true, forced: !NATIVE_SYMBOL }, {\n  useSetter: function () { USE_SETTER = true; },\n  useSimple: function () { USE_SETTER = false; }\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL, sham: !DESCRIPTORS }, {\n  // `Object.create` method\n  // https://tc39.es/ecma262/#sec-object.create\n  create: $create,\n  // `Object.defineProperty` method\n  // https://tc39.es/ecma262/#sec-object.defineproperty\n  defineProperty: $defineProperty,\n  // `Object.defineProperties` method\n  // https://tc39.es/ecma262/#sec-object.defineproperties\n  defineProperties: $defineProperties,\n  // `Object.getOwnPropertyDescriptor` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertydescriptors\n  getOwnPropertyDescriptor: $getOwnPropertyDescriptor\n});\n\n$({ target: 'Object', stat: true, forced: !NATIVE_SYMBOL }, {\n  // `Object.getOwnPropertyNames` method\n  // https://tc39.es/ecma262/#sec-object.getownpropertynames\n  getOwnPropertyNames: $getOwnPropertyNames\n});\n\n// `Symbol.prototype[@@toPrimitive]` method\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@toprimitive\ndefineSymbolToPrimitive();\n\n// `Symbol.prototype[@@toStringTag]` property\n// https://tc39.es/ecma262/#sec-symbol.prototype-@@tostringtag\nsetToStringTag($Symbol, SYMBOL);\n\nhiddenKeys[HIDDEN] = true;\n"
     },
     {
       "id": 108,
@@ -27191,7 +27191,7 @@
       "name": "./node_modules/core-js/modules/es.promise.constructor.js",
       "index": 120,
       "index2": 135,
-      "size": 9746,
+      "size": 9765,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -27240,7 +27240,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 3,
-      "source": "'use strict';\nvar $ = require('../internals/export');\nvar IS_PURE = require('../internals/is-pure');\nvar IS_NODE = require('../internals/engine-is-node');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar setPrototypeOf = require('../internals/object-set-prototype-of');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar setSpecies = require('../internals/set-species');\nvar aCallable = require('../internals/a-callable');\nvar isCallable = require('../internals/is-callable');\nvar isObject = require('../internals/is-object');\nvar anInstance = require('../internals/an-instance');\nvar speciesConstructor = require('../internals/species-constructor');\nvar task = require('../internals/task').set;\nvar microtask = require('../internals/microtask');\nvar hostReportErrors = require('../internals/host-report-errors');\nvar perform = require('../internals/perform');\nvar Queue = require('../internals/queue');\nvar InternalStateModule = require('../internals/internal-state');\nvar NativePromiseConstructor = require('../internals/promise-native-constructor');\nvar PromiseConstructorDetection = require('../internals/promise-constructor-detection');\nvar newPromiseCapabilityModule = require('../internals/new-promise-capability');\n\nvar PROMISE = 'Promise';\nvar FORCED_PROMISE_CONSTRUCTOR = PromiseConstructorDetection.CONSTRUCTOR;\nvar NATIVE_PROMISE_REJECTION_EVENT = PromiseConstructorDetection.REJECTION_EVENT;\nvar NATIVE_PROMISE_SUBCLASSING = PromiseConstructorDetection.SUBCLASSING;\nvar getInternalPromiseState = InternalStateModule.getterFor(PROMISE);\nvar setInternalState = InternalStateModule.set;\nvar NativePromisePrototype = NativePromiseConstructor && NativePromiseConstructor.prototype;\nvar PromiseConstructor = NativePromiseConstructor;\nvar PromisePrototype = NativePromisePrototype;\nvar TypeError = global.TypeError;\nvar document = global.document;\nvar process = global.process;\nvar newPromiseCapability = newPromiseCapabilityModule.f;\nvar newGenericPromiseCapability = newPromiseCapability;\n\nvar DISPATCH_EVENT = !!(document && document.createEvent && global.dispatchEvent);\nvar UNHANDLED_REJECTION = 'unhandledrejection';\nvar REJECTION_HANDLED = 'rejectionhandled';\nvar PENDING = 0;\nvar FULFILLED = 1;\nvar REJECTED = 2;\nvar HANDLED = 1;\nvar UNHANDLED = 2;\n\nvar Internal, OwnPromiseCapability, PromiseWrapper, nativeThen;\n\n// helpers\nvar isThenable = function (it) {\n  var then;\n  return isObject(it) && isCallable(then = it.then) ? then : false;\n};\n\nvar callReaction = function (reaction, state) {\n  var value = state.value;\n  var ok = state.state == FULFILLED;\n  var handler = ok ? reaction.ok : reaction.fail;\n  var resolve = reaction.resolve;\n  var reject = reaction.reject;\n  var domain = reaction.domain;\n  var result, then, exited;\n  try {\n    if (handler) {\n      if (!ok) {\n        if (state.rejection === UNHANDLED) onHandleUnhandled(state);\n        state.rejection = HANDLED;\n      }\n      if (handler === true) result = value;\n      else {\n        if (domain) domain.enter();\n        result = handler(value); // can throw\n        if (domain) {\n          domain.exit();\n          exited = true;\n        }\n      }\n      if (result === reaction.promise) {\n        reject(TypeError('Promise-chain cycle'));\n      } else if (then = isThenable(result)) {\n        call(then, result, resolve, reject);\n      } else resolve(result);\n    } else reject(value);\n  } catch (error) {\n    if (domain && !exited) domain.exit();\n    reject(error);\n  }\n};\n\nvar notify = function (state, isReject) {\n  if (state.notified) return;\n  state.notified = true;\n  microtask(function () {\n    var reactions = state.reactions;\n    var reaction;\n    while (reaction = reactions.get()) {\n      callReaction(reaction, state);\n    }\n    state.notified = false;\n    if (isReject && !state.rejection) onUnhandled(state);\n  });\n};\n\nvar dispatchEvent = function (name, promise, reason) {\n  var event, handler;\n  if (DISPATCH_EVENT) {\n    event = document.createEvent('Event');\n    event.promise = promise;\n    event.reason = reason;\n    event.initEvent(name, false, true);\n    global.dispatchEvent(event);\n  } else event = { promise: promise, reason: reason };\n  if (!NATIVE_PROMISE_REJECTION_EVENT && (handler = global['on' + name])) handler(event);\n  else if (name === UNHANDLED_REJECTION) hostReportErrors('Unhandled promise rejection', reason);\n};\n\nvar onUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    var value = state.value;\n    var IS_UNHANDLED = isUnhandled(state);\n    var result;\n    if (IS_UNHANDLED) {\n      result = perform(function () {\n        if (IS_NODE) {\n          process.emit('unhandledRejection', value, promise);\n        } else dispatchEvent(UNHANDLED_REJECTION, promise, value);\n      });\n      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should\n      state.rejection = IS_NODE || isUnhandled(state) ? UNHANDLED : HANDLED;\n      if (result.error) throw result.value;\n    }\n  });\n};\n\nvar isUnhandled = function (state) {\n  return state.rejection !== HANDLED && !state.parent;\n};\n\nvar onHandleUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    if (IS_NODE) {\n      process.emit('rejectionHandled', promise);\n    } else dispatchEvent(REJECTION_HANDLED, promise, state.value);\n  });\n};\n\nvar bind = function (fn, state, unwrap) {\n  return function (value) {\n    fn(state, value, unwrap);\n  };\n};\n\nvar internalReject = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  state.value = value;\n  state.state = REJECTED;\n  notify(state, true);\n};\n\nvar internalResolve = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  try {\n    if (state.facade === value) throw TypeError(\"Promise can't be resolved itself\");\n    var then = isThenable(value);\n    if (then) {\n      microtask(function () {\n        var wrapper = { done: false };\n        try {\n          call(then, value,\n            bind(internalResolve, wrapper, state),\n            bind(internalReject, wrapper, state)\n          );\n        } catch (error) {\n          internalReject(wrapper, error, state);\n        }\n      });\n    } else {\n      state.value = value;\n      state.state = FULFILLED;\n      notify(state, false);\n    }\n  } catch (error) {\n    internalReject({ done: false }, error, state);\n  }\n};\n\n// constructor polyfill\nif (FORCED_PROMISE_CONSTRUCTOR) {\n  // 25.4.3.1 Promise(executor)\n  PromiseConstructor = function Promise(executor) {\n    anInstance(this, PromisePrototype);\n    aCallable(executor);\n    call(Internal, this);\n    var state = getInternalPromiseState(this);\n    try {\n      executor(bind(internalResolve, state), bind(internalReject, state));\n    } catch (error) {\n      internalReject(state, error);\n    }\n  };\n\n  PromisePrototype = PromiseConstructor.prototype;\n\n  // eslint-disable-next-line no-unused-vars -- required for `.length`\n  Internal = function Promise(executor) {\n    setInternalState(this, {\n      type: PROMISE,\n      done: false,\n      notified: false,\n      parent: false,\n      reactions: new Queue(),\n      rejection: false,\n      state: PENDING,\n      value: undefined\n    });\n  };\n\n  // `Promise.prototype.then` method\n  // https://tc39.es/ecma262/#sec-promise.prototype.then\n  Internal.prototype = defineBuiltIn(PromisePrototype, 'then', function then(onFulfilled, onRejected) {\n    var state = getInternalPromiseState(this);\n    var reaction = newPromiseCapability(speciesConstructor(this, PromiseConstructor));\n    state.parent = true;\n    reaction.ok = isCallable(onFulfilled) ? onFulfilled : true;\n    reaction.fail = isCallable(onRejected) && onRejected;\n    reaction.domain = IS_NODE ? process.domain : undefined;\n    if (state.state == PENDING) state.reactions.add(reaction);\n    else microtask(function () {\n      callReaction(reaction, state);\n    });\n    return reaction.promise;\n  });\n\n  OwnPromiseCapability = function () {\n    var promise = new Internal();\n    var state = getInternalPromiseState(promise);\n    this.promise = promise;\n    this.resolve = bind(internalResolve, state);\n    this.reject = bind(internalReject, state);\n  };\n\n  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {\n    return C === PromiseConstructor || C === PromiseWrapper\n      ? new OwnPromiseCapability(C)\n      : newGenericPromiseCapability(C);\n  };\n\n  if (!IS_PURE && isCallable(NativePromiseConstructor) && NativePromisePrototype !== Object.prototype) {\n    nativeThen = NativePromisePrototype.then;\n\n    if (!NATIVE_PROMISE_SUBCLASSING) {\n      // make `Promise#then` return a polyfilled `Promise` for native promise-based APIs\n      defineBuiltIn(NativePromisePrototype, 'then', function then(onFulfilled, onRejected) {\n        var that = this;\n        return new PromiseConstructor(function (resolve, reject) {\n          call(nativeThen, that, resolve, reject);\n        }).then(onFulfilled, onRejected);\n      // https://github.com/zloirock/core-js/issues/640\n      }, { unsafe: true });\n    }\n\n    // make `.constructor === Promise` work for native promise-based APIs\n    try {\n      delete NativePromisePrototype.constructor;\n    } catch (error) { /* empty */ }\n\n    // make `instanceof Promise` work for native promise-based APIs\n    if (setPrototypeOf) {\n      setPrototypeOf(NativePromisePrototype, PromisePrototype);\n    }\n  }\n}\n\n$({ global: true, wrap: true, forced: FORCED_PROMISE_CONSTRUCTOR }, {\n  Promise: PromiseConstructor\n});\n\nsetToStringTag(PromiseConstructor, PROMISE, false, true);\nsetSpecies(PROMISE);\n"
+      "source": "'use strict';\nvar $ = require('../internals/export');\nvar IS_PURE = require('../internals/is-pure');\nvar IS_NODE = require('../internals/engine-is-node');\nvar global = require('../internals/global');\nvar call = require('../internals/function-call');\nvar defineBuiltIn = require('../internals/define-built-in');\nvar setPrototypeOf = require('../internals/object-set-prototype-of');\nvar setToStringTag = require('../internals/set-to-string-tag');\nvar setSpecies = require('../internals/set-species');\nvar aCallable = require('../internals/a-callable');\nvar isCallable = require('../internals/is-callable');\nvar isObject = require('../internals/is-object');\nvar anInstance = require('../internals/an-instance');\nvar speciesConstructor = require('../internals/species-constructor');\nvar task = require('../internals/task').set;\nvar microtask = require('../internals/microtask');\nvar hostReportErrors = require('../internals/host-report-errors');\nvar perform = require('../internals/perform');\nvar Queue = require('../internals/queue');\nvar InternalStateModule = require('../internals/internal-state');\nvar NativePromiseConstructor = require('../internals/promise-native-constructor');\nvar PromiseConstructorDetection = require('../internals/promise-constructor-detection');\nvar newPromiseCapabilityModule = require('../internals/new-promise-capability');\n\nvar PROMISE = 'Promise';\nvar FORCED_PROMISE_CONSTRUCTOR = PromiseConstructorDetection.CONSTRUCTOR;\nvar NATIVE_PROMISE_REJECTION_EVENT = PromiseConstructorDetection.REJECTION_EVENT;\nvar NATIVE_PROMISE_SUBCLASSING = PromiseConstructorDetection.SUBCLASSING;\nvar getInternalPromiseState = InternalStateModule.getterFor(PROMISE);\nvar setInternalState = InternalStateModule.set;\nvar NativePromisePrototype = NativePromiseConstructor && NativePromiseConstructor.prototype;\nvar PromiseConstructor = NativePromiseConstructor;\nvar PromisePrototype = NativePromisePrototype;\nvar TypeError = global.TypeError;\nvar document = global.document;\nvar process = global.process;\nvar newPromiseCapability = newPromiseCapabilityModule.f;\nvar newGenericPromiseCapability = newPromiseCapability;\n\nvar DISPATCH_EVENT = !!(document && document.createEvent && global.dispatchEvent);\nvar UNHANDLED_REJECTION = 'unhandledrejection';\nvar REJECTION_HANDLED = 'rejectionhandled';\nvar PENDING = 0;\nvar FULFILLED = 1;\nvar REJECTED = 2;\nvar HANDLED = 1;\nvar UNHANDLED = 2;\n\nvar Internal, OwnPromiseCapability, PromiseWrapper, nativeThen;\n\n// helpers\nvar isThenable = function (it) {\n  var then;\n  return isObject(it) && isCallable(then = it.then) ? then : false;\n};\n\nvar callReaction = function (reaction, state) {\n  var value = state.value;\n  var ok = state.state == FULFILLED;\n  var handler = ok ? reaction.ok : reaction.fail;\n  var resolve = reaction.resolve;\n  var reject = reaction.reject;\n  var domain = reaction.domain;\n  var result, then, exited;\n  try {\n    if (handler) {\n      if (!ok) {\n        if (state.rejection === UNHANDLED) onHandleUnhandled(state);\n        state.rejection = HANDLED;\n      }\n      if (handler === true) result = value;\n      else {\n        if (domain) domain.enter();\n        result = handler(value); // can throw\n        if (domain) {\n          domain.exit();\n          exited = true;\n        }\n      }\n      if (result === reaction.promise) {\n        reject(TypeError('Promise-chain cycle'));\n      } else if (then = isThenable(result)) {\n        call(then, result, resolve, reject);\n      } else resolve(result);\n    } else reject(value);\n  } catch (error) {\n    if (domain && !exited) domain.exit();\n    reject(error);\n  }\n};\n\nvar notify = function (state, isReject) {\n  if (state.notified) return;\n  state.notified = true;\n  microtask(function () {\n    var reactions = state.reactions;\n    var reaction;\n    while (reaction = reactions.get()) {\n      callReaction(reaction, state);\n    }\n    state.notified = false;\n    if (isReject && !state.rejection) onUnhandled(state);\n  });\n};\n\nvar dispatchEvent = function (name, promise, reason) {\n  var event, handler;\n  if (DISPATCH_EVENT) {\n    event = document.createEvent('Event');\n    event.promise = promise;\n    event.reason = reason;\n    event.initEvent(name, false, true);\n    global.dispatchEvent(event);\n  } else event = { promise: promise, reason: reason };\n  if (!NATIVE_PROMISE_REJECTION_EVENT && (handler = global['on' + name])) handler(event);\n  else if (name === UNHANDLED_REJECTION) hostReportErrors('Unhandled promise rejection', reason);\n};\n\nvar onUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    var value = state.value;\n    var IS_UNHANDLED = isUnhandled(state);\n    var result;\n    if (IS_UNHANDLED) {\n      result = perform(function () {\n        if (IS_NODE) {\n          process.emit('unhandledRejection', value, promise);\n        } else dispatchEvent(UNHANDLED_REJECTION, promise, value);\n      });\n      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should\n      state.rejection = IS_NODE || isUnhandled(state) ? UNHANDLED : HANDLED;\n      if (result.error) throw result.value;\n    }\n  });\n};\n\nvar isUnhandled = function (state) {\n  return state.rejection !== HANDLED && !state.parent;\n};\n\nvar onHandleUnhandled = function (state) {\n  call(task, global, function () {\n    var promise = state.facade;\n    if (IS_NODE) {\n      process.emit('rejectionHandled', promise);\n    } else dispatchEvent(REJECTION_HANDLED, promise, state.value);\n  });\n};\n\nvar bind = function (fn, state, unwrap) {\n  return function (value) {\n    fn(state, value, unwrap);\n  };\n};\n\nvar internalReject = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  state.value = value;\n  state.state = REJECTED;\n  notify(state, true);\n};\n\nvar internalResolve = function (state, value, unwrap) {\n  if (state.done) return;\n  state.done = true;\n  if (unwrap) state = unwrap;\n  try {\n    if (state.facade === value) throw TypeError(\"Promise can't be resolved itself\");\n    var then = isThenable(value);\n    if (then) {\n      microtask(function () {\n        var wrapper = { done: false };\n        try {\n          call(then, value,\n            bind(internalResolve, wrapper, state),\n            bind(internalReject, wrapper, state)\n          );\n        } catch (error) {\n          internalReject(wrapper, error, state);\n        }\n      });\n    } else {\n      state.value = value;\n      state.state = FULFILLED;\n      notify(state, false);\n    }\n  } catch (error) {\n    internalReject({ done: false }, error, state);\n  }\n};\n\n// constructor polyfill\nif (FORCED_PROMISE_CONSTRUCTOR) {\n  // 25.4.3.1 Promise(executor)\n  PromiseConstructor = function Promise(executor) {\n    anInstance(this, PromisePrototype);\n    aCallable(executor);\n    call(Internal, this);\n    var state = getInternalPromiseState(this);\n    try {\n      executor(bind(internalResolve, state), bind(internalReject, state));\n    } catch (error) {\n      internalReject(state, error);\n    }\n  };\n\n  PromisePrototype = PromiseConstructor.prototype;\n\n  // eslint-disable-next-line no-unused-vars -- required for `.length`\n  Internal = function Promise(executor) {\n    setInternalState(this, {\n      type: PROMISE,\n      done: false,\n      notified: false,\n      parent: false,\n      reactions: new Queue(),\n      rejection: false,\n      state: PENDING,\n      value: undefined\n    });\n  };\n\n  // `Promise.prototype.then` method\n  // https://tc39.es/ecma262/#sec-promise.prototype.then\n  Internal.prototype = defineBuiltIn(PromisePrototype, 'then', function then(onFulfilled, onRejected) {\n    var state = getInternalPromiseState(this);\n    var reaction = newPromiseCapability(speciesConstructor(this, PromiseConstructor));\n    state.parent = true;\n    reaction.ok = isCallable(onFulfilled) ? onFulfilled : true;\n    reaction.fail = isCallable(onRejected) && onRejected;\n    reaction.domain = IS_NODE ? process.domain : undefined;\n    if (state.state == PENDING) state.reactions.add(reaction);\n    else microtask(function () {\n      callReaction(reaction, state);\n    });\n    return reaction.promise;\n  });\n\n  OwnPromiseCapability = function () {\n    var promise = new Internal();\n    var state = getInternalPromiseState(promise);\n    this.promise = promise;\n    this.resolve = bind(internalResolve, state);\n    this.reject = bind(internalReject, state);\n  };\n\n  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {\n    return C === PromiseConstructor || C === PromiseWrapper\n      ? new OwnPromiseCapability(C)\n      : newGenericPromiseCapability(C);\n  };\n\n  if (!IS_PURE && isCallable(NativePromiseConstructor) && NativePromisePrototype !== Object.prototype) {\n    nativeThen = NativePromisePrototype.then;\n\n    if (!NATIVE_PROMISE_SUBCLASSING) {\n      // make `Promise#then` return a polyfilled `Promise` for native promise-based APIs\n      defineBuiltIn(NativePromisePrototype, 'then', function then(onFulfilled, onRejected) {\n        var that = this;\n        return new PromiseConstructor(function (resolve, reject) {\n          call(nativeThen, that, resolve, reject);\n        }).then(onFulfilled, onRejected);\n      // https://github.com/zloirock/core-js/issues/640\n      }, { unsafe: true });\n    }\n\n    // make `.constructor === Promise` work for native promise-based APIs\n    try {\n      delete NativePromisePrototype.constructor;\n    } catch (error) { /* empty */ }\n\n    // make `instanceof Promise` work for native promise-based APIs\n    if (setPrototypeOf) {\n      setPrototypeOf(NativePromisePrototype, PromisePrototype);\n    }\n  }\n}\n\n$({ global: true, constructor: true, wrap: true, forced: FORCED_PROMISE_CONSTRUCTOR }, {\n  Promise: PromiseConstructor\n});\n\nsetToStringTag(PromiseConstructor, PROMISE, false, true);\nsetSpecies(PROMISE);\n"
     },
     {
       "id": 133,
