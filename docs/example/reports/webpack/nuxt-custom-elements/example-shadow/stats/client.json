@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "1e29c516e18838879dc8",
-  "time": 1538,
-  "builtAt": 1652457700470,
+  "time": 1832,
+  "builtAt": 1652684983984,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
@@ -1406,9 +1406,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-          "issuerId": 119,
-          "issuerName": "./node_modules/core-js/modules/es.array.filter.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+          "issuerId": 98,
+          "issuerName": "./node_modules/core-js/modules/es.object.keys.js",
           "issuerPath": [
             {
               "id": 97,
@@ -1421,9 +1421,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
             },
             {
-              "id": 119,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-              "name": "./node_modules/core-js/modules/es.array.filter.js"
+              "id": 98,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+              "name": "./node_modules/core-js/modules/es.object.keys.js"
             }
           ],
           "failed": false,
@@ -8199,9 +8199,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
             },
             {
-              "id": 119,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-              "name": "./node_modules/core-js/modules/es.array.filter.js"
+              "id": 98,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+              "name": "./node_modules/core-js/modules/es.object.keys.js"
             },
             {
               "id": 4,
@@ -10367,9 +10367,9 @@
               "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
             },
             {
-              "id": 119,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-              "name": "./node_modules/core-js/modules/es.array.filter.js"
+              "id": 98,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+              "name": "./node_modules/core-js/modules/es.object.keys.js"
             },
             {
               "id": 4,
@@ -16525,9 +16525,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-      "issuerId": 119,
-      "issuerName": "./node_modules/core-js/modules/es.array.filter.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+      "issuerId": 98,
+      "issuerName": "./node_modules/core-js/modules/es.object.keys.js",
       "issuerPath": [
         {
           "id": 97,
@@ -16540,9 +16540,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
         },
         {
-          "id": 119,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-          "name": "./node_modules/core-js/modules/es.array.filter.js"
+          "id": 98,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+          "name": "./node_modules/core-js/modules/es.object.keys.js"
         }
       ],
       "failed": false,
@@ -23318,9 +23318,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
         },
         {
-          "id": 119,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-          "name": "./node_modules/core-js/modules/es.array.filter.js"
+          "id": 98,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+          "name": "./node_modules/core-js/modules/es.object.keys.js"
         },
         {
           "id": 4,
@@ -25486,9 +25486,9 @@
           "name": "./example/.nuxt/nuxt-custom-elements/entries/example-shadow.client.js"
         },
         {
-          "id": 119,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.array.filter.js",
-          "name": "./node_modules/core-js/modules/es.array.filter.js"
+          "id": 98,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.object.keys.js",
+          "name": "./node_modules/core-js/modules/es.object.keys.js"
         },
         {
           "id": 4,
