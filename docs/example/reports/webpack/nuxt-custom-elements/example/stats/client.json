@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "1a54a67c7821058fb5b0",
-  "time": 2266,
-  "builtAt": 1653292862596,
+  "hash": "2ebd080309e6dbd50deb",
+  "time": 2941,
+  "builtAt": 1653430221838,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
-    "NamedChunk": "NamedChunk.1a54a67c7821058fb5b0.js",
+    "NamedChunk": "NamedChunk.2ebd080309e6dbd50deb.js",
     "example": "example.client.js"
   },
   "assets": [
     {
-      "name": "NamedChunk.1a54a67c7821058fb5b0.js",
+      "name": "NamedChunk.2ebd080309e6dbd50deb.js",
       "size": 125,
       "chunks": [
         0
@@ -28,7 +28,7 @@
     },
     {
       "name": "example.client.js",
-      "size": 134351,
+      "size": 134354,
       "chunks": [
         1
       ],
@@ -120,7 +120,7 @@
         0
       ],
       "assets": [
-        "NamedChunk.1a54a67c7821058fb5b0.js"
+        "NamedChunk.2ebd080309e6dbd50deb.js"
       ],
       "children": {},
       "childAssets": {}
@@ -137,7 +137,7 @@
         "NamedChunk"
       ],
       "files": [
-        "NamedChunk.1a54a67c7821058fb5b0.js"
+        "NamedChunk.2ebd080309e6dbd50deb.js"
       ],
       "hash": "f13a58fe5937752ee913",
       "siblings": [],
@@ -235,14 +235,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 432596,
+      "size": 432719,
       "names": [
         "example"
       ],
       "files": [
         "example.client.js"
       ],
-      "hash": "238021c58a6a2b90073f",
+      "hash": "00911207add1fd9aa345",
       "siblings": [],
       "parents": [],
       "children": [
@@ -4351,7 +4351,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.6',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.6/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.7',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.7/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
         },
         {
           "id": 26,
@@ -10211,7 +10211,7 @@
           "name": "./node_modules/core-js/internals/make-built-in.js",
           "index": 48,
           "index2": 49,
-          "size": 2216,
+          "size": 2339,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -10265,7 +10265,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  if (options && hasOwn(options, 'constructor') && options.constructor) {\n    if (DESCRIPTORS) try {\n      defineProperty(value, 'prototype', { writable: false });\n    } catch (error) { /* empty */ }\n  } else value.prototype = undefined;\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
+          "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  try {\n    if (options && hasOwn(options, 'constructor') && options.constructor) {\n      if (DESCRIPTORS) defineProperty(value, 'prototype', { writable: false });\n    // in V8 ~ Chrome 53, prototypes of some methods, like `Array.prototype.values`, are non-writable\n    } else if (value.prototype) value.prototype = undefined;\n  } catch (error) { /* empty */ }\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
         },
         {
           "id": 102,
@@ -19552,7 +19552,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.6',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.6/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.22.7',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.22.7/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
     },
     {
       "id": 26,
@@ -25412,7 +25412,7 @@
       "name": "./node_modules/core-js/internals/make-built-in.js",
       "index": 48,
       "index2": 49,
-      "size": 2216,
+      "size": 2339,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -25466,7 +25466,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  if (options && hasOwn(options, 'constructor') && options.constructor) {\n    if (DESCRIPTORS) try {\n      defineProperty(value, 'prototype', { writable: false });\n    } catch (error) { /* empty */ }\n  } else value.prototype = undefined;\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
+      "source": "var fails = require('../internals/fails');\nvar isCallable = require('../internals/is-callable');\nvar hasOwn = require('../internals/has-own-property');\nvar DESCRIPTORS = require('../internals/descriptors');\nvar CONFIGURABLE_FUNCTION_NAME = require('../internals/function-name').CONFIGURABLE;\nvar inspectSource = require('../internals/inspect-source');\nvar InternalStateModule = require('../internals/internal-state');\n\nvar enforceInternalState = InternalStateModule.enforce;\nvar getInternalState = InternalStateModule.get;\n// eslint-disable-next-line es-x/no-object-defineproperty -- safe\nvar defineProperty = Object.defineProperty;\n\nvar CONFIGURABLE_LENGTH = DESCRIPTORS && !fails(function () {\n  return defineProperty(function () { /* empty */ }, 'length', { value: 8 }).length !== 8;\n});\n\nvar TEMPLATE = String(String).split('String');\n\nvar makeBuiltIn = module.exports = function (value, name, options) {\n  if (String(name).slice(0, 7) === 'Symbol(') {\n    name = '[' + String(name).replace(/^Symbol\\(([^)]*)\\)/, '$1') + ']';\n  }\n  if (options && options.getter) name = 'get ' + name;\n  if (options && options.setter) name = 'set ' + name;\n  if (!hasOwn(value, 'name') || (CONFIGURABLE_FUNCTION_NAME && value.name !== name)) {\n    defineProperty(value, 'name', { value: name, configurable: true });\n  }\n  if (CONFIGURABLE_LENGTH && options && hasOwn(options, 'arity') && value.length !== options.arity) {\n    defineProperty(value, 'length', { value: options.arity });\n  }\n  try {\n    if (options && hasOwn(options, 'constructor') && options.constructor) {\n      if (DESCRIPTORS) defineProperty(value, 'prototype', { writable: false });\n    // in V8 ~ Chrome 53, prototypes of some methods, like `Array.prototype.values`, are non-writable\n    } else if (value.prototype) value.prototype = undefined;\n  } catch (error) { /* empty */ }\n  var state = enforceInternalState(value);\n  if (!hasOwn(state, 'source')) {\n    state.source = TEMPLATE.join(typeof name == 'string' ? name : '');\n  } return value;\n};\n\n// add fake Function#toString for correct work wrapped methods / constructors with methods like LoDash isNative\n// eslint-disable-next-line no-extend-native -- required\nFunction.prototype.toString = makeBuiltIn(function toString() {\n  return isCallable(this) && getInternalState(this).source || inspectSource(this);\n}, 'toString');\n"
     },
     {
       "id": 102,
