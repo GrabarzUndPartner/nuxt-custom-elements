@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.9.1-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.0...v1.9.1-beta.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* **webpack:** add uniq `jsonpFunction` for each entry ([06d5a67](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/06d5a670572e90a505579300ff001bb001a2d2eb))
+
 # [1.9.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0...v1.9.0) (2022-05-09)
 
 
