@@ -1,6 +1,6 @@
 {
   "name": "nuxt-custom-elements",
-  "version": "1.9.1-beta.2",
+  "version": "1.9.1",
   "description": "Publish your Components as a vue-custom-element standalone build.",
   "keywords": [
     "nuxtjs",
