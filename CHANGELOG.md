@@ -1,5 +1,19 @@
 # Project Changelog
 
+## [1.9.1-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.1-beta.1...v1.9.1-beta.2) (2022-06-17)
+
+
+### Bug Fixes
+
+* **entry:** init polyfill only once ([3cae756](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/3cae756dfdcb6a7abcef7c663d98eb8b9d204c27))
+
+## [1.9.1-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.0...v1.9.1-beta.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* **webpack:** add uniq `jsonpFunction` for each entry ([06d5a67](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/06d5a670572e90a505579300ff001bb001a2d2eb))
+
 # [1.9.0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.8.0...v1.9.0) (2022-05-09)
 
 
