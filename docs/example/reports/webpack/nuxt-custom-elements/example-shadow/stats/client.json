@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "b64fdb48a70c31774645",
-  "time": 2022,
-  "builtAt": 1655732977358,
+  "hash": "6f41d1df2f56b8b970ec",
+  "time": 1556,
+  "builtAt": 1655929288339,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
-    "NamedChunk": "NamedChunk.b64fdb48a70c31774645.js",
+    "NamedChunk": "NamedChunk.6f41d1df2f56b8b970ec.js",
     "example-shadow": "example-shadow.client.js"
   },
   "assets": [
     {
-      "name": "NamedChunk.b64fdb48a70c31774645.js",
+      "name": "NamedChunk.6f41d1df2f56b8b970ec.js",
       "size": 187,
       "chunks": [
         0
@@ -120,7 +120,7 @@
         0
       ],
       "assets": [
-        "NamedChunk.b64fdb48a70c31774645.js"
+        "NamedChunk.6f41d1df2f56b8b970ec.js"
       ],
       "children": {},
       "childAssets": {}
@@ -137,7 +137,7 @@
         "NamedChunk"
       ],
       "files": [
-        "NamedChunk.b64fdb48a70c31774645.js"
+        "NamedChunk.6f41d1df2f56b8b970ec.js"
       ],
       "hash": "69d7d40d26085f90093d",
       "siblings": [],
@@ -242,7 +242,7 @@
       "files": [
         "example-shadow.client.js"
       ],
-      "hash": "244b0d27b34d3b809aa0",
+      "hash": "6aba0f9fbe2ead84e3b9",
       "siblings": [],
       "parents": [],
       "children": [
@@ -4157,7 +4157,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.23.1',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.23.1/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.23.2',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.23.2/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
         },
         {
           "id": 26,
@@ -19194,7 +19194,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.23.1',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.23.1/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.23.2',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.23.2/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
     },
     {
       "id": 26,
