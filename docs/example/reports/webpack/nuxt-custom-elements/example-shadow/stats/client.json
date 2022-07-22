@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "f3cbaf61e3fbc0fb4292",
-  "time": 1428,
-  "builtAt": 1658095307102,
+  "time": 1831,
+  "builtAt": 1658484098889,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
@@ -4923,9 +4923,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-          "issuerId": 121,
-          "issuerName": "./node_modules/core-js/modules/es.symbol.key-for.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
+          "issuerId": 122,
+          "issuerName": "./node_modules/core-js/modules/es.json.stringify.js",
           "issuerPath": [
             {
               "id": 100,
@@ -4943,9 +4943,9 @@
               "name": "./node_modules/core-js/modules/es.symbol.js"
             },
             {
-              "id": 121,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-              "name": "./node_modules/core-js/modules/es.symbol.key-for.js"
+              "id": 122,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
+              "name": "./node_modules/core-js/modules/es.json.stringify.js"
             }
           ],
           "failed": false,
@@ -9910,9 +9910,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "issuerId": 142,
-          "issuerName": "./node_modules/core-js/internals/microtask.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "issuerId": 91,
+          "issuerName": "./node_modules/core-js/internals/task.js",
           "issuerPath": [
             {
               "id": 100,
@@ -9935,9 +9935,9 @@
               "name": "./node_modules/core-js/modules/es.promise.constructor.js"
             },
             {
-              "id": 142,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-              "name": "./node_modules/core-js/internals/microtask.js"
+              "id": 91,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+              "name": "./node_modules/core-js/internals/task.js"
             }
           ],
           "failed": false,
@@ -19960,9 +19960,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-      "issuerId": 121,
-      "issuerName": "./node_modules/core-js/modules/es.symbol.key-for.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
+      "issuerId": 122,
+      "issuerName": "./node_modules/core-js/modules/es.json.stringify.js",
       "issuerPath": [
         {
           "id": 100,
@@ -19980,9 +19980,9 @@
           "name": "./node_modules/core-js/modules/es.symbol.js"
         },
         {
-          "id": 121,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.symbol.key-for.js",
-          "name": "./node_modules/core-js/modules/es.symbol.key-for.js"
+          "id": 122,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.json.stringify.js",
+          "name": "./node_modules/core-js/modules/es.json.stringify.js"
         }
       ],
       "failed": false,
@@ -24947,9 +24947,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-      "issuerId": 142,
-      "issuerName": "./node_modules/core-js/internals/microtask.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+      "issuerId": 91,
+      "issuerName": "./node_modules/core-js/internals/task.js",
       "issuerPath": [
         {
           "id": 100,
@@ -24972,9 +24972,9 @@
           "name": "./node_modules/core-js/modules/es.promise.constructor.js"
         },
         {
-          "id": 142,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/microtask.js",
-          "name": "./node_modules/core-js/internals/microtask.js"
+          "id": 91,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/internals/task.js",
+          "name": "./node_modules/core-js/internals/task.js"
         }
       ],
       "failed": false,
