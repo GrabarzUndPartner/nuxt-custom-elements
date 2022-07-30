@@ -1,0 +1,1 @@
+(window.webpackJsonpNuxtCustomElementsExample=window.webpackJsonpNuxtCustomElementsExample||[]).push([[0],{177:function(e,t,n){"use strict";n.r(t),t.default="Named Chunk"}}]);
