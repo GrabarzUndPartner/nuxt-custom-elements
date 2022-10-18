@@ -1,13 +1,14 @@
 
 import { join, resolve as pathResolve } from 'path';
+import http from 'http';
 import { joinURL } from 'ufo';
 import { Nuxt, Builder } from 'nuxt';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
-import { createApp } from 'h3';
-import { listen } from 'listhen';
+import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
+import { getPort } from 'get-port-please';
 import nuxtConfig from '../example/nuxt.config';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
@@ -73,10 +74,12 @@ function startTest (modern = true) {
   });
 }
 
-function startStaticServer (dist, port = 3000, hostname = 'localhost') {
-  const app = createApp();
-  app.use(serveStatic(dist));
-  return listen(app, {
-    hostname, port
+export const startStaticServer = async (dist, port, hostname = 'localhost') => {
+  port = port || await getPort();
+  const serve = serveStatic(dist);
+  const server = http.createServer(function onRequest (req, res) {
+    serve(req, res, finalhandler(req, res));
   });
-}
+  server.listen({ port, hostname });
+  return { server, url: (new URL(`http://${hostname}:${port}`)).toString() };
+};
