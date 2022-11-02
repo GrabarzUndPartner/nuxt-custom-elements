@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "99fc8396260ce7d2fe7f",
-  "time": 2987,
-  "builtAt": 1666279430255,
+  "hash": "12ab2f8c9c7841b44338",
+  "time": 2441,
+  "builtAt": 1667384253395,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
-    "NamedChunk": "NamedChunk.99fc8396260ce7d2fe7f.js",
+    "NamedChunk": "NamedChunk.12ab2f8c9c7841b44338.js",
     "example": "example.client.js"
   },
   "assets": [
     {
-      "name": "NamedChunk.99fc8396260ce7d2fe7f.js",
+      "name": "NamedChunk.12ab2f8c9c7841b44338.js",
       "size": 175,
       "chunks": [
         0
@@ -28,7 +28,7 @@
     },
     {
       "name": "example.client.js",
-      "size": 141181,
+      "size": 141178,
       "chunks": [
         1
       ],
@@ -120,7 +120,7 @@
         0
       ],
       "assets": [
-        "NamedChunk.99fc8396260ce7d2fe7f.js"
+        "NamedChunk.12ab2f8c9c7841b44338.js"
       ],
       "children": {},
       "childAssets": {}
@@ -137,7 +137,7 @@
         "NamedChunk"
       ],
       "files": [
-        "NamedChunk.99fc8396260ce7d2fe7f.js"
+        "NamedChunk.12ab2f8c9c7841b44338.js"
       ],
       "hash": "5ab75aaa9fcd57fa159f",
       "siblings": [],
@@ -235,14 +235,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 511476,
+      "size": 511472,
       "names": [
         "example"
       ],
       "files": [
         "example.client.js"
       ],
-      "hash": "b5030f9636c53e3c2ed9",
+      "hash": "70024cb69959d2e1c4d2",
       "siblings": [],
       "parents": [],
       "children": [
@@ -4157,7 +4157,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.25.5',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.25.5/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+          "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.26.0',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.26.0/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
         },
         {
           "id": 26,
@@ -8155,7 +8155,7 @@
           "name": "./node_modules/core-js/internals/function-uncurry-this-raw.js",
           "index": 17,
           "index2": 8,
-          "size": 369,
+          "size": 365,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -8223,7 +8223,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 5,
-          "source": "var NATIVE_BIND = require('../internals/function-bind-native');\n\nvar FunctionPrototype = Function.prototype;\nvar call = FunctionPrototype.call;\nvar uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);\n\nmodule.exports = function (fn) {\n  return NATIVE_BIND ? uncurryThisWithBind(fn) : function () {\n    return call.apply(fn, arguments);\n  };\n};\n"
+          "source": "var NATIVE_BIND = require('../internals/function-bind-native');\n\nvar FunctionPrototype = Function.prototype;\nvar call = FunctionPrototype.call;\nvar uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);\n\nmodule.exports = NATIVE_BIND ? uncurryThisWithBind : function (fn) {\n  return function () {\n    return call.apply(fn, arguments);\n  };\n};\n"
         },
         {
           "id": 67,
@@ -19637,7 +19637,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.25.5',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.25.5/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
+      "source": "var IS_PURE = require('../internals/is-pure');\nvar store = require('../internals/shared-store');\n\n(module.exports = function (key, value) {\n  return store[key] || (store[key] = value !== undefined ? value : {});\n})('versions', []).push({\n  version: '3.26.0',\n  mode: IS_PURE ? 'pure' : 'global',\n  copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',\n  license: 'https://github.com/zloirock/core-js/blob/v3.26.0/LICENSE',\n  source: 'https://github.com/zloirock/core-js'\n});\n"
     },
     {
       "id": 26,
@@ -23635,7 +23635,7 @@
       "name": "./node_modules/core-js/internals/function-uncurry-this-raw.js",
       "index": 17,
       "index2": 8,
-      "size": 369,
+      "size": 365,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -23703,7 +23703,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 5,
-      "source": "var NATIVE_BIND = require('../internals/function-bind-native');\n\nvar FunctionPrototype = Function.prototype;\nvar call = FunctionPrototype.call;\nvar uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);\n\nmodule.exports = function (fn) {\n  return NATIVE_BIND ? uncurryThisWithBind(fn) : function () {\n    return call.apply(fn, arguments);\n  };\n};\n"
+      "source": "var NATIVE_BIND = require('../internals/function-bind-native');\n\nvar FunctionPrototype = Function.prototype;\nvar call = FunctionPrototype.call;\nvar uncurryThisWithBind = NATIVE_BIND && FunctionPrototype.bind.bind(call, call);\n\nmodule.exports = NATIVE_BIND ? uncurryThisWithBind : function (fn) {\n  return function () {\n    return call.apply(fn, arguments);\n  };\n};\n"
     },
     {
       "id": 67,
