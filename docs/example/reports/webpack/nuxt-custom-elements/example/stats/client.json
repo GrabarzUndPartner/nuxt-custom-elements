@@ -3,8 +3,8 @@
   "warnings": [],
   "version": "4.46.0",
   "hash": "12ab2f8c9c7841b44338",
-  "time": 2475,
-  "builtAt": 1667384296501,
+  "time": 3712,
+  "builtAt": 1667808496409,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example",
   "assetsByChunkName": {
@@ -10420,9 +10420,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "issuerId": 159,
-          "issuerName": "./node_modules/core-js/modules/es.promise.race.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "issuerId": 153,
+          "issuerName": "./node_modules/core-js/modules/es.promise.all.js",
           "issuerPath": [
             {
               "id": 105,
@@ -10440,9 +10440,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 159,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-              "name": "./node_modules/core-js/modules/es.promise.race.js"
+              "id": 153,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+              "name": "./node_modules/core-js/modules/es.promise.all.js"
             }
           ],
           "failed": false,
@@ -10511,9 +10511,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 159,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-              "name": "./node_modules/core-js/modules/es.promise.race.js"
+              "id": 153,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+              "name": "./node_modules/core-js/modules/es.promise.all.js"
             },
             {
               "id": 98,
@@ -10567,9 +10567,9 @@
           "chunks": [
             1
           ],
-          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-          "issuerId": 153,
-          "issuerName": "./node_modules/core-js/modules/es.promise.all.js",
+          "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+          "issuerId": 159,
+          "issuerName": "./node_modules/core-js/modules/es.promise.race.js",
           "issuerPath": [
             {
               "id": 105,
@@ -10587,9 +10587,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 153,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-              "name": "./node_modules/core-js/modules/es.promise.all.js"
+              "id": 159,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+              "name": "./node_modules/core-js/modules/es.promise.race.js"
             }
           ],
           "failed": false,
@@ -13884,9 +13884,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 159,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-              "name": "./node_modules/core-js/modules/es.promise.race.js"
+              "id": 153,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+              "name": "./node_modules/core-js/modules/es.promise.all.js"
             },
             {
               "id": 98,
@@ -13951,9 +13951,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 159,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-              "name": "./node_modules/core-js/modules/es.promise.race.js"
+              "id": 153,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+              "name": "./node_modules/core-js/modules/es.promise.all.js"
             },
             {
               "id": 98,
@@ -14018,9 +14018,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 159,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-              "name": "./node_modules/core-js/modules/es.promise.race.js"
+              "id": 153,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+              "name": "./node_modules/core-js/modules/es.promise.all.js"
             },
             {
               "id": 98,
@@ -14085,9 +14085,9 @@
               "name": "./node_modules/core-js/modules/es.promise.js"
             },
             {
-              "id": 153,
-              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-              "name": "./node_modules/core-js/modules/es.promise.all.js"
+              "id": 159,
+              "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+              "name": "./node_modules/core-js/modules/es.promise.race.js"
             },
             {
               "id": 100,
@@ -25900,9 +25900,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-      "issuerId": 159,
-      "issuerName": "./node_modules/core-js/modules/es.promise.race.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+      "issuerId": 153,
+      "issuerName": "./node_modules/core-js/modules/es.promise.all.js",
       "issuerPath": [
         {
           "id": 105,
@@ -25920,9 +25920,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 159,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "name": "./node_modules/core-js/modules/es.promise.race.js"
+          "id": 153,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "name": "./node_modules/core-js/modules/es.promise.all.js"
         }
       ],
       "failed": false,
@@ -25991,9 +25991,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 159,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "name": "./node_modules/core-js/modules/es.promise.race.js"
+          "id": 153,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "name": "./node_modules/core-js/modules/es.promise.all.js"
         },
         {
           "id": 98,
@@ -26047,9 +26047,9 @@
       "chunks": [
         1
       ],
-      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-      "issuerId": 153,
-      "issuerName": "./node_modules/core-js/modules/es.promise.all.js",
+      "issuer": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+      "issuerId": 159,
+      "issuerName": "./node_modules/core-js/modules/es.promise.race.js",
       "issuerPath": [
         {
           "id": 105,
@@ -26067,9 +26067,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 153,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-          "name": "./node_modules/core-js/modules/es.promise.all.js"
+          "id": 159,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+          "name": "./node_modules/core-js/modules/es.promise.race.js"
         }
       ],
       "failed": false,
@@ -29364,9 +29364,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 159,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "name": "./node_modules/core-js/modules/es.promise.race.js"
+          "id": 153,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "name": "./node_modules/core-js/modules/es.promise.all.js"
         },
         {
           "id": 98,
@@ -29431,9 +29431,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 159,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "name": "./node_modules/core-js/modules/es.promise.race.js"
+          "id": 153,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "name": "./node_modules/core-js/modules/es.promise.all.js"
         },
         {
           "id": 98,
@@ -29498,9 +29498,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 159,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
-          "name": "./node_modules/core-js/modules/es.promise.race.js"
+          "id": 153,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
+          "name": "./node_modules/core-js/modules/es.promise.all.js"
         },
         {
           "id": 98,
@@ -29565,9 +29565,9 @@
           "name": "./node_modules/core-js/modules/es.promise.js"
         },
         {
-          "id": 153,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.all.js",
-          "name": "./node_modules/core-js/modules/es.promise.all.js"
+          "id": 159,
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/core-js/modules/es.promise.race.js",
+          "name": "./node_modules/core-js/modules/es.promise.race.js"
         },
         {
           "id": 100,
