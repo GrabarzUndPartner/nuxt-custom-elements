@@ -67,7 +67,7 @@
     "eslint-plugin-xss": "0.1.12",
     "finalhandler": "1.2.0",
     "get-port-please": "2.6.1",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "nuxt": "2.15.8",
     "playwright": "1.27.1",
@@ -78,8 +78,8 @@
     "stylelint": "14.14.1",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard": "29.0.0",
-    "vite": "3.2.2",
-    "vitest": "0.24.5",
+    "vite": "3.2.3",
+    "vitest": "0.25.1",
     "webpack-dynamic-public-path": "1.0.8"
   }
 }
