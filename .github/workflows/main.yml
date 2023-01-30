@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
 
     steps:
       - uses: actions/setup-node@v3
@@ -35,6 +35,8 @@ jobs:
         run: npm ci
       - name: Test
         run: npm run test
+      - name: Prepack
+        run: npm run prepack
       - name: cache node_modules (Docs)
         uses: actions/cache@v3
         id: cacheDocs
@@ -53,7 +55,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
 
     steps:
       - uses: actions/setup-node@v3
@@ -78,7 +80,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
 
     steps:
       - uses: actions/setup-node@v3
@@ -97,17 +99,15 @@ jobs:
           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
       - name: Build
         run: |
-          npm run generate --build-analyze --base=/example/ --website-host=https://nuxt-custom-elements.grabarzundpartner.dev
-          mkdir dist/nuxt-custom-elements/reports
-          cp -R .reports/* dist/nuxt-custom-elements/reports/
-          touch dist/nuxt-custom-elements/.nojekyll
+          npm run generate --base-url=/example/ --website-host=https://nuxt-custom-elements.grabarzundpartner.dev
+          touch playground/.output/public/nuxt-custom-elements
         env:
           DIST_PATH: dist
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
           name: exampleArtifact
-          path: dist/nuxt-custom-elements
+          path: playground/.output/public/nuxt-custom-elements
 
   build-docs:
     name: Build (Docs)
@@ -117,7 +117,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
 
     steps:
       - uses: actions/setup-node@v3
@@ -152,7 +152,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node: [19]
     steps:
       - name: Download Artifact (Docs)
         uses: actions/download-artifact@master

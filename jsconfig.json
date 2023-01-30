@@ -6,10 +6,10 @@
     "baseUrl": ".",
     "paths": {
       "nuxt-custom-elements/*": [
-        "lib/*"
+        "src/*"
       ],
       "@/*": [
-        "example/*"
+        "playground/*"
       ],
       "@@/*": [
         "./*"

@@ -1,5 +1,5 @@
 import path from 'path';
-import fsExtra from 'fs-extra';
+import fs from 'fs';
 import Webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
@@ -40,7 +40,7 @@ function build (webpackConfigs, nuxt) {
     return Promise.all(Object.keys(releases).map((name) => {
       const content = JSON.stringify(releases[String(name)]);
       const filepath = path.resolve(getBuildDir(nuxt), name, 'release.json');
-      return fsExtra.writeFile(filepath, content, 'utf-8');
+      return fs.promises.writeFile(filepath, content, 'utf-8');
     }));
   }).catch((err) => {
     throw err;

@@ -1,7 +1,7 @@
 
 import { readPackage } from 'read-pkg';
 import { defineNuxtConfig } from 'nuxt/config';
-import Module from '../lib/module';
+import Module from '../src/module';
 
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = process.env.NODE_ENV === 'development';

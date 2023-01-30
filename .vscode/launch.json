@@ -22,7 +22,54 @@
       "outputCapture": "std",
       "args": [
         "--dist",
-        "example/.nuxt/nuxt-custom-elements/dist"
+        "playground/.nuxt/nuxt-custom-elements/dist"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxi:generate)",
+      "runtimeVersion": "16.17.1",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxi",
+      "outputCapture": "std",
+      "args": [
+        "generate",
+        "playground",
+        "--target",
+        "static"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxi:build)",
+      "runtimeVersion": "16.17.1",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxi",
+      "outputCapture": "std",
+      "args": [
+        "build",
+        "playground"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxi:dev)",
+      "runtimeVersion": "16.17.1",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxi",
+      "outputCapture": "std",
+      "args": [
+        "dev",
+        "playground"
       ]
     },
     {
@@ -37,7 +84,7 @@
       "outputCapture": "std",
       "args": [
         "generate",
-        "example",
+        "playground",
         "--target",
         "static"
       ]
@@ -54,7 +101,7 @@
       "outputCapture": "std",
       "args": [
         "build",
-        "example"
+        "playground"
       ]
     },
     {
@@ -69,7 +116,7 @@
       "outputCapture": "std",
       "args": [
         "dev",
-        "example"
+        "playground"
       ]
     },
   ]

@@ -21,26 +21,37 @@
       "email": "lammpee@gmail.de"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prepack": "nuxt-module-build",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
-    "nuxi:dev": "nuxi dev example",
-    "nuxi:build": "nuxi build example",
-    "nuxi:generate": "nuxi generate example --target static",
-    "nuxt:dev": "nuxt example",
-    "nuxt:build": "nuxt build example",
-    "nuxt:generate": "nuxt generate example --target static",
+    "nuxi:dev": "nuxi dev playground",
+    "nuxi:build": "nuxi build playground",
+    "nuxi:generate": "nuxi generate playground --target static",
+    "nuxt:dev": "nuxt playground",
+    "nuxt:build": "nuxt build playground",
+    "nuxt:generate": "nuxt generate playground --target static",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:es": "eslint --ext .js,.vue .",
-    "lint:css": "stylelint \"example/**/*.vue\" \"example/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
+    "lint:css": "stylelint \"playground/**/*.vue\" \"playground/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
     "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
     "test": "npm run lint && npm run vitest:run",
     "vitest:run": "vitest run",
-    "vitest:dev": "vitest dev",
-    "start": "nuxt start --config-file example/nuxt.config.js",
-    "static-server": "node ./tools/static-server.mjs --dist example/.nuxt/nuxt-custom-elements/dist"
+    "vitest:watch": "vitest watch",
+    "start": "nuxt start --config-file playground/nuxt.config.js",
+    "static-server": "node ./tools/static-server.mjs --dist playground/.nuxt/nuxt-custom-elements/dist"
   },
   "dependencies": {
     "change-case": "4.1.2",
@@ -52,6 +63,7 @@
     "@babel/eslint-parser": "7.19.1",
     "@commitlint/cli": "17.2.0",
     "@commitlint/config-conventional": "17.2.0",
+    "@nuxt/module-builder": "^0.2.1",
     "@nuxt/webpack-builder": "^3.1.1",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",

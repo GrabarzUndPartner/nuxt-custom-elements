@@ -1,5 +1,5 @@
 import path from 'path';
-import fsExtra from 'fs-extra';
+import fs from 'fs';
 import { paramCase, pascalCase } from 'change-case';
 import consola from 'consola';
 
@@ -15,7 +15,7 @@ function getBuildDir (nuxt) {
   return path.resolve(nuxt.options.buildDir, MODULE_NAME, BUILD_DIR);
 }
 function getDistDir (nuxt) {
-  return path.resolve(nuxt.options.generate.dir, MODULE_NAME);
+  return path.resolve(nuxt._nitro.options.output.publicDir, MODULE_NAME);
 }
 
 const getDefaultOptions = () => {
@@ -60,12 +60,12 @@ function generateEntries (nuxt, moduleOptions) {
       name: entry.name,
       template: Object.fromEntries(['client'].map((type) => {
         return [type, {
-          src: path.resolve(__dirname, '../tmpl', 'entry.js'),
+          src: path.resolve(__dirname, '../tmpl', 'entry.mjs'),
           options: {
             tags: entry.tags,
             webpackExtend: entry.webpackExtend
           },
-          fileName: path.resolve(getEntriesDir(nuxt), `${entry.name}.${type}.js`)
+          fileName: path.resolve(getEntriesDir(nuxt), `${entry.name}.${type}.mjs`)
         }];
       }))
     };
@@ -73,8 +73,12 @@ function generateEntries (nuxt, moduleOptions) {
 }
 
 async function copyBuild (from, to) {
-  await fsExtra.remove(to);
-  await fsExtra.copy(from, to);
+  try {
+    await fs.promises.rm(to, { recursive: true, force: true });
+  } catch (error) {
+    // directory not found
+  }
+  await fs.promises.cp(from, to, { recursive: true });
   consola.info(`Custom-Elements output directory: ${to}`);
   consola.success('Generated Custom-Elements!');
 }

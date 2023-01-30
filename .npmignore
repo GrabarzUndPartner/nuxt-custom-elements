@@ -1,4 +1,5 @@
 .*.swp
+.*
 ._*
 .DS_Store
 .git
@@ -6,9 +7,6 @@
 .npmrc
 .lock-wscript
 .svn
-.wafpickle-*
-config.gypi
-CVS
 npm-debug.log
 
 *.iml
@@ -17,14 +15,11 @@ npm-debug.log
 .nuxt
 .history
 .reports
-publish
 .vscode/*
 !.vscode/launch.json
 .DS_Store
 coverage
-dist
 .husky
-.*
 *.code-workspace
 jsconfig.json
 vitest.config.js
@@ -36,9 +31,11 @@ commitlint.config.js
 renovate.json
 vetur.config.json
 sandbox.config.json
+build.config.mjs
+.output
 
 /docs
-/lib
-/example
+/src
+/playground
 /test
 /tools

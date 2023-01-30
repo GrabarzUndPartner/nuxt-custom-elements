@@ -2,7 +2,8 @@ import { resolve } from 'path';
 import {
   defineNuxtModule,
   addPluginTemplate,
-  addTemplate
+  addTemplate,
+  isNuxt3
 } from '@nuxt/kit';
 import { build, prepareConfigs } from './utils/webpack.mjs';
 import { generateEntries, getDefaultOptions, getEntriesDir, getEntryNamingMap, onBuildDone, onGeneratedDone } from './utils/index.mjs';
@@ -12,13 +13,11 @@ export default defineNuxtModule({
     name: 'nuxt-custom-elements',
     configKey: 'customElements',
     compatibility: {
-      // Semver version of supported nuxt versions
       nuxt: '^3.0.x'
     }
   },
-  // Default configuration options for your module
   defaults: getDefaultOptions(),
-  hooks: {},
+
   setup (moduleOptions, nuxt) {
     const entries = generateEntries(nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
@@ -33,8 +32,8 @@ export default defineNuxtModule({
     }, {});
 
     addPluginTemplate({
-      src: resolve(__dirname, 'runtime', 'plugin.tmpl.js'),
-      fileName: 'nuxt-custom-elements-plugin.js',
+      src: resolve(__dirname, 'runtime', 'plugin.tmpl.mjs'),
+      fileName: 'nuxt-custom-elements-plugin.mjs',
       write: true,
       options: Object.assign({
         entriesDir: getEntriesDir(nuxt),
@@ -44,6 +43,7 @@ export default defineNuxtModule({
 
     registerHooks(nuxt, moduleOptions);
   }
+
 });
 
 function registerHooks (nuxt, moduleOptions) {
@@ -61,6 +61,15 @@ function registerHooks (nuxt, moduleOptions) {
         await onBuildDone(nuxt, moduleOptions);
       }
     });
-    nuxt.hook('generate:done', () => onGeneratedDone(nuxt, moduleOptions));
+
+    if (isNuxt3() && nuxt.options.target !== 'static') {
+      // TODO: alternative for the `generate:done` hook?
+      nuxt.hook('close', () => {
+        debugger;
+        return onGeneratedDone(nuxt, moduleOptions);
+      });
+    } else {
+      nuxt.hook('generate:done', () => onGeneratedDone(nuxt, moduleOptions));
+    }
   }
 }
