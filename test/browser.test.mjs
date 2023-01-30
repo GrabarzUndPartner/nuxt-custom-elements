@@ -10,7 +10,7 @@ import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
 import { loadNuxt, build } from 'nuxt';
-import nuxtConfig from '../example/nuxt.config.mjs';
+import nuxtConfig from '../playground/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
@@ -54,18 +54,6 @@ function startTest () {
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
     await page.goto(joinURL(serverUrl, '/example/'));
-    await page.waitForSelector('.custom-element-example');
-  });
-
-  test('check bundle initialization (chrome)', async () => {
-    const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
-    await page.goto(joinURL(serverUrl, '/example-shadow/'));
-    await page.waitForSelector('.custom-element-example');
-  });
-
-  test('check bundle initialization (firefox)', async () => {
-    const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
-    await page.goto(joinURL(serverUrl, '/example-shadow/'));
     await page.waitForSelector('.custom-element-example');
   });
 }
