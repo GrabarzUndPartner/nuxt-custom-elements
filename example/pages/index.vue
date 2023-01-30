@@ -1,6 +1,6 @@
 <template>
   <div>
-    <github-corner />
+    <github-corner :url="$config.GITHUB_REPO_URL" />
     <div class="logo">
       <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements">
     </div>
@@ -16,17 +16,12 @@
 </template>
 
 <script>
+import CustomElementExample from '@/components/Example.vue';
 
-import Vue from 'vue';
-
-import GithubCorner from '@/components/GithubCorner';
-
-Vue.config.ignoredElements = [
-  'custom-element-example'
-];
+// import GithubCorner from '@/components/GithubCorner';
 
 export default {
-  components: { GithubCorner },
+  components: { CustomElementExample },
   created () {
     this.$customElements.registerEntry('example');
   }
@@ -108,5 +103,4 @@ fieldset legend {
   border: 1px solid #3b8070;
   border-radius: 4px;
 }
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="custom-element-example">
     <div class="title">
-      {{ exampleTitle }}
+      {{ title }}
     </div>
     <div class="content">
       <slot>Default Content</slot>
@@ -9,23 +9,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      default: null
-    }
-  },
-  computed: {
-    exampleTitle () {
-      return this.title || 'Default Title';
-    }
-  },
-  mounted () {
-    import(/* webpackChunkName: "NamedChunk" */ '@/js/namedChunk');
+<script setup>
+defineProps({
+  title: {
+    type: String,
+    default: 'Default Title'
   }
-};
+});
+
 </script>
 
 <style lang="postcss" scoped>
@@ -87,7 +78,8 @@ export default {
   line-height: 1.6;
 }
 
-.content a {
+.content a,
+:deep(.content a) {
   margin-top: 10px;
   color: currentColor;
 }

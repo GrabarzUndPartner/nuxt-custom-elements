@@ -2,40 +2,36 @@
 import { join, resolve as pathResolve } from 'path';
 import http from 'http';
 import { joinURL } from 'ufo';
-import { Nuxt, Builder } from 'nuxt';
+// import { Nuxt, Builder } from 'nuxt';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
 import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
-import nuxtConfig from '../example/nuxt.config';
+import { loadNuxt, build } from 'nuxt';
+import nuxtConfig from '../example/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
-describe('🧐 inspect browser (client & modern) (chromium and firefox)', () => {
+describe('🧐 inspect browser(chromium and firefox)', () => {
   startTest();
 });
 
-describe('🧐 inspect browser (client) (chromium and firefox)', () => {
-  startTest(false);
-});
-
-function startTest (modern = true) {
+function startTest () {
   let browsers, nuxt, serverUrl;
 
-  const testDir = pathResolve(__dirname, `.browser${modern ? '-modern' : ''}`);
+  const testDir = pathResolve(__dirname, '.browser');
   const buildDir = join(testDir, '.nuxt');
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
 
   beforeAll(async () => {
     const config = defu({
-      dev: false,
-      modern: modern ? 'client' : false,
       buildDir
     }, nuxtConfig);
-    nuxt = new Nuxt(config);
-    await new Builder(nuxt).build();
+
+    nuxt = await loadNuxt(config);
+    await build(nuxt);
 
     browsers = await Promise.all([
       chromium.launch(),

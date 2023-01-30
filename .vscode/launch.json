@@ -28,35 +28,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug (CLI)",
-      "runtimeVersion": "16.14.2",
-      "runtimeArgs": [
-        "--inspect"
-      ],
-      "program": "${workspaceFolder}/tools/cli",
-      "outputCapture": "std"
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Debug (build)",
-      "runtimeVersion": "16.14.2",
-      "runtimeArgs": [
-        "--inspect"
-      ],
-      "program": "${workspaceFolder}/node_modules/.bin/nuxt",
-      "outputCapture": "std",
-      "args": [
-        "build",
-        "--config-file",
-        "example/nuxt.config.js"
-      ]
-    },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Debug (generate)",
-      "runtimeVersion": "16.14.2",
+      "name": "Debug (nuxt:generate)",
+      "runtimeVersion": "16.17.1",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -64,24 +37,40 @@
       "outputCapture": "std",
       "args": [
         "generate",
-        "--config-file",
-        "example/nuxt.config.js"
+        "example",
+        "--target",
+        "static"
       ]
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug (nuxt)",
-      "runtimeVersion": "16.14.2",
+      "name": "Debug (nuxt:build)",
+      "runtimeVersion": "16.17.1",
       "runtimeArgs": [
         "--inspect"
       ],
       "program": "${workspaceFolder}/node_modules/.bin/nuxt",
       "outputCapture": "std",
       "args": [
-        "--config-file",
-        "example/nuxt.config.js"
+        "build",
+        "example"
       ]
-    }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxt:dev)",
+      "runtimeVersion": "16.17.1",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+      "outputCapture": "std",
+      "args": [
+        "dev",
+        "example"
+      ]
+    },
   ]
 }

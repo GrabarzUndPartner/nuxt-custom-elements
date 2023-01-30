@@ -1,8 +1,9 @@
 <template>
   <div>
-    <nuxt />
+    <slot />
   </div>
 </template>
+
 <style>
 body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpi/P//PwM6OHv2HIYgEwORYAAVsmBzuLGxEeNQ9AxAgAEAG1wKejjL7dsAAAAASUVORK5CYII=");

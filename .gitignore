@@ -13,3 +13,4 @@ dist
 .reports
 test/.*
 sw.*
+.output
