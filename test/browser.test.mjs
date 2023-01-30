@@ -1,6 +1,6 @@
 
-import { join, resolve as pathResolve } from 'path';
 import http from 'http';
+import { join, resolve as pathResolve } from 'pathe';
 import { joinURL } from 'ufo';
 // import { Nuxt, Builder } from 'nuxt';
 import { chromium, firefox } from 'playwright';

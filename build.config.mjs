@@ -7,6 +7,7 @@ export default {
     'html-webpack-plugin',
     'webpack-bundle-analyzer',
     'clone',
-    'vue'
+    'vue',
+    'pathe'
   ]
 };

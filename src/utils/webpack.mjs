@@ -1,5 +1,5 @@
-import path from 'path';
 import fs from 'fs';
+import path from 'pathe';
 import Webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';

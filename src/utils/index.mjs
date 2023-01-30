@@ -1,5 +1,5 @@
-import path from 'path';
 import fs from 'fs';
+import path from 'pathe';
 import { paramCase, pascalCase } from 'change-case';
 import consola from 'consola';
 
