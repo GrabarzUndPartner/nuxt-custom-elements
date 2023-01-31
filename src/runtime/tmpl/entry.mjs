@@ -1,21 +1,22 @@
 
-import { defineCustomElement } from 'vue'
+import { defineAsyncComponent, defineCustomElement } from 'vue'
 
-<% options.tags.filter(function ({ async }) { return !async; }).forEach(function ({ path }, i) { %><%= `import Component${i} from '${path}';\n` %><% }); %>
+<%= options.tags.filter(function ({ async }) { return !async; }).map(({ path }, i) => `import Component${i} from '${path}';`).join('\n') %>
 
 const defineTags = () => {
-  let Component, CustomElement;
-<% let i = 0; options.tags.forEach(function ({ async, name, path }) {
+  const elements = [
+<% let i = 0; %><%= options.tags.map(function ({ async, name, path }) {
   if (async) {
-    %><%= `  Component = () => { return import('${path}').then(module => (typeof module.default === 'function' ? (new module.default).$options : module.default) ); };\n` %><%
+    return`    ['${name}', defineAsyncComponent(() => { return import('${path}').then(module => (typeof module.default === 'function' ? (new module.default).$options : module.default) ); })]`;
   } else {
-    %><%= `  Component = (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i});\n` %><%
+    return`    ['${name}', (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i})]`;
     i++;
   }
-%><%= `
-  CustomElement = defineCustomElement(Component);
-  window.customElements.define('${name}', CustomElement);`%>
-<% }); %>
+ }).join(',\n') %>
+  ].forEach(([name, component]) => {
+    const CustomElement = defineCustomElement(component);
+    window.customElements.define(name, CustomElement);
+  })
 };
 
 const setup = () => {

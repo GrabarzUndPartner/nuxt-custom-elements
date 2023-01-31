@@ -42,7 +42,7 @@ export default defineNuxtModule({
       return;
     }
 
-    // create entry app templates
+    // create entry templates
     const entries = generateEntries(runtimeDir, nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
       Object.keys(template).forEach((type) => {

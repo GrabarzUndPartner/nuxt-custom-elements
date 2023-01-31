@@ -1,7 +1,8 @@
 import { join, normalize } from 'pathe';
-import { build as viteBuild } from 'vite';
+import { build as viteBuild, defineConfig } from 'vite';
 import { paramCase } from 'change-case';
 import vuePlugin from '@vitejs/plugin-vue';
+import clone from 'clone';
 import { getBuildDir } from './index.mjs';
 
 export async function build (builder, entryConfigs, statsList = []) {
@@ -16,17 +17,29 @@ export async function build (builder, entryConfigs, statsList = []) {
 
 function getViteConfig (entryName, nuxt, config, options) {
   const buildDir = normalize(join(getBuildDir(nuxt), entryName));
+  const entry = options.entry[String(entryName)].client;
+
+  config = clone(config);
+
+  config.base = '/';
+
+  config.build = {
+    ...config.build,
+    target: 'esnext',
+    outDir: buildDir,
+    rollupOptions: {
+      ...config.rollupOptions,
+      input: entry
+    }
+  };
 
   config.vue.customElement = true;
   // Replace vue plugin for property customElement
   config.plugins[config.plugins.indexOf(config.plugins.find(({ name }) => name === 'vite:vue'))] = vuePlugin(config.vue);
 
-  config.build.outDir = buildDir;
-  const entry = options.entry[String(entryName)].client;
-  config.build.rollupOptions.input = entry;
   config.entry = entry;
 
-  return config;
+  return defineConfig(config);
 }
 
 export function prepareEntryConfigs (viteConfig, nuxt, options) {

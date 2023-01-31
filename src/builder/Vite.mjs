@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { resolve } from 'pathe';
 import template from 'lodash.template';
-import clone from 'clone';
 import { getTagHTMLFromEntry } from '../utils/tags.mjs';
 import { build, prepareEntryConfigs } from '../utils/vite.mjs';
 import { getBuildDir } from '../utils/index.mjs';
@@ -18,7 +17,7 @@ export default class ViteBuilder extends Builder {
     this.config = [];
     this.nuxt.hook('vite:extendConfig', (config) => {
       if (!('ssr' in config)) {
-        return (this.config = clone(config));
+        return (this.config = config);
       }
     });
   }
