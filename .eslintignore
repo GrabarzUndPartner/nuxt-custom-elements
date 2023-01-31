@@ -5,9 +5,9 @@ dist
 coverage
 reports
 sw.*
-
+.output
 
 # Plugin
-lib/plugin.js
-lib/tmpl/entry.js
+src/runtime/tmpl/webpack/entry.mjs
+src/runtime/tmpl/plugin.mjs
 

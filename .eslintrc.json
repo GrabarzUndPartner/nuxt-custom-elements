@@ -7,6 +7,7 @@
   },
   "extends": [
     "@nuxtjs",
+    "@nuxtjs/eslint-config-typescript",
     "plugin:security/recommended",
     "plugin:sonarjs/recommended",
     "plugin:no-unsanitized/DOM"
@@ -26,7 +27,7 @@
       "always"
     ],
     "vue/no-v-html": "off",
-    "vue/name-property-casing": [
+    "vue/component-definition-name-casing": [
       "error",
       "PascalCase"
     ],

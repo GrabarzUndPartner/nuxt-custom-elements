@@ -5,5 +5,17 @@
   "baseBranches": [
     "main"
   ],
+  "packageRules": [
+    {
+      "packageNames": [
+        "node"
+      ],
+      "major": {
+        "enabled": true
+      },
+      "separateMultipleMajor": true,
+      "allowedVersions": "^16"
+    }
+  ],
   "rangeStrategy": "pin"
 }

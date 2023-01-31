@@ -1,4 +1,4 @@
-const { paramCase } = require('change-case');
+import { paramCase } from 'change-case';
 
 function getTagsFromEntry (entry) {
   const tags = [];
@@ -36,7 +36,7 @@ function getTagHTMLFromEntry (entry) {
   });
 }
 
-module.exports = {
+export {
   getTagsFromEntry,
   getTagHTMLFromEntry
 };

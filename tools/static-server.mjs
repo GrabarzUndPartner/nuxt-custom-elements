@@ -1,16 +1,9 @@
-const { paramCase } = require('change-case');
-const { createApp } = require('h3');
-const { listen } = require('listhen');
-const serveStatic = require('serve-static');
+import http from 'http';
+import { paramCase } from 'change-case';
+import finalhandler from 'finalhandler';
+import serveStatic from 'serve-static';
 
-const dist = getDist();
-
-const app = createApp();
-app.use(serveStatic(dist));
-
-listen(app, {
-  hostname: getHost(), port: getPort()
-});
+startStaticServer(getDist(), getPort(), getHost());
 
 function getDist () {
   return process.env.npm_config_dist || getArg('dist') || process.env.DIST || 'dist';
@@ -32,4 +25,14 @@ function getArg (name) {
     value = args[args.indexOf(`--${name}`) + 1];
   }
   return value;
+}
+
+function startStaticServer (dist, port, hostname = 'localhost') {
+  const serve = serveStatic(dist);
+  const server = http.createServer(function onRequest (req, res) {
+    serve(req, res, finalhandler(req, res));
+  });
+  server.listen({ port, hostname });
+  console.log('Server started:', `http://${hostname}:${port}`);
+  return { server, url: (new URL(`http://${hostname}:${port}`)).toString() };
 }
