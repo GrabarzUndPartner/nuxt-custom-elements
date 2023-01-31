@@ -8,6 +8,9 @@ export default {
     'webpack-bundle-analyzer',
     'clone',
     'vue',
-    'pathe'
+    'pathe',
+    '@vitejs/plugin-vue',
+    'lodash.template',
+    'vite'
   ]
 };

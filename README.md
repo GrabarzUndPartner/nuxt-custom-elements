@@ -20,12 +20,11 @@
   </a>
 </p>
 
-
 ![nuxt-custom-elements][logo]
 
 # Nuxt Custom-Elements
 
-[![Grabarz & Partner - Module][grabarz-partner-module-src]][grabarz-partner-href] 
+[![Grabarz & Partner - Module][grabarz-partner-module-src]][grabarz-partner-href]
 
 [![main][github-workflow-main-src]][github-workflow-main-href]
 [![develop][github-workflow-develop-src]][github-workflow-develop-href]
@@ -41,8 +40,6 @@
 - [📖 &nbsp;&nbsp;**Documentation**](https://nuxt-custom-elements.grabarzundpartner.dev/)
 - [👁 &nbsp;&nbsp;**Preview**](https://grabarzundpartner.github.io/nuxt-custom-elements-example/)
 
-> Publish your Components as a [vue-custom-element](https://github.com/karol-f/vue-custom-element) standalone build.
-
 Nuxt Custom-Elements allows you to export your existing project components as custom elements for integration into external pages.
 
 ## Features
@@ -50,15 +47,8 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 - Using modern and client build
 - Export components as widgets
 - Use the `Shadow DOM` 🥷
-- Use [TailwindCSS](https://tailwindcss.com/) and [Vuetify](https://vuetifyjs.com/) for your widgets
   
 📖 &nbsp;&nbsp;[Learn more in the documentation](https://nuxt-custom-elements.grabarzundpartner.dev/)
-
-## Browsers support
-
-For cross-browser [compatibility](https://github.com/ungap/custom-elements#compatibility) (IE11+) the `client` build uses the Polyfill [custom-elements](https://github.com/ungap/custom-elements)
-
-> Polyfill not included in the `modern` build, optional include by option `modernPolyfill` ([Learn more](https://nuxt-custom-elements.grabarzundpartner.dev/options/#modernpolyfill)).
 
 ## Development
 
@@ -89,10 +79,6 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 [github-workflow-main-href]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/actions?query=workflow%3AMain>
 [github-workflow-develop-src]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/workflows/Test/badge.svg?branch=develop>
 [github-workflow-develop-href]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/actions?query=workflow%3ATest>
-[dependencies-status-src]: <https://david-dm.org/GrabarzUndPartner/nuxt-custom-elements/status.svg>
-[dependencies-status-href]: <https://david-dm.org/GrabarzUndPartner/nuxt-custom-elements>
-[dependencies-dev-status-src]: <https://david-dm.org/GrabarzUndPartner/nuxt-custom-elements/dev-status.svg>
-[dependencies-dev-status-href]: <https://david-dm.org/GrabarzUndPartner/nuxt-custom-elements?type=dev>
 
 [sonarcloud-src]: <https://sonarcloud.io/api/project_badges/measure?project=GrabarzUndPartner_nuxt-custom-elements&metric=alert_status>
 [sonarcloud-href]: <https://sonarcloud.io/dashboard?id=GrabarzUndPartner_nuxt-custom-elements>
@@ -105,4 +91,3 @@ For cross-browser [compatibility](https://github.com/ungap/custom-elements#compa
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-custom-elements.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/nuxt-custom-elements
-
