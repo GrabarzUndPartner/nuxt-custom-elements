@@ -14,3 +14,4 @@ dist
 test/.*
 sw.*
 .output
+eslint-report.json
