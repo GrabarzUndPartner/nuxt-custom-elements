@@ -17,6 +17,8 @@ defineProps({
   }
 });
 
+document.body.classList.add('custom-element-example-ready');
+
 </script>
 
 <style lang="postcss" scoped>
@@ -41,8 +43,11 @@ defineProps({
 }
 
 .custom-element-example {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   min-width: 300px;
-  padding: 10px;
+  padding: 8px;
   font-family:
     Lato,
     "Source Sans Pro",
@@ -57,11 +62,10 @@ defineProps({
   color: #35495e;
   text-align: center;
   background: #35495e;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .title {
-  margin-bottom: 10px;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -69,18 +73,19 @@ defineProps({
 
 .title,
 .content {
-  padding: 5px;
+  padding: 8px;
   color: white;
   background: #3b8070;
 }
 
 .content {
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .content a,
 :deep(.content a) {
-  margin-top: 10px;
   color: currentColor;
 }
 </style>

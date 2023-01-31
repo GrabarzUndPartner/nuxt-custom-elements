@@ -23,9 +23,6 @@ const getDefaultOptions = () => {
     name: MODULE_NAME,
     buildDir: null,
     analyzer: false,
-    modern: undefined,
-    polyfill: true,
-    modernPolyfill: false,
     entries: []
   };
 };
@@ -53,14 +50,14 @@ function prepareEntry (entry) {
  * @param {Object} nuxt Nuxt
  * @param {Object} options Module-Options
  */
-function generateEntries (nuxt, moduleOptions) {
+function generateEntries (runtimeDir, nuxt, moduleOptions) {
   return moduleOptions.entries.map((entry) => {
     entry = prepareEntry(entry);
     return {
       name: entry.name,
       template: Object.fromEntries(['client'].map((type) => {
         return [type, {
-          src: path.resolve(__dirname, '../tmpl', 'entry.mjs'),
+          src: path.resolve(runtimeDir, 'tmpl/webpack', 'entry.mjs'),
           options: {
             tags: entry.tags,
             webpackExtend: entry.webpackExtend

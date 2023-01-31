@@ -1,15 +1,14 @@
 
 import http from 'http';
-import { join, resolve as pathResolve } from 'pathe';
+import { join } from 'pathe';
 import { joinURL } from 'ufo';
-// import { Nuxt, Builder } from 'nuxt';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
 import { afterAll, beforeAll, describe, test } from 'vitest';
 import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
-import { loadNuxt, build } from 'nuxt';
+import { createResolver, loadNuxt, buildNuxt } from '@nuxt/kit';
 import nuxtConfig from '../playground/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
@@ -21,22 +20,27 @@ describe('🧐 inspect browser(chromium and firefox)', () => {
 function startTest () {
   let browsers, nuxt, serverUrl;
 
-  const testDir = pathResolve(__dirname, '.browser');
-  const buildDir = join(testDir, '.nuxt');
+  const resolver = createResolver(import.meta.url);
+
+  const rootDir = resolver.resolve('.browser');
+  const srcDir = resolver.resolve('../playground');
+  const buildDir = join(rootDir, '.nuxt');
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
 
   beforeAll(async () => {
     const config = defu({
-      buildDir
-    }, nuxtConfig);
+      rootDir,
+      srcDir
+    }, await nuxtConfig());
 
-    nuxt = await loadNuxt(config);
-    await build(nuxt);
+    nuxt = await loadNuxt({ config });
+    await buildNuxt(nuxt);
 
     browsers = await Promise.all([
       chromium.launch(),
       firefox.launch()
     ]);
+
     const { url } = await startStaticServer(customElementsDir);
     serverUrl = url;
   });
@@ -48,13 +52,13 @@ function startTest () {
   test('check bundle initialization (chrome)', async () => {
     const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
     await page.goto(joinURL(serverUrl, '/example/'));
-    await page.waitForSelector('.custom-element-example');
+    await page.waitForSelector('.custom-element-example-ready');
   });
 
   test('check bundle initialization (firefox)', async () => {
     const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
     await page.goto(joinURL(serverUrl, '/example/'));
-    await page.waitForSelector('.custom-element-example');
+    await page.waitForSelector('.custom-element-example-ready');
   });
 }
 

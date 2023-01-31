@@ -1,7 +1,7 @@
 
 import { readPackage } from 'read-pkg';
 import { defineNuxtConfig } from 'nuxt/config';
-import Module from '../src/module';
+import Module from '../src/module.mjs';
 
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = process.env.NODE_ENV === 'development';
@@ -17,10 +17,6 @@ export default defineNuxtConfig(async () => {
 
     ssr: true,
 
-    webpack: {
-      extractCSS: true
-    },
-
     runtimeConfig: {
       public: {
         GITHUB_REPO_URL: repository.url
@@ -33,8 +29,6 @@ export default defineNuxtConfig(async () => {
 
     customElements: {
       analyzer: !isTest,
-      modern: true,
-      modernPolyfill: true,
       entries: [
         {
           name: 'Example',

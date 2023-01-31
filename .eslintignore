@@ -8,6 +8,6 @@ sw.*
 
 
 # Plugin
-lib/runtime/plugin.tmpl.mjs
-lib/tmpl/entry.mjs
+src/runtime/tmpl/webpack/entry.mjs
+src/runtime/tmpl/plugin.mjs
 

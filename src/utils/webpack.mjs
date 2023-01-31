@@ -47,7 +47,7 @@ function build (webpackConfigs, nuxt) {
   });
 }
 
-async function getWebpackConfig (entryName, nuxt, config, options) {
+async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
   const isModernBuild = config.name === 'modern';
   const buildDir = path.normalize(path.join(getBuildDir(nuxt), entryName));
   const pluginExcludes = [
@@ -74,7 +74,7 @@ async function getWebpackConfig (entryName, nuxt, config, options) {
     return result;
   }, []);
 
-  plugins.splice(htmlWebpackPluginIndex, 0, ...createHtmlWebpackPlugins(options.entries.filter(({ name }) => entryName === name), options.publicPath));
+  plugins.splice(htmlWebpackPluginIndex, 0, ...createHtmlWebpackPlugins(runtimeDir, options.entries.filter(({ name }) => entryName === name), options.publicPath));
 
   plugins.push(...getBundleAnalyzerPlugin(options, config, entryName));
 
@@ -139,12 +139,12 @@ function getBundleAnalyzerPlugin (options, config, entryName) {
   return [];
 }
 
-function createHtmlWebpackPlugin (chunks, publicPath, filename, tags) {
+function createHtmlWebpackPlugin (runtimeDir, chunks, publicPath, filename, tags) {
   filename = filename + '.html';
   return new HtmlWebpackPlugin({
     title: chunks.join(' - '),
     chunks: 'all',
-    template: path.resolve(__dirname, '../tmpl', 'index.html'),
+    template: path.resolve(runtimeDir, '../runtime/tmpl/webpack', 'index.html'),
     filename,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     templateParameters: (compilation, assets, assetTags) => {
@@ -164,9 +164,9 @@ function createHtmlWebpackPlugin (chunks, publicPath, filename, tags) {
   });
 }
 
-function createHtmlWebpackPlugins (entries, publicPath) {
+function createHtmlWebpackPlugins (runtimeDir, entries, publicPath) {
   return [
-    createHtmlWebpackPlugin(entries.map(entry => entry.name), publicPath, 'index', entries.reduce((result, entry) => {
+    createHtmlWebpackPlugin(runtimeDir, entries.map(entry => entry.name), publicPath, 'index', entries.reduce((result, entry) => {
       result.push(...getTagHTMLFromEntry(entry));
       return result;
     }, []))
@@ -200,14 +200,14 @@ function getJSFilesFromStats (stats) {
   };
 }
 
-function prepareConfigs (webpackConfigs, nuxt, options) {
+function prepareConfigs (runtimeDir, webpackConfigs, nuxt, options) {
   const configs = webpackConfigs;
 
   const configNames = ['client'];
   return Promise.all(Object.keys(options.entry).map((entryName) => {
     return Promise.all(configs.filter(config => configNames.includes(config.name))
       .map((config) => {
-        return getWebpackConfig(entryName, nuxt, config, Object.assign({}, options, { entry: { [entryName]: options.entry[String(entryName)] } }));
+        return getWebpackConfig(runtimeDir, entryName, nuxt, config, Object.assign({}, options, { entry: { [entryName]: options.entry[String(entryName)] } }));
       }));
   }));
 }

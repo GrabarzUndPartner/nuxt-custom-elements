@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import {
+  createResolver,
   defineNuxtModule,
   addPluginTemplate,
   addTemplate,
@@ -19,7 +20,13 @@ export default defineNuxtModule({
   defaults: getDefaultOptions(),
 
   setup (moduleOptions, nuxt) {
-    const entries = generateEntries(nuxt, moduleOptions);
+    const resolver = createResolver(import.meta.url);
+
+    const runtimeDir = resolver.resolve('./runtime');
+    nuxt.options.alias['#customElements'] = runtimeDir;
+    nuxt.options.build.transpile.push(runtimeDir);
+
+    const entries = generateEntries(runtimeDir, nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
       Object.keys(template).forEach((type) => {
         const { dst } = addTemplate({
@@ -32,7 +39,7 @@ export default defineNuxtModule({
     }, {});
 
     addPluginTemplate({
-      src: resolve(__dirname, 'runtime', 'plugin.tmpl.mjs'),
+      src: resolve(runtimeDir, 'tmpl', 'plugin.mjs'),
       fileName: 'nuxt-custom-elements-plugin.mjs',
       write: true,
       options: Object.assign({
@@ -41,12 +48,12 @@ export default defineNuxtModule({
       }, moduleOptions)
     });
 
-    registerHooks(nuxt, moduleOptions);
+    registerHooks(runtimeDir, nuxt, moduleOptions);
   }
 
 });
 
-function registerHooks (nuxt, moduleOptions) {
+function registerHooks (runtimeDir, nuxt, moduleOptions) {
   if (!nuxt.options.dev) {
     let webpackConfigs = [];
     nuxt.hook('webpack:config', (configs) => {
@@ -54,7 +61,7 @@ function registerHooks (nuxt, moduleOptions) {
     });
 
     nuxt.hook('build:done', async () => {
-      const configs = await prepareConfigs(webpackConfigs, nuxt, moduleOptions);
+      const configs = await prepareConfigs(runtimeDir, webpackConfigs, nuxt, moduleOptions);
 
       await build(configs, nuxt);
       if (nuxt.options.target !== 'static') {
