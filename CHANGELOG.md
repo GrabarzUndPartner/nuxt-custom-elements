@@ -1,5 +1,17 @@
 # Project Changelog
 
+# [2.0.0-beta.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.1...v2.0.0-beta.1) (2023-01-31)
+
+
+### Performance Improvements
+
+* **nuxt:** migration to `nuxt@3` ([5984ddb](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/5984ddb1cd7ae72a7a259acdea85cd8d3366d7d9))
+
+
+### BREAKING CHANGES
+
+* **nuxt:** Module was optimized for nuxt@3.
+
 ## [1.9.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.0...v1.9.1) (2022-06-20)
 
 
