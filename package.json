@@ -57,7 +57,8 @@
     "change-case": "4.1.2",
     "clone": "2.1.2",
     "defu": "6.1.0",
-    "html-webpack-plugin": "^5.5.0"
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-bundle-analyzer": "^4.7.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.19.1",
