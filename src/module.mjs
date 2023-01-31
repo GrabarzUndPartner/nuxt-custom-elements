@@ -4,10 +4,17 @@ import {
   defineNuxtModule,
   addPluginTemplate,
   addTemplate,
-  isNuxt3
+  isNuxt3,
+  logger
 } from '@nuxt/kit';
-import { build, prepareConfigs } from './utils/webpack.mjs';
 import { generateEntries, getDefaultOptions, getEntriesDir, getEntryNamingMap, onBuildDone, onGeneratedDone } from './utils/index.mjs';
+import WebpackBuilder from './builder/Webpack.mjs';
+import ViteBuilder from './builder/Vite.mjs';
+
+const validBuilders = {
+  '@nuxt/webpack-builder': WebpackBuilder,
+  '@nuxt/vite-builder': ViteBuilder
+};
 
 export default defineNuxtModule({
   meta: {
@@ -24,8 +31,18 @@ export default defineNuxtModule({
 
     const runtimeDir = resolver.resolve('./runtime');
     nuxt.options.alias['#customElements'] = runtimeDir;
+    nuxt.options.alias['#customElementsEntries'] = getEntriesDir(nuxt);
     nuxt.options.build.transpile.push(runtimeDir);
 
+    let builder;
+    if (validBuilders[nuxt.options.builder]) {
+      builder = new validBuilders[nuxt.options.builder](nuxt, moduleOptions, runtimeDir);
+    } else {
+      logger.log(`Current builder \`${nuxt.options.builder}\` is incomaptible.`);
+      return;
+    }
+
+    // create entry app templates
     const entries = generateEntries(runtimeDir, nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
       Object.keys(template).forEach((type) => {
@@ -48,34 +65,28 @@ export default defineNuxtModule({
       }, moduleOptions)
     });
 
-    registerHooks(runtimeDir, nuxt, moduleOptions);
+    if (!nuxt.options.dev) {
+      registerHooks(nuxt, moduleOptions, builder);
+    }
   }
 
 });
 
-function registerHooks (runtimeDir, nuxt, moduleOptions) {
-  if (!nuxt.options.dev) {
-    let webpackConfigs = [];
-    nuxt.hook('webpack:config', (configs) => {
-      return (webpackConfigs = configs);
-    });
+function registerHooks (nuxt, moduleOptions, builder) {
+  nuxt.hook('build:done', async () => {
+    await builder.build();
 
-    nuxt.hook('build:done', async () => {
-      const configs = await prepareConfigs(runtimeDir, webpackConfigs, nuxt, moduleOptions);
-
-      await build(configs, nuxt);
-      if (nuxt.options.target !== 'static') {
-        await onBuildDone(nuxt, moduleOptions);
-      }
-    });
-
-    if (isNuxt3() && nuxt.options._generate) {
-      // TODO: alternative for the `generate:done` hook?
-      nuxt.hook('close', () => {
-        return onGeneratedDone(nuxt, moduleOptions);
-      });
-    } else {
-      nuxt.hook('generate:done', () => onGeneratedDone(nuxt, moduleOptions));
+    if (nuxt.options.target !== 'static') {
+      await onBuildDone(nuxt, moduleOptions);
     }
+  });
+
+  if (isNuxt3() && nuxt.options._generate) {
+    // TODO: alternative for the `generate:done` hook?
+    nuxt.hook('close', () => {
+      return onGeneratedDone(nuxt, moduleOptions);
+    });
+  } else {
+    nuxt.hook('generate:done', () => onGeneratedDone(nuxt, moduleOptions));
   }
 }

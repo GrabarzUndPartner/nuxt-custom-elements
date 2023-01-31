@@ -10,6 +10,7 @@ export default defineNuxtConfig(async () => {
 
   return {
     dev: isDev,
+
     builder: '@nuxt/webpack-builder',
 
     baseUrl: getBaseUrl(),
@@ -20,6 +21,16 @@ export default defineNuxtConfig(async () => {
       public: {
         GITHUB_REPO_URL: repository.url
       }
+    },
+
+    postcss: {
+      plugins: {
+        'postcss-preset-env': {
+          preserve: true,
+          stage: 0
+        }
+      },
+      order: 'cssnanoLast'
     },
 
     devServer: {

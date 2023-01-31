@@ -22,25 +22,7 @@ document.body.classList.add('custom-element-example-ready');
 </script>
 
 <style lang="postcss" scoped>
-/* lato-regular - latin */
-@font-face {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("~assets/fonts/lato-v22-latin/lato-v22-latin-regular.woff2") format("woff2"),
-    url("~assets/fonts/lato-v22-latin/lato-v22-latin-regular.woff") format("woff");
-}
-
-/* lato-700 - latin */
-@font-face {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("~assets/fonts/lato-v22-latin/lato-v22-latin-700.woff2") format("woff2"),
-    url("~assets/fonts/lato-v22-latin/lato-v22-latin-700.woff") format("woff");
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
 .custom-element-example {
   display: flex;

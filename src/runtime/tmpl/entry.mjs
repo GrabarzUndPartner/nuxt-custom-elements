@@ -12,7 +12,7 @@ const defineTags = () => {
     %><%= `  Component = (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i});\n` %><%
     i++;
   }
-%><%= `
+%><%= `console.log('Component', Component)
   CustomElement = defineCustomElement(Component);
   window.customElements.define('${name}', CustomElement);`%>
 <% }); %>

@@ -9,26 +9,31 @@ import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
 import { createResolver, loadNuxt, buildNuxt } from '@nuxt/kit';
+import { paramCase } from 'change-case';
 import nuxtConfig from '../playground/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
-describe('🧐 inspect browser(chromium and firefox)', () => {
-  startTest();
+describe('🧐 inspect browser (@nuxt/webpack-builder) (chromium and firefox)', () => {
+  startTest('@nuxt/webpack-builder');
+});
+describe('🧐 inspect browser (@nuxt/vite-builder) (chromium and firefox)', () => {
+  startTest('@nuxt/vite-builder');
 });
 
-function startTest () {
+function startTest (builder) {
   let browsers, nuxt, serverUrl;
 
   const resolver = createResolver(import.meta.url);
 
-  const rootDir = resolver.resolve('.browser');
+  const rootDir = resolver.resolve(`.browser-${paramCase(builder)}`);
   const srcDir = resolver.resolve('../playground');
   const buildDir = join(rootDir, '.nuxt');
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
 
   beforeAll(async () => {
     const config = defu({
+      builder,
       rootDir,
       srcDir
     }, await nuxtConfig());

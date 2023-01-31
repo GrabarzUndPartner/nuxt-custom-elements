@@ -4,6 +4,7 @@ import Webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import clone from 'clone';
+import { paramCase } from 'change-case';
 
 import { getTagHTMLFromEntry } from './tags.mjs';
 import { getBuildDir, MODULE_NAME, getDefaultWebpackOutputOptions } from './index.mjs';
@@ -29,26 +30,21 @@ async function processBuilds (webpackConfigs, statsList = []) {
   }
 }
 
-function build (webpackConfigs, nuxt) {
-  const builds = processBuilds(webpackConfigs.flat());
-  return builds.then((statsList) => {
-    const releases = statsList.reduce((result, { name, stats }) => {
-      const data = getJSFilesFromStats(stats);
-      result[String(name)] = Object.assign({}, result[String(name)], { [data.name]: data });
-      return result;
-    }, {});
-    return Promise.all(Object.keys(releases).map((name) => {
-      const content = JSON.stringify(releases[String(name)]);
-      const filepath = path.resolve(getBuildDir(nuxt), name, 'release.json');
-      return fs.promises.writeFile(filepath, content, 'utf-8');
-    }));
-  }).catch((err) => {
-    throw err;
-  });
+async function build (nuxt, configs) {
+  const statsList = await processBuilds(configs.flat());
+  const releases = statsList.reduce((result, { name, stats }) => {
+    const data = getJSFilesFromStats(stats);
+    result[String(name)] = Object.assign({}, result[String(name)], { [data.name]: data });
+    return result;
+  }, {});
+  return Promise.all(Object.keys(releases).map((name) => {
+    const content = JSON.stringify(releases[String(name)]);
+    const filepath = path.resolve(getBuildDir(nuxt), name, 'release.json');
+    return fs.promises.writeFile(filepath, content, 'utf-8');
+  }));
 }
 
 async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
-  const isModernBuild = config.name === 'modern';
   const buildDir = path.normalize(path.join(getBuildDir(nuxt), entryName));
   const pluginExcludes = [
     'VueSSRClientPlugin', 'CorsPlugin', 'HtmlWebpackPlugin', 'BundleAnalyzerPlugin',
@@ -61,27 +57,16 @@ async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
   let rules = clone(config.module.rules);
   rules = setLoaderRulesForShadowMode(rules);
 
-  // ModernModePlugin
-  const plugins = config.plugins.reduce((result, plugin) => {
-    if (!pluginExcludes.includes(plugin.constructor.name)) {
-      result.push(...pluginReplace(plugin, {
-        ModernModePlugin: {
-          targetDir: buildDir,
-          isModernBuild
-        }
-      }));
-    }
-    return result;
-  }, []);
+  const plugins = config.plugins.filter(plugin => !pluginExcludes.includes(plugin.constructor.name));
 
-  plugins.splice(htmlWebpackPluginIndex, 0, ...createHtmlWebpackPlugins(runtimeDir, options.entries.filter(({ name }) => entryName === name), options.publicPath));
+  plugins.splice(htmlWebpackPluginIndex, 0, ...createHtmlWebpackPlugins(runtimeDir, options.entries.filter(({ name }) => entryName === paramCase(name)), options.publicPath));
 
   plugins.push(...getBundleAnalyzerPlugin(options, config, entryName));
 
   const output = getDefaultWebpackOutputOptions();
 
   const { filename, chunkFilename } = output;
-  const webpackExtend = options.entries.find(({ name }) => name === entryName).webpackExtend || (config => config);
+  const webpackExtend = options.entries.find(({ name }) => paramCase(name) === entryName).webpackExtend || (config => config);
   return await webpackExtend(Object.assign({}, config, {
     target: 'web',
     entry: prepareEntries(config, options),
@@ -89,7 +74,6 @@ async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
       filename: resolveFilename(filename, config, options),
       chunkFilename: resolveFilename(chunkFilename, config, options),
       path: buildDir
-      // jsonpFunction: getJsonPFunctionName(entryName)
     }),
     optimization: {
       runtimeChunk: false
@@ -173,16 +157,6 @@ function createHtmlWebpackPlugins (runtimeDir, entries, publicPath) {
   ];
 }
 
-function pluginReplace (plugin, replacments) {
-  const keys = Object.keys(replacments);
-  for (let i = 0; i < keys.length; i++) {
-    if (plugin.constructor.name === keys[Number(i)]) {
-      return [].concat(replacments[String(keys[Number(i)])]).map(options => new plugin.constructor(options));
-    }
-  }
-  return [plugin];
-}
-
 function getJSFilesFromStats (stats) {
   const name = stats.compilation.name;
   const assets = stats.toJson().assetsByChunkName;
@@ -200,18 +174,6 @@ function getJSFilesFromStats (stats) {
   };
 }
 
-function prepareConfigs (runtimeDir, webpackConfigs, nuxt, options) {
-  const configs = webpackConfigs;
-
-  const configNames = ['client'];
-  return Promise.all(Object.keys(options.entry).map((entryName) => {
-    return Promise.all(configs.filter(config => configNames.includes(config.name))
-      .map((config) => {
-        return getWebpackConfig(runtimeDir, entryName, nuxt, config, Object.assign({}, options, { entry: { [entryName]: options.entry[String(entryName)] } }));
-      }));
-  }));
-}
-
 function setLoaderRulesForShadowMode (rules) {
   const vueLoaderRule = rules.find(({ test }) => test.test('.vue'));
 
@@ -227,7 +189,12 @@ function setLoaderRulesForShadowMode (rules) {
 export {
   build,
   getWebpackConfig,
-  getJSFilesFromStats,
-  prepareConfigs
+  getJSFilesFromStats
 
 };
+
+export function prepareEntryConfigs (runtimeDir, webpackConfig, nuxt, options) {
+  return Promise.all(Object.keys(options.entry).map((entryName) => {
+    return getWebpackConfig(runtimeDir, entryName, nuxt, webpackConfig, Object.assign({}, options, { entry: { [entryName]: options.entry[String(entryName)] } }));
+  }));
+}

@@ -40,10 +40,11 @@ function prepareEntry (entry) {
       async: tag.async || false
     });
   });
-  return Object.assign(entry, {
+  return {
+    ...entry,
     name: paramCase(entry.name),
     tags
-  });
+  };
 }
 
 /**
@@ -58,9 +59,10 @@ function generateEntries (runtimeDir, nuxt, moduleOptions) {
       name: entry.name,
       template: Object.fromEntries(['client'].map((type) => {
         return [type, {
-          src: path.resolve(runtimeDir, 'tmpl/webpack', 'entry.mjs'),
+          src: path.resolve(runtimeDir, 'tmpl', 'entry.mjs'),
           options: {
             tags: entry.tags,
+            // TODO: Hier muss auhc noch ist der dann auch für vite?
             webpackExtend: entry.webpackExtend
           },
           fileName: path.resolve(getEntriesDir(nuxt), `${entry.name}.${type}.mjs`)
@@ -140,6 +142,7 @@ function getDefaultWebpackOutputOptions () {
 }
 
 export {
+  logger,
   MODULE_NAME,
   getEntriesDir,
   getBuildDir,
