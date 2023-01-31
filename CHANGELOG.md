@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2023-01-31)
+
+
+### Bug Fixes
+
+* **webpack:** remove `release.json` generate ([7633255](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/763325553977e28a2f8048fd6dd721cf8525c849))
+
 # [2.0.0-beta.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2023-01-31)
 
 
