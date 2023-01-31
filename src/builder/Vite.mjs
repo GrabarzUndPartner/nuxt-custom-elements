@@ -40,18 +40,5 @@ export default class ViteBuilder extends Builder {
         encoding: 'utf-8'
       });
     }));
-
-    // const releases = builds.reduce((result, { name, stats }) => {
-    // // const data = getJSFilesFromStats(stats);
-    //   const data = {};
-    //   result[String(name)] = Object.assign({}, result[String(name)], { [data.name]: data });
-    //   return result;
-    // }, {});
-
-    // return Promise.all(Object.keys(releases).map((name) => {
-    //   const content = JSON.stringify(releases[String(name)]);
-    //   const filepath = resolve(getBuildDir(this.nuxt), name, 'release.json');
-    //   return fs.promises.writeFile(filepath, content, 'utf-8');
-    // }));
   }
 }

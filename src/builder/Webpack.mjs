@@ -17,6 +17,6 @@ export default class WebpackBuilder extends Builder {
 
   async build () {
     const configs = await prepareEntryConfigs(this.runtimeDir, this.config, this.nuxt, this.moduleOptions);
-    return build(this.nuxt, configs);
+    return build(configs.flat());
   }
 }

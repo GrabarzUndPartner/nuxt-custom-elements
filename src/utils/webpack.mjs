@@ -1,4 +1,3 @@
-import fs from 'fs';
 import path from 'pathe';
 import Webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -20,28 +19,14 @@ function webpackBuild (config) {
   });
 }
 
-async function processBuilds (webpackConfigs, statsList = []) {
+async function build (webpackConfigs, statsList = []) {
   const configs = webpackConfigs.splice(0, Math.min(1, webpackConfigs.length));
   if (configs.length > 0) {
     const stats = await Promise.all(configs.map(async config => ({ name: Object.keys(config.entry)[0], stats: await webpackBuild(config) })));
-    return processBuilds(webpackConfigs, statsList.concat(stats));
+    return build(webpackConfigs, statsList.concat(stats));
   } else {
     return statsList;
   }
-}
-
-async function build (nuxt, configs) {
-  const statsList = await processBuilds(configs.flat());
-  const releases = statsList.reduce((result, { name, stats }) => {
-    const data = getJSFilesFromStats(stats);
-    result[String(name)] = Object.assign({}, result[String(name)], { [data.name]: data });
-    return result;
-  }, {});
-  return Promise.all(Object.keys(releases).map((name) => {
-    const content = JSON.stringify(releases[String(name)]);
-    const filepath = path.resolve(getBuildDir(nuxt), name, 'release.json');
-    return fs.promises.writeFile(filepath, content, 'utf-8');
-  }));
 }
 
 async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
@@ -157,23 +142,6 @@ function createHtmlWebpackPlugins (runtimeDir, entries, publicPath) {
   ];
 }
 
-function getJSFilesFromStats (stats) {
-  const name = stats.compilation.name;
-  const assets = stats.toJson().assetsByChunkName;
-  const files = Object.keys(assets).map((asset) => {
-    return {
-      asset,
-      file: assets[String(asset)]
-    };
-  });
-  return {
-    timestamp: stats.endTime,
-    hash: stats.hash,
-    name,
-    files
-  };
-}
-
 function setLoaderRulesForShadowMode (rules) {
   const vueLoaderRule = rules.find(({ test }) => test.test('.vue'));
 
@@ -188,8 +156,7 @@ function setLoaderRulesForShadowMode (rules) {
 
 export {
   build,
-  getWebpackConfig,
-  getJSFilesFromStats
+  getWebpackConfig
 
 };
 
