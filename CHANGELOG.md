@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [2.0.0-beta.4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.3...v2.0.0-beta.4) (2023-01-31)
+
+
+### Bug Fixes
+
+* **entries:** fix multiple entries; fix async tags ([995dee0](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/995dee017951aa619a49aeb26b707c6cd9210f43))
+* **vite:** fix vite html template ([54f92dc](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/54f92dc3e37793eeb07abaab215dfeaaa11a9631))
+
 # [2.0.0-beta.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2023-01-31)
 
 
