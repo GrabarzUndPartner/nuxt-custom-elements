@@ -11,7 +11,7 @@ export default defineNuxtConfig(async () => {
   return {
     dev: isDev,
 
-    builder: '@nuxt/webpack-builder',
+    // builder: '@nuxt/webpack-builder',
 
     baseUrl: getBaseUrl(),
 
