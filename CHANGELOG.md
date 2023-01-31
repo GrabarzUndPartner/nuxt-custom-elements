@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.3](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.2...v2.0.0-beta.3) (2023-01-31)
+
+
+### Bug Fixes
+
+* **deps:** added missing `webpack-bundle-analyzer` dependency ([6dcb7d9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/6dcb7d985332e242dd5dd23fc1e4e9f8ec10909e))
+
 # [2.0.0-beta.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.1...v2.0.0-beta.2) (2023-01-31)
 
 
