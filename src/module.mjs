@@ -69,10 +69,9 @@ function registerHooks (runtimeDir, nuxt, moduleOptions) {
       }
     });
 
-    if (isNuxt3() && nuxt.options.target !== 'static') {
+    if (isNuxt3() && nuxt.options._generate) {
       // TODO: alternative for the `generate:done` hook?
       nuxt.hook('close', () => {
-        debugger;
         return onGeneratedDone(nuxt, moduleOptions);
       });
     } else {

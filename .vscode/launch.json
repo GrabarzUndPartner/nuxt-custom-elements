@@ -119,5 +119,20 @@
         "playground"
       ]
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug (nuxi:prepare)",
+      "runtimeVersion": "16.17.1",
+      "runtimeArgs": [
+        "--inspect"
+      ],
+      "program": "${workspaceFolder}/node_modules/.bin/nuxt",
+      "outputCapture": "std",
+      "args": [
+        "prepare",
+        "playground"
+      ]
+    },
   ]
 }

@@ -4,6 +4,7 @@ import { paramCase, pascalCase } from 'change-case';
 import consola from 'consola';
 
 const MODULE_NAME = 'nuxt-custom-elements';
+const logger = consola.withTag(MODULE_NAME);
 
 const BUILD_DIR = 'dist';
 const ENTRIES_DIR = 'entries';
@@ -75,9 +76,13 @@ async function copyBuild (from, to) {
   } catch (error) {
     // directory not found
   }
-  await fs.promises.cp(from, to, { recursive: true });
-  consola.info(`Custom-Elements output directory: ${to}`);
-  consola.success('Generated Custom-Elements!');
+  try {
+    await fs.promises.cp(from, to, { recursive: true });
+    logger.info(`Entries output directory: ${to}`);
+    logger.success('Generated entries!');
+  } catch (error) {
+    logger.warn('Generated entries `dist` is missing!');
+  }
 }
 
 async function onBuildDone (nuxt, options) {
