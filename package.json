@@ -30,7 +30,8 @@
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
   "files": [
-    "dist/**"
+    "dist/**",
+    "dist/**/*.json"
   ],
   "scripts": {
     "prepack": "nuxt-module-build",
