@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [2.0.0-beta.10](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2023-02-25)
+
+
+### Bug Fixes
+
+* **npm:** clean package files ([8f53148](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/8f53148b4de94e4b26fe4753d619980b5749069f))
+* **npm:** remove comma… ([690c73d](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/690c73d2c0c1f941414bbe58ebda05f59b8929d9))
+
 # [2.0.0-beta.9](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.8...v2.0.0-beta.9) (2023-02-25)
 
 
