@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.8](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.7...v2.0.0-beta.8) (2023-02-25)
+
+
+### Bug Fixes
+
+* **npm:** fix package.json files test 2 ([823f009](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/823f009c861745c1ccc8bf2b82fd4fdd9a13c567))
+
 # [2.0.0-beta.7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.6...v2.0.0-beta.7) (2023-02-25)
 
 
