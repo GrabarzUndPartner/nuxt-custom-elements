@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [2.0.0-beta.6](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.5...v2.0.0-beta.6) (2023-02-25)
+
+
+### Bug Fixes
+
+* **deps:** pin `@nuxt/webpack-builder` ([83f0846](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/83f0846a0673ba876adcb381539c86f4c23a64a9))
+* **deps:** update dependencies ([ac29042](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/ac2904203bc3d7f8238afa31e33d4014b9ee444d))
+
 # [2.0.0-beta.5](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.4...v2.0.0-beta.5) (2023-01-31)
 
 
