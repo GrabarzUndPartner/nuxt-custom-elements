@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Express-Server (dist)",
-      "runtimeVersion": "16.14.2",
+      "runtimeVersion": "19.5.0",
       "program": "${workspaceFolder}/tools/express-server",
       "outputCapture": "std",
       "args": [
@@ -17,7 +17,7 @@
       "type": "node",
       "request": "launch",
       "name": "Express-Server (build/dist)",
-      "runtimeVersion": "16.14.2",
+      "runtimeVersion": "19.5.0",
       "program": "${workspaceFolder}/tools/express-server",
       "outputCapture": "std",
       "args": [
@@ -29,7 +29,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxi:generate)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -46,7 +46,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxi:build)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -61,7 +61,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxi:dev)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -76,7 +76,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxt:generate)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -93,7 +93,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxt:build)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -108,7 +108,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxt:dev)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
@@ -123,7 +123,7 @@
       "type": "node",
       "request": "launch",
       "name": "Debug (nuxi:prepare)",
-      "runtimeVersion": "16.17.1",
+      "runtimeVersion": "19.5.0",
       "runtimeArgs": [
         "--inspect"
       ],
