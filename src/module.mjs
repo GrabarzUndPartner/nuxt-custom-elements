@@ -4,10 +4,9 @@ import {
   defineNuxtModule,
   addPluginTemplate,
   addTemplate,
-  isNuxt3,
   logger
 } from '@nuxt/kit';
-import { generateEntries, getDefaultOptions, getEntriesDir, getEntryNamingMap, onBuildDone, onGeneratedDone } from './utils/index.mjs';
+import { generateEntries, getDefaultOptions, getEntriesDir, getEntryNamingMap, onClose } from './utils/index.mjs';
 import WebpackBuilder from './builder/Webpack.mjs';
 import ViteBuilder from './builder/Vite.mjs';
 
@@ -75,18 +74,9 @@ export default defineNuxtModule({
 function registerHooks (nuxt, moduleOptions, builder) {
   nuxt.hook('build:done', async () => {
     await builder.build();
-
-    if (nuxt.options.target !== 'static') {
-      await onBuildDone(nuxt, moduleOptions);
-    }
   });
 
-  if (isNuxt3() && nuxt.options._generate) {
-    // TODO: alternative for the `generate:done` hook?
-    nuxt.hook('close', () => {
-      return onGeneratedDone(nuxt, moduleOptions);
-    });
-  } else {
-    nuxt.hook('generate:done', () => onGeneratedDone(nuxt, moduleOptions));
-  }
+  nuxt.hook('close', () => {
+    return onClose(nuxt, moduleOptions);
+  });
 }

@@ -80,20 +80,14 @@ async function copyBuild (from, to) {
   }
   try {
     await fs.promises.cp(from, to, { recursive: true });
-    logger.info(`Entries output directory: ${to}`);
+    logger.info(`Entries output directory: \`${to}\``);
     logger.success('Generated entries!');
   } catch (error) {
     logger.warn('Generated entries `dist` is missing!');
   }
 }
 
-async function onBuildDone (nuxt, options) {
-  if (options.buildDir) {
-    await copyBuild(getBuildDir(nuxt), options.buildDir);
-  }
-}
-
-async function onGeneratedDone (nuxt, options) {
+async function onClose (nuxt, options) {
   const buildDir = getBuildDir(nuxt);
   let distPath = getDistDir(nuxt);
 
@@ -149,8 +143,7 @@ export {
   getDistDir,
   getDefaultOptions,
   generateEntries,
-  onBuildDone,
-  onGeneratedDone,
+  onClose,
   getEntryNamingMap,
   getDefaultWebpackOutputOptions
 };
