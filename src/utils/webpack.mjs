@@ -1,14 +1,12 @@
 import path from 'pathe';
-import Webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import clone from 'clone';
 import { paramCase } from 'change-case';
 
 import { getTagHTMLFromEntry } from './tags.mjs';
 import { getBuildDir, MODULE_NAME, getDefaultWebpackOutputOptions } from './index.mjs';
 
-function webpackBuild (config) {
+async function webpackBuild (config) {
+  const Webpack = await import('webpack').then(module => module.default);
   return new Promise((resolve) => {
     Webpack(config, (err, stats) => {
       if (err || stats.hasErrors()) {
@@ -44,9 +42,9 @@ async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
 
   const plugins = config.plugins.filter(plugin => !pluginExcludes.includes(plugin.constructor.name));
 
-  plugins.splice(htmlWebpackPluginIndex, 0, ...createHtmlWebpackPlugins(runtimeDir, options.entries.filter(({ name }) => entryName === paramCase(name)), options.publicPath));
+  plugins.splice(htmlWebpackPluginIndex, 0, ...(await createHtmlWebpackPlugins(runtimeDir, options.entries.filter(({ name }) => entryName === paramCase(name)), options.publicPath)));
 
-  plugins.push(...getBundleAnalyzerPlugin(options, config, entryName));
+  plugins.push(...(await getBundleAnalyzerPlugin(options, config, entryName)));
 
   const output = getDefaultWebpackOutputOptions();
 
@@ -90,7 +88,8 @@ function prepareEntries (config, options) {
   }));
 }
 
-function getBundleAnalyzerPlugin (options, config, entryName) {
+async function getBundleAnalyzerPlugin (options, config, entryName) {
+  const { BundleAnalyzerPlugin } = await import('webpack-bundle-analyzer');
   // BundleAnalyzerPlugin
   if (options.analyzer) {
     const analyzerOptions = Object.assign({
@@ -108,7 +107,8 @@ function getBundleAnalyzerPlugin (options, config, entryName) {
   return [];
 }
 
-function createHtmlWebpackPlugin (runtimeDir, chunks, publicPath, filename, tags) {
+async function createHtmlWebpackPlugin (runtimeDir, chunks, publicPath, filename, tags) {
+  const HtmlWebpackPlugin = await import('html-webpack-plugin').then(module => module.default);
   filename = filename + '.html';
   return new HtmlWebpackPlugin({
     title: chunks.join(' - '),
@@ -133,9 +133,9 @@ function createHtmlWebpackPlugin (runtimeDir, chunks, publicPath, filename, tags
   });
 }
 
-function createHtmlWebpackPlugins (runtimeDir, entries, publicPath) {
+async function createHtmlWebpackPlugins (runtimeDir, entries, publicPath) {
   return [
-    createHtmlWebpackPlugin(runtimeDir, entries.map(entry => entry.name), publicPath, 'index', entries.reduce((result, entry) => {
+    await createHtmlWebpackPlugin(runtimeDir, entries.map(entry => entry.name), publicPath, 'index', entries.reduce((result, entry) => {
       result.push(...getTagHTMLFromEntry(entry));
       return result;
     }, []))
