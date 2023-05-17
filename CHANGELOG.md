@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [2.0.0-beta.11](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.10...v2.0.0-beta.11) (2023-05-17)
+
+
+### Bug Fixes
+
+* **webpack:** added dynamic imports for webpack ([1bf0c5a](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/1bf0c5a6bb506302da253480de434872d9cf5e90))
+* **webpack:** remove log ([f1b887e](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/f1b887e70c2da2c84bc0f0a4339acbab97704c40))
+
 # [2.0.0-beta.10](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.9...v2.0.0-beta.10) (2023-02-25)
 
 
