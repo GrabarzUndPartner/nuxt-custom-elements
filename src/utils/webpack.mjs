@@ -7,7 +7,6 @@ import { getBuildDir, MODULE_NAME, getDefaultWebpackOutputOptions } from './inde
 
 async function webpackBuild (config) {
   const Webpack = await import('webpack').then(module => module.default);
-  console.log(Webpack);
   return new Promise((resolve) => {
     Webpack(config, (err, stats) => {
       if (err || stats.hasErrors()) {
