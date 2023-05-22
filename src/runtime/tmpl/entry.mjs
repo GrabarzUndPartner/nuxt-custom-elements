@@ -5,12 +5,11 @@ import { defineAsyncComponent, defineCustomElement } from 'vue'
 
 const defineTags = () => {
   const elements = [
-<% let i = 0; %><%= options.tags.map(function ({ async, name, path }) {
+<%= options.tags.map(function ({ async, name, path }, i) {
   if (async) {
     return`    ['${name}', defineAsyncComponent(() => { return import('${path}').then(module => (typeof module.default === 'function' ? (new module.default).$options : module.default) ); })]`;
   } else {
     return`    ['${name}', (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i})]`;
-    i++;
   }
  }).join(',\n') %>
   ].forEach(([name, component]) => {
