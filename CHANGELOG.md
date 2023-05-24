@@ -1,5 +1,13 @@
 # Project Changelog
 
+# [2.0.0-beta.13](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2023-05-24)
+
+
+### Bug Fixes
+
+* **entries:** multiple entries non-asynn ([286e881](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/286e881ff40189eeb26c03480c665a6159f879e5))
+* loop and iterate entry tags ([6a367e1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/6a367e196fd121a0ad7b438aefd4721f2a6f6e4f))
+
 # [2.0.0-beta.12](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.11...v2.0.0-beta.12) (2023-05-17)
 
 
