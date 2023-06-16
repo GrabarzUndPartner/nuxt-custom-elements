@@ -3,7 +3,7 @@
     "@nuxtjs"
   ],
   "baseBranches": [
-    "main"
+    "beta"
   ],
   "packageRules": [
     {
@@ -14,7 +14,7 @@
         "enabled": true
       },
       "separateMultipleMajor": true,
-      "allowedVersions": "^16"
+      "allowedVersions": "^19"
     }
   ],
   "rangeStrategy": "pin"
