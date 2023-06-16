@@ -1,9 +1,10 @@
-import { resolve } from 'pathe';
+import { resolve, join } from 'pathe';
 import {
   createResolver,
   defineNuxtModule,
   addPluginTemplate,
   addTemplate,
+  addImports,
   logger
 } from '@nuxt/kit';
 import {
@@ -11,6 +12,7 @@ import {
   getDefaultOptions,
   getEntriesDir,
   getEntryNamingMap,
+  getModuleDir,
   onClose
 } from './utils/index.mjs';
 import WebpackBuilder from './builder/Webpack.mjs';
@@ -67,9 +69,19 @@ export default defineNuxtModule({
       return result;
     }, {});
 
+    addTemplate({
+      src: resolve(runtimeDir, 'tmpl', 'entries.mjs'),
+      fileName: join(getModuleDir(nuxt), 'entries.mjs'),
+      write: true,
+      options: Object.assign({
+        entriesDir: getEntriesDir(nuxt),
+        entryMap: getEntryNamingMap(moduleOptions)
+      })
+    });
+
     addPluginTemplate({
       src: resolve(runtimeDir, 'tmpl', 'plugin.mjs'),
-      fileName: 'nuxt-custom-elements-plugin.mjs',
+      fileName: join(getModuleDir(nuxt), 'plugin.mjs'),
       write: true,
       options: Object.assign(
         {
@@ -78,6 +90,12 @@ export default defineNuxtModule({
         },
         moduleOptions
       )
+    });
+
+    addImports({
+      name: 'useCustomElements',
+      as: 'useCustomElements',
+      from: resolve(runtimeDir, 'composables/useCustomElements.mjs')
     });
 
     if (!nuxt.options.dev) {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <github-corner :url="$config.GITHUB_REPO_URL" />
+    <github-corner :url="$config.public.githubRepoUrl" />
     <div class="logo">
       <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements" />
     </div>
@@ -15,17 +15,12 @@
   </div>
 </template>
 
-<script>
-import CustomElementExample from '@/components/Example.vue';
+<script setup>
+import { useCustomElements } from '#imports';
 
-// import GithubCorner from '@/components/GithubCorner';
+const { registerEntry } = useCustomElements();
 
-export default {
-  components: { CustomElementExample },
-  created() {
-    this.$customElements.registerEntry('example');
-  }
-};
+registerEntry('example');
 </script>
 
 <style lang="postcss">

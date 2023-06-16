@@ -3,23 +3,26 @@ import path from 'pathe';
 import { paramCase, pascalCase } from 'change-case';
 import consola from 'consola';
 
-const MODULE_NAME = 'nuxt-custom-elements';
-const logger = consola.withTag(MODULE_NAME);
+export const MODULE_NAME = 'nuxt-custom-elements';
+export const logger = consola.withTag(MODULE_NAME);
 
 const BUILD_DIR = 'dist';
 const ENTRIES_DIR = 'entries';
 
-function getEntriesDir(nuxt) {
-  return path.resolve(nuxt.options.buildDir, MODULE_NAME, ENTRIES_DIR);
+export function getModuleDir(nuxt) {
+  return path.resolve(nuxt.options.buildDir, MODULE_NAME);
 }
-function getBuildDir(nuxt) {
-  return path.resolve(nuxt.options.buildDir, MODULE_NAME, BUILD_DIR);
+export function getEntriesDir(nuxt) {
+  return path.resolve(getModuleDir(nuxt), ENTRIES_DIR);
 }
-function getDistDir(nuxt) {
+export function getBuildDir(nuxt) {
+  return path.resolve(getModuleDir(nuxt), BUILD_DIR);
+}
+export function getDistDir(nuxt) {
   return path.resolve(nuxt._nitro.options.output.publicDir, MODULE_NAME);
 }
 
-const getDefaultOptions = () => {
+export const getDefaultOptions = () => {
   return {
     name: MODULE_NAME,
     buildDir: null,
@@ -52,7 +55,7 @@ function prepareEntry(entry) {
  * @param {Object} nuxt Nuxt
  * @param {Object} options Module-Options
  */
-function generateEntries(runtimeDir, nuxt, moduleOptions) {
+export function generateEntries(runtimeDir, nuxt, moduleOptions) {
   return moduleOptions.entries.map(entry => {
     entry = prepareEntry(entry);
     return {
@@ -95,7 +98,7 @@ async function copyBuild(from, to) {
   }
 }
 
-async function onClose(nuxt, options) {
+export async function onClose(nuxt, options) {
   const buildDir = getBuildDir(nuxt);
   let distPath = getDistDir(nuxt);
 
@@ -107,7 +110,7 @@ async function onClose(nuxt, options) {
   await copyBuild(buildDir, distPath);
 }
 
-function getEntryNamingMap(options) {
+export function getEntryNamingMap(options) {
   return options.entries.reduce((result, { name }) => {
     result[String(pascalCase(name))] = paramCase(name);
     result[String(paramCase(name))] = paramCase(name);
@@ -134,23 +137,10 @@ function DEFAULT_CHUNK_FILENAME_FUNC(webpackConfig, moduleOptions) {
     return '[name].js';
   }
 }
-function getDefaultWebpackOutputOptions() {
+export function getDefaultWebpackOutputOptions() {
   return {
     filename: DEFAULT_FILENAME_FUNC,
     chunkFilename: DEFAULT_CHUNK_FILENAME_FUNC,
     publicPath: './'
   };
 }
-
-export {
-  logger,
-  MODULE_NAME,
-  getEntriesDir,
-  getBuildDir,
-  getDistDir,
-  getDefaultOptions,
-  generateEntries,
-  onClose,
-  getEntryNamingMap,
-  getDefaultWebpackOutputOptions
-};

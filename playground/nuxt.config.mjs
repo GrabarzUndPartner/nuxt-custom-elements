@@ -5,7 +5,7 @@ const isTest = process.env.NODE_ENV === 'test';
 const isDev = process.env.NODE_ENV === 'development';
 
 export default defineNuxtConfig(async () => {
-  const { repository } = await readPackage();
+  const { homepage } = await readPackage();
 
   return {
     dev: isDev,
@@ -18,7 +18,7 @@ export default defineNuxtConfig(async () => {
 
     runtimeConfig: {
       public: {
-        GITHUB_REPO_URL: repository.url
+        githubRepoUrl: homepage
       }
     },
 
@@ -48,7 +48,7 @@ export default defineNuxtConfig(async () => {
             {
               async: false,
               name: 'CustomElementExample',
-              path: '@/components/Example',
+              path: '@/components/Example.ce.vue',
               options: {
                 props: {
                   title: 'Live Example'
