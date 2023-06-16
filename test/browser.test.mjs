@@ -1,4 +1,3 @@
-
 import http from 'http';
 import { join } from 'pathe';
 import { joinURL } from 'ufo';
@@ -21,7 +20,7 @@ describe('🧐 inspect browser (@nuxt/vite-builder) (chromium and firefox)', () 
   startTest('@nuxt/vite-builder');
 });
 
-function startTest (builder) {
+function startTest(builder) {
   let browsers, nuxt, serverUrl;
 
   const resolver = createResolver(import.meta.url);
@@ -32,19 +31,19 @@ function startTest (builder) {
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
 
   beforeAll(async () => {
-    const config = defu({
-      builder,
-      rootDir,
-      srcDir
-    }, await nuxtConfig());
+    const config = defu(
+      {
+        builder,
+        rootDir,
+        srcDir
+      },
+      await nuxtConfig()
+    );
 
     nuxt = await loadNuxt({ config });
     await buildNuxt(nuxt);
 
-    browsers = await Promise.all([
-      chromium.launch(),
-      firefox.launch()
-    ]);
+    browsers = await Promise.all([chromium.launch(), firefox.launch()]);
 
     const { url } = await startStaticServer(customElementsDir);
     serverUrl = url;
@@ -55,24 +54,24 @@ function startTest (builder) {
   });
 
   test('check bundle initialization (chrome)', async () => {
-    const page = await (browsers[Number(BROWSERS.CHROMIUM)]).newPage();
+    const page = await browsers[Number(BROWSERS.CHROMIUM)].newPage();
     await page.goto(joinURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example-ready');
   });
 
   test('check bundle initialization (firefox)', async () => {
-    const page = await (browsers[Number(BROWSERS.FIREFOX)]).newPage();
+    const page = await browsers[Number(BROWSERS.FIREFOX)].newPage();
     await page.goto(joinURL(serverUrl, '/example/'));
     await page.waitForSelector('.custom-element-example-ready');
   });
 }
 
 export const startStaticServer = async (dist, port, hostname = 'localhost') => {
-  port = port || await getPort();
+  port = port || (await getPort());
   const serve = serveStatic(dist);
-  const server = http.createServer(function onRequest (req, res) {
+  const server = http.createServer(function onRequest(req, res) {
     serve(req, res, finalhandler(req, res));
   });
   server.listen({ port, hostname });
-  return { server, url: (new URL(`http://${hostname}:${port}`)).toString() };
+  return { server, url: new URL(`http://${hostname}:${port}`).toString() };
 };

@@ -1,4 +1,3 @@
-
 import theme from '@nuxt/content-theme-docs';
 import nuxtCustomElementsPkg from '../package.json';
 
@@ -32,13 +31,12 @@ export default theme({
   generate: {
     dir: getDistPath()
   }
-
 });
 
-function getDistPath () {
+function getDistPath() {
   return process.env.npm_config_dist || process.env.DIST_PATH || 'dist';
 }
 
-function getPort () {
+function getPort() {
   return process.env.npm_config_port || process.env.PORT || 3000;
 }

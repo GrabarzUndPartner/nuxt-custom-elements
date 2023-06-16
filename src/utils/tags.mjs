@@ -1,6 +1,6 @@
 import { paramCase } from 'change-case';
 
-function getTagsFromEntry (entry) {
+function getTagsFromEntry(entry) {
   const tags = [];
   if ('tags' in entry) {
     tags.push(...entry.tags);
@@ -10,9 +10,10 @@ function getTagsFromEntry (entry) {
   return tags;
 }
 
-function getTagHTMLFromEntry (entry) {
-  return getTagsFromEntry(entry).map((tag) => {
-    const options = typeof tag.options === 'function' ? tag.options() : (tag.options || {});
+function getTagHTMLFromEntry(entry) {
+  return getTagsFromEntry(entry).map(tag => {
+    const options =
+      typeof tag.options === 'function' ? tag.options() : tag.options || {};
 
     let props = [];
     if ('props' in options) {
@@ -21,7 +22,7 @@ function getTagHTMLFromEntry (entry) {
         props = options.props.map(prop => `${paramCase(prop)}=""`);
       } else {
         // object {'prop-a': 'val-a', 'prop-b': 'val-a'}
-        props = (Object.keys(options.props || {})).reduce((result, prop) => {
+        props = Object.keys(options.props || {}).reduce((result, prop) => {
           const value = options.props[String(prop)];
           if (typeof value !== 'object') {
             result.push(`${paramCase(prop)}="${value}"`);
@@ -36,7 +37,4 @@ function getTagHTMLFromEntry (entry) {
   });
 }
 
-export {
-  getTagsFromEntry,
-  getTagHTMLFromEntry
-};
+export { getTagsFromEntry, getTagHTMLFromEntry };

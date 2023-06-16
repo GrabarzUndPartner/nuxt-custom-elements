@@ -18,11 +18,10 @@ defineProps({
 });
 
 document.body.classList.add('custom-element-example-ready');
-
 </script>
 
 <style lang="postcss" scoped>
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .custom-element-example {
   display: flex;
@@ -30,16 +29,8 @@ document.body.classList.add('custom-element-example-ready');
   gap: 16px;
   min-width: 300px;
   padding: 8px;
-  font-family:
-    Lato,
-    "Source Sans Pro",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: Lato, 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   color: #35495e;
   text-align: center;

@@ -6,7 +6,13 @@ import {
   addTemplate,
   logger
 } from '@nuxt/kit';
-import { generateEntries, getDefaultOptions, getEntriesDir, getEntryNamingMap, onClose } from './utils/index.mjs';
+import {
+  generateEntries,
+  getDefaultOptions,
+  getEntriesDir,
+  getEntryNamingMap,
+  onClose
+} from './utils/index.mjs';
 import WebpackBuilder from './builder/Webpack.mjs';
 import ViteBuilder from './builder/Vite.mjs';
 
@@ -25,7 +31,7 @@ export default defineNuxtModule({
   },
   defaults: getDefaultOptions(),
 
-  setup (moduleOptions, nuxt) {
+  setup(moduleOptions, nuxt) {
     const resolver = createResolver(import.meta.url);
 
     const runtimeDir = resolver.resolve('./runtime');
@@ -35,21 +41,28 @@ export default defineNuxtModule({
 
     let builder;
     if (validBuilders[nuxt.options.builder]) {
-      builder = new validBuilders[nuxt.options.builder](nuxt, moduleOptions, runtimeDir);
+      builder = new validBuilders[nuxt.options.builder](
+        nuxt,
+        moduleOptions,
+        runtimeDir
+      );
     } else {
-      logger.log(`Current builder \`${nuxt.options.builder}\` is incomaptible.`);
+      logger.log(
+        `Current builder \`${nuxt.options.builder}\` is incomaptible.`
+      );
       return;
     }
 
     // create entry templates
     const entries = generateEntries(runtimeDir, nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
-      Object.keys(template).forEach((type) => {
+      Object.keys(template).forEach(type => {
         const { dst } = addTemplate({
           ...template[String(type)],
           write: true
         });
-        (result[String(name)] || (result[String(name)] = {}))[String(type)] = dst;
+        (result[String(name)] || (result[String(name)] = {}))[String(type)] =
+          dst;
       });
       return result;
     }, {});
@@ -58,20 +71,22 @@ export default defineNuxtModule({
       src: resolve(runtimeDir, 'tmpl', 'plugin.mjs'),
       fileName: 'nuxt-custom-elements-plugin.mjs',
       write: true,
-      options: Object.assign({
-        entriesDir: getEntriesDir(nuxt),
-        entryMap: getEntryNamingMap(moduleOptions)
-      }, moduleOptions)
+      options: Object.assign(
+        {
+          entriesDir: getEntriesDir(nuxt),
+          entryMap: getEntryNamingMap(moduleOptions)
+        },
+        moduleOptions
+      )
     });
 
     if (!nuxt.options.dev) {
       registerHooks(nuxt, moduleOptions, builder);
     }
   }
-
 });
 
-function registerHooks (nuxt, moduleOptions, builder) {
+function registerHooks(nuxt, moduleOptions, builder) {
   nuxt.hook('build:done', async () => {
     await builder.build();
   });

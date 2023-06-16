@@ -9,13 +9,13 @@ const logger = consola.withTag(MODULE_NAME);
 const BUILD_DIR = 'dist';
 const ENTRIES_DIR = 'entries';
 
-function getEntriesDir (nuxt) {
+function getEntriesDir(nuxt) {
   return path.resolve(nuxt.options.buildDir, MODULE_NAME, ENTRIES_DIR);
 }
-function getBuildDir (nuxt) {
+function getBuildDir(nuxt) {
   return path.resolve(nuxt.options.buildDir, MODULE_NAME, BUILD_DIR);
 }
-function getDistDir (nuxt) {
+function getDistDir(nuxt) {
   return path.resolve(nuxt._nitro.options.output.publicDir, MODULE_NAME);
 }
 
@@ -32,8 +32,8 @@ const getDefaultOptions = () => {
  * Prepare entry and its tags.
  * @param {Object} entry Endpoint-Entry
  */
-function prepareEntry (entry) {
-  const tags = entry.tags.map((tag) => {
+function prepareEntry(entry) {
+  const tags = entry.tags.map(tag => {
     return Object.assign(tag, {
       name: paramCase(tag.name),
       options: tag.options,
@@ -52,27 +52,35 @@ function prepareEntry (entry) {
  * @param {Object} nuxt Nuxt
  * @param {Object} options Module-Options
  */
-function generateEntries (runtimeDir, nuxt, moduleOptions) {
-  return moduleOptions.entries.map((entry) => {
+function generateEntries(runtimeDir, nuxt, moduleOptions) {
+  return moduleOptions.entries.map(entry => {
     entry = prepareEntry(entry);
     return {
       name: entry.name,
-      template: Object.fromEntries(['client'].map((type) => {
-        return [type, {
-          src: path.resolve(runtimeDir, 'tmpl', 'entry.mjs'),
-          options: {
-            tags: entry.tags,
-            // TODO: Hier muss auhc noch ist der dann auch für vite?
-            webpackExtend: entry.webpackExtend
-          },
-          fileName: path.resolve(getEntriesDir(nuxt), `${entry.name}.${type}.mjs`)
-        }];
-      }))
+      template: Object.fromEntries(
+        ['client'].map(type => {
+          return [
+            type,
+            {
+              src: path.resolve(runtimeDir, 'tmpl', 'entry.mjs'),
+              options: {
+                tags: entry.tags,
+                // TODO: Hier muss auhc noch ist der dann auch für vite?
+                webpackExtend: entry.webpackExtend
+              },
+              fileName: path.resolve(
+                getEntriesDir(nuxt),
+                `${entry.name}.${type}.mjs`
+              )
+            }
+          ];
+        })
+      )
     };
   });
 }
 
-async function copyBuild (from, to) {
+async function copyBuild(from, to) {
   try {
     await fs.promises.rm(to, { recursive: true, force: true });
   } catch (error) {
@@ -87,7 +95,7 @@ async function copyBuild (from, to) {
   }
 }
 
-async function onClose (nuxt, options) {
+async function onClose(nuxt, options) {
   const buildDir = getBuildDir(nuxt);
   let distPath = getDistDir(nuxt);
 
@@ -99,7 +107,7 @@ async function onClose (nuxt, options) {
   await copyBuild(buildDir, distPath);
 }
 
-function getEntryNamingMap (options) {
+function getEntryNamingMap(options) {
   return options.entries.reduce((result, { name }) => {
     result[String(pascalCase(name))] = paramCase(name);
     result[String(paramCase(name))] = paramCase(name);
@@ -107,7 +115,7 @@ function getEntryNamingMap (options) {
   }, {});
 }
 
-function DEFAULT_FILENAME_FUNC (webpackConfig, moduleOptions) {
+function DEFAULT_FILENAME_FUNC(webpackConfig, moduleOptions) {
   if (moduleOptions.modern) {
     if (webpackConfig.name === 'modern') {
       return '[name].modern.js';
@@ -119,15 +127,14 @@ function DEFAULT_FILENAME_FUNC (webpackConfig, moduleOptions) {
   }
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function DEFAULT_CHUNK_FILENAME_FUNC (webpackConfig, moduleOptions) {
+function DEFAULT_CHUNK_FILENAME_FUNC(webpackConfig, moduleOptions) {
   if (moduleOptions.modern) {
     return '[name].[hash].js';
   } else {
     return '[name].js';
   }
 }
-function getDefaultWebpackOutputOptions () {
+function getDefaultWebpackOutputOptions() {
   return {
     filename: DEFAULT_FILENAME_FUNC,
     chunkFilename: DEFAULT_CHUNK_FILENAME_FUNC,

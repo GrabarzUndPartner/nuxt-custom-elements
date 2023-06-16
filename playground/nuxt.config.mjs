@@ -1,4 +1,3 @@
-
 import { readPackage } from 'read-pkg';
 import { defineNuxtConfig } from 'nuxt/config';
 
@@ -63,22 +62,17 @@ export default defineNuxtConfig(async () => {
     },
 
     buildModules: isDev
-      ? [
-          '@nuxtjs/eslint-module',
-          '@nuxtjs/stylelint-module'
-        ]
+      ? ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module']
       : [],
 
-    modules: [
-      '../src/module'
-    ]
+    modules: ['../src/module']
   };
 });
 
-function getBaseUrl () {
+function getBaseUrl() {
   return process.env.npm_config_base_url || process.env.BASE_URL || '/';
 }
 
-function getPort () {
+function getPort() {
   return process.env.npm_config_port || process.env.PORT || 3000;
 }

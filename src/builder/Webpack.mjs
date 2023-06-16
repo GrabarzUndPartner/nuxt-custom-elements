@@ -2,7 +2,7 @@ import { build, prepareEntryConfigs } from '../utils/webpack.mjs';
 import Builder from './Builder.mjs';
 
 export default class WebpackBuilder extends Builder {
-  constructor (...args) {
+  constructor(...args) {
     super(...args);
 
     if (this.nuxt.options.dev) {
@@ -10,13 +10,18 @@ export default class WebpackBuilder extends Builder {
     }
 
     this.config = null;
-    this.nuxt.hook('webpack:config', (configs) => {
+    this.nuxt.hook('webpack:config', configs => {
       return (this.config = configs.find(({ name }) => name === 'client'));
     });
   }
 
-  async build () {
-    const configs = await prepareEntryConfigs(this.runtimeDir, this.config, this.nuxt, this.moduleOptions);
+  async build() {
+    const configs = await prepareEntryConfigs(
+      this.runtimeDir,
+      this.config,
+      this.nuxt,
+      this.moduleOptions
+    );
     return build(configs.flat());
   }
 }

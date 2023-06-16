@@ -2,12 +2,12 @@
   <div>
     <github-corner :url="$config.GITHUB_REPO_URL" />
     <div class="logo">
-      <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements">
+      <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements" />
     </div>
     <div class="container">
       <client-only>
         <custom-element-example title="Custom Title">
-          Custom Slot Content<br>
+          Custom Slot Content<br />
           <a href="./nuxt-custom-elements/example/">Go to Real Example</a>
         </custom-element-example>
       </client-only>
@@ -22,11 +22,10 @@ import CustomElementExample from '@/components/Example.vue';
 
 export default {
   components: { CustomElementExample },
-  created () {
+  created() {
     this.$customElements.registerEntry('example');
   }
 };
-
 </script>
 
 <style lang="postcss">
@@ -57,15 +56,8 @@ export default {
 
 html {
   box-sizing: border-box;
-  font-family:
-    "Source Sans Pro",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   text-size-adjust: 100%;
@@ -87,7 +79,7 @@ fieldset,
   padding: 30px;
   padding-top: 0;
   color: #3b8070;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpi/P//PwM6OHv2HIYgEwORYAAVsmBzuLGxEeNQ9AxAgAEAG1wKejjL7dsAAAAASUVORK5CYII=");
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpi/P//PwM6OHv2HIYgEwORYAAVsmBzuLGxEeNQ9AxAgAEAG1wKejjL7dsAAAAASUVORK5CYII=');
   border: 1px solid #3b8070;
   border-radius: 4px;
 }
