@@ -1,6 +1,6 @@
 import path from 'pathe';
 import clone from 'clone';
-import { paramCase } from 'change-case';
+import { paramCase, pascalCase } from 'change-case';
 
 import { getTagHTMLFromEntry } from './tags.mjs';
 import { getBuildDir, MODULE_NAME, getDefaultWebpackOutputOptions } from './index.mjs';
@@ -56,7 +56,8 @@ async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
     output: Object.assign(output, {
       filename: resolveFilename(filename, config, options),
       chunkFilename: resolveFilename(chunkFilename, config, options),
-      path: buildDir
+      path: buildDir,
+      chunkLoadingGlobal: getChunkLoadingGlobalName(entryName)
     }),
     optimization: {
       runtimeChunk: false
@@ -67,6 +68,11 @@ async function getWebpackConfig (runtimeDir, entryName, nuxt, config, options) {
       rules
     }
   }), { client: true });
+}
+
+function getChunkLoadingGlobalName (entryName) {
+  // eslint-disable-next-line no-secrets/no-secrets
+  return 'webpackChunkLoadingGlobalNuxtCustomElements' + pascalCase(entryName);
 }
 
 function resolveFilename (filename, config, options) {
