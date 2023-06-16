@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.14](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2023-06-16)
+
+
+### Bug Fixes
+
+* **webpack:** added `output.chunkLoadingGlobal` ([a101491](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/a101491da35f01727e335a6f1d6e7d9cc2991b95))
+
 # [2.0.0-beta.13](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.12...v2.0.0-beta.13) (2023-05-24)
 
 
