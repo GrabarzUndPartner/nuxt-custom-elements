@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.15](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.14...v2.0.0-beta.15) (2023-06-16)
+
+
+### Bug Fixes
+
+* **composable:** added useCustomElements ([a4e456f](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/a4e456fa70c48fa77fedb6095f5608de8cd8a3c7))
+
 # [2.0.0-beta.14](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.13...v2.0.0-beta.14) (2023-06-16)
 
 
