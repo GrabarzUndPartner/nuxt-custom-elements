@@ -45,13 +45,15 @@ export default {
     },
 
     postcss: {
-      plugins: {
-        'postcss-preset-env': {
-          preserve: true,
-          stage: 0
-        }
-      },
-      order: 'cssnanoLast'
+      postcssOptions: {
+        plugins: {
+          'postcss-preset-env': {
+            preserve: true,
+            stage: 0
+          }
+        },
+        order: 'cssnanoLast'
+      }
     }
 
   },
@@ -115,7 +117,6 @@ export default {
   },
 
   buildModules: [
-    '@nuxt/postcss8',
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module'
   ],
