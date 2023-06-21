@@ -56,7 +56,7 @@ export default {
     }
   }
 
-  @media (max-width: 500px) {
+  @media (width <= 500px) {
     & .octo-arm {
       animation: octocat-wave 560ms ease-in-out;
     }
