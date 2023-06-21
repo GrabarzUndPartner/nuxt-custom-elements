@@ -1,5 +1,12 @@
 # Project Changelog
 
+## [1.9.2](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.1...v1.9.2) (2023-06-21)
+
+
+### Bug Fixes
+
+* **webpack:** fix `setLoaderRulesForShadowMode` ([ec4e387](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/ec4e387eeac8abad80cc245053f7c4bd68461897))
+
 ## [1.9.1](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v1.9.0...v1.9.1) (2022-06-20)
 
 
