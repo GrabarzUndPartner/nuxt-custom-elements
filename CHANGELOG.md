@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.16](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.15...v2.0.0-beta.16) (2023-06-21)
+
+
+### Bug Fixes
+
+* **vite:** fix lodash templating ([3fccacb](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/3fccacb07c20bcf17091af8339e745f5db70199d))
+
 # [2.0.0-beta.15](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.14...v2.0.0-beta.15) (2023-06-16)
 
 
