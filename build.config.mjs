@@ -1,7 +1,6 @@
 export default {
   failOnWarn: false,
   externals: [
-    'consola',
     'webpack',
     'change-case',
     'html-webpack-plugin',
@@ -10,7 +9,7 @@ export default {
     'vue',
     'pathe',
     '@vitejs/plugin-vue',
-    'lodash.template',
+    'lodash-es',
     'vite'
   ]
 };
