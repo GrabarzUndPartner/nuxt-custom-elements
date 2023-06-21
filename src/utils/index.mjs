@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'pathe';
 import { paramCase, pascalCase } from 'change-case';
-import consola from 'consola';
+import { useLogger } from '@nuxt/kit';
 
 export const MODULE_NAME = 'nuxt-custom-elements';
-export const logger = consola.withTag(MODULE_NAME);
+export const logger = useLogger(MODULE_NAME);
 
 const BUILD_DIR = 'dist';
 const ENTRIES_DIR = 'entries';

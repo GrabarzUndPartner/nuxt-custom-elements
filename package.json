@@ -42,7 +42,7 @@
     "generate": "nuxt generate playground",
     "preview": "nuxt preview",
     "lint": "npm run lint:es && npm run lint:css",
-    "lint:es": "eslint --ext .js,.vue .",
+    "lint:es": "eslint --ext .mjs,.js,.vue .",
     "lint:css": "stylelint \"playground/**/*.vue\" \"playground/**/*.css\", \"lib/**/*.vue\" \"lib/**/*.css\"",
     "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
     "test": "vitest run",

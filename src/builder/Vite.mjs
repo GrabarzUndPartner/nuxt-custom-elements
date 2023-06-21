@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { resolve } from 'pathe';
-import template from 'lodash.template';
+import { template as lodashTemplate } from 'lodash-es';
 import { getTagHTMLFromEntry } from '../utils/tags.mjs';
 import { build, prepareEntryConfigs } from '../utils/vite.mjs';
 import { getBuildDir } from '../utils/index.mjs';
@@ -38,7 +38,7 @@ export default class ViteBuilder extends Builder {
           resolve(this.runtimeDir, 'tmpl/vite/index.html'),
           { encoding: 'utf-8' }
         );
-        const compiled = template(html);
+        const compiled = lodashTemplate(html);
         const filepath = resolve(getBuildDir(this.nuxt), name, 'index.html');
         const options = {
           title: entry.name,
