@@ -4,18 +4,25 @@ import { defineAsyncComponent, defineCustomElement } from 'vue'
 
 const defineTags = () => {
   const elements = [
-<% let i = 0; %><%= options.tags.map(function ({ async, name, path }) {
+<% let i = 0; %><%= options.tags.map(function ({ async, name, path, options }) {
+
+  if (typeof options === 'function') {
+    options = `(${options.toString().replace(/^options[ ]?\(\) {/, '() => {')})()`
+  } else {
+    options = JSON.stringify(options)
+  }
+
   let tag;
   if (async) {
-    tag = `    ['${name}', defineAsyncComponent(() => { return import('${path}').then(module => (typeof module.default === 'function' ? (new module.default).$options : module.default) ); })]`;
+    tag = `    ['${name}', defineAsyncComponent(() => { return import('${path}').then(module => (typeof module.default === 'function' ? (new module.default).$options : module.default) ); }), ${options || {}}]`;
   } else {
-    tag = `    ['${name}', (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i})]`;
+    tag = `    ['${name}', (typeof Component${i} === 'function' ? (new Component${i}).$options : Component${i}), ${options || {}}]`;
     i++;
   }
   return tag;
  }).join(',\n') %>
-  ].forEach(([name, component]) => {
-    const CustomElement = defineCustomElement(component);
+  ].forEach(([name, component, options]) => {
+    const CustomElement = defineCustomElement(component, options);
     window.customElements.define(name, CustomElement);
   })
 };

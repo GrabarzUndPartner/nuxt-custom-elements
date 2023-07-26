@@ -25,6 +25,10 @@ function getViteConfig(entryName, nuxt, config, options) {
   const buildDir = normalize(join(getBuildDir(nuxt), entryName));
   const entry = options.entry[String(entryName)].client;
 
+  const viteExtend =
+    options.entries.find(({ name }) => paramCase(name) === entryName)
+      .viteExtend || (config => config);
+
   config = clone(config);
 
   config.base = '/';
@@ -49,7 +53,7 @@ function getViteConfig(entryName, nuxt, config, options) {
 
   config.entry = entry;
 
-  return defineConfig(config);
+  return defineConfig(viteExtend(config));
 }
 
 export function prepareEntryConfigs(viteConfig, nuxt, options) {
