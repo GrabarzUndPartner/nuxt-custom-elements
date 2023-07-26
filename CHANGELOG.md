@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.17](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.16...v2.0.0-beta.17) (2023-07-26)
+
+
+### Bug Fixes
+
+* **update:** entry & config ([94f2d5d](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/94f2d5d4bee451685e95b935934919f8d2e6e34f))
+
 # [2.0.0-beta.16](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.15...v2.0.0-beta.16) (2023-06-21)
 
 
