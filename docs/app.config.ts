@@ -6,7 +6,7 @@ export default defineAppConfig({
     // eslint-disable-next-line no-secrets/no-secrets
     image: 'https://repository-images.githubusercontent.com/265295866/7e292000-5cc1-11eb-8469-1aafbf1d2727',
     socials: {
-      github: 'GrabarzUndPartner/nuxt-speedkit'
+      github: 'GrabarzUndPartner/nuxt-custom-elements'
     },
     aside: {
       level: 0,
