@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "e0e8cf94a5b11f7207e6",
-  "time": 1070,
-  "builtAt": 1687352290295,
+  "hash": "356047b3b65ea1bc9e36",
+  "time": 1084,
+  "builtAt": 1691766481207,
   "publicPath": "./",
   "outputPath": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/.nuxt/nuxt-custom-elements/dist/example-shadow",
   "assetsByChunkName": {
-    "NamedChunk": "NamedChunk.e0e8cf94a5b11f7207e6.js",
+    "NamedChunk": "NamedChunk.356047b3b65ea1bc9e36.js",
     "example-shadow": "example-shadow.modern.js"
   },
   "assets": [
     {
-      "name": "NamedChunk.e0e8cf94a5b11f7207e6.js",
+      "name": "NamedChunk.356047b3b65ea1bc9e36.js",
       "size": 186,
       "chunks": [
         0
@@ -39,7 +39,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/lato-v22-latin-700.5cd2462.woff",
+      "name": "fonts/lato-v22-latin-700.1833f9f.woff",
       "size": 28044,
       "chunks": [],
       "chunkNames": [],
@@ -50,7 +50,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/lato-v22-latin-700.8f28e0e.woff2",
+      "name": "fonts/lato-v22-latin-700.de69cf9.woff2",
       "size": 23040,
       "chunks": [],
       "chunkNames": [],
@@ -61,7 +61,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/lato-v22-latin-regular.2927254.woff",
+      "name": "fonts/lato-v22-latin-regular.0e898c1.woff",
       "size": 28648,
       "chunks": [],
       "chunkNames": [],
@@ -72,7 +72,7 @@
       "emitted": true
     },
     {
-      "name": "fonts/lato-v22-latin-regular.be36596.woff2",
+      "name": "fonts/lato-v22-latin-regular.e1b3b59.woff2",
       "size": 23580,
       "chunks": [],
       "chunkNames": [],
@@ -120,7 +120,7 @@
         0
       ],
       "assets": [
-        "NamedChunk.e0e8cf94a5b11f7207e6.js"
+        "NamedChunk.356047b3b65ea1bc9e36.js"
       ],
       "children": {},
       "childAssets": {}
@@ -137,9 +137,9 @@
         "NamedChunk"
       ],
       "files": [
-        "NamedChunk.e0e8cf94a5b11f7207e6.js"
+        "NamedChunk.356047b3b65ea1bc9e36.js"
       ],
-      "hash": "f06c005cb8851ae350ac",
+      "hash": "fa2b0e4e6c8a19d2c995",
       "siblings": [],
       "parents": [
         1
@@ -242,7 +242,7 @@
       "files": [
         "example-shadow.modern.js"
       ],
-      "hash": "df56ba2f0da492d94943",
+      "hash": "eb1d94368fd56aaba328",
       "siblings": [],
       "parents": [],
       "children": [
@@ -479,7 +479,7 @@
         },
         {
           "id": 2,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 9dc5e40e94618eeca9893415d3ecdf1e",
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 260b951ba7fadc47f4d6922bb1004e0b",
           "name": "./example/components/Example.vue + 5 modules",
           "index": 5,
           "index2": 19,
@@ -1328,7 +1328,7 @@
           "reasons": [
             {
               "moduleId": 2,
-              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 9dc5e40e94618eeca9893415d3ecdf1e",
+              "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 260b951ba7fadc47f4d6922bb1004e0b",
               "module": "./example/components/Example.vue + 5 modules",
               "moduleName": "./example/components/Example.vue + 5 modules",
               "type": "cjs require",
@@ -1608,7 +1608,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "fonts/lato-v22-latin-regular.be36596.woff2"
+            "fonts/lato-v22-latin-regular.e1b3b59.woff2"
           ],
           "reasons": [
             {
@@ -1627,7 +1627,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 6,
-          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.be36596.woff2\";"
+          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.e1b3b59.woff2\";"
         },
         {
           "id": 13,
@@ -1682,7 +1682,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "fonts/lato-v22-latin-regular.2927254.woff"
+            "fonts/lato-v22-latin-regular.0e898c1.woff"
           ],
           "reasons": [
             {
@@ -1701,7 +1701,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 6,
-          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.2927254.woff\";"
+          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.0e898c1.woff\";"
         },
         {
           "id": 14,
@@ -1756,7 +1756,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "fonts/lato-v22-latin-700.8f28e0e.woff2"
+            "fonts/lato-v22-latin-700.de69cf9.woff2"
           ],
           "reasons": [
             {
@@ -1775,7 +1775,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 6,
-          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.8f28e0e.woff2\";"
+          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.de69cf9.woff2\";"
         },
         {
           "id": 15,
@@ -1830,7 +1830,7 @@
           "errors": 0,
           "warnings": 0,
           "assets": [
-            "fonts/lato-v22-latin-700.5cd2462.woff"
+            "fonts/lato-v22-latin-700.1833f9f.woff"
           ],
           "reasons": [
             {
@@ -1849,7 +1849,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 6,
-          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.5cd2462.woff\";"
+          "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.1833f9f.woff\";"
         },
         {
           "id": 16,
@@ -2039,7 +2039,7 @@
         },
         {
           "id": 19,
-          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-style-loader/lib/addStylesShadow.js ce9f3c07ce6dbab4a3153bd89e1d9cb9",
+          "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-style-loader/lib/addStylesShadow.js 63f714d45e51bbac2aecf3bc419f651a",
           "name": "./node_modules/vue-style-loader/lib/addStylesShadow.js + 1 modules",
           "index": 19,
           "index2": 15,
@@ -2472,7 +2472,7 @@
     },
     {
       "id": 2,
-      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 9dc5e40e94618eeca9893415d3ecdf1e",
+      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 260b951ba7fadc47f4d6922bb1004e0b",
       "name": "./example/components/Example.vue + 5 modules",
       "index": 5,
       "index2": 19,
@@ -3321,7 +3321,7 @@
       "reasons": [
         {
           "moduleId": 2,
-          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 9dc5e40e94618eeca9893415d3ecdf1e",
+          "moduleIdentifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-loader/lib/index.js??vue-loader-options!/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/example/components/Example.vue 260b951ba7fadc47f4d6922bb1004e0b",
           "module": "./example/components/Example.vue + 5 modules",
           "moduleName": "./example/components/Example.vue + 5 modules",
           "type": "cjs require",
@@ -3601,7 +3601,7 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "fonts/lato-v22-latin-regular.be36596.woff2"
+        "fonts/lato-v22-latin-regular.e1b3b59.woff2"
       ],
       "reasons": [
         {
@@ -3620,7 +3620,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 6,
-      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.be36596.woff2\";"
+      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.e1b3b59.woff2\";"
     },
     {
       "id": 13,
@@ -3675,7 +3675,7 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "fonts/lato-v22-latin-regular.2927254.woff"
+        "fonts/lato-v22-latin-regular.0e898c1.woff"
       ],
       "reasons": [
         {
@@ -3694,7 +3694,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 6,
-      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.2927254.woff\";"
+      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-regular.0e898c1.woff\";"
     },
     {
       "id": 14,
@@ -3749,7 +3749,7 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "fonts/lato-v22-latin-700.8f28e0e.woff2"
+        "fonts/lato-v22-latin-700.de69cf9.woff2"
       ],
       "reasons": [
         {
@@ -3768,7 +3768,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 6,
-      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.8f28e0e.woff2\";"
+      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.de69cf9.woff2\";"
     },
     {
       "id": 15,
@@ -3823,7 +3823,7 @@
       "errors": 0,
       "warnings": 0,
       "assets": [
-        "fonts/lato-v22-latin-700.5cd2462.woff"
+        "fonts/lato-v22-latin-700.1833f9f.woff"
       ],
       "reasons": [
         {
@@ -3842,7 +3842,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 6,
-      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.5cd2462.woff\";"
+      "source": "module.exports = __webpack_public_path__ + \"fonts/lato-v22-latin-700.1833f9f.woff\";"
     },
     {
       "id": 16,
@@ -4032,7 +4032,7 @@
     },
     {
       "id": 19,
-      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-style-loader/lib/addStylesShadow.js ce9f3c07ce6dbab4a3153bd89e1d9cb9",
+      "identifier": "/home/runner/work/nuxt-custom-elements/nuxt-custom-elements/node_modules/vue-style-loader/lib/addStylesShadow.js 63f714d45e51bbac2aecf3bc419f651a",
       "name": "./node_modules/vue-style-loader/lib/addStylesShadow.js + 1 modules",
       "index": 19,
       "index2": 15,
@@ -4360,7 +4360,7 @@
           "files": [
             "__child-HtmlWebpackPlugin_0"
           ],
-          "hash": "294ff4e9589de560a55a",
+          "hash": "7208a5b162e454d7cc31",
           "siblings": [],
           "parents": [],
           "children": [],
