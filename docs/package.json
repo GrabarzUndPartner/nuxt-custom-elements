@@ -15,13 +15,21 @@
   },
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview"
+  },
+  "devDependencies": {
+    "@nuxt-themes/docus": "1.12.3",
+    "@nuxtjs/eslint-module": "4.1.0",
+    "@nuxtjs/robots": "3.0.0",
+    "@nuxtlabs/github-module": "1.6.3",
+    "nuxt": "3.5.3",
+    "theme-colors": "0.0.5"
   },
   "dependencies": {
-    "@nuxt/content-theme-docs": "0.11.1",
-    "nuxt": "2.17.1"
+    "vite-svg-loader": "^4.0.0",
+    "vue-svg-loader": "^0.16.0"
   }
 }
