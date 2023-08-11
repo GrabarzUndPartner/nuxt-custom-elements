@@ -29,7 +29,7 @@
     "theme-colors": "0.0.5"
   },
   "dependencies": {
-    "vite-svg-loader": "^4.0.0",
-    "vue-svg-loader": "^0.16.0"
+    "vite-svg-loader": "4.0.0",
+    "vue-svg-loader": "0.16.0"
   }
 }
