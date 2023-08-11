@@ -83,7 +83,7 @@
     "nuxt": "3.6.5",
     "playwright": "1.37.0",
     "postcss-html": "1.5.0",
-    "postcss-preset-env": "8.5.1",
+    "postcss-preset-env": "9.1.1",
     "prettier": "3.0.1",
     "read-pkg": "8.0.0",
     "serve-static": "1.15.0",
