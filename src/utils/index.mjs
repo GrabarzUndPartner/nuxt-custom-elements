@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'pathe';
-import { paramCase, pascalCase } from 'change-case';
+import { paramCase } from 'change-case';
 import { useLogger } from '@nuxt/kit';
 
 export const MODULE_NAME = 'nuxt-custom-elements';
@@ -108,14 +108,6 @@ export async function onClose(nuxt, options) {
   }
 
   await copyBuild(buildDir, distPath);
-}
-
-export function getEntryNamingMap(options) {
-  return options.entries.reduce((result, { name }) => {
-    result[String(pascalCase(name))] = paramCase(name);
-    result[String(paramCase(name))] = paramCase(name);
-    return result;
-  }, {});
 }
 
 function DEFAULT_FILENAME_FUNC(webpackConfig, moduleOptions) {

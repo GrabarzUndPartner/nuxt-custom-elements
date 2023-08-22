@@ -17,11 +17,18 @@
 
 <script setup>
 import { useCustomElements } from '#imports';
-
 const { registerEntry } = useCustomElements();
-
 registerEntry('example');
 </script>
+
+<!-- <script>
+import { useCustomElements } from '#imports';
+export default {
+  setup() {
+    useCustomElements('example');
+  }
+};
+</script> -->
 
 <style lang="postcss">
 .logo {

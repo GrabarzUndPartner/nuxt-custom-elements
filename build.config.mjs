@@ -10,6 +10,8 @@ export default {
     'pathe',
     '@vitejs/plugin-vue',
     'lodash-es',
-    'vite'
+    'vite',
+    '@unplugin-vue-ce/sub-style',
+    'vue-loader'
   ]
 };

@@ -3,6 +3,7 @@ import { build as viteBuild, defineConfig } from 'vite';
 import { paramCase } from 'change-case';
 import vuePlugin from '@vitejs/plugin-vue';
 import clone from 'clone';
+import { viteVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 import { getBuildDir } from './index.mjs';
 
 export async function build(builder, entryConfigs, statsList = []) {
@@ -32,6 +33,9 @@ function getViteConfig(entryName, nuxt, config, options) {
   config = clone(config);
 
   config.base = '/';
+  config.entry = entry;
+
+  // Build
 
   config.build = {
     ...config.build,
@@ -43,15 +47,16 @@ function getViteConfig(entryName, nuxt, config, options) {
     }
   };
 
-  config.vue.customElement = true;
-  // Replace vue plugin for property customElement
-  config.plugins[
-    config.plugins.indexOf(
-      config.plugins.find(({ name }) => name === 'vite:vue')
-    )
-  ] = vuePlugin(config.vue);
+  // Plugins
 
-  config.entry = entry;
+  config.plugins = [
+    vuePlugin({
+      reactivityTransform: false,
+      isProduction: true,
+      customElement: true
+    }),
+    viteVueCESubStyle()
+  ];
 
   return defineConfig(viteExtend(config));
 }

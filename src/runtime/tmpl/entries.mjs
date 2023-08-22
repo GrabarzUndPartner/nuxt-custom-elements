@@ -1,14 +1,12 @@
-const entryNamings = <%= JSON.stringify(options.entryMap) %>;
+const entries = new Map();
 
-export const registerEntry = (name) => {
-  if (process.client) {
-    if (name in entryNamings){
-      const filename = entryNamings[name]
-      return import(<%= '`#customElementsEntries/${filename}' + '.client.mjs`' %>);
-    } else {
-      throw new Error('Entry named "' + name + '" not found');
-    }
-  } else {
-    return Promise.resolve();
-  }
-};
+<%= options.entries.map(entry => {
+  return `entries.set('${entry.name.toLowerCase()}', (nuxtApp) => {
+  ` + entry.tags.map(({ name ,path}, i) => `nuxtApp.vueApp.component('${name}', defineAsyncComponent(() => import('${path}')));`).join('\n  ') +
+`
+});`
+})
+
+%>
+
+export default entries;

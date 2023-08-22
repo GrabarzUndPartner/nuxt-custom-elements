@@ -28,6 +28,7 @@ export default class ViteBuilder extends Builder {
       this.nuxt,
       this.moduleOptions
     );
+
     const builds = await build(this, configs);
 
     await Promise.all(

@@ -1,8 +1,11 @@
 import path from 'pathe';
 import clone from 'clone';
 import { paramCase, pascalCase } from 'change-case';
+// import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
+import { VueLoaderPlugin } from 'vue-loader';
 import { getTagHTMLFromEntry } from './tags.mjs';
+
 import {
   getBuildDir,
   MODULE_NAME,
@@ -38,39 +41,44 @@ async function build(webpackConfigs, statsList = []) {
 
 async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
   const buildDir = path.normalize(path.join(getBuildDir(nuxt), entryName));
-  const pluginExcludes = [
-    'VueSSRClientPlugin',
-    'CorsPlugin',
-    'HtmlWebpackPlugin',
-    'BundleAnalyzerPlugin',
-    // Remove all native Objects, PWA Modul registriert sich ohne identifizierbares Object (PWA)
-    'Object'
-  ];
-
-  const htmlWebpackPluginIndex = config.plugins.indexOf(
-    config.plugins.find(
-      plugin => plugin.constructor.name === 'HtmlWebpackPlugin'
-    )
-  );
 
   let rules = clone(config.module.rules);
   rules = setLoaderRulesForShadowMode(rules);
+  // const removeLoaderRule =(rules, ext) => rules.filter(({ test }) => !test.test(ext))
+  // rules = [...removeLoaderRule(rules, .vue)];
+  // rules.push({
+  //   test: /\.vue$/i,
+  //   use: [
+  //     {
+  //       loader: 'vue-loader',
+  //       options: {
+  //         customElement: true,
+  //         reactivityTransform: false,
+  //         transformAssetUrls: {
+  //           video: 'src',
+  //           source: 'src',
+  //           object: 'src',
+  //           embed: 'src'
+  //         },
+  //         compilerOptions: {},
+  //         propsDestructure: false,
+  //         defineModel: false
+  //       }
+  //     }
+  //   ]
+  // });
 
-  const plugins = config.plugins.filter(
-    plugin => !pluginExcludes.includes(plugin.constructor.name)
-  );
-
-  plugins.splice(
-    htmlWebpackPluginIndex,
-    0,
+  const plugins = [
+    new VueLoaderPlugin(),
+    // TODO: https://github.com/baiwusanyu-c/unplugin-vue-ce/issues/65
+    // webpackVueCESubStyle(),
     ...(await createHtmlWebpackPlugins(
       runtimeDir,
       options.entries.filter(({ name }) => entryName === paramCase(name)),
       options.publicPath
-    ))
-  );
-
-  plugins.push(...(await getBundleAnalyzerPlugin(options, config, entryName)));
+    )),
+    ...(await getBundleAnalyzerPlugin(options, config, entryName))
+  ];
 
   const output = getDefaultWebpackOutputOptions();
 
@@ -213,7 +221,6 @@ function setLoaderRulesForShadowMode(rules) {
 }
 
 export { build, getWebpackConfig };
-
 export function prepareEntryConfigs(runtimeDir, webpackConfig, nuxt, options) {
   return Promise.all(
     Object.keys(options.entry).map(entryName => {

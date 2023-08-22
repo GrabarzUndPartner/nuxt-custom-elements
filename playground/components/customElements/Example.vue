@@ -1,8 +1,9 @@
 <template>
-  <div class="custom-element-example">
+  <div class="custom-element-example-a">
     <div class="title">
       {{ title }}
     </div>
+    <test></test>
     <div class="content">
       <slot>Default Content</slot>
     </div>
@@ -10,6 +11,8 @@
 </template>
 
 <script setup>
+import Test from '@/components/ChildContent.vue';
+
 defineProps({
   title: {
     type: String,
@@ -23,7 +26,7 @@ document.body.classList.add('custom-element-example-ready');
 <style lang="postcss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-.custom-element-example {
+.custom-element-example-a {
   display: flex;
   flex-direction: column;
   gap: 16px;

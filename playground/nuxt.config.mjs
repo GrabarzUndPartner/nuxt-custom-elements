@@ -41,14 +41,19 @@ export default defineNuxtConfig(async () => {
       entries: [
         {
           name: 'Example',
-          // webpackExtend (config) {
-          // https://webpack.js.org/guides/public-path/#automatic-publicpath
+          // viteExtend(config) {
+          //   // https://vitejs.dev/config/#config-file
+          //   config.plugins.push(viteVueCE());
+          //   return config;
+          // },
+          // webpackExtend(config) {
+          //   // https://webpack.js.org/guides/public-path/#automatic-publicpath
           // },
           tags: [
             {
               async: false,
               name: 'CustomElementExample',
-              path: '@/components/Example.ce.vue',
+              path: '@/components/customElements/Example.vue',
               options: {
                 props: {
                   title: 'Live Example'

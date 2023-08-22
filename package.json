@@ -47,9 +47,10 @@
     "lint:report": "eslint --ext .js,.vue -f json-relative -o ./eslint-report.json .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "static-server": "node ./tools/static-server.mjs --dist playground/.nuxt/nuxt-custom-elements/dist"
+    "start:static": "node ./tools/static-server.mjs --dist playground/.nuxt/nuxt-custom-elements/dist"
   },
   "dependencies": {
+    "@unplugin-vue-ce/sub-style": "1.0.0-beta.12",
     "change-case": "4.1.2",
     "clone": "2.1.2",
     "defu": "6.1.2",
@@ -64,10 +65,9 @@
     "@nuxt/webpack-builder": "3.6.5",
     "@nuxtjs/eslint-config": "12.0.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@nuxtjs/eslint-module": "3.1.0",
+    "@nuxtjs/eslint-module": "4.1.0",
     "@nuxtjs/stylelint-module": "5.1.0",
     "commitlint": "17.7.1",
-    "core-js": "3.32.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-formatter-json-relative": "0.1.0",
     "eslint-plugin-jsonc": "2.9.0",
@@ -79,9 +79,9 @@
     "finalhandler": "1.2.0",
     "get-port-please": "3.0.1",
     "husky": "8.0.3",
-    "lint-staged": "13.3.0",
+    "lint-staged": "14.0.1",
     "nuxt": "3.6.5",
-    "playwright": "1.37.0",
+    "playwright": "1.37.1",
     "postcss-html": "1.5.0",
     "postcss-preset-env": "9.1.1",
     "prettier": "3.0.2",
@@ -90,7 +90,6 @@
     "standard-version": "9.5.0",
     "stylelint-config-recess-order": "4.3.0",
     "stylelint-config-standard": "34.0.0",
-    "vitest": "0.34.1",
-    "webpack-dynamic-public-path": "1.0.8"
+    "vitest": "0.34.2"
   }
 }
