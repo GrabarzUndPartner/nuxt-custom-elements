@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.22](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.21...v2.0.0-beta.22) (2023-08-25)
+
+
+### Bug Fixes
+
+* **update:** added `vue-web-component-wrapper` ([543cd6a](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/543cd6aa8193d9b3dc23b9c7fa41206d5200b2d7))
+
 # [2.0.0-beta.21](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.20...v2.0.0-beta.21) (2023-08-25)
 
 
