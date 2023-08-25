@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.23](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.22...v2.0.0-beta.23) (2023-08-25)
+
+
+### Bug Fixes
+
+* **update:** use appContext with file ([1fd189f](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/1fd189f6683624db7a4f39b4229a92e43da08606))
+
 # [2.0.0-beta.22](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.21...v2.0.0-beta.22) (2023-08-25)
 
 
