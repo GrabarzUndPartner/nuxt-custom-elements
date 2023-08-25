@@ -55,6 +55,7 @@
     "clone": "2.1.2",
     "defu": "6.1.2",
     "html-webpack-plugin": "5.5.3",
+    "lodash-es": "^4.17.21",
     "webpack-bundle-analyzer": "4.9.0"
   },
   "devDependencies": {

@@ -12,6 +12,7 @@ export default {
     'lodash-es',
     'vite',
     '@unplugin-vue-ce/sub-style',
-    'vue-loader'
+    'vue-loader',
+    'lodash-es'
   ]
 };
