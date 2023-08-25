@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.21](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.20...v2.0.0-beta.21) (2023-08-25)
+
+
+### Bug Fixes
+
+* **deps:** added missing dep `lodash-es` ([33a7c43](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/33a7c430cd08ac2ffdd1573e7f917c2c9f8c8971))
+
 # [2.0.0-beta.20](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.19...v2.0.0-beta.20) (2023-08-25)
 
 
