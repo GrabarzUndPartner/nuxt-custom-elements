@@ -1,9 +1,8 @@
 import path from 'pathe';
 import clone from 'clone';
 import { paramCase, pascalCase } from 'change-case';
-// import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
+import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
-import { VueLoaderPlugin } from 'vue-loader';
 import { getTagHTMLFromEntry } from './tags.mjs';
 
 import {
@@ -42,36 +41,14 @@ async function build(webpackConfigs, statsList = []) {
 async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
   const buildDir = path.normalize(path.join(getBuildDir(nuxt), entryName));
 
+  const { VueLoaderPlugin } = await import('vue-loader');
+
   let rules = clone(config.module.rules);
   rules = setLoaderRulesForShadowMode(rules);
-  // const removeLoaderRule =(rules, ext) => rules.filter(({ test }) => !test.test(ext))
-  // rules = [...removeLoaderRule(rules, .vue)];
-  // rules.push({
-  //   test: /\.vue$/i,
-  //   use: [
-  //     {
-  //       loader: 'vue-loader',
-  //       options: {
-  //         customElement: true,
-  //         reactivityTransform: false,
-  //         transformAssetUrls: {
-  //           video: 'src',
-  //           source: 'src',
-  //           object: 'src',
-  //           embed: 'src'
-  //         },
-  //         compilerOptions: {},
-  //         propsDestructure: false,
-  //         defineModel: false
-  //       }
-  //     }
-  //   ]
-  // });
 
   const plugins = [
     new VueLoaderPlugin(),
-    // TODO: https://github.com/baiwusanyu-c/unplugin-vue-ce/issues/65
-    // webpackVueCESubStyle(),
+    webpackVueCESubStyle(),
     ...(await createHtmlWebpackPlugins(
       runtimeDir,
       options.entries.filter(({ name }) => entryName === paramCase(name)),

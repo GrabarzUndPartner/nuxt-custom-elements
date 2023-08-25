@@ -3,7 +3,7 @@ import { join } from 'pathe';
 import { joinURL } from 'ufo';
 import { chromium, firefox } from 'playwright';
 import { defu } from 'defu';
-import { afterAll, beforeAll, describe, test } from 'vitest';
+import { afterAll, beforeAll, test } from 'vitest';
 import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
@@ -13,14 +13,7 @@ import nuxtConfig from '../playground/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 
-describe('🧐 inspect browser (@nuxt/webpack-builder) (chromium and firefox)', () => {
-  startTest('@nuxt/webpack-builder');
-});
-describe('🧐 inspect browser (@nuxt/vite-builder) (chromium and firefox)', () => {
-  startTest('@nuxt/vite-builder');
-});
-
-function startTest(builder) {
+export default function (builder) {
   let browsers, nuxt, serverUrl;
 
   const resolver = createResolver(import.meta.url);
