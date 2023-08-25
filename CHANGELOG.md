@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.20](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.19...v2.0.0-beta.20) (2023-08-25)
+
+
+### Bug Fixes
+
+* **webpack:** import async `vue-loader`; fix tests ([b568cc7](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/b568cc7598877795ab5c73142e8a14c12923006e))
+
 # [2.0.0-beta.19](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.18...v2.0.0-beta.19) (2023-08-22)
 
 
