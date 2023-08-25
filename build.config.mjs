@@ -13,6 +13,7 @@ export default {
     'vite',
     '@unplugin-vue-ce/sub-style',
     'vue-loader',
-    'lodash-es'
+    'lodash-es',
+    'vue-web-component-wrapper'
   ]
 };
