@@ -59,6 +59,7 @@ export default defineNuxtConfig(async () => {
                   title: 'Live Example'
                 }
               },
+              appContext: '@/components/customElements/Example.appContext.js',
               slotContent: '<div>Live Example Content</div>'
             }
           ]
