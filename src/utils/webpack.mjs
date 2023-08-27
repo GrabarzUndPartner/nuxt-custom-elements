@@ -44,7 +44,7 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
   const { VueLoaderPlugin } = await import('vue-loader');
 
   let rules = clone(config.module.rules);
-  rules = setLoaderRulesForShadowMode(rules);
+  rules = setLoaderRulesForCustomElement(rules);
 
   const plugins = [
     new VueLoaderPlugin(),
@@ -185,7 +185,7 @@ async function createHtmlWebpackPlugins(runtimeDir, entries, publicPath) {
   ];
 }
 
-function setLoaderRulesForShadowMode(rules) {
+function setLoaderRulesForCustomElement(rules) {
   const vueLoaderRule = rules.find(({ test }) => test.test('.vue'));
 
   if (vueLoaderRule) {
