@@ -61,18 +61,18 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.22.15",
-    "@commitlint/cli": "17.7.1",
+    "@commitlint/cli": "17.7.2",
     "@commitlint/config-conventional": "17.7.0",
-    "@nuxt/module-builder": "0.5.1",
+    "@nuxt/module-builder": "0.5.2",
     "@nuxt/webpack-builder": "3.7.4",
     "@nuxtjs/eslint-config": "12.0.0",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@nuxtjs/eslint-module": "4.1.0",
     "@nuxtjs/stylelint-module": "5.1.0",
-    "commitlint": "17.7.1",
+    "commitlint": "17.7.2",
     "eslint-config-prettier": "9.0.0",
     "eslint-formatter-json-relative": "0.1.0",
-    "eslint-plugin-jsonc": "2.9.0",
+    "eslint-plugin-jsonc": "2.10.0",
     "eslint-plugin-no-unsanitized": "4.0.2",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-security": "1.7.1",
@@ -85,13 +85,13 @@
     "nuxt": "3.7.4",
     "playwright": "1.38.1",
     "postcss-html": "1.5.0",
-    "postcss-preset-env": "9.1.4",
+    "postcss-preset-env": "9.2.0",
     "prettier": "3.0.3",
     "read-pkg": "8.1.0",
     "serve-static": "1.15.0",
     "standard-version": "9.5.0",
     "stylelint-config-recess-order": "4.3.0",
     "stylelint-config-standard": "34.0.0",
-    "vitest": "0.34.5"
+    "vitest": "0.34.6"
   }
 }
