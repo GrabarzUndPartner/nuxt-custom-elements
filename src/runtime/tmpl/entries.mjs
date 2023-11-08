@@ -4,7 +4,7 @@ const entries = new Map();
   return `entries.set('${entry.name.toLowerCase()}', (nuxtApp) => {
   ` + entry.tags.map(({ name ,path}, i) => `nuxtApp.vueApp.component('${name}', defineAsyncComponent(() => import('${path}')));`).join('\n  ') +
 `
-});`
+})`
 })
 
 %>
