@@ -47,9 +47,7 @@ export default defineNuxtModule({
         runtimeDir
       );
     } else {
-      logger.log(
-        `Current builder \`${nuxt.options.builder}\` is incomaptible.`
-      );
+      logger.log(`Current builder \`${nuxt.options.builder}\` is invalid.`);
       return;
     }
 

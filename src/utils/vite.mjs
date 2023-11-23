@@ -1,6 +1,6 @@
 import { join, normalize } from 'pathe';
 import { build as viteBuild, defineConfig } from 'vite';
-import { paramCase } from 'change-case';
+import { kebabCase } from 'change-case';
 import vuePlugin from '@vitejs/plugin-vue';
 import clone from 'clone';
 import { viteVueCESubStyle } from '@unplugin-vue-ce/sub-style';
@@ -27,7 +27,7 @@ function getViteConfig(entryName, nuxt, config, options) {
   const entry = options.entry[String(entryName)].client;
 
   const viteExtend =
-    options.entries.find(({ name }) => paramCase(name) === entryName)
+    options.entries.find(({ name }) => kebabCase(name) === entryName)
       .viteExtend || (config => config);
 
   config = clone(config);
@@ -67,7 +67,7 @@ export function prepareEntryConfigs(viteConfig, nuxt, options) {
       return {
         name: entryName,
         entry: options.entries.find(
-          ({ name }) => entryName === paramCase(name)
+          ({ name }) => entryName === kebabCase(name)
         ),
         config: getViteConfig(
           entryName,
