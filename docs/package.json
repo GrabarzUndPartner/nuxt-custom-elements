@@ -25,11 +25,11 @@
     "@nuxtjs/eslint-module": "4.1.0",
     "@nuxtjs/robots": "3.0.0",
     "@nuxtlabs/github-module": "1.6.3",
-    "nuxt": "3.7.4",
-    "theme-colors": "0.0.5"
+    "nuxt": "3.8.2",
+    "theme-colors": "0.1.0"
   },
   "dependencies": {
-    "vite-svg-loader": "4.0.0",
+    "vite-svg-loader": "5.1.0",
     "vue-svg-loader": "0.16.0"
   }
 }
