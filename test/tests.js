@@ -8,7 +8,7 @@ import finalhandler from 'finalhandler';
 import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
 import { createResolver, loadNuxt, buildNuxt } from '@nuxt/kit';
-import { paramCase } from 'change-case';
+import { kebabCase } from 'change-case';
 import nuxtConfig from '../playground/nuxt.config.mjs';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
@@ -18,7 +18,7 @@ export default function (builder) {
 
   const resolver = createResolver(import.meta.url);
 
-  const rootDir = resolver.resolve(`.browser-${paramCase(builder)}`);
+  const rootDir = resolver.resolve(`.browser-${kebabCase(builder)}`);
   const srcDir = resolver.resolve('../playground');
   const buildDir = join(rootDir, '.nuxt');
   const customElementsDir = join(buildDir, 'nuxt-custom-elements/dist');
