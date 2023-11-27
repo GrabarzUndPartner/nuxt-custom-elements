@@ -1,14 +1,5 @@
 export default {
-  versions: [[{ version: 2, default: true }, { version: 1 }]],
-  nav: [
-    {
-      text: 'Version',
-      items: [
-        { text: 'v2', link: '/' },
-        { text: 'v1', link: '/v1/' }
-      ]
-    }
-  ],
+  version: [{ version: 2, isDefault: true }, { version: 1 }],
 
   sidebar: {
     '/v1/': [

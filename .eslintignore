@@ -9,4 +9,5 @@ sw.*
 
 # Plugin
 src/runtime/tmpl
-!.vitepress
+docs/.vitepress/dist
+docs/.vitepress/cache

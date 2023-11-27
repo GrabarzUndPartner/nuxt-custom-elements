@@ -27,7 +27,6 @@ const { currentLang } = useLangs();
 </template>
 
 <style scoped>
-/* stylelint-disable selector-class-pattern */
 .title {
   display: flex;
   align-items: center;
@@ -40,11 +39,12 @@ const { currentLang } = useLangs();
   transition: opacity 0.25s;
 }
 
-@media (width >= 960px) {
+@media (width >=960px) {
   .title {
     flex-shrink: 0;
   }
 
+  /* stylelint-disable-next-line selector-class-pattern */
   .VPNavBarTitle.has-sidebar .title {
     border-bottom-color: var(--vp-c-divider);
   }

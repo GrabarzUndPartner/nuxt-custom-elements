@@ -1,4 +1,4 @@
-{
+export default {
   "arrowParens": "avoid",
   "bracketSameLine": true,
   "trailingComma": "none",

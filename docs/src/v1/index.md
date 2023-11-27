@@ -2,8 +2,6 @@
 title: Introduction
 ---
 
-# {{$frontmatter.title}}
-
 <img src="/intro-light.png" width="1280" height="640" alt=""/>
 
 [Module](https://github.com/GrabarzUndPartner/nuxt-custom-elements) for [NuxtJS](https://nuxtjs.org).
