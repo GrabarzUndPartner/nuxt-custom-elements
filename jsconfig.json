@@ -3,10 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "nuxt-speedkit/*": [
+      "nuxt-custom-elements/*": [
         "src/*"
       ],
-      "#speedkit": [
+      "#customElements": [
         "src/runtime/*"
       ],
       "@/*": [

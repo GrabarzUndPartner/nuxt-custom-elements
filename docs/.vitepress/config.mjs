@@ -53,13 +53,13 @@ export default defineConfig(() => ({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/GrabarzUndPartner/nuxt-speedkit'
+        link: 'https://github.com/GrabarzUndPartner/nuxt-custom-elements'
       }
     ]
   },
 
   sitemap: {
-    hostname: 'https://nuxt-speedkit.grabarzundpartner.dev'
+    hostname: 'https://nuxt-custom-elements.grabarzundpartner.dev'
   }
 }));
 
