@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'pathe';
-import { paramCase } from 'change-case';
+import { kebabCase } from 'change-case';
 import { useLogger } from '@nuxt/kit';
 
 export const MODULE_NAME = 'nuxt-custom-elements';
@@ -38,14 +38,14 @@ export const getDefaultOptions = () => {
 function prepareEntry(entry) {
   const tags = entry.tags.map(tag => {
     return Object.assign(tag, {
-      name: paramCase(tag.name),
+      name: kebabCase(tag.name),
       options: tag.options,
       async: tag.async || false
     });
   });
   return {
     ...entry,
-    name: paramCase(entry.name),
+    name: kebabCase(entry.name),
     tags
   };
 }

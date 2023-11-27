@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.26](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.25...v2.0.0-beta.26) (2023-11-23)
+
+
+### Bug Fixes
+
+* **change-case:** renamed paramCase to kebabCase ([cddbd7a](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/cddbd7acaa9bff54ad18807b7b119898eea253e8))
+
 # [2.0.0-beta.25](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.24...v2.0.0-beta.25) (2023-11-08)
 
 

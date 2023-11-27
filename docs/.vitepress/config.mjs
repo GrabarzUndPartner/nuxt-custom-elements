@@ -45,7 +45,10 @@ export default defineConfig(() => ({
     ...navigation,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/GrabarzUndPartner/nuxt-speedkit' }
+      {
+        icon: 'github',
+        link: 'https://github.com/GrabarzUndPartner/nuxt-speedkit'
+      }
     ]
   },
 

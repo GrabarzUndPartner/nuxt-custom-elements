@@ -63,7 +63,6 @@
       "@": "${workspaceRoot}/example",
       "@@": "${workspaceRoot}"
     },
-    "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "vetur.format.enable": false,
     "vetur.format.defaultFormatter.html": "js-beautify-html",

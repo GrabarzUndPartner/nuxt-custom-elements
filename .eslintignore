@@ -9,3 +9,4 @@ sw.*
 
 # Plugin
 src/runtime/tmpl
+!.vitepress

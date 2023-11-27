@@ -1,4 +1,5 @@
 export default {
+  versions: [[{ version: 2, default: true }, { version: 1 }]],
   nav: [
     {
       text: 'Version',
@@ -26,7 +27,7 @@ export default {
       },
       {
         text: 'Plugins',
-        "link": "/v1/plugins"
+        link: '/v1/plugins'
       }
     ],
     '/': {

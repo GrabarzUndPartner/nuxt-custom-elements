@@ -1,6 +1,6 @@
 import path from 'pathe';
 import clone from 'clone';
-import { paramCase, pascalCase } from 'change-case';
+import { kebabCase, pascalCase } from 'change-case';
 import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
 import { getTagHTMLFromEntry } from './tags.mjs';
@@ -51,7 +51,7 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
     webpackVueCESubStyle(),
     ...(await createHtmlWebpackPlugins(
       runtimeDir,
-      options.entries.filter(({ name }) => entryName === paramCase(name)),
+      options.entries.filter(({ name }) => entryName === kebabCase(name)),
       options.publicPath
     )),
     ...(await getBundleAnalyzerPlugin(options, config, entryName))
@@ -61,7 +61,7 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
 
   const { filename, chunkFilename } = output;
   const webpackExtend =
-    options.entries.find(({ name }) => paramCase(name) === entryName)
+    options.entries.find(({ name }) => kebabCase(name) === entryName)
       .webpackExtend || (config => config);
   return await webpackExtend(
     Object.assign({}, config, {

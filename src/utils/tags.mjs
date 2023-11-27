@@ -1,4 +1,4 @@
-import { paramCase } from 'change-case';
+import { kebabCase } from 'change-case';
 
 function getTagsFromEntry(entry) {
   const tags = [];
@@ -19,13 +19,13 @@ function getTagHTMLFromEntry(entry) {
     if ('props' in options) {
       if (Array.isArray(options.props) && options.props.length > 0) {
         // array ['prop-a', prop-b]
-        props = options.props.map(prop => `${paramCase(prop)}=""`);
+        props = options.props.map(prop => `${kebabCase(prop)}=""`);
       } else {
         // object {'prop-a': 'val-a', 'prop-b': 'val-a'}
         props = Object.keys(options.props || {}).reduce((result, prop) => {
           const value = options.props[String(prop)];
           if (typeof value !== 'object') {
-            result.push(`${paramCase(prop)}="${value}"`);
+            result.push(`${kebabCase(prop)}="${value}"`);
           }
           return result;
         }, []);
