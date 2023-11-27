@@ -15,3 +15,6 @@ test/.*
 sw.*
 .output
 eslint-report.json
+
+docs/.vitepress/dist
+docs/.vitepress/cache
