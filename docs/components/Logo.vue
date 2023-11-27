@@ -56,7 +56,6 @@
 svg {
   display: block;
   width: 100%;
-  aspect-ratio: 949 / 114;
 
   @nest .dark & {
     & path:first-child {
@@ -71,20 +70,4 @@ svg {
     fill: #fff;
   }
 }
-</style>
-
-<style lang="ts" scoped>
-css({
-  svg: {
-    color: '{color.gray.900}',
-    height: '{space.6}',
-    width: 'auto',
-    '@dark': {
-      color: '{color.gray.100}'
-    },
-    '@sm': {
-      height: '{space.7}'
-    }
-  }
-});
 </style>
