@@ -5,7 +5,7 @@ title: useCustomElements
 # {{$frontmatter.title}}
 
 ::: info
-The composable `useCustomElements` is equal to the plugin [`$customElements.registerEntry`](/v2/guide/plugins#customelementsregisterentry)
+The composable `useCustomElements` is equal to the plugin [`$customElements.registerEntry`](/plugins#customelementsregisterentry)
 :::
 
 ```js

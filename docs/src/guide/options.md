@@ -65,8 +65,8 @@ Allows the targeted distribution of resources.
 | --------------- | ---------- | -------- | ----------------------------------------------------------------- | ------- |
 | `name`          | `String`   | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
 | `shadow`        | `Boolean`  |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
-| `viteExtend`    | `Function` |          | [Learn more](/v2/guide/options#more-about-viteextend)             |         |
-| `webpackExtend` | `Function` |          | [Learn more](/v2/guide/options#more-about-webpackextend)          |         |
+| `viteExtend`    | `Function` |          | [Learn more](/guide/options#more-about-viteextend)                |         |
+| `webpackExtend` | `Function` |          | [Learn more](/guide/options#more-about-webpackextend)             |         |
 | `tags`          | `Array`    |          | Tag Definitions.                                                  | `[]`    |
 
 #### More about `viteExtend`

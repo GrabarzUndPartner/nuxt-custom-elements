@@ -94,13 +94,13 @@ Allows the targeted distribution of resources.
 | --------------- | ---------- | -------- | ----------------------------------------------------------------- | ------- |
 | `name`          | `String`   | yes      | Name of the endpoint. Value will be converted to ParamCase later. |         |
 | `shadow`        | `Boolean`  |          | If set, the tags are used with the <code>Shadow DOM</code>.       | `false` |
-| `webpackExtend` | `Function` |          | [Learn more](/guide/options#more-about-webpackextend)             |         |
+| `webpackExtend` | `Function` |          | [Learn more](/v1/guide/options#more-about-webpackextend)          |         |
 | `tags`          | `Array`    |          | Tag Definitions.                                                  | `[]`    |
 
 #### More about `webpackExtend`
 
 Called before the `build` and allows to customize the configuration before build.  
-Return value is the `config`. `async` is supported. [Learn more](/guide/options#entry-webpack-extend-example)
+Return value is the `config`. `async` is supported. [Learn more](/v1/guide/options#entry-webpack-extend-example)
 
 **Example Configuration:**
 

@@ -15,7 +15,7 @@ These are the first steps you need to export a component built in [Nuxt.js](http
 Create a component that you want to use as custom element.
 
 ::: warning
-There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/usage#integrations).
+There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/v1/guide/usage#integrations).
 :::
 
 ```vue[example/components/Example.vue]
@@ -139,7 +139,7 @@ For providing a custom element an entry must be created, this needs a name and s
 The previously created component is put under `tags`. The name must also be specified as `PascalCase`.  
 If necessary you can also define multiple custom elements in `tags` and deliver them together 😉 .
 
-[Learn more about `async` loading of tags]([#](http://localhost:5000/options#tag))
+[Learn more about `async` loading of tags](/v1/guide/options#tag)
 
 ```js[nuxt.config.js]
 {
@@ -193,7 +193,7 @@ After the `build` or `generate` has run, you will find the export under followin
 To develop a custom component in Dev mode, you must call the `entry` in the`create` or `mounted` method.
 This contains all the `tags` that can be called in the `template`.
 
-[Learn more about `$customElements.registerEntry`](/plugins#customelementsregisterentry)
+[Learn more about `$customElements.registerEntry`](/v1/plugins#customelementsregisterentry)
 
 ::: info
 Remember to ignore the specified tags with `Vue.config.ignoredElements` in Vue. For the local Vue instance the respective tag is unknown.
@@ -255,7 +255,7 @@ The modification can be done in two ways:
 
 ### Define fixed public path in the build
 
-For a fixed definition of the publich path, the `output` option must be extended in the entry in [`webpackExtend`](/guide/options#webpackextend).
+For a fixed definition of the publich path, the `output` option must be extended in the entry in [`webpackExtend`](/v1/guide/options#webpackextend).
 
 ```javascript
 {
@@ -270,7 +270,7 @@ For a fixed definition of the publich path, the `output` option must be extended
 
 ### Define Public Path dynamically
 
-Alternatively, the public path can be set dynamically in the [`webpackExtend`](/guide/options#webpackextend) of Entry. The Webpack plugin [`webpack-dynamic-public-path`](https://github.com/zahorovskyi/webpack-dynamic-public-path) can be used for this.
+Alternatively, the public path can be set dynamically in the [`webpackExtend`](/v1/guide/options#webpackextend) of Entry. The Webpack plugin [`webpack-dynamic-public-path`](https://github.com/zahorovskyi/webpack-dynamic-public-path) can be used for this.
 
 **Konfiguration Beispiel:**
 

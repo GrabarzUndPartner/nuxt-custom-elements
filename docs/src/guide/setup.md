@@ -39,4 +39,4 @@ Then, add `nuxt-custom-elements` to the `modules` section of `nuxt.config.js`:
 
 :::
 
-See [module options](/options).
+See [module options](/guide/options).

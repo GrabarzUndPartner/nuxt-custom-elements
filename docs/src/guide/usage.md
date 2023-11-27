@@ -15,7 +15,7 @@ These are the first steps you need to export a component built in [Nuxt.js](http
 Create a component that you want to use as custom element.
 
 ::: warning
-There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/usage#integrations).
+There is no integration of [Nuxt.js](https://nuxtjs.org) modules in the custom elements. For using Vue plugins, [look at Integrations](/guide/usage#integrations).
 :::
 
 ::: code-group
@@ -140,7 +140,7 @@ For providing a custom element an entry must be created, this needs a name and s
 The previously created component is put under `tags`. The name must also be specified as `PascalCase`.  
 If necessary you can also define multiple custom elements in `tags` and deliver them together 😉 .
 
-[Learn more about `async` loading of tags]([#](http://localhost:5000/options#tag))
+[Learn more about `async` loading of tags](/guide/options#tag)
 
 ::: code-group
 
@@ -198,7 +198,7 @@ After the `build` or `generate` has run, you will find the export under followin
 To develop a custom component in Dev mode, you must call the `entry` in the`create` or `mounted` method.
 This contains all the `tags` that can be called in the `template`.
 
-[Learn more about composable `useCustomElements`](/v2/guide/composable/usecustomelements)
+[Learn more about composable `useCustomElements`](/composable/use-custom-elements)
 
 ```html
 <script setup>

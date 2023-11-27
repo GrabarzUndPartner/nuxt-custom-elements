@@ -29,7 +29,7 @@ The name can be specified in `PascalCase`or `ParamCase`.
 
 e.g. `CustomElementExample` or `custom-element-example`.
 
-[Learn more about Entry.](/guide/options#entry)
+[Learn more about Entry.](/v1/guide/options#entry)
 
 ### Example
 
