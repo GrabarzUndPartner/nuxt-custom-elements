@@ -98,6 +98,6 @@
     "stylelint-config-recess-order": "4.4.0",
     "stylelint-config-standard": "34.0.0",
     "vitepress": "1.0.0-rc.31",
-    "vitest": "0.34.6"
+    "vitest": "1.1.0"
   }
 }
