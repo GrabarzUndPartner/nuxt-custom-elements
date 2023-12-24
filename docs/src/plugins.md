@@ -7,7 +7,7 @@ title: Plugins
 ## $customElements.registerEntry
 
 ::: info
-The plugin `$customElements.registerEntry` is equal to the composable [`useCustomElements`](/composable/use-custom-elements)
+The plugin `$customElements.registerEntry` is equal to the composable [`useCustomElements`](/composables/useCustomElements)
 :::
 
 `$customElements.registerEntry` is used to include the defined entries during development.

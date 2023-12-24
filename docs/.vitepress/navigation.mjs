@@ -40,7 +40,7 @@ export default {
           text: 'Composables',
           collapsed: false,
           items: [
-            { text: 'useCustomElements', link: '/composable/useCustomElements' }
+            { text: 'useCustomElements', link: '/composables/useCustomElements' }
           ]
         },
         {

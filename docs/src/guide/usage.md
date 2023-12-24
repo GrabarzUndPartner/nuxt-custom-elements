@@ -198,7 +198,7 @@ After the `build` or `generate` has run, you will find the export under followin
 To develop a custom component in Dev mode, you must call the `entry` in the`create` or `mounted` method.
 This contains all the `tags` that can be called in the `template`.
 
-[Learn more about composable `useCustomElements`](/composable/use-custom-elements)
+[Learn more about composable `useCustomElements`](/composables/useCustomElements)
 
 ```html
 <script setup>
