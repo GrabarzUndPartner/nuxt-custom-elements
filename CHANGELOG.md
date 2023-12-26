@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.28](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.27...v2.0.0-beta.28) (2023-12-26)
+
+
+### Bug Fixes
+
+* **package:** added type module ([931e6b4](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/931e6b4f6c06d5edcac2b84c2e3f886e35de9da5))
+
 # [2.0.0-beta.27](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.26...v2.0.0-beta.27) (2023-12-23)
 
 
