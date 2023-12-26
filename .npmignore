@@ -28,7 +28,7 @@ CONTRIBUTING.md
 CHANGELOG.md
 README.md
 commitlint.config.js
-renovate.json
+default.json
 vetur.config.json
 sandbox.config.json
 build.config.mjs
