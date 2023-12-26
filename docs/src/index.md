@@ -10,9 +10,8 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 ## Features
 
-- Using modern and client build
+- Use Vue with Shadow DOM 🥷
 - Export components as widgets
-- Use the Shadow DOM 🥷
 
 ## Preview
 

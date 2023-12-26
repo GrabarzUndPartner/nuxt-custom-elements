@@ -3,13 +3,13 @@ import clone from 'clone';
 import { kebabCase, pascalCase } from 'change-case';
 import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
-import { getTagHTMLFromEntry } from './tags.mjs';
+import { getTagHTMLFromEntry } from './tags.js';
 
 import {
   getBuildDir,
   MODULE_NAME,
   getDefaultWebpackOutputOptions
-} from './index.mjs';
+} from './index.js';
 
 async function webpackBuild(config) {
   const Webpack = await import('webpack').then(module => module.default);

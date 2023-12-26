@@ -27,7 +27,7 @@
 [![Grabarz & Partner - Module][grabarz-partner-module-src]][grabarz-partner-href]
 
 [![main][github-workflow-main-src]][github-workflow-main-href]
-[![develop][github-workflow-develop-src]][github-workflow-develop-href]
+[![beta][github-workflow-beta-src]][github-workflow-beta-href]
 [![Sonarcloud Status][sonarcloud-src]][sonarcloud-href]
 
 [![npm version][npm-version-latest-src]][npm-version-latest-href]
@@ -44,9 +44,8 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 ## Features
 
-- Using modern and client build
+- Use Vue with Shadow DOM 🥷
 - Export components as widgets
-- Use the `Shadow DOM` 🥷
   
 📖 &nbsp;&nbsp;[Learn more in the documentation](https://nuxt-custom-elements.grabarzundpartner.dev/)
 
@@ -77,8 +76,8 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 
 [github-workflow-main-src]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/workflows/Main/badge.svg?branch=main>
 [github-workflow-main-href]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/actions?query=workflow%3AMain>
-[github-workflow-develop-src]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/workflows/Test/badge.svg?branch=develop>
-[github-workflow-develop-href]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/actions?query=workflow%3ATest>
+[github-workflow-beta-src]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/workflows/Beta/badge.svg?branch=beta>
+[github-workflow-beta-href]: <https://github.com/GrabarzUndPartner/nuxt-custom-elements/actions?query=workflow%3ABeta>
 
 [sonarcloud-src]: <https://sonarcloud.io/api/project_badges/measure?project=GrabarzUndPartner_nuxt-custom-elements&metric=alert_status>
 [sonarcloud-href]: <https://sonarcloud.io/dashboard?id=GrabarzUndPartner_nuxt-custom-elements>
@@ -86,8 +85,8 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 [license-src]: https://img.shields.io/npm/l/nuxt-custom-elements.svg?style=flat-square
 [license-href]: https://npmjs.com/package/nuxt-custom-elements
 
-[npm-version-latest-src]: https://img.shields.io/npm/v/nuxt-custom-elements/latest.svg?
-[npm-version-latest-href]: https://npmjs.com/package/nuxt-custom-elements/v/latest
+[npm-version-latest-src]: https://img.shields.io/npm/v/nuxt-custom-elements/beta.svg?
+[npm-version-latest-href]: https://npmjs.com/package/nuxt-custom-elements/v/beta
 
 [npm-downloads-src]: https://img.shields.io/npm/dt/nuxt-custom-elements.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/nuxt-custom-elements
