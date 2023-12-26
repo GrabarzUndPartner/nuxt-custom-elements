@@ -28,6 +28,7 @@
     }
   },
   "main": "./dist/module.cjs",
+  "type": "module",
   "types": "./dist/types.d.ts",
   "files": [
     "dist"

@@ -8,6 +8,6 @@ sw.*
 .output
 
 # Plugin
-src/runtime/tmpl
+src/tmpl
 docs/.vitepress/dist
 docs/.vitepress/cache

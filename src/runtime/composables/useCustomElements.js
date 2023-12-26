@@ -1,4 +1,4 @@
-import entries from '#build/nuxt-custom-elements/entries.mjs';
+import entries from '#build/nuxt-custom-elements/entries.js';
 import { useNuxtApp } from '#imports';
 
 export function useCustomElements() {

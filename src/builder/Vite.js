@@ -1,10 +1,10 @@
 import fs from 'fs';
 import { resolve } from 'pathe';
 import { template as lodashTemplate } from 'lodash-es';
-import { getTagHTMLFromEntry } from '../utils/tags.mjs';
-import { build, prepareEntryConfigs } from '../utils/vite.mjs';
-import { getBuildDir } from '../utils/index.mjs';
-import Builder from './Builder.mjs';
+import { getTagHTMLFromEntry } from '../utils/tags.js';
+import { build, prepareEntryConfigs } from '../utils/vite.js';
+import { getBuildDir } from '../utils/index.js';
+import Builder from './Builder.js';
 
 export default class ViteBuilder extends Builder {
   constructor(...args) {

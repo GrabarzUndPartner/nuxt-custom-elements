@@ -9,7 +9,7 @@ import serveStatic from 'serve-static';
 import { getPort } from 'get-port-please';
 import { createResolver, loadNuxt, buildNuxt } from '@nuxt/kit';
 import { kebabCase } from 'change-case';
-import nuxtConfig from '../playground/nuxt.config.mjs';
+import nuxtConfig from '../playground/nuxt.config.js';
 
 const BROWSERS = { CHROMIUM: 0, FIREFOX: 1 };
 

@@ -12,9 +12,10 @@ import {
   getEntriesDir,
   getModuleDir,
   onClose
-} from './utils/index.mjs';
-import WebpackBuilder from './builder/Webpack.mjs';
-import ViteBuilder from './builder/Vite.mjs';
+} from './utils/index.js';
+import WebpackBuilder from './builder/Webpack.js';
+import ViteBuilder from './builder/Vite.js';
+import entriesTemplate from './tmpl/entries.tmpl.js';
 
 const validBuilders = {
   '@nuxt/webpack-builder': WebpackBuilder,
@@ -52,7 +53,7 @@ export default defineNuxtModule({
     }
 
     // create entry templates
-    const entries = generateEntries(runtimeDir, nuxt, moduleOptions);
+    const entries = generateEntries(nuxt, moduleOptions);
     moduleOptions.entry = entries.reduce((result, { name, template }) => {
       Object.keys(template).forEach(type => {
         const { dst } = addTemplate({
@@ -66,21 +67,18 @@ export default defineNuxtModule({
     }, {});
 
     addTemplate({
-      src: resolve(runtimeDir, 'tmpl', 'entries.mjs'),
-      fileName: join(getModuleDir(nuxt), 'entries.mjs'),
-      write: true,
-      options: Object.assign(
-        {
+      getContents: () =>
+        entriesTemplate({
           entries: moduleOptions.entries
-        },
-        moduleOptions
-      )
+        }),
+      filename: join(getModuleDir(nuxt), 'entries.js'),
+      write: true
     });
 
     addImports({
       name: 'useCustomElements',
       as: 'useCustomElements',
-      from: resolve(runtimeDir, 'composables/useCustomElements.mjs')
+      from: resolve(runtimeDir, 'composables/useCustomElements.js')
     });
 
     if (!nuxt.options.dev) {

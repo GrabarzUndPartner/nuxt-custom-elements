@@ -1,5 +1,5 @@
-import { build, prepareEntryConfigs } from '../utils/webpack.mjs';
-import Builder from './Builder.mjs';
+import { build, prepareEntryConfigs } from '../utils/webpack.js';
+import Builder from './Builder.js';
 
 export default class WebpackBuilder extends Builder {
   constructor(...args) {

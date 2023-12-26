@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'pathe';
 import { kebabCase } from 'change-case';
 import { useLogger } from '@nuxt/kit';
+import entryTemplate from '../tmpl/entry.tmpl.js';
 
 export const MODULE_NAME = 'nuxt-custom-elements';
 export const logger = useLogger(MODULE_NAME);
@@ -55,7 +56,7 @@ function prepareEntry(entry) {
  * @param {Object} nuxt Nuxt
  * @param {Object} options Module-Options
  */
-export function generateEntries(runtimeDir, nuxt, moduleOptions) {
+export function generateEntries(nuxt, moduleOptions) {
   return moduleOptions.entries.map(entry => {
     entry = prepareEntry(entry);
     return {
@@ -65,16 +66,15 @@ export function generateEntries(runtimeDir, nuxt, moduleOptions) {
           return [
             type,
             {
-              src: path.resolve(runtimeDir, 'tmpl', 'entry.mjs'),
-              options: {
-                tags: entry.tags,
-                // TODO: Hier muss auhc noch ist der dann auch für vite?
-                webpackExtend: entry.webpackExtend
-              },
-              fileName: path.resolve(
+              getContents: () =>
+                entryTemplate({
+                  tags: entry.tags
+                }),
+              filename: path.resolve(
                 getEntriesDir(nuxt),
-                `${entry.name}.${type}.mjs`
-              )
+                `${entry.name}.${type}.js`
+              ),
+              write: true
             }
           ];
         })

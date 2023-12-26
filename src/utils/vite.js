@@ -4,7 +4,7 @@ import { kebabCase } from 'change-case';
 import vuePlugin from '@vitejs/plugin-vue';
 import clone from 'clone';
 import { viteVueCESubStyle } from '@unplugin-vue-ce/sub-style';
-import { getBuildDir } from './index.mjs';
+import { getBuildDir } from './index.js';
 
 export async function build(builder, entryConfigs, statsList = []) {
   const configs = entryConfigs.splice(0, Math.min(1, entryConfigs.length));
