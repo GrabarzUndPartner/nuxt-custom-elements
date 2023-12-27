@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.29](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.28...v2.0.0-beta.29) (2023-12-27)
+
+
+### Bug Fixes
+
+* **composable:** fix `addImports` resolve path ([c599c8a](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/c599c8a8905d20643f8a8b3be77b8416b4f0a5b6))
+
 # [2.0.0-beta.28](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.27...v2.0.0-beta.28) (2023-12-26)
 
 
