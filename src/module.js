@@ -77,8 +77,7 @@ export default defineNuxtModule({
 
     addImports({
       name: 'useCustomElements',
-      as: 'useCustomElements',
-      from: resolve(runtimeDir, 'composables/useCustomElements.js')
+      from: resolve(runtimeDir, 'composables/index')
     });
 
     if (!nuxt.options.dev) {
