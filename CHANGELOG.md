@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.30](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.29...v2.0.0-beta.30) (2024-01-03)
+
+
+### Bug Fixes
+
+* **webpack:** added missing define plugin ([8e66daa](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/8e66daafc516d9fd79097359029d7225f53c4065))
+
 # [2.0.0-beta.29](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.28...v2.0.0-beta.29) (2023-12-27)
 
 
