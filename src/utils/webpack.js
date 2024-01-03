@@ -42,6 +42,7 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
   const buildDir = path.normalize(path.join(getBuildDir(nuxt), entryName));
 
   const { VueLoaderPlugin } = await import('vue-loader');
+  const Webpack = await import('webpack').then(module => module.default);
 
   let rules = clone(config.module.rules);
   rules = setLoaderRulesForCustomElement(rules);
@@ -54,7 +55,10 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
       options.entries.filter(({ name }) => entryName === kebabCase(name)),
       options.publicPath
     )),
-    ...(await getBundleAnalyzerPlugin(options, config, entryName))
+    ...(await getBundleAnalyzerPlugin(options, config, entryName)),
+    new Webpack.DefinePlugin({
+      __VUE_PROD_DEVTOOLS__: JSON.stringify(false)
+    })
   ];
 
   const output = getDefaultWebpackOutputOptions();
