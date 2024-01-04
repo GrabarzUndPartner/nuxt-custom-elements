@@ -3,7 +3,7 @@
     <div class="title">
       {{ title }}
     </div>
-    <test></test>
+    <component :is="childContent"></component>
     <div class="content">
       <slot>Default Content</slot>
     </div>
@@ -11,7 +11,10 @@
 </template>
 
 <script setup>
-import Test from '@/components/ChildContent.vue';
+import { defineAsyncComponent } from 'vue';
+const childContent = defineAsyncComponent(
+  () => import('@/components/ChildContent.vue')
+);
 
 defineProps({
   title: {

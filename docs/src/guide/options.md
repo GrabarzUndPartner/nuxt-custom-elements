@@ -80,7 +80,7 @@ Return value is the `config`. `async` is supported.
 {
   viteExtend(config) {
 
-    plugins.plugins.push(VitePlugin())
+    config.plugins.push(VitePlugin())
 
     return config;
   }
