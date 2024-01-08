@@ -71,7 +71,7 @@
     "@nuxt/webpack-builder": "3.9.1",
     "@nuxtjs/eslint-config": "12.0.0",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
-    "@types/node": "20.10.6",
+    "@types/node": "20.10.7",
     "commitlint": "18.4.4",
     "eslint-config-prettier": "9.1.0",
     "eslint-formatter-json-relative": "0.1.0",
@@ -97,7 +97,7 @@
     "stylelint": "16.1.0",
     "stylelint-config-recess-order": "4.4.0",
     "stylelint-config-standard": "36.0.0",
-    "vitepress": "1.0.0-rc.35",
+    "vitepress": "1.0.0-rc.36",
     "vitest": "1.1.3"
   }
 }
