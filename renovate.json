@@ -1,6 +1,7 @@
 {
   "extends": [
-    "@nuxtjs"
+    "@nuxtjs",
+    ":semanticCommits"
   ],
   "baseBranches": [
     "beta"
