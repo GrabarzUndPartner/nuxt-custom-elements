@@ -90,7 +90,7 @@
     "playwright": "1.40.1",
     "postcss-html": "1.6.0",
     "postcss-preset-env": "9.3.0",
-    "prettier": "3.2.1",
+    "prettier": "3.2.2",
     "read-pkg": "9.0.1",
     "serve-static": "1.15.0",
     "standard-version": "9.5.0",
