@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.31](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.30...v2.0.0-beta.31) (2024-05-18)
+
+
+### Bug Fixes
+
+* **deps:** update deps ([9ceca51](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/9ceca513f7ee33f3e52a58331241829aa567c154))
+
 # [2.0.0-beta.30](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.29...v2.0.0-beta.30) (2024-01-03)
 
 
