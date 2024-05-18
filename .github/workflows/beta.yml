@@ -126,7 +126,7 @@ jobs:
           name: docsArtifact
           path: public/docs
       - name: Deploy to GH-Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
