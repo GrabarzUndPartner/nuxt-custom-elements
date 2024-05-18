@@ -34,7 +34,7 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "nuxt-module-build",
+    "prepack": "nuxt-module-build build",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
@@ -88,7 +88,6 @@
     "prettier": "3.2.5",
     "read-pkg": "9.0.1",
     "serve-static": "1.15.0",
-    "standard-version": "9.5.0",
     "stylelint": "16.5.0",
     "stylelint-config-recess-order": "5.0.1",
     "stylelint-config-standard": "36.0.0",
