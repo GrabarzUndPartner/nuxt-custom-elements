@@ -93,7 +93,7 @@ function prepareTags(tags) {
       if (typeof appContext === 'function') {
         context = `(${appContext
           .toString()
-          .replace(/^appContext[ ]?\(([^\(\)]+)\) {/, '($1) => {')})`;
+          .replace(/^appContext[ ]?\(([^\\(\\)]+)\) {/, '($1) => {')})`;
       } else if (typeof appContext === 'string') {
         imports[`appContext${index}`] = appContext;
         context = `appContext${index}`;

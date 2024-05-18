@@ -13,7 +13,7 @@ function getDefinitions(entries) {
   ` +
       entry.tags
         .map(
-          ({ name, path }, i) =>
+          ({ name, path }) =>
             `nuxtApp.vueApp.component('${name}', defineAsyncComponent(() => import('${path}')));`
         )
         .join('\n  ') +

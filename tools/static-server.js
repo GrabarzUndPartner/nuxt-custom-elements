@@ -42,7 +42,7 @@ function startStaticServer(dist, port, hostname = 'localhost') {
     serve(req, res, finalhandler(req, res));
   });
   server.listen({ port, hostname });
-  // eslint-disable-next-line no-console
+
   console.log('Server started:', `http://${hostname}:${port}`);
   return { server, url: new URL(`http://${hostname}:${port}`).toString() };
 }

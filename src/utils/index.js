@@ -86,6 +86,7 @@ export function generateEntries(nuxt, moduleOptions) {
 async function copyBuild(from, to) {
   try {
     await fs.promises.rm(to, { recursive: true, force: true });
+    // eslint-disable-next-line no-unused-vars
   } catch (error) {
     // directory not found
   }
@@ -93,6 +94,7 @@ async function copyBuild(from, to) {
     await fs.promises.cp(from, to, { recursive: true });
     logger.info(`Entries output directory: \`${to}\``);
     logger.success('Generated entries!');
+    // eslint-disable-next-line no-unused-vars
   } catch (error) {
     logger.warn('Generated entries `dist` is missing!');
   }

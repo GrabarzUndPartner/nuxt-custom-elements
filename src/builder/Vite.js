@@ -34,7 +34,7 @@ export default class ViteBuilder extends Builder {
     await Promise.all(
       builds.map(async ({ name, entry, stats }) => {
         const { fileName } = stats.output.find(({ isEntry }) => isEntry);
-        // eslint-disable-next-line security/detect-non-literal-fs-filename
+
         const html = await fs.promises.readFile(
           resolve(this.runtimeDir, 'tmpl/vite/index.html'),
           { encoding: 'utf-8' }
@@ -46,7 +46,7 @@ export default class ViteBuilder extends Builder {
           tags: getTagHTMLFromEntry(entry),
           entry: fileName
         };
-        // eslint-disable-next-line security/detect-non-literal-fs-filename
+
         await fs.promises.writeFile(filepath, compiled({ options }), {
           encoding: 'utf-8'
         });

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue';
 import DefaultTheme from 'vitepress/theme';

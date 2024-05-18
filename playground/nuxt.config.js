@@ -71,7 +71,13 @@ export default defineNuxtConfig(async () => {
       ? ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module']
       : [],
 
-    modules: ['../src/module']
+    modules: ['@nuxt/eslint', '../src/module'],
+
+    eslint: {
+      config: {
+        typescript: false
+      }
+    }
   };
 });
 
