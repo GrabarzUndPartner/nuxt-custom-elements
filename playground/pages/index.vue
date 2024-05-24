@@ -4,14 +4,7 @@
     <div class="logo">
       <img src="@/assets/logo.svg" alt="Nuxt Custom-Elements" />
     </div>
-    <div class="container">
-      <client-only>
-        <custom-element-example title="Custom Title">
-          Custom Slot Content<br />
-          <a href="./nuxt-custom-elements/example/">Go to Real Example</a>
-        </custom-element-example>
-      </client-only>
-    </div>
+    <div class="container" v-html="html"></div>
   </div>
 </template>
 
@@ -19,16 +12,14 @@
 import { useCustomElements } from '#imports';
 const { registerEntry } = useCustomElements();
 registerEntry('example');
-</script>
 
-<!-- <script>
-import { useCustomElements } from '#imports';
-export default {
-  setup() {
-    useCustomElements('example');
-  }
-};
-</script> -->
+const html = ref(`
+        <custom-element-example title="Custom Title">
+          Custom Slot Content<br />
+          <a href="./nuxt-custom-elements/example/">Go to Real Example</a>
+        </custom-element-example>
+        `);
+</script>
 
 <style lang="postcss">
 .logo {

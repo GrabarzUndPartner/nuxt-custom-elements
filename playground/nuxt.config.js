@@ -1,5 +1,6 @@
 import { readPackage } from 'read-pkg';
 import { defineNuxtConfig } from 'nuxt/config';
+import { viteVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = process.env.NODE_ENV === 'development';
@@ -36,6 +37,10 @@ export default defineNuxtConfig(async () => {
       port: getPort()
     },
 
+    vite: {
+      plugins: [viteVueCESubStyle()]
+    },
+
     customElements: {
       analyzer: !isTest,
       entries: [
@@ -53,7 +58,7 @@ export default defineNuxtConfig(async () => {
             {
               async: false,
               name: 'CustomElementExample',
-              path: '@/components/customElements/Example.vue',
+              path: '@/components/customElements/Example.ce.vue',
               options: {
                 props: {
                   title: 'Live Example'

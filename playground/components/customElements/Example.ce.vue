@@ -13,7 +13,7 @@
 <script setup>
 import { defineAsyncComponent } from 'vue';
 const childContent = defineAsyncComponent(
-  () => import('@/components/ChildContent.vue')
+  () => import('@/components/ChildContent.ce.vue')
 );
 
 defineProps({
