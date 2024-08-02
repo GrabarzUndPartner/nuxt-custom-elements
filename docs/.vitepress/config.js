@@ -40,9 +40,9 @@ export default defineConfig(() => ({
 
   srcDir: 'src',
 
-  title: 'Nuxt Speedkit',
+  title: 'Nuxt Custom-Elements',
   description:
-    'Nuxt Speedkit takes over the Lighthouse performance optimization of your generated website.',
+    'Publish your Components as a vue-custom-element standalone build.',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
