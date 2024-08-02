@@ -37,7 +37,7 @@
 [![License][license-src]][license-href]
 
 - [✨ &nbsp;&nbsp;**Release Notes**](./CHANGELOG.md)
-- [📖 &nbsp;&nbsp;**Documentation**](https://nuxt-custom-elements.grabarzundpartner.dev/)
+- [📖 &nbsp;&nbsp;**Documentation**](https://grabarzundpartner.github.io/nuxt-custom-elements/)
 - [👁 &nbsp;&nbsp;**Preview**](https://grabarzundpartner.github.io/nuxt-custom-elements-example/)
 
 Nuxt Custom-Elements allows you to export your existing project components as custom elements for integration into external pages.
@@ -47,7 +47,7 @@ Nuxt Custom-Elements allows you to export your existing project components as cu
 - Use Vue with Shadow DOM 🥷
 - Export components as widgets
   
-📖 &nbsp;&nbsp;[Learn more in the documentation](https://nuxt-custom-elements.grabarzundpartner.dev/)
+📖 &nbsp;&nbsp;[Learn more in the documentation](https://grabarzundpartner.github.io/nuxt-custom-elements/)
 
 ## Development
 

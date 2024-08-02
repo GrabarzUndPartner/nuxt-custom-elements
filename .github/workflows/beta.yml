@@ -104,6 +104,7 @@ jobs:
           npm run docs:build
           touch docs/.vitepress/dist/.nojekyll
         env:
+          BASE_URL: /nuxt-custom-elements/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Archive Production Artifact
         uses: actions/upload-artifact@v4
@@ -130,5 +131,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: public
-          cname: nuxt-custom-elements.grabarzundpartner.dev
           keep_files: true
