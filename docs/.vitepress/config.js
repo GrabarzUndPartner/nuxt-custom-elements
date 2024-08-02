@@ -59,7 +59,7 @@ export default defineConfig(() => ({
   },
 
   sitemap: {
-    hostname: 'https://nuxt-custom-elements.grabarzundpartner.dev'
+    hostname: 'https://grabarzundpartner.github.io/nuxt-custom-elements/'
   }
 }));
 
