@@ -35,9 +35,7 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
+    "prepare": "husky",
     "build": "nuxt build playground",
     "dev": "nuxt dev playground",
     "generate": "nuxt generate playground",
@@ -82,7 +80,6 @@
     "lint-staged": "15.2.7",
     "markdown-it-inline-comments": "1.0.1",
     "nuxt": "3.12.4",
-    "pinst": "3.0.0",
     "playwright": "1.45.3",
     "postcss-html": "1.7.0",
     "postcss-preset-env": "9.6.0",
