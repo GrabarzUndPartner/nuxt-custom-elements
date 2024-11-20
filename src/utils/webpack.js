@@ -1,7 +1,6 @@
 import path from 'pathe';
 import clone from 'clone';
 import { kebabCase, pascalCase } from 'change-case';
-import { webpackVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 
 import { getTagHTMLFromEntry } from './tags.js';
 
@@ -49,7 +48,6 @@ async function getWebpackConfig(runtimeDir, entryName, nuxt, config, options) {
 
   const plugins = [
     new VueLoaderPlugin(),
-    webpackVueCESubStyle(),
     ...(await createHtmlWebpackPlugins(
       runtimeDir,
       options.entries.filter(({ name }) => entryName === kebabCase(name)),

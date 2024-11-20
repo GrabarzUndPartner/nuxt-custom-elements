@@ -11,7 +11,6 @@ export default {
     '@vitejs/plugin-vue',
     'lodash-es',
     'vite',
-    '@unplugin-vue-ce/sub-style',
     'vue-loader',
     'lodash-es',
     'vue-web-component-wrapper'
