@@ -1,5 +1,12 @@
 # Project Changelog
 
+# [2.0.0-beta.32](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.31...v2.0.0-beta.32) (2024-11-20)
+
+
+### Bug Fixes
+
+* **deps:** removed `@unplugin-vue-ce/sub-style` ([22ba6da](https://github.com/GrabarzUndPartner/nuxt-custom-elements/commit/22ba6daad9381fe656dfd46ff6a73553b4d7276b))
+
 # [2.0.0-beta.31](https://github.com/GrabarzUndPartner/nuxt-custom-elements/compare/v2.0.0-beta.30...v2.0.0-beta.31) (2024-05-18)
 
 
