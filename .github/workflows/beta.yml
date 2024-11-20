@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        node: [22]
 
     steps:
       - uses: actions/setup-node@v4
@@ -54,7 +54,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        node: [22]
 
     steps:
       - uses: actions/setup-node@v4
@@ -84,7 +84,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        node: [22]
 
     steps:
       - uses: actions/setup-node@v4
@@ -119,7 +119,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20]
+        node: [22]
     steps:
       - name: Download Artifact (Docs)
         uses: actions/download-artifact@v4
