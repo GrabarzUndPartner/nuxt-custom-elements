@@ -3,7 +3,6 @@ import { build as viteBuild, defineConfig } from 'vite';
 import { kebabCase } from 'change-case';
 import vuePlugin from '@vitejs/plugin-vue';
 import clone from 'clone';
-import { viteVueCESubStyle } from '@unplugin-vue-ce/sub-style';
 import { getBuildDir } from './index.js';
 
 export async function build(builder, entryConfigs, statsList = []) {
@@ -54,8 +53,7 @@ function getViteConfig(entryName, nuxt, config, options) {
       reactivityTransform: false,
       isProduction: true,
       customElement: true
-    }),
-    viteVueCESubStyle()
+    })
   ];
 
   return defineConfig(viteExtend(config));

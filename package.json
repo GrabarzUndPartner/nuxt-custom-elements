@@ -52,7 +52,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@unplugin-vue-ce/sub-style": "1.0.0",
     "change-case": "5.4.4",
     "clone": "2.1.2",
     "defu": "6.1.4",

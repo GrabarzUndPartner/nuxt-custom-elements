@@ -1,5 +1,6 @@
 import { readPackage } from 'read-pkg';
 import { defineNuxtConfig } from 'nuxt/config';
+import { join } from 'path';
 
 const isTest = process.env.NODE_ENV === 'test';
 const isDev = process.env.NODE_ENV === 'development';
@@ -8,6 +9,7 @@ export default defineNuxtConfig(async () => {
   const { homepage } = await readPackage();
 
   return {
+    compatibilityDate: '2024-11-20',
     dev: isDev,
 
     // builder: '@nuxt/webpack-builder',
@@ -71,7 +73,7 @@ export default defineNuxtConfig(async () => {
       ? ['@nuxtjs/eslint-module', '@nuxtjs/stylelint-module']
       : [],
 
-    modules: ['@nuxt/eslint', '../src/module'],
+    modules: ['@nuxt/eslint', join(process.cwd(), 'src/module.js')],
 
     eslint: {
       config: {

@@ -43,7 +43,7 @@ export default function (builder) {
   });
 
   afterAll(async () => {
-    await Promise.all(browsers.map(browser => browser.close()));
+    await Promise.all((browsers || []).map(browser => browser.close()));
   });
 
   test('check bundle initialization (chrome)', async () => {
