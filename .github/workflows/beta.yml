@@ -107,7 +107,7 @@ jobs:
           BASE_URL: /nuxt-custom-elements/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: docsArtifact
           path: docs/.vitepress/dist
@@ -122,7 +122,7 @@ jobs:
         node: [22]
     steps:
       - name: Download Artifact (Docs)
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: docsArtifact
           path: public/docs
