@@ -84,7 +84,7 @@
     "postcss-preset-env": "10.1.1",
     "prettier": "3.3.3",
     "read-pkg": "9.0.1",
-    "serve-static": "1.16.2",
+    "serve-static": "2.2.1",
     "stylelint": "16.10.0",
     "stylelint-config-recess-order": "5.1.1",
     "stylelint-config-standard": "36.0.1",
